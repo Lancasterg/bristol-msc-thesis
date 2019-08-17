@@ -1,0 +1,630 @@
+\ifglsentryexists{hpc}{}%
+{%
+\gls@defglossaryentry{hpc}%
+{%
+name={HPC},%
+sort={HPC},%
+type={main},%
+first={High Performance Computing\glsspace (HPC)},%
+firstplural={High Performance Computings\glsspace (HPCs)},%
+text={HPC},%
+plural={HPCs},%
+description={High Performance Computing},%
+descriptionplural={High Performance Computing\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={High Performance Computing},%
+longplural={High Performance Computings},%
+short={HPC},%
+shortplural={HPCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gcm}{}%
+{%
+\gls@defglossaryentry{gcm}%
+{%
+name={GCM},%
+sort={GCM},%
+type={main},%
+first={Global Circulation Model\glsspace (GCM)},%
+firstplural={Global Circulation Models\glsspace (GCMs)},%
+text={GCM},%
+plural={GCMs},%
+description={Global Circulation Model},%
+descriptionplural={Global Circulation Model\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Global Circulation Model},%
+longplural={Global Circulation Models},%
+short={GCM},%
+shortplural={GCMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fft}{}%
+{%
+\gls@defglossaryentry{fft}%
+{%
+name={FFT},%
+sort={FFT},%
+type={main},%
+first={Fast Fourier Transform\glsspace (FFT)},%
+firstplural={Fast Fourier Transforms\glsspace (FFTs)},%
+text={FFT},%
+plural={FFTs},%
+description={Fast Fourier Transform},%
+descriptionplural={Fast Fourier Transform\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fast Fourier Transform},%
+longplural={Fast Fourier Transforms},%
+short={FFT},%
+shortplural={FFTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fftw}{}%
+{%
+\gls@defglossaryentry{fftw}%
+{%
+name={FFTW},%
+sort={FFTW},%
+type={main},%
+first={Fastest Fourier Transform in the West\glsspace (FFTW)},%
+firstplural={Fastest Fourier Transform in the Wests\glsspace (FFTWs)},%
+text={FFTW},%
+plural={FFTWs},%
+description={Fastest Fourier Transform in the West},%
+descriptionplural={Fastest Fourier Transform in the West\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fastest Fourier Transform in the West},%
+longplural={Fastest Fourier Transform in the Wests},%
+short={FFTW},%
+shortplural={FFTWs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nag}{}%
+{%
+\gls@defglossaryentry{nag}%
+{%
+name={NAG},%
+sort={NAG},%
+type={main},%
+first={Numerical Algorithms Group\glsspace (NAG)},%
+firstplural={Numerical Algorithms Groups\glsspace (NAGs)},%
+text={NAG},%
+plural={NAGs},%
+description={Numerical Algorithms Group},%
+descriptionplural={Numerical Algorithms Group\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Numerical Algorithms Group},%
+longplural={Numerical Algorithms Groups},%
+short={NAG},%
+shortplural={NAGs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mpi}{}%
+{%
+\gls@defglossaryentry{mpi}%
+{%
+name={MPI},%
+sort={MPI},%
+type={main},%
+first={Message Passing Interface\glsspace (MPI)},%
+firstplural={Message Passing Interfaces\glsspace (MPIs)},%
+text={MPI},%
+plural={MPIs},%
+description={Message Passing Interface},%
+descriptionplural={Message Passing Interface\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Message Passing Interface},%
+longplural={Message Passing Interfaces},%
+short={MPI},%
+shortplural={MPIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cce}{}%
+{%
+\gls@defglossaryentry{cce}%
+{%
+name={CCE},%
+sort={CCE},%
+type={main},%
+first={Cray Compiling Environment\glsspace (CCE)},%
+firstplural={Cray Compiling Environments\glsspace (CCEs)},%
+text={CCE},%
+plural={CCEs},%
+description={Cray Compiling Environment},%
+descriptionplural={Cray Compiling Environment\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Cray Compiling Environment},%
+longplural={Cray Compiling Environments},%
+short={CCE},%
+shortplural={CCEs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mpp}{}%
+{%
+\gls@defglossaryentry{mpp}%
+{%
+name={MPP},%
+sort={MPP},%
+type={main},%
+first={Massively Parallel Module\glsspace (MPP)},%
+firstplural={Massively Parallel Modules\glsspace (MPPs)},%
+text={MPP},%
+plural={MPPs},%
+description={Massively Parallel Module},%
+descriptionplural={Massively Parallel Module\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Massively Parallel Module},%
+longplural={Massively Parallel Modules},%
+short={MPP},%
+shortplural={MPPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ulp}{}%
+{%
+\gls@defglossaryentry{ulp}%
+{%
+name={ULP},%
+sort={ULP},%
+type={main},%
+first={Units of Last Place\glsspace (ULP)},%
+firstplural={Units of Last Places\glsspace (ULPs)},%
+text={ULP},%
+plural={ULPs},%
+description={Units of Last Place},%
+descriptionplural={Units of Last Place\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Units of Last Place},%
+longplural={Units of Last Places},%
+short={ULP},%
+shortplural={ULPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fms}{}%
+{%
+\gls@defglossaryentry{fms}%
+{%
+name={FMS},%
+sort={FMS},%
+type={main},%
+first={Flexible Modelling System\glsspace (FMS)},%
+firstplural={Flexible Modelling Systems\glsspace (FMSs)},%
+text={FMS},%
+plural={FMSs},%
+description={Flexible Modelling System},%
+descriptionplural={Flexible Modelling System\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Flexible Modelling System},%
+longplural={Flexible Modelling Systems},%
+short={FMS},%
+shortplural={FMSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dft}{}%
+{%
+\gls@defglossaryentry{dft}%
+{%
+name={DFT},%
+sort={DFT},%
+type={main},%
+first={Discrete Fourier Transform\glsspace (DFT)},%
+firstplural={Discrete Fourier Transforms\glsspace (DFTs)},%
+text={DFT},%
+plural={DFTs},%
+description={Discrete Fourier Transform},%
+descriptionplural={Discrete Fourier Transform\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Discrete Fourier Transform},%
+longplural={Discrete Fourier Transforms},%
+short={DFT},%
+shortplural={DFTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{idft}{}%
+{%
+\gls@defglossaryentry{idft}%
+{%
+name={IDFT},%
+sort={IDFT},%
+type={main},%
+first={Inverse Discrete Fourier Transform\glsspace (IDFT)},%
+firstplural={Inverse Discrete Fourier Transforms\glsspace (IDFTs)},%
+text={IDFT},%
+plural={IDFTs},%
+description={Inverse Discrete Fourier Transform},%
+descriptionplural={Inverse Discrete Fourier Transform\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Inverse Discrete Fourier Transform},%
+longplural={Inverse Discrete Fourier Transforms},%
+short={IDFT},%
+shortplural={IDFTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sve}{}%
+{%
+\gls@defglossaryentry{sve}%
+{%
+name={SVE},%
+sort={SVE},%
+type={main},%
+first={Scalable Vector Extensions\glsspace (SVE)},%
+firstplural={Scalable Vector Extensionss\glsspace (SVEs)},%
+text={SVE},%
+plural={SVEs},%
+description={Scalable Vector Extensions},%
+descriptionplural={Scalable Vector Extensions\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Scalable Vector Extensions},%
+longplural={Scalable Vector Extensionss},%
+short={SVE},%
+shortplural={SVEs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bcp3}{}%
+{%
+\gls@defglossaryentry{bcp3}%
+{%
+name={BCP3},%
+sort={BCP3},%
+type={main},%
+first={BlueCrystal phase 3\glsspace (BCP3)},%
+firstplural={BlueCrystal phase 3s\glsspace (BCP3s)},%
+text={BCP3},%
+plural={BCP3s},%
+description={BlueCrystal phase 3},%
+descriptionplural={BlueCrystal phase 3\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={BlueCrystal phase 3},%
+longplural={BlueCrystal phase 3s},%
+short={BCP3},%
+shortplural={BCP3s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bcp4}{}%
+{%
+\gls@defglossaryentry{bcp4}%
+{%
+name={BCP4},%
+sort={BCP4},%
+type={main},%
+first={BlueCrystal phase 4\glsspace (BCP4)},%
+firstplural={BlueCrystal phase 4s\glsspace (BCP4s)},%
+text={BCP4},%
+plural={BCP4s},%
+description={BlueCrystal phase 4},%
+descriptionplural={BlueCrystal phase 4\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={BlueCrystal phase 4},%
+longplural={BlueCrystal phase 4s},%
+short={BCP4},%
+shortplural={BCP4s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bp}{}%
+{%
+\gls@defglossaryentry{bp}%
+{%
+name={BP},%
+sort={BP},%
+type={main},%
+first={BluePebble\glsspace (BP)},%
+firstplural={BluePebbles\glsspace (BPs)},%
+text={BP},%
+plural={BPs},%
+description={BluePebble},%
+descriptionplural={BluePebble\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={BluePebble},%
+longplural={BluePebbles},%
+short={BP},%
+shortplural={BPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{avx}{}%
+{%
+\gls@defglossaryentry{avx}%
+{%
+name={AVX},%
+sort={AVX},%
+type={main},%
+first={Advanced Vector Extensions\glsspace (AVX)},%
+firstplural={Advanced Vector Extensionss\glsspace (AVXs)},%
+text={AVX},%
+plural={AVXs},%
+description={Advanced Vector Extensions},%
+descriptionplural={Advanced Vector Extensions\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Advanced Vector Extensions},%
+longplural={Advanced Vector Extensionss},%
+short={AVX},%
+shortplural={AVXs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{flops}{}%
+{%
+\gls@defglossaryentry{flops}%
+{%
+name={FLOPS},%
+sort={FLOPS},%
+type={main},%
+first={Floating Point Operations\glsspace (FLOPS)},%
+firstplural={Floating Point Operationss\glsspace (FLOPSs)},%
+text={FLOPS},%
+plural={FLOPSs},%
+description={Floating Point Operations},%
+descriptionplural={Floating Point Operations\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Floating Point Operations},%
+longplural={Floating Point Operationss},%
+short={FLOPS},%
+shortplural={FLOPSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{epsrc}{}%
+{%
+\gls@defglossaryentry{epsrc}%
+{%
+name={EPSRC},%
+sort={EPSRC},%
+type={main},%
+first={Engineering and Physical Sciences Research Council\glsspace (EPSRC)},%
+firstplural={Engineering and Physical Sciences Research Councils\glsspace (EPSRCs)},%
+text={EPSRC},%
+plural={EPSRCs},%
+description={Engineering and Physical Sciences Research Council},%
+descriptionplural={Engineering and Physical Sciences Research Council\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Engineering and Physical Sciences Research Council},%
+longplural={Engineering and Physical Sciences Research Councils},%
+short={EPSRC},%
+shortplural={EPSRCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{acrc}{}%
+{%
+\gls@defglossaryentry{acrc}%
+{%
+name={ACRC},%
+sort={ACRC},%
+type={main},%
+first={Advanced Computing Research Centre\glsspace (ACRC)},%
+firstplural={Advanced Computing Research Centres\glsspace (ACRCs)},%
+text={ACRC},%
+plural={ACRCs},%
+description={Advanced Computing Research Centre},%
+descriptionplural={Advanced Computing Research Centre\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Advanced Computing Research Centre},%
+longplural={Advanced Computing Research Centres},%
+short={ACRC},%
+shortplural={ACRCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hpl}{}%
+{%
+\gls@defglossaryentry{hpl}%
+{%
+name={HPL},%
+sort={HPL},%
+type={main},%
+first={High Performance Linpack\glsspace (HPL)},%
+firstplural={High Performance Linpacks\glsspace (HPLs)},%
+text={HPL},%
+plural={HPLs},%
+description={High Performance Linpack},%
+descriptionplural={High Performance Linpack\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={High Performance Linpack},%
+longplural={High Performance Linpacks},%
+short={HPL},%
+shortplural={HPLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

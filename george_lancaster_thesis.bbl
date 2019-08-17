@@ -1,0 +1,188 @@
+\begin{thebibliography}{10}
+
+\bibitem{vallis2018isca}
+G.~K. Vallis, G.~Colyer, R.~Geen, E.~Gerber, M.~Jucker, P.~Maher, A.~Paterson,
+  M.~Pietschnig, J.~Penn, and S.~I. Thomson, ``Isca, v1.0: a framework for the
+  global modelling of the atmospheres of earth and other planets at varying
+  levels of complexity,'' {\em Geoscientific Model Development}, vol.~11,
+  pp.~843--859, Oct. 2018.
+
+\bibitem{penn2017thermal}
+J.~Penn and G.~K. Vallis, ``The thermal phase curve offset on tidally and
+  nontidally locked exoplanets: A shallow water model,'' {\em The Astrophysical
+  Journal}, vol.~842, no.~2, p.~101, 2017.
+
+\bibitem{thomson2018atmospheric}
+S.~I. Thomson and G.~K. Vallis, ``Atmospheric response to sst anomalies. part
+  i: Background-state dependence, teleconnections, and local effects in
+  winter,'' {\em Journal of the Atmospheric Sciences}, vol.~75, no.~12,
+  pp.~4107--4124, 2018.
+
+\bibitem{geen2018regime}
+R.~Geen, F.~Lambert, and G.~Vallis, ``Regime change behavior during asian
+  monsoon onset,'' {\em Journal of Climate}, vol.~31, no.~8, pp.~3327--3348,
+  2018.
+
+\bibitem{balaji2002fms}
+V.~Balaji, ``The fms manual: A developer's guide to the gfdl flexible modeling
+  system,'' tech. rep., Princeton, NJ, USA, 2002.
+
+\bibitem{donner2011dynamical}
+L.~J. Donner, B.~L. Wyman, R.~S. Hemler, L.~W. Horowitz, Y.~Ming, M.~Zhao,
+  J.-C. Golaz, P.~Ginoux, S.-J. Lin, M.~D. Schwarzkopf, {\em et~al.}, ``The
+  dynamical core, physical parameterizations, and basic simulation
+  characteristics of the atmospheric component am3 of the gfdl global coupled
+  model cm3,'' {\em Journal of Climate}, vol.~24, pp.~3484--3519, Jul. 2011.
+
+\bibitem{farneti2009intermediate}
+R.~Farneti and G.~K. Vallis, ``An intermediate complexity climate model
+  (iccmp1) based on the gfdl flexible modelling system,'' {\em Geoscientific
+  Model Development}, vol.~2, pp.~73--88, Jul. 2009.
+
+\bibitem{gfdl2019fms}
+GFDL, ``Stream memory-bandwidth benchmark,'' Jul. 2019.
+
+\bibitem{bjerknes1910dynamic}
+V.~Bjerknes, J.~W. Sandström, and O.~D. Devik, {\em Dynamic meteorology and
+  hydrography}.
+\newblock No.~88, Carnegie, 1910.
+
+\bibitem{edwards2011history}
+P.~N. Edwards, ``History of climate modeling,'' {\em Wiley Interdisciplinary
+  Reviews: Climate Change}, vol.~2, pp.~128--139, Dec. 2011.
+
+\bibitem{godske1957dynamic}
+C.~L. Godske and V.~Bjerknes, {\em Dynamic meteorology and weather
+  forecasting}, vol.~605.
+\newblock American Meteorological Society, 1957.
+
+\bibitem{bart1998coordinate}
+B.~Geerts, ``Coordinate systems of numerical weather prediction models,'' Apr.
+  1998.
+
+\bibitem{isca2019github}
+Execlim, ``Isca: Idealized gcm from the university of exeter,'' Dec. 2018.
+
+\bibitem{6877473}
+N.~Rajovic, P.~M. Carpenter, I.~Gelado, N.~Puzovic, A.~Ramirez, and M.~Valero,
+  ``Supercomputing with commodity cpus: Are mobile socs ready for hpc?,'' in
+  {\em Proceedings of the International Conference on High Performance
+  Computing, Networking, Storage and Analysis}, SC '13, (New York, NY, USA),
+  pp.~41--53, ACM, Nov. 2013.
+
+\bibitem{conte2000long}
+G.~Conte, S.~Tommesani, and F.~Zanichelli, ``The long and winding road to
+  high-performance image processing with mmx/sse,'' in {\em Proceedings Fifth
+  IEEE International Workshop on Computer Architectures for Machine
+  Perception}, pp.~302--310, IEEE, Sept. 2000.
+
+\bibitem{chris2011avx}
+C.~Lomont, ``Introduction to intel advanced vector extensions,'' tech. rep.,
+  Santa Clara, CA, USA, 2011.
+
+\bibitem{intel2019avx}
+I.~Corporation, ``Intel architecture instruction set extensions and future
+  features programming reference,'' tech. rep., Santa Clara, CA, USA, Apr.
+  2019.
+
+\bibitem{xeon2680v4}
+I.~Corporation, ``Intel xeon processor e5-2680 v4 product specification,'' Jan.
+  2019.
+
+\bibitem{mccalpin1995memory}
+J.~D. McCalpin {\em et~al.}, ``Memory bandwidth and machine balance in current
+  high performance computers,'' {\em IEEE computer society technical committee
+  on computer architecture (TCCA) newsletter}, vol.~2, Dec. 1995.
+
+\bibitem{thunderprocessor2018brief}
+Cavium, ``Thunderx2 cn99xx product brief,'' tech. rep., San Jose, CA, USA,
+  2018.
+
+\bibitem{mcintosh2018performance}
+S.~McIntosh-Smith, J.~Price, T.~Deakin, and A.~Poenaru, ``A performance
+  analysis of the first generation of hpc-optimized arm processors,'' {\em
+  Concurrency and Computation: Practice and Experience}, p.~e5110, May. 2018.
+
+\bibitem{kindratenko2011trends}
+V.~Kindratenko and P.~Trancoso, ``Trends in high-performance computing,'' {\em
+  Computing in Science \& Engineering}, vol.~13, p.~92, Apr. 2011.
+
+\bibitem{calore2018advanced}
+E.~Calore, F.~Mantovani, and D.~Ruiz, ``Advanced performance analysis of hpc
+  workloads on cavium thunderx,'' in {\em 2018 International Conference on High
+  Performance Computing \& Simulation (HPCS)}, pp.~375--382, IEEE, Jul. 2018.
+
+\bibitem{Rajovic:2016:MPA:3014904.3014955}
+N.~Rajovic, A.~Rico, F.~Mantovani, D.~Ruiz, J.~O. Vilarrubi, C.~Gomez,
+  L.~Backes, D.~Nieto, H.~Servat, X.~Martorell, J.~Labarta, E.~Ayguade,
+  C.~Adeniyi-Jones, S.~Derradji, H.~Gloaguen, P.~Lanucara, N.~Sanna, J.-F.
+  Mehaut, K.~Pouget, B.~Videau, E.~Boyer, M.~Allalen, A.~Auweter, D.~Brayford,
+  D.~Tafani, V.~Weinberg, D.~Br\"{o}mmel, R.~Halver, J.~H. Meinke, R.~Beivide,
+  M.~Benito, E.~Vallejo, M.~Valero, and A.~Ramirez, ``The mont-blanc prototype:
+  An alternative approach for hpc systems,'' in {\em Proceedings of the
+  International Conference for High Performance Computing, Networking, Storage
+  and Analysis}, SC '16, (Piscataway, NJ, USA), pp.~38--50, IEEE Press, 2016.
+
+\bibitem{rico2017arm}
+A.~Rico, J.~A. Joao, C.~Adeniyi-Jones, and E.~Van~Hensbergen, ``Arm hpc
+  ecosystem and the reemergence of vectors,'' in {\em Proceedings of the
+  Computing Frontiers Conference}, (New York NY, USA), pp.~329--334, ACM, ACM,
+  May. 2017.
+
+\bibitem{stephens2017arm}
+N.~Stephens, S.~Biles, M.~Boettcher, J.~Eapen, M.~Eyole, G.~Gabrielli,
+  M.~Horsnell, G.~Magklis, A.~Martinez, N.~Premillieu, {\em et~al.}, ``The arm
+  scalable vector extension,'' {\em IEEE Micro}, vol.~37, pp.~26--39, Apr.
+  2017.
+
+\bibitem{moore1965cramming}
+G.~E. Moore {\em et~al.}, ``Cramming more components onto integrated
+  circuits,'' {\em Electronics}, vol.~38, pp.~33--35, Apr. 1965.
+
+\bibitem{patterson1997case}
+D.~Patterson, T.~Anderson, N.~Cardwell, R.~Fromm, K.~Keeton, C.~Kozyrakis,
+  R.~Thomas, and K.~Yelick, ``A case for intelligent ram,'' {\em IEEE micro},
+  vol.~17, pp.~34--44, Apr. 1997.
+
+\bibitem{stream2019github}
+J.~Hammond, ``Stream memory-bandwidth benchmark,'' Jul. 2019.
+
+\bibitem{dongarra2008linpack}
+A.~Petitet, R.~C.~Whaley, J.~Dongarra, and A.~Cleary, ``Hpl – a portable
+  implementation of the high-performance linpack benchmark for
+  distributed-memory computers,'' Jan. 2008.
+
+\bibitem{schmidt2007benchmark}
+M.~Schmidt, ``A benchmark for the parallel code used in fms and mom-4,'' {\em
+  Ocean Modelling}, vol.~17, pp.~49--67, Dec. 2007.
+
+\bibitem{fortran1991standard}
+A.~N.~S. Programming, {\em Fortran 90 ISO/IEC 1539 : 1991}.
+\newblock Carnegie, 1991.
+
+\bibitem{gnu2019conversion}
+GNU, ``Implicit conversion between logical and integer,'' Jul. 2019.
+
+\bibitem{held1994proposal}
+I.~M. Held and M.~J. Suarez, ``A proposal for the intercomparison of the
+  dynamical cores of atmospheric general circulation models,'' {\em Bulletin of
+  the american Meteorological society}, vol.~75, no.~10, pp.~1825--1830, 1994.
+
+\bibitem{frigo2005design}
+M.~Frigo and S.~G. Johnson, ``The design and implementation of fftw3,'' {\em
+  Proceedings of the IEEE}, vol.~93, no.~2, pp.~216--231, 2005.
+
+\bibitem{frigo2003fftw}
+M.~Frigo, S.~G. Johnson, {\em et~al.}, ``Fftw for version 3.3.8,'' May 2018.
+
+\bibitem{cooley1965algorithm}
+J.~W. Cooley and J.~W. Tukey, ``An algorithm for the machine calculation of
+  complex fourier series,'' {\em Mathematics of computation}, vol.~19, no.~90,
+  pp.~297--301, 1965.
+
+\bibitem{heideman1985gauss}
+M.~T. Heideman, D.~H. Johnson, and C.~S. Burrus, ``Gauss and the history of the
+  fast fourier transform,'' {\em Archive for history of exact sciences},
+  vol.~34, no.~3, pp.~265--277, 1985.
+
+\end{thebibliography}
