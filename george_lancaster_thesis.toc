@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1.2}Aims and Objectives}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Contributions}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Heading}{4}{section.1.4}
-\contentsline {chapter}{\numberline {2}A background on climate modelling}{5}{chapter.2}
+\contentsline {chapter}{\numberline {2}Climate modelling}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}The Isca climate model}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Global Circulation Model (GCM)}{5}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Domain decomposition}{6}{subsection.2.1.2}
@@ -15,10 +15,10 @@
 \contentsline {subsection}{\numberline {2.2.2}Dependencies}{9}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Fortran Libraries}{9}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Python Libraries}{10}{subsection.2.2.4}
-\contentsline {chapter}{\numberline {3}A background on HPC hardware and parallel processing}{12}{chapter.3}
+\contentsline {chapter}{\numberline {3}HPC hardware and parallel processing}{12}{chapter.3}
 \contentsline {section}{\numberline {3.1}Parallel processing}{12}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Flynns Taxonomy}{12}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Instruction-level parallelism (SIMD)}{12}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Data-level parallelism (SIMD)}{12}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Message passing}{14}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Hardware}{14}{subsection.3.1.4}
 \contentsline {section}{\numberline {3.2}HPC clusters}{14}{section.3.2}
@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {3.2.4}Isambard}{15}{subsection.3.2.4}
 \contentsline {subsubsection}{Cavium ThunderX2 Server Microprocessors}{15}{section*.12}
 \contentsline {subsubsection}{A64FX}{17}{section*.14}
-\contentsline {chapter}{\numberline {4}A background on benchmarking}{18}{chapter.4}
+\contentsline {chapter}{\numberline {4}Benchmarking and performance analysis}{18}{chapter.4}
 \contentsline {section}{\numberline {4.1}Cluster benchmarks}{18}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}STREAM TRIAD}{18}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}High Performance Linpack (HPLinpack)}{19}{subsection.4.1.2}
@@ -42,71 +42,95 @@
 \contentsline {chapter}{\numberline {5}Porting}{22}{chapter.5}
 \contentsline {section}{\numberline {5.1}Compilers and MPI libraries}{22}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}GNU Compiler Collection (GCC)}{22}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Intel Compiler Collection (ICC)}{22}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Cray Compiling Environment (CCE)}{22}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.2}Intel Compiler Collection (ICC)}{23}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Cray Compiling Environment (CCE)}{23}{subsection.5.1.3}
 \contentsline {subsubsection}{Implicit type conversion}{23}{section*.23}
-\contentsline {section}{\numberline {5.2}Libraries etc}{23}{section.5.2}
-\contentsline {section}{\numberline {5.3}BlueCrystal phase 3}{23}{section.5.3}
-\contentsline {section}{\numberline {5.4}Discussion}{23}{section.5.4}
-\contentsline {section}{\numberline {5.5}BluePebble}{24}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Building modules}{24}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Build Tools}{24}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}Issues}{24}{section.5.6}
-\contentsline {section}{\numberline {5.7}Isambard}{24}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}GNU Compiler Collection}{24}{subsection.5.7.1}
-\contentsline {subsubsection}{Namelist read errors}{25}{section*.24}
-\contentsline {subsection}{\numberline {5.7.2}Ambiguous arithmetic}{25}{subsection.5.7.2}
-\contentsline {subsubsection}{Arm HPC Compiler}{25}{section*.25}
-\contentsline {subsection}{\numberline {5.7.3}Modifications to codebase}{25}{subsection.5.7.3}
-\contentsline {section}{\numberline {5.8}Verification of results}{25}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}Units of last place}{26}{subsection.5.8.1}
-\contentsline {subsection}{\numberline {5.8.2}Rounding errors}{26}{subsection.5.8.2}
-\contentsline {subsection}{\numberline {5.8.3}Application}{26}{subsection.5.8.3}
+\contentsline {subsubsection}{Namelist read errors}{23}{section*.24}
+\contentsline {subsubsection}{Ambiguous arithmetic}{24}{section*.25}
+\contentsline {subsection}{\numberline {5.1.4}Discussion}{24}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Cluster feedback}{24}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Stack size}{24}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Strict processor enforcement}{24}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Libraries and dependencies}{25}{section.5.3}
+\contentsline {section}{\numberline {5.4}Development tools}{25}{section.5.4}
+\contentsline {section}{\numberline {5.5}Verification of results}{25}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Units of last place}{25}{subsection.5.5.1}
+\contentsline {subsubsection}{Rounding errors}{25}{section*.26}
+\contentsline {subsection}{\numberline {5.5.2}Program verifcation}{26}{subsection.5.5.2}
 \contentsline {part}{II\hspace {1em}Benchmarking, performance analysis and optimisation}{27}{part.2}
-\contentsline {chapter}{\numberline {6}Benchmarking and Performance Analysis}{28}{chapter.6}
+\contentsline {chapter}{\numberline {6}Experimental Methodology}{28}{chapter.6}
 \contentsline {section}{\numberline {6.1}Model configurations}{28}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Held-Suarez test case}{28}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Held-Suarez test case}{29}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Grey-Mars test case}{29}{subsection.6.1.2}
 \contentsline {subsection}{\numberline {6.1.3}Domain decomposition}{29}{subsection.6.1.3}
 \contentsline {section}{\numberline {6.2}Automated data collection}{30}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Job submission}{30}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Scaling study}{30}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Results and discussion}{31}{subsection.6.3.1}
-\contentsline {subsubsection}{T21 resolution}{31}{section*.27}
-\contentsline {subsubsection}{T42 resolution}{32}{section*.30}
-\contentsline {subsubsection}{T85 resolution}{35}{section*.33}
-\contentsline {subsection}{\numberline {6.3.2}Conclusions}{35}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Compiler comparison}{36}{section.6.4}
-\contentsline {section}{\numberline {6.5}Communication analysis}{36}{section.6.5}
-\contentsline {section}{\numberline {6.6}Performance projection}{37}{section.6.6}
-\contentsline {chapter}{\numberline {7}Optimisation}{39}{chapter.7}
-\contentsline {section}{\numberline {7.1}Roofline model analysis}{39}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Isca performance}{40}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}FFT optimisation}{40}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}FFTW}{42}{subsection.7.2.1}
-\contentsline {subsubsection}{Cooley-Tukey algorithm}{42}{section*.41}
-\contentsline {subsubsection}{FFTW applied to Isca}{43}{section*.42}
-\contentsline {subsubsection}{Methodology}{44}{section*.44}
-\contentsline {subsubsection}{Results}{44}{section*.45}
-\contentsline {section}{\numberline {7.3}Floating point precision}{45}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Methodology}{46}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Results}{46}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Discussion}{47}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Load imbalance}{48}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Vector Instructions}{51}{subsection.7.4.1}
-\contentsline {section}{\numberline {7.5}Memory Leaks}{51}{section.7.5}
-\contentsline {section}{\numberline {7.6}Conclusions}{52}{section.7.6}
-\contentsline {part}{III\hspace {1em}Reflection and Critical Analysis}{53}{part.3}
-\contentsline {chapter}{\numberline {8}Reflection and Critical Analysis}{54}{chapter.8}
-\contentsline {chapter}{\numberline {A}Porting code changes}{58}{appendix.A}
-\contentsline {section}{\numberline {A.1}Isambard}{58}{section.A.1}
-\contentsline {subsection}{\numberline {A.2.1}Error 1}{58}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Error 2}{58}{subsection.A.2.2}
-\contentsline {chapter}{\numberline {B}Code listings}{59}{appendix.B}
-\contentsline {section}{\numberline {B.1}Grid to Fourier subroutine}{59}{section.B.1}
-\contentsline {section}{\numberline {B.3}Program to time FFT}{59}{section.B.3}
-\contentsline {chapter}{\numberline {C}Job submission scripts}{61}{appendix.C}
-\contentsline {section}{\numberline {C.1}BCP3 (PBS)}{61}{section.C.1}
-\contentsline {section}{\numberline {C.3}BluePebble (PBS Pro)}{61}{section.C.3}
-\contentsline {section}{\numberline {C.5}Isambard (PBS Pro)}{61}{section.C.5}
-\contentsline {section}{\numberline {C.7}BCP4 (SLURM)}{61}{section.C.7}
+\contentsline {section}{\numberline {6.3}Experiments}{31}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Experiment A: Scaling study}{31}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Experiment B: Compiler comparison}{31}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Experiment C: Vectorisation analysis}{31}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Experiment D: Communication analysis}{32}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Experiment E: Runtime variation}{32}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Experiment F: Roofline analysis}{32}{subsection.6.3.6}
+\contentsline {chapter}{\numberline {7}Results}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}Experiment A: Scaling study}{33}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Results}{33}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Conclusions and discussion}{36}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Experiment B: Compiler comparison}{37}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Results}{37}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Conclusions and discussion}{38}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Experiment C: Vectorisation analysis}{38}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Results}{38}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Conclusions and discussion}{38}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Experiment D: Computation rate}{39}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Results}{39}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Conclusions and discussion}{40}{subsection.7.4.2}
+\contentsline {section}{\numberline {7.5}Experiment E: Time spent in the MPI library}{40}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Results}{40}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Conclusions and discussion}{41}{subsection.7.5.2}
+\contentsline {section}{\numberline {7.6}Experiment E: Runtime variation}{42}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Results}{42}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Conclusions and discussion}{43}{subsection.7.6.2}
+\contentsline {section}{\numberline {7.7}Experiment F: Roofline model analysis}{43}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Conclusions and discussion}{44}{subsection.7.7.1}
+\contentsline {section}{\numberline {7.8}Summary}{44}{section.7.8}
+\contentsline {chapter}{\numberline {8}Optimisation}{46}{chapter.8}
+\contentsline {section}{\numberline {8.1}FFT optimisation}{46}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}FFTW}{48}{subsection.8.1.1}
+\contentsline {subsubsection}{Cooley-Tukey algorithm}{48}{section*.45}
+\contentsline {subsubsection}{Implementation}{49}{section*.46}
+\contentsline {subsubsection}{Verification}{50}{section*.48}
+\contentsline {subsubsection}{Methodology}{50}{section*.49}
+\contentsline {subsubsection}{Results and discussion}{50}{section*.50}
+\contentsline {section}{\numberline {8.2}Floating point precision}{52}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Methodology}{52}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Results}{52}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Discussion}{52}{subsection.8.2.3}
+\contentsline {section}{\numberline {8.3}Load imbalance}{55}{section.8.3}
+\contentsline {section}{\numberline {8.4}Memory Leaks}{55}{section.8.4}
+\contentsline {section}{\numberline {8.5}Conclusions}{55}{section.8.5}
+\contentsline {part}{III\hspace {1em}Reflection, Critical Analysis and Conclusion}{56}{part.3}
+\contentsline {chapter}{\numberline {9}Conclusion and Critical Analysis}{57}{chapter.9}
+\contentsline {section}{\numberline {9.1}Benchmarking and performance analysis}{57}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Hardware benchmarking}{57}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Application benchmarking}{57}{subsection.9.1.2}
+\contentsline {section}{\numberline {9.2}Load imbalance}{57}{section.9.2}
+\contentsline {section}{\numberline {9.3}Optimisation}{58}{section.9.3}
+\contentsline {section}{\numberline {9.4}Further work}{58}{section.9.4}
+\contentsline {chapter}{\numberline {10}Reflection}{59}{chapter.10}
+\contentsline {section}{\numberline {10.1}Challenges}{59}{section.10.1}
+\contentsline {chapter}{\numberline {A}Porting code changes}{63}{appendix.A}
+\contentsline {section}{\numberline {A.1}Isambard}{63}{section.A.1}
+\contentsline {subsection}{\numberline {A.2.1}Error 1}{63}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Error 2}{63}{subsection.A.2.2}
+\contentsline {chapter}{\numberline {B}Code listings}{64}{appendix.B}
+\contentsline {section}{\numberline {B.1}Grid to Fourier subroutine}{64}{section.B.1}
+\contentsline {section}{\numberline {B.3}Program to time FFT}{64}{section.B.3}
+\contentsline {chapter}{\numberline {C}Compile environment scripts}{66}{appendix.C}
+\contentsline {section}{\numberline {C.1}Isambard GNU}{66}{section.C.1}
+\contentsline {section}{\numberline {C.3}BCP3 Intel}{66}{section.C.3}
+\contentsline {chapter}{\numberline {D}Job submission scripts}{68}{appendix.D}
+\contentsline {section}{\numberline {D.1}BCP3 (PBS)}{68}{section.D.1}
+\contentsline {section}{\numberline {D.3}BluePebble (PBS Pro)}{68}{section.D.3}
+\contentsline {section}{\numberline {D.5}Isambard (PBS Pro)}{68}{section.D.5}
+\contentsline {section}{\numberline {D.7}BCP4 (SLURM)}{68}{section.D.7}

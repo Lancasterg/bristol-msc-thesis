@@ -107,11 +107,6 @@ S.~McIntosh-Smith, J.~Price, T.~Deakin, and A.~Poenaru, ``A performance
 V.~Kindratenko and P.~Trancoso, ``Trends in high-performance computing,'' {\em
   Computing in Science \& Engineering}, vol.~13, p.~92, Apr. 2011.
 
-\bibitem{calore2018advanced}
-E.~Calore, F.~Mantovani, and D.~Ruiz, ``Advanced performance analysis of hpc
-  workloads on cavium thunderx,'' in {\em 2018 International Conference on High
-  Performance Computing \& Simulation (HPCS)}, pp.~375--382, IEEE, Jul. 2018.
-
 \bibitem{Rajovic:2016:MPA:3014904.3014955}
 N.~Rajovic, A.~Rico, F.~Mantovani, D.~Ruiz, J.~O. Vilarrubi, C.~Gomez,
   L.~Backes, D.~Nieto, H.~Servat, X.~Martorell, J.~Labarta, E.~Ayguade,
@@ -123,17 +118,22 @@ N.~Rajovic, A.~Rico, F.~Mantovani, D.~Ruiz, J.~O. Vilarrubi, C.~Gomez,
   International Conference for High Performance Computing, Networking, Storage
   and Analysis}, SC '16, (Piscataway, NJ, USA), pp.~38--50, IEEE Press, 2016.
 
-\bibitem{rico2017arm}
-A.~Rico, J.~A. Joao, C.~Adeniyi-Jones, and E.~Van~Hensbergen, ``Arm hpc
-  ecosystem and the reemergence of vectors,'' in {\em Proceedings of the
-  Computing Frontiers Conference}, (New York NY, USA), pp.~329--334, ACM, ACM,
-  May. 2017.
+\bibitem{calore2018advanced}
+E.~Calore, F.~Mantovani, and D.~Ruiz, ``Advanced performance analysis of hpc
+  workloads on cavium thunderx,'' in {\em 2018 International Conference on High
+  Performance Computing \& Simulation (HPCS)}, pp.~375--382, IEEE, Jul. 2018.
 
 \bibitem{stephens2017arm}
 N.~Stephens, S.~Biles, M.~Boettcher, J.~Eapen, M.~Eyole, G.~Gabrielli,
   M.~Horsnell, G.~Magklis, A.~Martinez, N.~Premillieu, {\em et~al.}, ``The arm
   scalable vector extension,'' {\em IEEE Micro}, vol.~37, pp.~26--39, Apr.
   2017.
+
+\bibitem{rico2017arm}
+A.~Rico, J.~A. Joao, C.~Adeniyi-Jones, and E.~Van~Hensbergen, ``Arm hpc
+  ecosystem and the reemergence of vectors,'' in {\em Proceedings of the
+  Computing Frontiers Conference}, (New York NY, USA), pp.~329--334, ACM, ACM,
+  May. 2017.
 
 \bibitem{moore1965cramming}
 G.~E. Moore {\em et~al.}, ``Cramming more components onto integrated
@@ -167,6 +167,23 @@ GNU, ``Implicit conversion between logical and integer,'' Jul. 2019.
 I.~M. Held and M.~J. Suarez, ``A proposal for the intercomparison of the
   dynamical cores of atmospheric general circulation models,'' {\em Bulletin of
   the american Meteorological society}, vol.~75, no.~10, pp.~1825--1830, 1994.
+
+\bibitem{lancaster2019github}
+G.~Lancaster, ``A collection of scripts for automating runtime and trace data
+  collection for the isca climate model,'' Aug. 2019.
+
+\bibitem{arm2019practices}
+X.~Guo, C.~Morales, O.~Saastad, A.~Shamakina, W.~Rijks, and V.~Weinberg, ``Best
+  practice guide - arm64,'' tech. rep., Germany, 2019.
+
+\bibitem{behling2001power4}
+S.~Behling, R.~Bell, P.~Farrell, H.~Holthoff, F.~O’Connell, and W.~Weir,
+  ``The power4 processor introduction and tuning guide,'' tech. rep., Armonk,
+  NY, USA, 2001.
+
+\bibitem{carvalho2002gap}
+C.~Carvalho, ``The gap between processor and memory speeds,'' in {\em Proc. of
+  IEEE International Conference on Control and Automation}, 2002.
 
 \bibitem{frigo2005design}
 M.~Frigo and S.~G. Johnson, ``The design and implementation of fftw3,'' {\em

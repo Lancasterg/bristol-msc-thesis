@@ -6,11 +6,13 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Compilers and MPI libraries used for benchmarking\relax }}{22}{table.caption.22}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Resolutions and their compatible core counts}}{29}{table.caption.26}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Number of processor cores used to measure the performance of different compilers at the T21 and T42 resolutions.\relax }}{36}{table.caption.35}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Resolutions and their compatible core counts}}{30}{table.caption.27}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Number of processor cores used to measure the performance of different compilers at the T21 and T42 resolutions.\relax }}{31}{table.caption.28}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code\relax }}{40}{table.caption.40}
-\contentsline {table}{\numberline {7.2}{\ignorespaces TODO\relax }}{51}{table.caption.51}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {8.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code\relax }}{46}{table.caption.44}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

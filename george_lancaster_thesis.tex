@@ -74,8 +74,10 @@
 \newacronym{nerc}{NERC}{National Environmental Research Council}
 \newacronym{pbs}{PBS}{Portable Batch System}
 \newacronym{icc}{ICC}{Intel Compiler Collection}
-\newacronym{gcc}{GCC}{Gnu Compiler Collection}
+\newacronym{gcc}{GCC}{GNU Compiler Collection}
 \newacronym{cce}{CCE}{Cray Compiling Environment}
+\newacronym{mkmf}{MKMF}{MakeMakeFile}
+\newacronym{ccpgpt}{CCPG}{Computational Cost per Grid Point per Time Step}
 
 
 
@@ -216,7 +218,7 @@ The work presented in this thesis was carried out over the the summer of 2019 al
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 % Chapter 2 - Background - - - - - - - - - - - - - - - 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-\chapter{A background on climate modelling}
+\chapter{Climate modelling}
 \label{chap:background}
 Software development for scientific applications is a multidisciplinary task, and requires knowledge of both computer programming and the scientific domain for which the software is being developed. Although a comprehensive understanding of the mathematics used to simulate climate is not necessary to understand the work presented in this thesis, some domain knowledge is required. This chapter presents a summary of climate modelling codes, and provides an extensive overview of the workings of Isca.
 
@@ -379,14 +381,14 @@ Due to the simplicity of the language, Isca uses a Python interface to create an
 
 
 
-\chapter{A background on HPC hardware and parallel processing}
+\chapter{HPC hardware and parallel processing}
 There are many different techniques and processor designs that allow for a program to be run in parallel. This chapter presents a brief but thorough overview of some that have been used throughout this research project. 
 
 \section{Parallel processing}
 To allow for programs to be run in parallel, there are numerous different techniques that can be used. In order to improve the performance of a parallel code, understanding of these techniques are essential.
 
 \subsection{Flynns Taxonomy}
-Flynns taxonomy is a classification of parallel computing architectures first proposed by Michael J Flynn in 1966. Flynns taxonomy defines four unambiguous terms to describe the relationship between data and the technique by which it is processed. The entirety of Flynns taxonomy is visualised in Figure \ref{fig:flynns}, however the following bullet list provides further details of the architectures it describes.
+Flynns taxonomy is a classification of parallel computing architectures first proposed by Michael J Flynn in 1966. Flynns taxonomy defines four unambiguous terms to describe the relationship between data and the technique by which it is processed. The entirety of Flynns taxonomy is visualised in Figure \ref{fig:flynns}, and the following bullet list details the architectures it describes.
 
 \begin{description}
 	\item[Single Instruction Single Data (SISD)] refers to the most basic type of processing; whereby a single instruction is applied to a single data item stored in memory. Code that uses this processing type is often referred to as scalar or serial. 
@@ -408,7 +410,7 @@ Flynns taxonomy is a classification of parallel computing architectures first pr
 \par
 Isca, like most scientific codes, uses the SIMD and MIMD approaches to parallelism. As discussed in Section \ref{blah}, the model uses the MPI library to split the domain into latitude bands.
 
-\subsection{Instruction-level parallelism (SIMD)}
+\subsection{Data-level parallelism (SIMD)}
 From the 1970's to the early 1990's, high performance machines relied heavily on instruction level vector operations to compute in parallel \cite{6877473}. These machines used vector processors, and performed operations on one-dimensional arrays of data, rather than single data items using a SIMD processor architecture \cite{conte2000long}. Many scientific codes from this time were written with this architecture in mind, and it is likely that it influenced the design and implementation of the FMS. 
 \par
 Instruction level parallelism using SIMD is becoming popular once again through the introduction of Intel's \gls{avx}. Intel introduced AVX in 2011's Sandy Bridge architecture, AVX-2 in 2013's Haswell architecture and AVX-512 in 2016's Skylake architecture \cite{chris2011avx, intel2019avx}. AVX-2 increased the width of some vector registers to 256 bits, allowing for SIMD operations on four, 64-bit elements per clock cycle. In comparison, the AVX-512 instruction set increased vector register width to 512 bits, allowing for SIMD operations on eight, 64-bit elements per clock cycle, double that of AVX-2 \cite{chris2011avx,xeon2680v4}.
@@ -435,7 +437,7 @@ Throughout the course of this research project, Isca has been ported to and run 
 
 				\cmidrule(lr){2-4} \cmidrule(lr){5-5}
 
- 				& {\textbf{BC3}} 	& {\textbf{BC4}} 		& {\textbf{BP}} 		& {\textbf{Isambard}} \\
+ 				& {\textbf{BCP3}} 	& {\textbf{BCP4}} 		& {\textbf{BP}} 		& {\textbf{Isambard}} \\
 \midrule
 %Machine		   	& blank		    	&blank				&					& Cray XC50 	\\
 Processor	   		& E5-2670 v1 		& E5-2680 v4			& Gold 5120			& ThunderX2	\\
@@ -445,7 +447,7 @@ Clock Speed	   	& 2.6 GHz		    	& 2.4 GHz				& 2.2 GHz				&  2.1 GHz 	\\
 Cores / Node		& $2\times8$		& $2\times14$			& $2 \times 14$			& $2\times32$	\\
 Memory / Node		& 64GB			& 128GB				&					& 256GB		\\
 Compute Cores		& 3,568		    	&14,700				& -					& 10,752 		\\
-Interconnect		&				&					&					&			\\
+Interconnect		&  QDR InfiniBand	& Omnipath			& Ethernet			& Cray Aries	\\
 \bottomrule
 \end{tabular}
 \label{tbl:hardware}
@@ -494,7 +496,7 @@ The ThunderX2 uses the ARMv8.1 instruction set, which allows for the use of 128-
 To meet the compute requirements of future HPC workloads, Fujitsu has recently announced the next generation of Arm chips in their A64FX processor. The A64FX improves upon the NEON instruction set found in the ThunderX2 by introducing \gls{sve}, which allow for a flexible vector register length between 128 and 512 bits so that vector length can reflect the compute requirements of different use cases \cite{stephens2017arm, rico2017arm}. These processors have not yet been released, however this thesis provides an estimate of their performance based on the performance of the ThunderX2.
 
 
-\chapter{A background on benchmarking}
+\chapter{Benchmarking and performance analysis}
 This chapter is an introduction to benchmarking both hardware and software, and describes some of the techniques and metrics used to benchmark the Isca code. 
 \section{Cluster benchmarks}
 The STREAM TRIAD and \gls{hpl} benchmarks have been used to measure the peak memory bandwidth and floating point performance of each node configuration used in this study, respectively. This has been done to provide a relative performance overview of each processor architecture, and to highlight the differences between them. 
@@ -534,6 +536,7 @@ Generally, the theoretical peak performance of a machine is unattainable. The \g
 As can be expected, the performance measured using the HPLinpack benchmark is less than the theoretical performance in all cases. The large theoretical peak performance of the Skylake processor is attributed to its wide 512-bit vector registers, which can process 16 double precision floating point numbers with a single instruction. The drastically reduced actual performance measurement is because the processor can only use AVX-512 at a reduced clock rate, and therefore the performance model rarely opts to use these registers. 
 
 \section{Application benchmarking}
+\label{sec:app-benchmarking}
 Floating point performance and memory bandwidth are usually measured using idealised techniques like the STREAM and HPLinpack benchmarks, and may not provide the best metrics for a complex code like Isca. Although the model is computationally demanding, there is also a large overhead cost incurred by communication. This includes tasks such as reading and writing files, the movement of data into contiguous memory and the transmission of data between processors. For this reason, the model can only be expected to achieve a fraction of the theoretical peak memory bandwidth and floating point performance. Therefore, the following performance metrics have been defined, and are used throughout this study.
 \subsection{Performance metrics}
 
@@ -548,13 +551,13 @@ S = \frac{R_1}{R_2}
 \end{equation}
 	
 \subsubsection{Cost per gridpoint}
-Other studies that have benchmarked parallel climate codes have used the cost per gridpoint as a primary performance metric as it takes into account the cost of interprocess communication \cite{schmidt2007benchmark}. When run on a single core, 100\% of the program runtime is spent on computation. As the number of processor cores increases, a larger portion of the runtime is spent on communication, and therefore the cpu time taken to compute a single grid-point increases. The amount of consumed compute resources $T_p$ for a given simulation can be calculated given the wallclock runtime $t$ and the number of processors used $p$, as shown in Equation \ref{equ:comp-cost}.
+Other studies that have benchmarked parallel climate codes have used the \gls{ccpgpt} as a primary performance metric as it takes into account the cost of interprocess communication \cite{schmidt2007benchmark}. When run on a single core, 100\% of the program runtime is spent on computation. As the number of processor cores increases, a larger portion of the runtime is spent on communication, and therefore the cpu time taken to compute a single grid-point increases. The amount of consumed compute resources $T_p$ for a given simulation can be calculated given the wallclock runtime $t$ and the number of processors used $p$, as shown in Equation \ref{equ:comp-cost}.
 \par
 \begin{equation}
 T_p = t \cdot p
 \label{equ:comp-cost}
 \end{equation}
-To provide a meaningful comparison between core counts, the cost per gridpoint must be calculated. Given the number of timesteps $N_t$ and number of gridpoints $N_g$, we can calculate the total simulation cost per gridpoint per timestep $C_{tg}$ as shown in Equation \ref{equ:cost}. 
+To provide a meaningful comparison between core counts, the \gls{ccpgpt} must be calculated. Given the number of timesteps $N_t$ and number of grid points $N_g$, we can calculate the total simulation \gls{ccpgpt}, $C_{tg}$ as shown in Equation \ref{equ:cost}. 
 
 \begin{equation}
 C_{tg} = \frac{T_p}{N_t \cdot N_g}
@@ -563,7 +566,7 @@ C_{tg} = \frac{T_p}{N_t \cdot N_g}
 Although increasing MIMD parallelism by introducing additional processor cores decreases the overall runtime, a greater portion of the runtime is spend idle waiting for data to be sent between processors. The $C_{tg}$ metric doesn't discriminate based on wallclock runtime, and provides a solid basis for comparison between model resolution and number of processor cores. 
 
 \subsubsection{Operational intensity}
-The operational intensity $I$ of a code or compute kernel is defined as the ratio of work $W$ to the memory traffic $Q$. It is a commonly used metric to deter formally defined in Equation \ref{equ:oi}.
+The operational intensity $I$ of a code or compute kernel is defined as the ratio of work $W$ to the memory traffic $Q$. It is a commonly used metric to assist in the identification of performance bottlenecks of high-performance codes. Operational intensity is formally defined in Equation \ref{equ:oi}.
 
 \begin{equation}
 \label{equ:oi}
@@ -573,7 +576,7 @@ I = \frac{W}{Q}
 For the analysis performed in this research project, $W$ denotes the number of \gls{flops}, and $Q$ denotes the total amount of memory transferred in Bytes. This results in operational intensity measured in FLOPS/Byte. 
 
 \subsubsection{Summary}
-To ensure simplicity, the wallclock runtime is the primary performance metric used throughout this paper. However, it is important to consider other metrics as they can uncover important features of the code that are overlooked by runtime alone. Values for all three metrics defined in this section have been calculated using the data collected as part of this research project. 
+To ensure simplicity, the wallclock runtime is the primary performance metric used throughout this paper. However, it is important to consider other metrics as they can uncover important features of the code that are overlooked by runtime alone. Values for all four metrics defined in this section have been calculated using the data collected as part of this research project. 
 
 
 
@@ -584,7 +587,7 @@ To ensure simplicity, the wallclock runtime is the primary performance metric us
 \let\textcircled=\pgftextcircled
 \chapter{Porting}
 \label{chap:baselineexp}
-In the context of software development, porting refers the process of modifying an existing codebase in order for it to run on a different system than it was originally written for. This chapter gives an overview of some of the different tools used when porting Isca, and presents some of the challenges encountered in doing so. As there are too many code small changes to present in this thesis, this chapter...
+In the context of software development, porting refers the process of modifying an existing codebase in order for it to run on a different system than it was originally written for. This chapter gives an overview of some of the tools and techniques used when porting Isca, and presents some of the challenges encountered in doing so. Many small changes have been made to the codebase to enable the model to compile and run using a selection of commonly-used compilers and these can be found in appendix \ref{apdx:porting}. 
 
 \section{Compilers and MPI libraries}
 To allow for the best comparison between processors, Isca was compiled using a number of different compilers and MPI libraries. Table \ref{tbl:compilers} shows the different configurations used to compile Isca on each of the clusters used in this study. 
@@ -609,139 +612,72 @@ BP					&	Skylake					&	Intel 19.0.3 			&	Intel MPI			\\
 					&							&	GNU 8.2.0			&	Cray MPI			\\
 %					&							&	Arm $x.y$				&	Cray MPI			\\
 \bottomrule \\
-\end{tabular}
+\end{tabular}	
 \end{center}
 \label{tbl:compilers}
 \end{table}%
+\par
+Isca uses a Perl script called \gls{mkmf} to construct makefiles for different model configurations. Before compilation, Isca runs a series of `template scripts' to export environment variables and to load relevant module files to be used by \gls{mkmf}. In order to compile on a new system, a new template script must be written to setup the compilation environment for the machine in question. Although Isca provides some example scripts to do this on existing systems, a new script had to be written for each compiler and processor pair in this study. Two examples of such scripts can be found in Appendix \ref{apdx:compile-env}.  
 
 \subsection{GNU Compiler Collection (GCC)}
-The \gls{gcc} is a selection of compilers for numerous programming languages produced and maintained by the GNU project. 
+The \gls{gcc} is a selection of compilers for various programming languages produced and maintained by the GNU project. \gls{gcc} is available on many different computer architectures, providing the same interfaces and compile flags options on each. This makes it a convenient compiler for porting code, as similar configurations can be used on different machines. The Isca codebase already has an existing \gls{gcc} template script, however it required some minor changes to allow for compilation on each system. 
 
 \subsection{Intel Compiler Collection (ICC)}
-The \gls{icc}
+The \gls{icc} provides numerous premium compilers specifically for Intel-based machines, and is bundled as part of Intel Parallel Studio XE. As Intel develops its compilers alongside its hardware, \gls{icc} generally produces well-optimised instructions, however they are not portable and are limited to Intel processors only. Contained within \gls{icc} is the Intel MPI library, which is focussed on making parallel applications perform better on Intel-based clusters.
+\par
+The Intel template script generally worked, however the locations of some libraries needed to be specified. Additionally, the NetCDF library in needed to be recompiled using the latest version of the Intel compiler in order to work. 
 
 
 \subsection{Cray Compiling Environment (CCE)}
-The \gls{cce} is a Fortran 90 compiler developed by Cray Inc. This compiler is relatively new in comparison to the Intel and GNU compilers, and as such is strict to the Fortran standard. This caused many issues when porting the code using this compiler, and flagged up a number of issues with the Isca codebase. However, the process of Porting for CCE turned into a stringent debugging exercise that has improved the reproduciblity of the code on different platforms. The following section describes some of the code changes required to compile and run Isca using the CCE compiler. A full list of code changes can be found in appendix TODO.
+The \gls{cce} is a Fortran 90 compiler developed by Cray Inc. This compiler is relatively new in comparison to the Intel and GNU compilers, and as such is strict to the Fortran standard. This caused many issues when porting the code using this compiler, and flagged up a number of issues with the Isca codebase. The process of porting for \gls{cce} turned into a stringent debugging exercise that has inevitably improved the reproducibility of the code on different platforms. The following subsections describe some of the code changes required to compile and run Isca using the CCE compiler, however a full list of code changes can be found in appendix \ref{apdx:porting}.
 
 \subsubsection{Implicit type conversion}
-To provide interprocess communication, Isca uses a `\textit{Massively-parallel} ' module, codenamed MPP. It is a set of simple calls to provide a uniform interface to a collection of commonly used message-passing routines for climate modelling, implemented in different libraries \cite{balaji2002fms}. This module defines many subroutines that depend on the definition of the \texttt{MPP\_DEFAULT\_VALUE\_} macro, which is defined using preprocessor directives at compile time. The \texttt{MPP\_DEFAULT\_VALUE\_} can be assigned as either real, integer or logical. As an extension for backwards compatibility with other compilers, the GNU and Intel compilers allow for the implicit conversion of logicals to integers and reals and vice versa. When converting from a logical to an integer, the numeric value of \texttt{.false.} is 0, and that of \texttt{.true.} is 1. When converting from integer to logical, the value 0 is interpreted as \texttt{.false.} and any non-zero value is interpreted as \texttt{.true.}. This does not conform to the Fortran 90 standard, which disallows implicit conversion between numeric variables and logicals \cite{fortran1991standard,gnu2019conversion}.
-
-
-
-
-\section{Libraries etc}
-The NetCDF library installed on BCP4 was incompatible with the latest GNU Fortran compiler, therefore the NetCDF library was installed in the \texttt{\$HOME} directory in order to compile Isca using this configuration. On bcp4 the FFTW library was installed using easybuild, and wastherefore slow, so i reinstalled in my home directory. 
-
-\section{BlueCrystal phase 3}
-The NetCDF library installed on \gls{bcp3} was incompatible with the latest GNU Fortran compiler, therefore the NetCDF library was installed in the \texttt{\$HOME} directory in order to compile Isca using this configuration. 
-
-\section{Discussion}
-A large part of the Isca code does not adhere to the Fortran standard. 
-
-Additionally, the Fortran standard has evolved over the past twenty years, and many features that were once commonplace are no longer supported by newer compilers. Some of the more popular compilers like the GNU Compiler Collection (GCC) and the Intel Compiler Collection (ICC) have been updated to allow for backwards compatibility with legacy code, however this is not the case for the Cray and Arm compilers that are available on Isambard and Catalyst.
-\par
-The FMS was first released in 1998. It is a slowly evolving code that relies on 
-\par
-Isca is a strong scaling code. This means that the total program runtime varies with the number of processor cores for a fixed total problem size. The design of the code means that it is very limited in how it can scale. 
-
-
-\par
-
-
-
-
-
-
-
-
-
-\section{BluePebble}
-
-\subsection{Building modules}
-
-Had to build: 
-\begin{itemize}
-	\item Python 3.7 on Catalyst
-	\item NetCDF on BluePebble
-	\item Git on BluePebble
-\end{itemize}
-
-\subsection{Build Tools}
-BluePebble only has access to the Intel Fortran and C compilers, and only allows for the use of the Intel MPI implementation. This was a purposeful decision made when designing the cluster with the aim of reducing the number of libraries, and therefore the number of dependencies for each code base. This meant that the Isca codebase had be compatible with the latest 2019 version of the Intel compiler. 
-\par
-As BluePebble is still in its Beta phase, there are only a limited number of modules on the system. In order to compile Isca, the NetCDF, Git, and Anaconda Python libraries had to be built and made into module files. 
-
-\section{Issues}
-The default stack size on Bluepebble was 8Kb. However, as Isca uses a large amount of memory, this caused a stack overflow error when running the model at resolutions greater than T42. Due to some configuration restraints on the cluster, the PBS scheduler does not allow for the stack size to be increased using \texttt{ulimit -s unlimited}, as used in Isca's run script. To resolve this issue, the default stack size was increased to 64k.
-\par
-As a temporary work-around before this issue was resolved, and before interactive jobs were available on the cluster, a regular job can be submitted the queue that sleeps for an hour in the submission script. The details of the job can be found using the  \texttt{qstat -f <jobid>} PBS command, which can then be used to SSH to the node running the sleeping job. As PBS has been not been used to get access to the node, the stack size can be increased using the command \texttt{ulimit -s unlimited}, and the code will then run as if in an interactive job. Most of the runtimes for BluePebble were collected using this technique. 
-
-
-% Isambard porting
-\section{Isambard}
-Although many of Isambards compute nodes use the Cavium ThunderX2 processor, the machine itself is a Cray XC50. This means that there are a wide range of tools and compilation environments available on this cluster that are unique to Cray systems. 
-
-
-\subsection{GNU Compiler Collection}
-The GNU compiler collection is commonly used... 
-
-
-
-
-
-
-\par
-This implicit conversion allowed by the GNU and Intel compilers caused many errors for the CCE compiler. To resolve this issue, additional preprocessor directives had to be included in the \texttt{mpp\_domains\_reduce.inc} file. 
+To provide interprocess communication, Isca uses a `\textit{Massively-parallel} ' module, codenamed MPP. It is a set of simple calls to provide a uniform interface to a collection of commonly used message-passing routines for climate modelling, implemented in different libraries \cite{balaji2002fms}. This module defines many subroutines that depend on the definition of the \texttt{MPP\_DEFAULT\_VALUE\_} macro, which is defined using preprocessor directives at compile time. The \texttt{MPP\_DEFAULT\_VALUE\_} can be assigned as either real, integer or logical. As an extension for backwards compatibility with other compilers, the GNU and Intel compilers allow for the implicit conversion of logicals to numericals and vice versa. When converting from a logical to an integer, the numeric value of \texttt{.false.} is 0, and that of \texttt{.true.} is 1. When converting from integer to logical, the value 0 is interpreted as \texttt{.false.} and any non-zero value is interpreted as \texttt{.true.}. This does not conform to the Fortran 90 standard, which disallows implicit conversion between numeric variables and logicals \cite{fortran1991standard,gnu2019conversion}. This error was found throughout the codebase and changes were made to resolve this issue by enforcing the Fortran90 standards.
 
 \subsubsection{Namelist read errors}
-Isca uses Fortran namelist files to read large numbers of parameters into existing variables and data structures at runtime. 
+Isca uses Fortran namelist files to read large numbers of parameters into existing variables and data structures at runtime. Using \gls{cce}, many of the namelist files were being read incorrectly, as Isca did not open and close files between reads causing the code to hang during execution. Additionally, the Cray compiler requires that the representation of the value in the namelist file reflects the type of variable that it will be used for. This means that an integer value must be stored in the namelist as \texttt{variable = 1}, and not \texttt{variable = 1.0}.
+
+\subsubsection{Ambiguous arithmetic}
+The Cray compiler required brackets around some arithmetic where it could be considered ambiguous. This was only found in a few places in the codebase, and was trivial to fix. 
+
+\subsection{Discussion}
+As the Fortran standard has evolved over the past twenty years, many features that were once commonplace are no longer deemed to fit the language standard, and are therefore not supported by newer compilers. Some of the more popular compilers like \gls{gcc} and \gls{icc} have been updated to allow for backwards compatibility with legacy code, however this is not the case for the \gls{cce} compiler, which strictly follows the Fortran standard.
 \par
-The code exhibited different behaviour when compiled using CCE, which suggests that the code relies on some legacy compiler features that are not part of the original Fortran standard, and have remain in the Intel and GNU compilers for backwards compatibility issues. 
-
-\subsection{Ambiguous arithmetic}
-The Cray compiler required brackets around some arithmetic. 
+Both \gls{icc} and \gls{gcc} overlook many negligent programming practices. However to remain portable, codes should be written to the standards of the programming language. Many legacy codes suffer from this issue whereby outdated code remains unchanged throughout many years of use, and part of this research project was to update this code to improve its portability.
 
 
-
-
-
-\subsubsection{Arm HPC Compiler}
-The Arm HPC compiler....
-
-
-\subsection{Modifications to codebase}
-On Cray machines, jobs submitted using the PBS pro workload manager must launch MPI applications using the \texttt{aprun} utility, which is synonymous to the \texttt{mpirun} utility provided by Intel MPI. Prior to this research project, Isca had never been compiled and run on a Cray machine, and the script template used to execute the compiled binary (\texttt{run.sh}) only allowed for the use of \texttt{mpirun}.
+\section{Cluster feedback}
+\subsection{Stack size}
+Prior to this project, the default stack size on BP was 8Kb. However, as Isca uses a large amount of memory, this caused a stack overflow error when running the model at resolutions greater than T42. Due to some configuration restraints on the cluster, the PBS scheduler does not allow for the stack size to be increased using \texttt{ulimit -s unlimited}, as used in Isca's run script. To resolve this issue, the default stack size was increased to 64MB by the system administrator.
 \par
-To allow for the code to run using \texttt{aprun}, a clause was added to the \texttt{run.sh} template script that looks for an environment file called \texttt{EXECUTION\_TYPE}, which must be set the value \texttt{APRUN} if running on a cray system. To allow for backwards compatibility, the script defaults to using \texttt{mpirun} if no environment file is defined. 
+As a temporary work around before this issue was resolved, and before interactive jobs were available on the cluster, a regular job can be submitted the queue that sleeps for an hour in the submission script. The details of the job can be found using the  \texttt{qstat -f <jobid>} PBS command, which can then be used to SSH to the node running the sleeping job. As PBS has been not been used to get access to the node, the stack size can be increased using the command \texttt{ulimit -s unlimited}, and the code will then run as if in an interactive job. Most of the single-node runtimes for BluePebble were collected using this technique as it took a long time to modify the cluster configuration. 
 
-\begin{lstlisting}[language=bash]
-  if [[ -z "${EXECUTION_TYPE}" ]] || [ "${EXECUTION_TYPE^^}" = "MPIRUN" ]; then
-    exec nice -{{nice_score}} mpirun {{mpirun_opts}} -n {{ num_cores }} {{ execdir }}/{{ executable }}
-    
-  elif [ "${EXECUTION_TYPE^^}" = "APRUN" ]; then
-    eexec nice -{{nice_score}} aprun {{mpirun_opts}} -n {{ num_cores }} {{ execdir }}/{{ executable }}
-  fi
-\end{lstlisting}
-A full list of code changes can be found in appendix \ref{na}. 
+\subsection{Strict processor enforcement}
+Isca's Python library is multithreaded, creating additional threads of execution when running experiments. This caused some issues when the model was run on BluePebble, as its job scheduler was configured to strictly enforce the CPU limitations defined in the job submission script. After running for an arbitrary amount of time, the job would fail as additional Python threads were created, causing the CPU to try to burst past the scheduler limit. This issue took many weeks to fix, and required working alongside the BluePebble system administrator. 
 
 
+
+\section{Libraries and dependencies}
+Although many of the libraries required by Isca were already available as module files, in some cases they were not. This meant that they needed to be built in the \texttt{\$HOME} directory to allow for the model to be compiled. These builds were then used to create module files by the system administrators. Throughout the course of the project, the NetCDF, Git, FFTW, Anaconda Python, zlib and HDF5 software packages were installed multiple times using different compilers. 
+
+\section{Development tools}
+All code developments were made remotely over SSH, and all work was done on the filesystem of each supercomputer. Microsoft Visual Studio Code has a Remote-SSH plugin that allows for files to be edited as if they were on a local machine. This plugin is still in its Beta phase of development, and is therefore not reliable. When it failed, work continued using both emacs and vim. To allow for code changes to be synchronised across machines, a new fork of the Isca Git repository was created. Each cluster had their own development branch as well as a main development branch for merging changes between them. 
 
 
 
 \section{Verification of results}
-When porting a codebase, it is important to test that that the changes made to the code are backwards compatible. This means that changes must be non-intrusive, and configurations must default to the original behaviour. In the case of Isca, the code changes that have been made to run on the new machine must not stop the code from working on an old one. 
+When porting a codebase, it is important to test that that the changes made to the code are backwards compatible. This means that all changes must be non-intrusive, and configurations must default to the original behaviour. In the case of Isca, all code changes that have been made to run the model on a different cluster have been tested on the BCP4 supercomputer to ensure that they produce the same outputs.
+
 \subsection{Units of last place}
-To ensure that the model produces the same results on each system, the model outputs have been checked using the \gls{ulp} numerical analysis technique, which can be used to measure the spacing between floating point numbers. As the whole real line cannot be represented in computer memory, there is a minimum distance between two numbers occupying the full space offered by floating point numbers. NetCDF files aim to record data in a continuous fashion, which is an impossible task for the discrete numbers used in computational simulations like Isca.
+To ensure that the model produces the same results on each system, the model outputs have been checked using the \gls{ulp} numerical analysis technique, which can be used to measure the spacing between floating point numbers. As the whole real line cannot be represented in memory, there is a minimum difference between two numbers occupying the full space offered by floating point numbers. NetCDF files aim to record data in a continuous fashion, which is an impossible task for the discrete numbers used in computational simulations like Isca.
 \par
-The outputs of a simulation run by Isca can be verified by comparing the ULP of each parameter in the resulting NetCDF file. As the model is chaotic, even small changes to model parameters can produce vastly different results, although as the model is not stochastic in any way, the same simulation configuration ran on two separate machines should produce identical results, assuming that the compilers use the same amount of memory of each floating point variable. 
+The outputs of a simulation run by Isca can be verified by comparing the ULP of each parameter in the resulting NetCDF file. As the model is chaotic, even small changes to model parameters can produce vastly different results. However, as the model is not stochastic, the same simulation configuration ran on two separate machines should produce identical results, assuming that the compilers store variables to the same degree of precision. 
 
-\subsection{Rounding errors}
-Rounding errors are a commonly occurring quantisation problem in scientific codes (citation needed). Although double-precision floating point variables can store numbers to a high degree of precision, they can only store a finite number of digits. Rounding errors are a result of performing arithmetic on continuous numbers in a discrete representation. The IEEE Standard for Floating-Point Arithmetic (IEEE 754) states that all floating point arithmetic must be correctly rounded to within 0.5 ULP of the true mathematical result, therefore any differences greater that 1 ULP suggests an inconsistent result. 
+\subsubsection{Rounding errors}
+Rounding errors are a commonly occurring quantisation problem in scientific codes (citation needed). Although double-precision floating point variables can store numbers to a high degree of precision, they can only store a finite number of digits. Rounding errors are a result of performing arithmetic on continuous numbers in a discrete representation. The IEEE Standard for Floating-Point Arithmetic (IEEE 754) states that all floating point arithmetic must be correctly rounded to within 0.5 ULP of the true mathematical result, therefore any differences greater that 1 ULP suggest inconsistencies in the code. 
 
-\subsection{Application}
-A C++ program written by Gethin Williams in 2009, and modified for this research project was used to measure the difference in ULP between NetCDF files obtained on different machines. The program allows for a tolerance to be given, to accomodate any rounding errors that may have accumulated throughout the course of the simulation. Due to the differences in compiler and processor architecture, a tolerance of 2 ULP was deemed acceptable. All changes to the Isca codebase were verified using this metric.
-\par
+\subsection{Program verifcation}
+A C++ program written by Gethin Williams in 2009, and modified for this research project was used to measure the difference in ULP between NetCDF files obtained on different machines. The program allows for a tolerance to be given, to accommodate any rounding errors that may have accumulated throughout the course of the simulation. Due to the differences in compiler and processor architecture, a tolerance of 2 ULP was deemed acceptable. All changes to the Isca codebase were verified using this metric.
 
 
 
@@ -752,18 +688,26 @@ A C++ program written by Gethin Williams in 2009, and modified for this research
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 % Chapter - Benchmarking and Scaling study - - - 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-\chapter{Benchmarking and Performance Analysis}
-This chapter presents an extensive performance analysis of the Isca model running two unique configurations. The aim of this is to characterise the code on different hardware configurations, aid in the identification of performance optimisations and to provide a comparison of the processors themselves. To do this, the following experiments were performed:
+\chapter{Experimental Methodology}
+This chapter outlines the experimental methodology used for benchmarking and analysing the performance of Isca. The collective aim of the following experiments is to characterise the code, to identify potential optimisations and to provide a comparison of the processors themselves.
 
 \begin{description}
 
-	\item[Scaling study] The runtimes of two model configurations have been measured on four different compute nodes. This involved varying the core count and spatial resolution on each system.
+	\item[Experiment A: Scaling study] The wallclock runtime taken to complete a simulation for various spatial resolutions and core counts was measured.
 	
-	\item[Compiler comparison] The per-node performance of the model was compared for two different compilers on each processor, excluding Skylake.
+	\item[Experiment B: Compiler comparison] The per-node performance of the model was compared for two different compilers on each processor, excluding Skylake.
 	
-	\item[Performance projection] Using the results from the scaling study, the performance of Isca has been projected to Fujitsu's A64FX Arm processor, which is planned to be debuted in the Post-K supercomputer in 2021. Most notably, the A64FX will be the first production processor to use the new \gls{sve}, which allow for SIMD registers of up to 512-bits.
+	\item[Experiment C: Vectorisation analysis] The per-node performance of the model was measured with SIMD instructions enabled and disabled, to determine the importance of data-level parallelism. 
 	
+	\item[Experiment D: Communication analysis] The interprocess communication times were measured. 
+	
+	\item[Experiment E: Runtime variation] The wallclock runtime was measured for each of the iterations that comprise a full simulation.
+	
+	
+	\item[Performance projection] Using the results from these experiments, the performance of Isca has been projected to Fujitsu's A64FX Arm processor, which is planned to be debuted in the Post-K supercomputer in 2021. Most notably, the A64FX will be the first production processor to use the new \gls{sve}, which allow for 512-bit SIMD registers.
 \end{description}
+\par
+In order to collect reliable data, a full node was used for each experiment. Even when run in serial, the model used the resources of an entire node, so that the performance would not be affected by shared resource usage by other programs running on the cluster. To account for variations in runtime caused by factors outside the control of the experiment, all runtimes reported in this chapter are the mean value of three repeat measurements, unless stated otherwise. The results presented in the following section are the consequence of over 2,000 hours of experimental runtime.
 
 \section{Model configurations}
 Isca is a coupled model, allowing for the simulation of either the atmospheric or oceanic components of a planet, or both components simultaneously. The complexity of these simulations are defined at compile time, and allow for different algorithms to be applied depending on the model configuration. Although this means that the model is highly flexible, it introduces a challenge when trying to profile the code as a whole, as optimising one configuration may have no impact on another. This research project focuses on the optimisation of two test configurations: the well-known Held-Suarez configuration and a Grey-Mars radiation model.
@@ -801,132 +745,25 @@ This inherent domain decomposition constraint imposed by the model means that so
 Although Isca can vary both in its spatial and temporal resolution, the scaling study undertaken as part of this research project focuses solely on variations in spatial resolution. This decision was made in order to simplify the process of performance modelling by limiting the number of problem sizes. Additionally, changes to performance as a result of time stepping are generally predictable, and will not contribute to a further understanding of the code. A model that performs twice as many time steps will perform twice as many calculations and will therefore be twice as slow. 
 
 \section{Automated data collection}
-In order to collect reliable and consistent data, it is important to define a strict method of data collection. When benchmarking high performance applications, data collection can be a timely process. The runtimes of the configurations used in this study are in the range of 3 minutes for simple configurations at low resolutions, up to 10 days for high resolution complex scenarios running in serial. Running this range of simulations manually would be incredibly time consuming, therefore a Python library was written to automate this process. The source code for this library can be found on GitHub (citation). 
+In order to collect reliable and consistent data, it is important to use the same method of data collection for different configurations. When benchmarking high performance applications, data collection can be a laborious process. The runtimes of the configurations used in this study are in the range of 3 minutes for simple configurations at low resolutions, up to 10 days for high resolution complex scenarios running in serial. Running this range of simulations manually would be incredibly time consuming, therefore a Python library was written to automate this process. The source code for this library can be found on GitHub \cite{lancaster2019github}. 
 \par
 The Python library was written to sequentially run a number of different experimental configurations given a set of parameters, including the core count, resolution and model configuration. This allowed for a number of experiments to be run from within a single job submission script, with the results of each experiment automatically stored in a spreadsheet. Each experiment defined by the Python script recorded the total time taken to complete the simulation, as well as each thirty-day time step. 
-\par
-In order to collect reliable data, a full node was used for each experiment. This means that even when run in serial, the model used the resources of an entire node, so that the performance would not be affected by shared resource usage by other programs running on the cluster. To account for variation in runtime caused by factors outside the control of the experiment, all runtimes reported in this chapter are the mean value of three repeat measurements. The results presented in the following section are the consequence of over 2,000 hours of experimental runtime.
 
 
 \subsection{Job submission}
-\gls{bcp3} uses the \gls{pbs} job scheduler, \gls{bp} and Isambard use the \gls{pbs} Pro job scheduler and \gls{bcp4} uses the SLURM scheduler. These are tools that allow for applications to be submitted to a queue, and then run on a compute node when the required resources are available. Each of these schedulers use a slightly different syntax, therefore a number of submission scripts have been created for each cluster based on the amount of resources required and expected runtime. Example job submission scripts can be found in Appendix \ref{apx:submission}. 
+\gls{bcp3} uses the \gls{pbs} job scheduler, \gls{bp} and Isambard use the \gls{pbs} Pro job scheduler and \gls{bcp4} uses the SLURM scheduler. These are tools that allow for applications to be submitted to a queue and run on a compute node when the required resources are available. Each of these schedulers use a slightly different syntax, therefore a number of submission scripts have been created for each cluster based on the amount of resources required and expected runtime. Example job submission scripts can be found in Appendix \ref{apx:submission}. 
 \par
 As the clusters used in this project are actively used for research, there is naturally some competition for compute resources between users. A trial and error approach was used to find the right parameters for the job script in order for the job to be processed from the queue quickly, whilst ensuring that the runtime was adequate to complete the entirety of the job.
 
-
-\section{Scaling study}
-To determine how well the model performs when presented with additional compute resources, Isca was run on 1 core, up to and including the maximum number of cores available on a node of each cluster. In addition to this, it was also run across all possible combinations of model configuration and resolution to model its performance at various levels of complexity and realism.  
+\section{Experiments}
+\label{sec:experiment-methods}
+\subsection{Experiment A: Scaling study}
+To determine how well the model performs when presented with additional compute resources, Isca was run on 1 core, up to and including the maximum number of cores available on a node of each cluster. In addition to this, it was also run across all possible combinations of model configuration and resolution in order to measure its performance at various levels of complexity and realism.  
 \par
-Whilst the majority of the results presented in this section were to be expected, the performance is significantly affected when running across multiple nodes. For this reason, the results have been presented as a comparison of the performance on a single node, and a further analysis has been done for the multi node configurations.
+Whilst the majority of the results observed in this experiment were as expected, the performance is significantly affected when running across multiple nodes. For this reason, the results have been presented as a comparison of the performance on a single node, and a further analysis has been done for the multi-node configurations.
 
-\subsection{Results and discussion}
-For the Held-Suarez configuration, each spatial resolution was run up to the maxmum. 
-\par
-The Grey-Mars simulation can only be run on a maximum resolution of T42. 
-
-\begin{description}
-	\item[Held-Suarez T21: ] 1, 2, 4, 8, 16
-	\item[Held-Suarez T42: ] 1, 2, 4, 8, 16, 32
-	\item[Held-Suarez T85: ] 1, 2, 4, 8, 16, 32, 64
-\end{description}
-
-\subsubsection{T21 resolution}
-Why are lower resolutions good?
-\par
-The scaling curve as shown in Figure \ref{fig:t21-scale} shows how the runtime varies as a function of processor cores for the Held-Suarez configuration at the T21 resolution, and can be described as a sublinear plateau for all node configurations. The wallclock runtime is greatest when the program is run in serial, and lowest when run on 16 cores, which is the maximum number of cores possible for this resolution.
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=0.8\textwidth]{img/scaling_graph_T21_Held_suarez.pdf}
-\caption{Wallclock runtime of the Held-Suarez configuration running at T21 resolution across all processor architectures. The vertical purple bar on the $y$ plane indicates the maximum number of processors available on a node of BCP3.}
-\label{fig:t21-scale}
-\end{center}
-\end{figure}
-\par
-Interestingly, when increasing the number of processor cores from 8 to 16 in the Held-Suarez case, there is only an approximate 1.15$\times$ performance gain for the Intel processors. Results like these are typical of many parallel codes, whereby the performance benefit of additional compute resources decreases as more processor cores are utilised. This effect is similar to the law of diminishing returns observed in Economics. As this problem size is small, more time is spent in communication relative to compute when a greater number of processor cores are used.
-\par
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=0.8\linewidth]{img/scaling_graph_T21_Grey_mars.pdf}
-\caption{Wallclock runtime of the Grey-Mars configuration across all processor architectures. Vertical coloured bars on the $y$ plane indicate the maximum number of processors available on a node for each cluster.}
-\label{fig:t21-scale-grey}
-\end{center}
-\end{figure}
-\par
-The trend observed for the Grey-Mars configuration in Figure \ref{fig:t21-scale-grey} is comparable to that of of the Held-Suarez result, whereby the slowest runtime is the serial case, and the fastest is the 16 core case. The Skylake processor massively outperforms all other processors when run on 8 cores, however it quickly tapers off when run on 16 cores, providing just a 1.02$\times$ speedup. 
-\par
-To determine the importance of memory bandwidth at this resolution, the 16 core configuration was rerun on the Broadwell processor. However, the cores were split across two nodes. Figure x shows that...x
-
-
-\subsubsection{T42 resolution}
-The T42 resolution in Figure \ref{fig:t42-scale} presents a similar scaling curve to that observed for the T21 resolution. For all processors except Sandy Bridge, the slowest runtime is measured for the serial code, and the performance improves until the program is run on 16 cores. However for the Intel processors, running on more than 16 cores requires multiple nodes, and this has a dramatic impact on the performance of the Sandy Bridge and Skylake processors. 
-\par
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=0.9\textwidth]{img/scaling_graph_T42_Held_suarez.pdf}
-\caption{Wallclock runtime of the Held-Suarez configuration running at T42 resolution across all processor architectures. The vertical coloured bars on the $y$ plane indicate the maximum number of processor cores available on a node of each cluster.}
-\label{fig:t42-scale}
-\end{center}
-\end{figure}
-\par
-In comparison to the ThunderX2, which still runs within a in a single socket when using 32 processor cores, we can determine that this issue is most likely caused by internode communication rather than a problem with the model itself. Interestingly, this behaviour is not apparent on the Broadwell processor, which improves its performance as expected when increasing the number of processor cores used from 16 to 32, even though two nodes are used in this case. To determine the cause, will need to to a mpi trace.
-\par
-
-\par
-The worst performance observed for the multinode configuration is the Sandy Bridge processor, which takes 82$\times$ longer to complete the same job than when running on a single node. Both BCP3 and BluePebble are intended to be used for smaller node jobs on a single node, so this result could be explained by a slower interconnect. 
-\par
-Generally, running on a greater number of nodes improves the performance of codes that are bound by memory bandwidth, as a greater number of nodes implies a larger memory bandwidth. 
-
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=0.9\linewidth]{img/speedup-T42-Held_suarez.pdf}
-\caption{Wallclock runtime of the Grey-Mars configuration across all processor architectures. Vertical coloured bars on the $y$ plane indicate the maximum number of processors available on a node for each cluster.}
-\label{default}
-\end{center}
-\end{figure}
-
-\newpage
-\subsubsection{T85 resolution}
-Due to restrictions imposed by domain decomposition, the Grey-Mars configuration cannot be run at a resolution higher than T42. Because of this, the results for the T85 resolution are limited to the Held-Suarez configuration only. Additionally, the time limit imposed by the queuing system prevented results from being gathered for the Sandy Bridge processor when running on 64 cores as the runtime was longer than 360 hours. 
-\par
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=0.9\textwidth]{img/scaling_graph_T85_Held_suarez.pdf}
-\caption{Wallclock runtime of the Held-Suarez configuration running at T85 resolution across all processor architectures. The vertical coloured bars on the $y$ plane indicate the maximum number of processors available on a node of each cluster.}
-\label{fig:t85-scale}
-\end{center}
-\end{figure}
-\par	
-Plotting the scaling graph as a function of speedup in relation to the serial performance, we can see that...
-When run on 64 cores across four nodes, the performance of the Broadwell processor 
-
-The results obtained for the T85 resolution are similar to the T42 resolution
-A similar behaviour is observed for the largest problem size of T85. 
-\par
-One possible reason for this phenomenon is that the MPI library is using shared memory for communication. 
-\par
-The BluePebble and BCP3 supercomputers were designed to be used for single node jobs, and larger communication times may be as a result of the interconnect? 
-
-
-
-
-\subsection{Conclusions}
-This scaling study highlighted the differences in processor architecture between Arm and Intel. Arms approach to processor design relies on a greater number of simpler cores, in comparison to Intel's fewer more complex cores. This design benefitted the performance of Isca when run on the ThunderX2 by keeping communication inside a single node for all resolutions tested and allowed for competitive runtimes to that of the Intel processors.
-\par
-An interesting issue has been uncovered on the BCP3 (Sand Bridge) and BP (Skylake) supercomputers, whereby Isca performs worse when run in a multi-node configuration. Further analysis of this problem has been discussed in section x. Although the different run configurations have demonstrated 
-\par
-BluePebble is slow because it just uses ethernet. 
-
-Although the ThunderX2 has the largest memory bandwidth, it does not have the best runtime at all resolutions. 
-
-It would be interesting to run the model at much higher resolutions to see how it reacts to processors at very high core counts.
-
-
-
-
-
-\section{Compiler comparison}
-To find the optimal compilation settings for each processor, both the Held-Suarez and Grey-Mars model configurations were complied using two different compilers on each cluster. All cases compiled using the GNU compiler used the same flags, and all cases compiled using the Intel compiler used the same flags. At the time of writing, only the Intel compiler and MPI library was available on BluePebble, therefore there is no comparison of different compilers on a Skylake node. 
+\subsection{Experiment B: Compiler comparison}
+To find the optimal compilation settings for each processor, both the Held-Suarez and Grey-Mars model configurations were complied using two different compilers on each cluster. All cases compiled using the GNU compiler used the same flags, and all cases compiled using the Intel compiler used the same flags. The flags used for the GNU compiler on Isambard were those recommended by the ARM64 Best Practices Guide, and the equivalent flags were used on the Intel machines \cite{arm2019practices}. At the time of writing, only the Intel compiler and MPI library was available on BluePebble, therefore there is no comparison of different compilers on a Skylake node. 
 \par
 
 \begin{table}[htp]
@@ -949,24 +786,164 @@ ThunderX2						&	16			&	32					\\
 
 \par
 
-For this test, the per-node performance was considered only. This means that the model  was ran up to the maximum number of cores available on each node for the given model configuration as shown in Table \ref{tbl:-compiler-cores}. This was done to provide a comparison of the compilers in relation to the performance available on other processors.  
+For this test, the per-node performance was considered only. The model was run on up to the maximum number of cores available on each node for the given model configuration as shown in Table \ref{tbl:-compiler-cores}. This provided a comparison of the compilers in relation to the performance available on other processors. The observations made in this experiment informed the choice of compiler for all other experiments. For all results reported on Intel nodes, Isca was compiled using ICC. For all ThunderX2 results Isca was compiled using GCC.
+
+\subsection{Experiment C: Vectorisation analysis}
+The per-node performance of the code was measured with SIMD instructions enabled and disabled for the Held-Suarez and Grey-Mars model configurations running at T42 resolution. This determined the importance of data-level parallelism in the model. Isca was compiled using the relevant flags to disable vectorisation, and vector reports were produced to ensure that the no automatic vectorisation occurred. For this experiment, all other optimisations were enabled.
+
+\subsection{Experiment D: Communication analysis}
+This experiment measured the percentage of runtime spent in the MPI library and the total communication time between processors. This was done to determine if there was load imbalance affecting the performance of the model, and to find the percentage of total runtime spent in communication. 
+	
+\subsection{Experiment E: Runtime variation}
+Isca simulations are made up of many sub-simulations called epochs, with each epoch often lasting for one model month at a time. Epochs differ from time steps, which describe the amount of time between each global calculation. To determine if any parts of the simulation are more computationally demanding than others, the runtime of each epoch was measured for both the Held-Suarez and Grey-Mars configurations at various model resolutions.
+
+\subsection{Experiment F: Roofline analysis}
+A roofline model is an insightful visual performance analysis technique used to identify the hardware-limiting factors of an application, or compute kernels within an application. It plots the floating point performance as a function of peak machine performance, peak machine memory-bandwidth and the operational intensity of the code itself. The performance limiting factor of a code or compute kernel can be determined by looking at where it sits on the roofline.
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% Chapter - Results - - - - - - - - - - - - - - - - - - - -  
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\chapter{Results}
+\label{chap:results}
+This chapter presents the findings of the experiments described in Section \ref{sec:experiment-methods}, demonstrating an extensive performance analysis of Isca running two unique model configurations on four different compute nodes. These results have been used to inform the design and implementation of two performance optimisations in Chapter \ref{chap:optimiations}. 
+\section{Experiment A: Scaling study}
+%\subsection{T21 resolution}
+%T21discussion
+Figures \ref{fig:t21-scale-grey}, \ref{fig:t42-scale} and \ref{fig:t85-scale} show how the runtime of the model varies as a function of processor cores. The vertical coloured bars on the $y$ plane indicate the maximum number of processors available on each cluster.
+\subsection{Results}
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=1\textwidth]{img/compiler-comparison.pdf}
-\caption{Runtimes for the Held-Suarez and Grey-Mars configurations using different compilers.}
-\label{fig:compiler-comparison-t42}
+\includegraphics[width=1\textwidth]{img/speedup-T21-Held_suarez.pdf}
+\caption[Parallel speedup relative to serial performance for the Held-Suarez configuration running at T21 resolution]{Parallel speedup relative to serial performance for the Held-Suarez configuration running at T21 resolution.}
+\label{fig:t21-scale}
 \end{center}
 \end{figure}
 \par
-Figure \ref{fig:compiler-comparison-t42} shows that for all configurations tested on Intel nodes, the Intel compiler outperformed the GNU compiler. This is consistent with what was expected, as Intel has developed their compiler alongside their processors and it therefore produces well-optimised instructions. For the ThunderX2, the GNU compiler outperformed the Cray compiler. Neither compiler is developed specifically for the ThunderX2, therefore this performance difference can be explained by the fact that the GNU compiler is older and therefore more mature than the Cray compiler, however this is just speculation and has not been investigated. To confirm these observations, the test was repeated for the T21 resolution, which yielded similar results. 
-
-
-
-\section{Communication analysis}
-Load imbalance refers to an uneven distribution of work across compute resources. In the domain of HPC, it affects the performance of parallel codes only.
+When Isca is run on 8 cores, the Sandy Bridge, Broadwell and Skylake processors see a performance improvement of  5.1$\times$, 4.5$\times$ and 5.0$\times$ relative to the serial runtime, respectively, before plateauing between 8 and 16 processor cores (Figure \ref{fig:t21-scale}). The ThunderX2 speeds up by 5.9$\times$ when run on 8 cores, and 8.7$\times$ when run on 16 cores. When increasing the number of processor cores from 8 to 16 for the Held-Suarez configuration, there is only an approximate 1.15$\times$ performance gain for the Intel processors. This is typical of many parallel codes, whereby the performance benefit of additional compute resources decreases as more processor cores are utilised (citation). As this problem size is small, more time is spent in communication relative to compute when a greater number of processor cores are used. 
 \par
-The rate of computation is defined by the cost of computing a single grid cell per time step of the simulation, relative to the number of processors used. When run in serial, 100\% of the program runtime is spent on compute as there is no interprocessor communication. 
 
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=1\linewidth]{img/scaling_graph_T21_Grey_mars.pdf}
+\caption[Wallclock runtime of the Grey-Mars configuration running at T21 resolution]{Wallclock runtime of the Grey-Mars configuration running at T21 resolution across all processor architectures.}
+\label{fig:t21-scale-grey}
+\end{center}
+\end{figure}
+\newpage
+
+
+The scaling curve in Figure \ref{fig:t21-scale-grey} shows a sublinear plateau for all node configurations, whereby the wallclock runtime of all four processors reduces steadily from 1 to 8 processor cores. The wallclock runtime is greatest when the program is run in serial and lowest when run on 16 cores, which is the maximum number of cores possible for this resolution. The trend observed for the Grey-Mars configuration (Figure \ref{fig:t21-scale-grey}) is comparable to that of the Held-Suarez result, whereby the slowest runtime is the serial case and the fastest is the 16 core case (Figure 7.1). The Skylake processor massively outperforms all other processors when run on 8 cores, however it quickly tapers off when run on 16 cores, running just 1.02$\times$ faster than the 8 core case.
+\par
+%To determine the importance of memory bandwidth at this resolution, the 16 core configuration was rerun on the Broadwell processor. However, the cores were split across two nodes. Figure x shows that...x
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=1\textwidth]{img/scaling_graph_T42_Held_suarez.pdf}
+\caption[Wallclock runtime of the Held-Suarez configuration running at T42 resolution]{Wallclock runtime of the Held-Suarez configuration running at T42 resolution across all processor architectures.}
+\label{fig:t42-scale}
+\end{center}
+\end{figure}
+
+\newpage
+%T42 discussion
+%\subsection{T42 resolution}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=1\linewidth]{img/speedup-T42-Held_suarez.pdf}
+\caption{Speedup of the Held-Suarez configuration running at T42 resolution relative to serial runtime across all processor architectures.}
+\label{fig:held-t42-speedup}
+\end{center}
+\end{figure}
+Increasing the spatial resolution to T42 (Figures \ref{fig:t42-scale}, \ref{fig:held-t42-speedup} ) presents a similar scaling curve to that observed for the T21 resolution (Figure \ref{fig:t21-scale-grey}). For all processors except Sandy Bridge, the slowest runtime is measured for the serial code, and the performance improves until the program is run on 16 cores. For the Intel processors, running on more than 16 cores requires multiple nodes, which has a dramatic impact on the performance of the Sandy Bridge and Skylake processors. At 32 cores, the performance of the Sandy Bridge and Skylake processors reduces from 9.2$\times$ to 0.1$\times$ and 12.0$\times$ to 3.0$\times$, respectively. The Broadwell and ThunderX2 processors improve at this core count, from 8.2$\times$ to 10.2$\times$ and 12.7$\times$ to 18.7$\times$, respectively. Although the ThunderX2 does not provide the fastest overall runtime (Figure \ref{fig:t42-scale}), plotting the speedup relative to the serial runtime demonstrates that it exhibits the best level of scaling (Figure \ref{fig:held-t42-speedup}). This can be attributed to the large core count of the processor, which means that it does not have to rely on internode communication. 
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.94\textwidth]{img/scaling_graph_T85_Held_suarez.pdf}
+\caption{Wallclock runtime of the Held-Suarez configuration running at T85 resolution across all processor architectures.}
+\label{fig:t85-scale}
+\end{center}
+\end{figure}
+
+
+\par
+
+%T85 discussion
+%\subsubsection{T85 resolution}
+
+
+\par
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=1\textwidth]{img/speedup-T85-Held_suarez.pdf}
+\caption{Wallclock runtime of the Held-Suarez configuration running at T85 resolution across all processor architectures. }
+\label{fig:t85-speedup}
+\end{center}
+\end{figure}
+\par	
+For the T85 resolution (Figures \ref{fig:t85-scale} and \ref{fig:t85-speedup}), the performance of the Broadwell processor begins to decline when run on 64 cores across three nodes, reducing from a 18.6$\times$ speedup at 32 cores to a 17.3$\times$ speedup at 64 cores (Figures  and \ref{fig:t85-scale}). This suggests that this is the point at which the cost of communication outweighs the benefit of additional parallelism for this processor. The performance of the ThunderX2 continues to improve when run on 64 cores, increasing from 24.0$\times$ at 32 cores to 35.3$\times$ at 64 cores.
+
+\subsection{Conclusions and discussion}
+This scaling study highlighted some of the architectural differences between Intel and Arm processors. Arms approach to processor design relies on a greater number of simple processor cores, in comparison to Intel's fewer more complex cores. This design complemented the the Isca code by keeping communication inside a single node for resolutions of T85 and below, allowing for competitive runtimes to that of the Intel processors. 
+\par
+MPI is primarily used for communication between nodes, however messages are exchanged using shared memory when used within a single node (citation). This can greatly reduce the amount of time spent on communication as there is no data transfer between nodes, which can be an expensive process. This is likely what is causing Isca to scale well on the ThunderX2. In contrast, memory-bandwidth bound codes can see significant gains to performance when run on multiple nodes, which increases the total memory bandwidth and therefore reduces the cache-contention between processors (citation).
+\par
+The performance of the Intel nodes suffered when ran on multiple nodes. This is to be expected on the Skylake nodes, as the \gls{bp} supercomputer does not have a high-speed interconnect, using only ethernet to connect compute nodes. Interestingly, the lowest performance observed for the dual-node configuration is the Sandy Bridge processor, which takes 82$\times$ longer to complete the same job than when running on a single node. \gls{bcp3} uses QDR InfiniBand, which has a theoretical throughput of 8GB/s per connection and should therefore not exhibit this behaviour (citation). The Sandy Bridge node was the only Intel configuration to use OpenMPI instead of Intel MPI. Unlike Intel MPI, OpenMPI has not been developed specifically for Intel compute nodes, and this could have affected the internode performance for this configuration. Both the ThunderX2 and Broadwell processors do not exhibit this behaviour when run on 32 and 64 cores, which suggests that the issue is most likely caused by internode communication rather than a bug in the model that manifests at higher core counts.
+\par
+Due to restrictions imposed by domain decomposition, the Grey-Mars configuration cannot be run at resolutions higher than T42. Because of this, the results for the T85 resolution are limited to the Held-Suarez configuration only. Additionally, the time limit imposed by the queuing system prevented results from being gathered for the Sandy Bridge processor when running on 64 cores as the runtime was greater than 360 hours, which caused PBS to cancel the job. 
+%\begin{itemize}
+%\item BluePebble is slow because it just uses ethernet. 
+%
+%\item Athough MPI is used, most of the comms will happen inside shared memory as MPI is not stupid. 
+%
+%\item It would be interesting to run the model at much higher resolutions to see how it reacts to processors at very high core counts.
+%
+%\item Generally, running on a greater number of nodes improves the performance of codes that are bound by memory bandwidth, as a greater number of nodes implies a larger memory bandwidth. Although the ThunderX2 has the largest memory bandwidth, it does not have the best runtime at all resolutions. 
+%
+%\end{itemize}
+
+
+
+\section{Experiment B: Compiler comparison}
+This experiment measured the wallclock runtime of Isca when complied using the ICC, GCC and CCE compilers using two different model configurations and resolutions (Tables \ref{tbl:compilers},  \ref{tbl:-compiler-cores}). 
+\subsection{Results}
+For all configurations tested on Intel nodes, ICC outperformed GCC (Figure \ref{fig:compiler-comparison-t42}). ICC provides a mean performance improvement of 1.26$\times$ over GCC across both the T21 and T42 resolutions. On the ThunderX2, GCC was 1.4$\times$ faster than CCE at the T21 resolution, but just 1.01$\times$ faster at the T42 resolution.
+
+
+\par
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=1\textwidth]{img/compiler-comparison.pdf}
+\caption[Performance comparison using different compilers]{Runtimes for the Held-Suarez and Grey-Mars configurations using different compilers.}
+\label{fig:compiler-comparison-t42}
+\end{center}
+\end{figure}
+\subsection{Conclusions and discussion}
+It can be expected that ICC outperforms GCC on Intel hardware, as Intel develops their compilers alongside their processors. Consequently, the Intel compilers produce well-optimised instructions for the architecture. This experiment confirmed this expectation as ICC outperformed GCC in all cases. For the ThunderX2, GCC outperformed CCE. For both compilers, flags were specified to produce hardware specific instructions for the ThunderX2 processor, however neither compiler has been exclusively developed for the Armv8 architecture. Therefore, this performance difference could be explained by the the maturity of GCC in comparison to CCE, as the compiler has been in constant development since 1987. However there is no evidence to support this claim. 
+
+
+\section{Experiment C: Vectorisation analysis}
+This experiment measured the performance speedup of Isca when the model was compiled to use SIMD instructions, compared to when run in scalar.
+\subsection{Results}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\textwidth]{img/speedup-vector.pdf}
+\caption{Speedup for the vectorised and scalar code. }
+\label{fig:vector-gains}
+\end{center}
+\end{figure}
+\par
+Only marginal performance gains are observed when running Isca using SIMD instructions compared to scalar (Figure \ref{fig:vector-gains}). For the Held-Suarez model, there is a 1.07$\times$, 1.25$\times$, 1.13$\times$ and 1.01$\times$ performance improvement for the Sandy Bridge, Broadwell, Skylake and ThunderX2 processors, respectively. For the Grey-Mars configuration, there is a 1.07$\times$, 1.02$\times$, 1.11$\times$ and 1.06$\times$ performance improvement for the same processors.
+
+\subsection{Conclusions and discussion}
+Some of the most time consuming compute kernels in Isca operate over arrays of double precision complex numbers. In Fortran, a complex number is composed of a pair of floating point numbers, representing both real and imaginary parts of the complex number. This means that a double precision complex number of kind 8 uses 128 bits of memory; both real and imaginary parts of the number are a real value of 8 bytes each. This means that vectorisation is costly in parts of the code that iterate over complex data structures, and impossible on the 128-bit registers used in Intels SSE, and Arms NEON SIMD extensions. Interestingly, Intel's cost model often determines that there is no benefit to using SIMD instructions on arrays of double precision complex numbers, even when 256-bit and 512-bit registers are available as a results of AVX-2 and AVX-512 respectively.
+\par
+Only small, but consistent performance gains were measured when the model was compiled to use SIMD instructions. This suggests that the model is not dependant on vectorisation to provide its performance. For the Held-Suarez configuration, the ThunderX2 saw the least improvement, which was expected as the ThunderX2 only has 128-bit vector registers. Following the ThunderX2 was the Sandy Bridge processor, which uses the AVX instruction set. Although this allows for a vector width of up to 256-bits, it does not include fuded multiply-accumulate operations like the AVX-2 instructions used by Broadwell and the AVX-512 instructions used by Skylake (citation).
+
+
+
+\section{Experiment D: Computation rate}
+Section \ref{sec:app-benchmarking} defines CCPG as the cost of computing a single grid cell per time step of the simulation. This experiment measures the cost of computation relative to the number of concurrently utilised processors. %When run in serial, 100\% of the program runtime is spent on compute as there is no communication between processors. 
+\label{sec:comm-analysis}
+\subsection{Results}
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=1\textwidth]{img/cost-per-grid-point.pdf} 
@@ -974,57 +951,119 @@ The rate of computation is defined by the cost of computing a single grid cell p
 \label{fig:cost-per-grid-point}
 \end{center}
 \end{figure}
+For the Held-Suarez configuration running at the T21 resolution, the introduction of parallelism causes the \gls{ccpgpt} to increase for all node configurations except Skylake (Figure \ref{fig:cost-per-grid-point}). The \gls{ccpgpt} decreased for the Skylake node when parallelism was introduced to the model. Increasing the amount of parallelism past the utilisation of two cores causes the \gls{ccpgpt} to increase almost linearly for all processors at this resolution. The same trend was observed for the Held-Suarez configuration when running at the T42 resolution. However, for the dual-node case the \gls{ccpgpt} sharply increases for the Skylake node, with a cost 6.7$\times$ greater than when run on the maximum capacity of a single node.
+
+
 \par
-The measured rate of computation for the three model resolutions is shown in Figure \ref{fig:cost-per-grid-point}.
+
+\par
+For Intel nodes running the Grey-Mars configuration at the T21 resolution, the CPPG initially decreases when parallelism is introduced. However running on more than 4 processor cores increases the \gls{ccpgpt}. This is not the case for the ThunderX2, for which the \gls{ccpgpt} increases until it is ran on 8 processor cores at which a plateau is reached, before increasing again at 32 cores. This same pattern is observed Grey-Mars configuration running at the T42 resolution, however the \gls{ccpgpt} dips for the ThunderX2 when run on 16 cores, rather than reaching a plateau. 
+
+\subsection{Conclusions and discussion}
+Plotting the \gls{ccpgpt} demonstrates that increasing the number of processors also increases the cost to compute a single grid point (Figure \ref{fig:cost-per-grid-point}). Although there are more processors collectively working on the problem, a greater portion of the runtime is spent on communication and therefore processors spend more time idle. Although increasing the amount of parallelism causes the the overall wallclock runtime to decrease, the total CPU time increases, which indicates that the code is less efficient. 
+
+\section{Experiment E: Time spent in the MPI library}
+This experiment measured the percentage of runtime spent in the MPI library and the communication time between processors. 
+
+\subsection{Results}
+\begin{figure}[htbp]
+\begin{center}
+	\includegraphics[width=\textwidth]{img/mpi-barrier-time.pdf}
+\caption[Percentage of runtime spent in MPI across processes]{Percentage of runtime spent in MPI across processes for both the Held-Suarez and Grey-Mars model configurations.}
+\label{fig:mpi-barrier}
+\end{center}
+\end{figure}
+For the Held-Suarez configuration, each process spends between 40.8\% and 48.1\% of its total runtime in calls to MPI, and no discernible patterns can be identified through visual inspection of Figure \ref{fig:mpi-barrier}. For the Grey-Mars configuration, each process spends between 33.0\% and 47.5\% of its total runtime in calls to MPI. Processes 0-7 spend a much smaller percentage of their runtime in calls to MPI in comparison to processes 8-15, and process 0 spends a significantly smaller percentage of runtime in calls to MPI than any other process. Additionally, the time spent in the MPI library increases relative to the processor rank number. 
+\par
+\begin{figure}[htbp]
+\begin{center}
+%\includegraphics[width=0.49\textwidth]{img/comm_mat_Held-Suarez.pdf}
+\includegraphics[width=1\textwidth]{img/comm_mat_grey-mars.pdf}
+\caption[Communication matrix for the Grey-Mars model configuration]{Communication matrix for the Grey-Mars model configuration when run at a resolution of T42. Communication time has been measured as the sum of all time spent inside the MPI library}
+\label{fig:comm_mat}
+\end{center}
+\end{figure}
+\par
+The longest communication times are measured when processes 8-15 transmit data to process 0 (Figure \ref{fig:comm_mat}), with a mean communication time of 118.5 seconds. However, process 0 has the lowest sending times of any process, with a mean communication time of just 31.3 seconds. This suggests that process 0 is consistently taking the longest amount of time to reach points of synchronisation, and can exchange data almost immediately upon reaching MPI barriers. 
+
+\subsection{Conclusions and discussion}
+Load imbalance refers to an uneven distribution of work across compute resources. In the domain of HPC, it affects the performance of parallel codes only. The large variation in MPI time observed in Isca suggests that it suffers from a significant load balancing issue, which is amplified by the large portion of runtime that the model spends inside calls to MPI.
+\par
+Many of the subroutines found in Isca with long execution times inherently involve expensive communication. For example, when calculating global sums over 2D fields, each processor gathers the missing pieces of data they require to construct the global field from all other processes using blocking communication \cite{schmidt2007benchmark}. As Isca operates on a global domain, these points of synchronisation are unavoidable as communication must finish between all processes before the program can continue. Subroutines like this are found all throughout the Isca code, and each contributes to the large amount of time the model spends on communication. Unfortunately, Isca has been built around these points of synchronisation, and optimisation is not possible by using asynchronous message passing without affecting the scientific validity of the model. 
+\par
+Referring back to Figure \ref{fig:mpi-barrier}, the Held-Suarez configuration generally presents more consistency amongst its processors than the Grey-Mars configuration, which is to be expected as it is much simpler simulation. Although some variation was measured in the time spent in MPI across processes for the Held-Suarez model configuration, this can be attributed to environmental variables outside the control of the experiment. The Grey-Mars simulation exhibits more severe symptoms of load imbalance. As discussed in Section x, some radiation models can suffer from a load-balancing issue whereby calculations take longer on the side of the planet facing the Sun. Although Isca 
+
+\par
+Check if this is true by running with data from run13. 
+
+\section{Experiment E: Runtime variation}
+This experiment measured the differences in runtimes for each individual epoch comprising an Isca simulation.
+
+\subsection{Results}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/held_suarez-variation.pdf}
+\caption{Variation in runtimes for the Held-Suarez configuration running at T42 resolution.}
+\label{fig:variation-comparison-held-t42}
+\end{center}
+\end{figure}
+For the Held-Suarez model configuration, the runtimes for individual epochs have a range of 0.99 seconds, 1.11 seconds and 1.60 seconds for the ThunderX2, Skylake and Broadwell processors, respectively (Figure \ref{fig:variation-comparison-held-t42}). However, the Sandy Bridge processor had more fluctuations in runtime throughout the full simulation, with a range of 7.97 seconds.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/grey_mars-variation.pdf}
+\caption{Variation in runtimes for the Grey-Mars configuration running at T42 resolution.}
+\label{fig:variation-comparison-mars-t42}
+\end{center}
+\end{figure}
+\par
+The Grey-Mars simulation presents similar results, showing only minor variations in epoch runtime across all processors except Sandy Bridge (Figure \ref{fig:variation-comparison-mars-t42}). There is a large peak for the Sandy Bridge processor at epoch 18, however rerunning this experiment causes peaks at seemingly random intervals.
+
+\subsection{Conclusions and discussion}
+The FMS Manual warns of a spin-up time that can slow the performance of the the first epoch of a simulation due to the initialisation of the global starting state \cite{balaji2002fms}. This effect has not been observed in either the Held-Suarez or Grey-Mars model configurations, even in simulations that have not been visualised in Figures \ref{fig:variation-comparison-held-t42} and \ref{fig:variation-comparison-mars-t42}. The FMS manual was written in 2002, when the clock speeds of high performance processors were in the range of 1.1GHz to 1.5 GHz, and memory-bandwidth rarely exceeded 1600MB/s \cite{behling2001power4, carvalho2002gap}. Perhaps the spin-up cost is now negligible when the model is run on modern hardware. 
+\par
+The runtimes observed on the ThunderX2, Broadwell and Skylake processors indicate that each epoch contains the same amount of work and no part of the planetary orbit is more computationally expensive than others. The results obtained on the Sandy Bridge processor can be attributed to environmental factors, and can therefore be treated as an outlier. 
 
 
+\section{Experiment F: Roofline model analysis}
 
-\section{Performance projection}
-The A64FX processor
-\begin{itemize}
-\item list processor specs
-\item compare specs to Thunderx2
-\item Does the A64fx clock down?
-\end{itemize}
-Using these results, how do I think that the code will perform on the new processors?
+\begin{figure}[htbp]
+\begin{center}
+ \includegraphics[width=\textwidth]{img/roofline_model_bluepebble.pdf}
+\caption[Roofline model of Isca on Intel hardware]{Roofline model for 16 cores of two Intel Xeon Gold processors at 2.6 GHz. } 
+\label{fig:roofline}
+\end{center}
+\end{figure}
+
+The Held-Suarez simulation running at the T42 resolution delivers an operational intensity of 0.11 FLOPS/Byte and a double-precision floating point performance of 1.54 GFLOPS (Figure \ref{fig:roofline}). This indicates that the configuration is limited by memory-bandwidth, as the program total performance is located underneath the DRAM ceiling. The Grey-Mars configuration presents a floating point performance of 1.96 GFLOPS, with the same operational intensity of the Held-Suarez configuration. Intel Advisor suggests that the peak double-precision floating point performance of a code running on the Skylake architecture using SIMD is 584.99 GFLOPS. This means that the Isca code is only running at 0.26\% of the peak performance available on the hardware.
+
+\subsection{Conclusions and discussion}
+In addition to quantifying the performance of Isca, Figure \ref{fig:roofline} identifies 2 compute kernels referred to as Loop $a$ and Loop $b$, for optimisation. Loops $a$ and $b$ are both found in Isca's FFT code, and provide especially bad floating-point performance of 0.22 GFLOPS and 0.14 GFLOPS, respectively. Further analysis of these compute kernels are found in Section \ref{}
+
+%\section{Performance projection}
+%The A64FX processor
+%\begin{itemize}
+%\item list processor specs
+%\item compare specs to Thunderx2
+%\item Does the A64fx clock down?
+%\end{itemize}
+%Using these results, how do I think that the code will perform on the new processors?
 
 
-%\section{Throughput}
-%How to maximise throughput? 
-%
-%\section{Job Scripts}
-%
-%
-%\subsection{Portable Batch System (PBS)}
-%BlueCrystal phase 3 uses the PBS queuing system.
-%(example of PBS job script)
-%
-%\subsection{PBS pro}
-%Both Isambard and BluePebble use the PBS pro queuing system
-%
-%\subsection{SLURM}
-%(example of SLURM job script)
-%
-%
-%\section{Results}
-%\subsection{Single node performance}
-%
-%The code doesn't scale outside of a node. It is limited by both the resolution of the model and the number of cores on a node. This actually bodes well for the Arm nodes, as the model decomposes nicely onto 64 cores. To test the total throughput we need to measure the number of model days simulated per hour or something similar to that.
-%
-%
-%
-%
-%\subsection{Whole node performance }
-%
-%\subsection{Cache misses etc}
-%\subsection{Vectorisation}
-%Some of the most time consuming loops (spherical\_fourier.F90), operate on variables of a double precision complex type. These variables contain two double precision floating point numbers, both occupying 8 bytes of storage, for a total storage space of 128bits. This is wider than the vector registers...
-%\par
-%By default, Isca uses 8-byte real and integer
-%\par
-%Talk about how AVX-512 is usually slower, because it decreases the clock speed in order to prevent overheating. 
-%These variables  loops use a 
-%\par
+\section{Summary}
+The main observations of all experiments are summarised:
+\begin{description}
+
+	\item[Scalability] For the T21 and T42 resolutions, the Skylake processor presents the best level of single-node performance. However, the large core count of the ThunderX2 allows for the best level of single node performance at the T85 resolution. 
+
+	\item[Load balancing] A serious load balancing issue has been discovered, whereby approximately 40\% of the program runtime is spent inside MPI. Although communication is the biggest performance limiting factor of the code, the identified points of synchronisation are unavoidable, and cannot be optimised without rewriting the entirety of the model, which is well outside the scope of this project.
+	
+	\item[Vectorisation] As Isca operates on double precision floating point values, the small vector registers of the ThunderX2 cannot be used on complex numbers. This also affects the performance of the Intel processors, as vectorisation only accounts for a performance gain of between 1.02$\times$ and 1.25$\times$ the un-vectorised code. 
+	
+	\item[Compilers] On the Intel machines, ICC outperforms GCC in all cases, however on the ThunderX2 GCC provides better performance than CCE. These results were used to inform the choice of compiler for all other experiments. 
+	
+	\item[Slow FFT] 
+	
+\end{description}
 
 
 
@@ -1038,25 +1077,6 @@ Using these results, how do I think that the code will perform on the new proces
 \chapter[Optimisation]{Optimisation}
 \label{chap:optimiations}
 This chapter outlines the various performance bottlenecks identified in the Isca codebase, describes the steps taken to address their underlying issues, and evaluates the performance of the code changes that have been made. In some cases, a significant performance improvement was observed. 
-
-\section{Roofline model analysis}
-A roofline model is an insightful visual performance analysis technique used to identify the hardware-limiting factors of an application, or compute kernels within an application. It plots the floating point performance as a function of peak machine performance, peak machine memory-bandwidth and the operational intensity of the code itself. The performance limiting factor of a code or compute kernel can be determined by looking at where it sits on the roofline.
-
-\begin{figure}[htbp]
-\begin{center}
- \includegraphics[width=\textwidth]{img/roofline_model_bluepebble.pdf}
-\caption[Roofline model of Isca on Intel hardware]{Roofline model for 16 cores of two Intel Xeon Gold processors at 2.6 GHz. } 
-\label{fig:roofline}
-\end{center}
-\end{figure}
-\newpage
-
-\subsection{Isca performance}
-The Held-Suarez simulation running at the T42 resolution delivers an operational intensity of 0.11 FLOPS/Byte and a double-precision floating point performance of 1.54 GFLOPS. The roofline model in Figure \ref{fig:roofline} indicates that the configuration is limited by memory-bandwidth, as the program total performance is located underneath the DRAM ceiling. Intel Advisor suggests that the theoretical peak double-precision performance of a code running on the Skylake architecture using SIMD is 584.99 GFLOPS. This means that the Isca code is only running at 0.26\% of the peak performance available to the hardware.
-\par
-In addition to quantifying the performance of Isca, Figure \ref{fig:roofline} identifies 2 compute kernels referred to as Loop $a$ and Loop $b$, for optimisation. Loops $a$ and $b$ are both found in Isca's FFT code, and provide especially bad floating-point performance. The following section investigates the limitations of these kernels and describes how they have been improved.
-
-
 % FFT Optimisation
 \section[FFT optimisation]{Fast Fourier Transform optimisation}
 As discussed in Section \ref{sec:spectral-domain}, spectral climate models use a FFT to transform data between the spacial and frequency domains. Isca does this using the \texttt{fft991} subroutine, found in the \texttt{fft99.F90} module. This subroutine is used to perform multiple one-dimensional FFT's in succession over a two-dimensional array of sequential data when converting from a grid-point decomposition to the frequency domain and vice versa. This implementation of the FFT has been adapted from a Fortran77 code written by Clive Temperton in 1981, and can be found in the EMOSLIB library by The European Centre for Medium-Range Weather Forecasts (references).
@@ -1135,7 +1155,7 @@ Y _ { i } = \sum _ { j = 0 } ^ { N - 1 } X _ { j } e ^ { - 2 \pi i j \sqrt { - 1
 Y _ { i } = \sum _ { j = 0 } ^ { N - 1 } X _ { j } e ^ { 2 \pi i j \sqrt { - 1 / N } }
 \end{equation}
 
-\subsubsection{FFTW applied to Isca}
+\subsubsection{Implementation}
 In order to call FFTW rather than Temperton's FFT, a new Fortran module \texttt{fftw.F90} has been written, and preprocessor directives have been added to the existing \texttt{fft.F90} file to allow for the type of FFT used to be chosen at compile time. Compiling the model with the \texttt{-DFFTW3} preprocessor directive will compile the model to use \gls{fftw} instead of the default call to Temperton's FFT. Isambard, \gls{bcp3}, \gls{bcp4} and \gls{bp} have module files that allow for automatic linking to the FFTW library. If using the library on other systems, the FFTW library must be installed and linked to Isca manually. FFTW provides both a single and double precision version of its library, with subtle differences to the names of the interfaces it provides. Preprocessor directives must be used to chose which version of FFTW is linked to the Isca code. 
 \par
 \begin{figure}[htbp]
@@ -1150,23 +1170,34 @@ To guarantee proper alignment for SIMD, the data structures on which the FFT is 
 \par
 Isca performs a transform from real to complex numbers and vice versa. A one-dimensional transform from a real array of size $N$ results in a complex array of size $N/2$. When implementing this using FFTW, the same input and output arrays are re-used for multiple transforms in order to take advantage of FFTWs plans. As \gls{fftw} computes an unnormalised \gls{dft}, the result is multiplied by the number of items in the input sequence. This means that the result must be scaled by a factor of $\frac{1}{N}$ after the \gls{dft} is performed, which adds a small overhead to compute costs in addition to the cost of the DFT.  
 
-\subsubsection{Methodology}
+\subsubsection{Verification}
 To ensure that FFTW computes the same values as Temperton's FFT, both forward and backwards transforms were tested on sequences of known data. The results of this test shows that both transforms compute the exact same DFT, and IDFT for 30 unique sequences of data. Additionally, computing both the DFT and IDFT of a sequence in succession yields the original sequence upon which the transforms were applied.
+
+\subsubsection{Methodology}
+
 \par
 To compare the performance of FFTW against the original Temperton FFT found in Isca, the time taken to complete a number of one-dimensional FFTs was measured for both FFT implementations. Each FFT implementation was tested on four different sizes of randomly initialised two-dimensional data structures. For example, a two-dimensional array of size 128 $\times$ 64 will compute the DFT of 128 one-dimensional arrays of size 64. The sizes of the arrays tested correspond to the different array sizes used for the T42 (128 $\times$ 64), T85 (256 $\times$ 128) and T170 (512 $\times$ 256) model resolutions. To emulate the Isca code, the test program was compiled using the same compiler flags used to compile Isca. To negate the error incurred by fluctuations in compute costs caused by the random data used in each array, the mean value for 100 transformations was calculated.  \ref{fig:fft-times}.
 
-\subsubsection{Results}
+\subsubsection{Results and discussion}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{img/speedup-fft.pdf}
+    \caption[Speedup of FFTW relative to Temperton's FFT]{Speedup of FFTW relative to Temperton's FFT. }
+    \label{fig:fft-speedup}
+\end{figure}
+
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{img/compare_fft.pdf}
-    \caption[Performance comparison of FFTW and Temperton's FFT]{The performance of Isca's bespoke Temperton FFT compared to the performance of FFTW across multiple domain sizes.  }
+    \caption[Performance comparison of FFTW and Temperton's FFT]{The performance of Temperton's FFT compared to the performance of FFTW across multiple domain sizes.  }
     \label{fig:fft-times}
 \end{figure}
 \par
-The biggest performance improvement was observed on the Sandy Bridge processor when performing a FFT on a grid size representing the T170 resolution. For this configuration, the FFTW code ran 5.25$\times$ quicker than the Temperton FFT. Interestingly, a greater performance gain was measured when the FFT was applied to the largest data structure. why?
+The biggest performance improvement was observed on the Sandy Bridge processor when performing a FFT on a grid size representing the T170 resolution. For this configuration, the FFTW code ran 5.25$\times$ quicker than Temperton's FFT. Figure \ref{fig:fft-speedup} shows that the performance gain was relative to the size of the data structure used, almost linearly in the case of the Intel processors. 
 \par
-Interestingly, the performance gain was only marginal for the T42 resolution when run on the ThunderX2 processor Interestingly, the T170 resolution gave the greatest performance boost, which suggests that the actual computation is much quicker... 
+Interestingly, the performance gain was only significant on the ThunderX2 for a problem of size 256$\times$128 and greater. 
 \par
 Regardless of wether FFTW provides a significant improvement to Its better to use a library that is updated rather than relying on bespoke code that does not evolve with hardware. 
 \par
@@ -1191,17 +1222,19 @@ FFT only takes up around 5\% of the total compute costs, so overall not a massiv
 
 \newpage
 \section{Floating point precision}
+\label{sec:floating-pont}
 On modern processors, the time taken to perform floating point arithmetic on a single data item is about the same for both single and double precision variables. At a larger scale, single precision arithmetic can improve performance by reducing memory bandwidth consumption, and by allowing for more data items to fit in a vector register. 
-\par
-Some of the most time consuming compute kernels in Isca operate over arrays of double precision complex numbers. In Fortran, a complex number is composed of a pair of floating point numbers, representing both real and imaginary parts of the complex number. This means that a double precision complex number of kind 8 uses 128 bits of memory; both real and imaginary parts of the number are a real value of 8 Bytes each. This means that vectorisation is costly in parts of the code that iterate over complex data structures, and impossible on the 128-bit registers used in Intels SSE, and Arms NEON SIMD extensions. Interestingly, Intel's cost model often determines that there is no benefit to using SIMD instructions on arrays of double precision complex numbers, even when 256-bit and 512-bit registers are available as a results of AVX2 and AVX512 respectively.
 \par
 To allow for SIMD instructions to be applied to complex data structures, Isca has been compiled to use single-precision floating point numbers. There is existing infrastructure to allow for this to be done as the codebase includes interfaces to both single and double precision versions of commonly used subroutines. To change the default memory usage of real and complex variables, a number of preprocessor directives and compiler flags can be specified at compile time. 
 
 \subsection{Methodology}
 To measure the performance difference between single and double precision numbers in Isca, both the Held-Suarez and Grey-Mars configurations were rerun using the single precision configuration. Additionally, the operational intensity (FLOPS/Byte) and performance (GFLOPS/s) were remeasured for the entire run of the executable to allow for comparison with the double precision code. 
+\par
+I suspect that the speedup is caused by vectorisation... is this true?
 \begin{itemize}
 	\item Measure runtime of both sp and dp code
 	\item Look at roofline, how has it changed? 
+	\item plot vec and no-vec, see how the performance changes
 \end{itemize}
 
 \subsection{Results}
@@ -1249,30 +1282,6 @@ Halves memory-bandwidth consumption. Therefore why isn't ThunderX2 performing be
 \newpage
 %%% MPI imbalance
 \section{Load imbalance}
-Isca exhibits a significant load-balancing issue whereby over 30\% of the program runtime is spent inside calls to \texttt{mpi\_recv}. It is not possible to improve upon this code due to the deep rooted imbalance throughput the code. This is just a necessary point of synchronisation that the code requires in order to operate. In order to make the code run faster it would require a complete re-write. Perhaps it may benefit from using some shared memory here, as 
-\par
-Graph of communication pattern
-\par
-Some special purposes require more expensive communication. For bit-reproducible global sums over 2D fields each processor gathers the pieces from all other processors to construct the global field. Examples for such expensive operations are surface flux corrections to maintain the total volume or salinity budget. How- ever, operations of this kind are rare in MOM-4 and can be avoided completely for regional models.
-\par
-Switched to an asynchronous call but this lead to segmentation faults. use some kind of graph to prove that there is a deeper rooted issue here.
-\par
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=\textwidth]{img/comm_mat_Held-Suarez.pdf}
-\includegraphics[width=\textwidth]{img/comm_mat_grey-mars.pdf}
-\caption[Communication matrices for Held-Suarez and Grey-Mars]{Communication matrices for both the Held-Suarez and Grey-mars model configurations when run at a resolution of T42. Communication time has been measured as the sum of all time spent inside the MPI library}
-\label{fig:comm_mat}
-\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-\begin{center}
-	\includegraphics[width=\textwidth]{img/mpi-barrier-time.pdf}
-\caption[Comparison of the time spent in MPI]{Sum of total time spent at an MPI barrier for both the Held-Suarez and Grey-mars model configurations}
-\label{fig:mpi-barrier}
-\end{center}
-\end{figure}
 
 
 Slowest functions/subroutines as a result of MPI\_recv
@@ -1283,47 +1292,7 @@ Slowest functions/subroutines as a result of MPI\_recv
 
 Further down the call stack, both of these issues are caused by \texttt{MPI\_wait}. This suggests that there is an imbalance in the MPI. Both these functions are something to do with the FFT, although the root cause of the problem is the MPI wait.
 
-\clearpage
-\subsection{Vector Instructions}
-Intel advisor was run for both the Grey-Mars and Held-Suarez case. Running the Grey-Mars case, we find that there are five top time-consuming loops that are performing scalar operations, when vector operations may be able to be used. 
-\par
-Additionally, many of the vector instructions that are being used are only using SSE. Why are there not many AVX2/512 operations being performed? Can we force/coax the use of these wider registers to improve performance? 
-\par
-Inefficient memory access patterns may result in significant vector code execution slowdown or as in this case, block automatic vectorisation by the compiler.
-\par
-The top five slowest functions.
 
-\par
-At \texttt{spherical\_fourier.F90:312} and \texttt{spherical\_fourier.F90:315}, there is a similar problem due the nature of how the DFT to spherical harmonics transform works. The transform splits data into even and odd 
-\par
-To do this, it uses two fast Fourier transforms to convert between states. The first being \texttt{trans\_spherical\_to\_fourier}, and the second being \texttt{trans\_fourier\_to\_spherical}. This is the slowest part of the code, lasting for xxx\% of the runtime. 
-
-\texttt{trans\_spherical\_to\_grid} and \texttt{trans\_grid\_to\_spherical} both call the \texttt{trans\_fourier\_to\_spherical} subroutines that take ages to compute. This means that it would be best to swap out \texttt{trans\_spherical\_to\_grid} for something else... 
-\par
-TODO: find a library that does what we want. Will need to check the outputs from both the FMS code, and the new library to make sure that they are the same. 
-\par
-There are some parallels between fftw3 and the implementation in Isca. fftw3 has two subroutines called \texttt{fftw\_plan\_many\_dft\_r2c} and \texttt{fftw\_plan\_many\_dft\_c2r}, that looks like they are used to perform many one-dimensional fft's over a two-dimensional array. Additionally, the \texttt{n} variable from \texttt{fft99} is used in the same way as \texttt{L} from fftw3 when allocating the memory for the complex type array in the Fourier domain (\texttt{n/2+1} or \texttt{L/2+1}). This means that these arrays are probably used in the same way. 
-\par
-To ensure that the results are the same, need to compare the results of the regular FFT to the results obtained using fftw. Sure that this will reveal the root of the problem. 
-\par
-
-Tested the results of the FFT by using a number of test scenarios using fft991 and fftw. The results were identical using both methods. 
-\par
-
-
-\begin{table}
-\caption{TODO}
-\begin{center}
-\begin{tabular}{ c c c }
-\toprule
-File 					& Line 		& Performance Issue 					 \\\midrule
-\texttt{fft99.F90}		& 1081		& Inefficient memory access patterns		  \\
-\texttt{fft99.F90}		& 1049		& Inefficient memory access patterns		 \\
-\bottomrule
-\end{tabular}
-\label{table:resolutions}
-\end{center}
-\end{table}
 
 
 
@@ -1387,9 +1356,34 @@ Moral of the story is that bespoke code does not age well. It is best to use a p
 
 %%% Reflection and critical analysis
 
-\part{Reflection and Critical Analysis}
-\chapter{Reflection and Critical Analysis}
-This project aimed to present 
+\part{Reflection, Critical Analysis and Conclusion}
+
+\chapter{Conclusion and Critical Analysis}
+This project aimed to present a comprehensive performance analysis and optimisation of the Isca climate model on multiple processor architectures. The following chapter assesses whether this has been achieved, and discusses the limitations of the work presented. 
+\par
+\section{Benchmarking and performance analysis}
+\subsection{Hardware benchmarking}
+Although this research project presents a grounded performance analysis of numerous high-performance processors, Isca is just one program and the performance of said processors cannot be judged based on this alone. Isca also has a relatively low computational intensity for a high-performance code, and did not push any of the processors tested to their limits. Perhaps more computationally intensive programs like TeaLeaf, CloverLeaf, or other synthetic benchmarking codes would provide a better platform for performance comparison (citation).
+
+\subsection{Application benchmarking}
+The results presented in Chapter \ref{chap:results} disproportionately represents the performance of the T42 resolution. This was not intentional, however providing benchmarks across all different combinations of processor, configuration and resolution was challenging to manage, therefore the T42 resolution was chosen as the default for many experiments. The time restrictions of the three month project meant that it was simply not possible to collect results for all possible scenarios. 
+\par
+Although the Grey-Mars and Held-Suarez model configurations are vastly different, they only represent two narrow use-cases of the Isca model. Isca can be used for the simulation of countless other scenarios, ranging from the benignly simple to complex realistic global simulations. Further work could look at other use-cases included in the Isca Github repository, including a `hot Jupiter', `bucket hydrology' and realistic Earth simulation using topography (citation). 
+\par
+The work presented in this thesis measured resolutions up to and including T85 only. Isca officially supports resolutions up to T170, however it would be trivial to modify the Python library to allow for simulations of arbitrary granularity. Larger resolutions would allow for the model to be run across 10's of nodes, rather than just the maximum of three used in this project. Although this is non-standard and does not represent how the model is used by researchers, it would be interesting to study the underlying . Higher resolutions would also allow for the ThunderX2 processor to be tested in a mutlinode configuration.
+ 
+ \section{Load imbalance}
+ It would have been good to have a proper go at fixing the load imbalance -> couldnt do because time restrictions. Also berkley guy said to focus on the 95\%, not possible in this case. 
+
+\par
+
+\par
+Didnt look at resolutions higher than T85, and therefore did not measure the multinode performance of the ThunderX2
+
+\section{Optimisation}
+
+\section{Further work}
+
 
 \begin{itemize}
 	\item It was difficult to find things to optimise. The biggest time-sink was the MPI, but that was due to unavoidable load-balancing issues that cannot be resolved through asynchronous message passing. 
@@ -1402,7 +1396,24 @@ This project aimed to present
 	\item Only benchmarked one code, therefore can't be a good reflection of the ThunderX2
 	\item What do the results mean? 
 	\item The codebase takes a long time to compile. The Cray compiler can take upwards of half an hour to compile the Grey-mars configuration. Sometimes a single code change can take half an hour to check if it works. 
+	\item As the number of cores per processor increases there is less point in using MPI for smaller codes like Isca. Perhaps this was unavoidable 20 years ago when processors commonly had only 1/2 cores per node but this is not the case anymore. Especially at low resolutions
 \end{itemize}
+
+
+\chapter{Reflection}
+
+\section{Challenges}
+The initial challenge was learning the Fortran programming language, having never used it before this project. This was complicated further by the size and complexity of the Isca codebase, which made it difficult to learn by example. Fortran behaves very differently from other more familiar programming languages like C and Python and a long time was spent learning the intricacies of the language before any real development could take place.
+\par
+Following this, simply compiling the model was a non-trivial process, and it took 4 weeks before Isca was compiled and run on each cluster. There were many small problems with the codebase that were unique and difficult to find information on, and often required an obscure fix in the form of a compiler flag or environment variable. The BluePebble and Isambard clusters caused many issues. Towards the beginning of the project, a large amount of time was spend trying to compile the model using the Arm HPC compiler, which was not used in the rest of the project. Perhaps this was a waste of time. 
+\par
+Isca can sometimes take up to half an hour to compile. This made it difficult to test changes made to the codebase as minor mistakes required a total recompilation of the model.
+\par
+Isca is a very fragile codebase, and even very minor changes cause the model to crash. The main source of crashes throughout this project occurred as a result of atmospheric variables exceeding their expected range. The chaotic nature of the model meant that this was a frequent occurrence, as small changes to parameter values would cause vastly different results. 
+
+ underestimated the amount of time it would take to 
+Compiling the model was non-trivial, and finding 
+
 
 
 
@@ -1415,6 +1426,7 @@ This project aimed to present
 
 \appendix
 \chapter{Porting code changes}
+\label{apdx:porting}
 
 \toclesssection{Isambard}
 \subsection{Error 1}
@@ -1453,6 +1465,7 @@ Tr = T0 + lapse/(zt** (-alpha) + z(k)** (-alpha))**(1./alpha)
 
 
 \chapter{Code listings}
+\label{apdx:codelisting}
 
 \toclesssection{Grid to Fourier subroutine}
 
@@ -1550,6 +1563,83 @@ end subroutine time_fft
 
 end program test
 \end{lstlisting}
+
+
+\chapter{Compile environment scripts}
+\label{apdx:compile-env}
+
+\toclesssection{Isambard GNU}
+
+\begin{lstlisting}[language=bash]
+# template for the  gfortran compiler
+# typical use with mkmf
+# mkmf -t template.ifc -c"-Duse_libMPI -Duse_netCDF" path_names /usr/local/include
+CPPFLAGS = -I/usr/local/include
+NETCDF_LIBS = `nf-config --fflags  --flibs`
+
+# FFLAGS:
+#  -cpp: Use the fortran preprocessor
+#  -ffree-line-length-none -fno-range-check: Allow arbitrarily long lines
+#  -fcray-pointer: Cray pointers don't alias other variables.
+#  -ftz: Denormal numbers are flushed to zero.
+#  -assume byterecl: Specifies the units for the OPEN statement as bytes.
+#  -shared-intel:  Load intel libraries dynamically
+#  -i4: 4 byte integers
+#  -fdefault-real-8: 8 byte reals (compatability for some parts of GFDL code)
+#  -fdefault-double-8: 8 byte doubles (compat. with RRTM)
+#  -O2: Level 2 speed optimisations
+
+FFLAGS = $(CPPFLAGS) $(NETCDF_LIBS) -cpp -fcray-pointer \
+          -O2 -ffree-line-length-none -fno-range-check \
+          -fbacktrace -target-cpu=arm-thunderx2 -fdefault-real-8 -fdefault-double-8
+
+#         -ftree-vectorize -fopt-info-vec-missed
+
+#FFLAGS = $(CPPFLAGS) $(NETCDF_LIBS) -cpp -fcray-pointer \
+#          -O2 -ffree-line-length-none -fno-range-check \
+#          -fdefault-real-8 -fdefault-double-8 -fbacktrace \
+#              -target-cpu=arm-thunderx2 
+
+FC = $(F90)
+LD = $(F90) $(NETCDF_LIBS)
+
+LDFLAGS = -lnetcdff -lnetcdf 
+CFLAGS = -D__IFC
+\end{lstlisting}
+
+\toclesssection{BCP3 Intel}
+\begin{lstlisting}[language=bash]
+# template for the Intel fortran compiler
+# typical use with mkmf
+# mkmf -t template.ifc -c"-Duse_libMPI -Duse_netCDF" path_names /usr/local/include
+CPPFLAGS = -I/usr/local/include
+NETCDF_LIBS = `nc-config --libs`
+
+# FFLAGS:
+#  -fpp: Use the fortran preprocessor
+#  -stack_temps:  Put temporary runtime arrays on the stack, not heap.
+#  -safe_cray_ptr: Cray pointers don't alias other variables.
+#  -ftz: Denormal numbers are flushed to zero.
+#  -assume byterecl: Specifies the units for the OPEN statement as bytes.
+#  -shared-intel:  Load intel libraries dynamically
+#  -i4: 4 byte integers
+#  -r8: 8 byte reals
+#  -g: Generate symbolic debugging info in code
+#  -O2: Level 2 speed optimisations
+#  -diag-disable 6843:
+#       This suppresses the warning: `warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.` of which
+#       there are a lot of instances in the GFDL codebase.
+FFLAGS = $(CPPFLAGS) -fpp -stack_temps -safe_cray_ptr -ftz -assume byterecl -shared-intel -i4 -r8 -g -O2 -diag-disable 6843
+#FFLAGS = $(CPPFLAGS) -fltconsistency -stack_temps -safe_cray_ptr -ftz -shared-intel -assume byterecl -g -O0 -i4 -r8 -check -warn -warn noerrors -debug variable_locations -inline_debug_info -traceback
+FC = $(F90)
+LD = $(F90) $(NETCDF_LIBS)
+#CC = mpicc
+
+LDFLAGS = -lnetcdff -lnetcdf -lmpi -shared-intel
+CFLAGS = -D__IFC
+\end{lstlisting}
+
+
 
 \chapter{Job submission scripts}
 \label{apx:submission}

@@ -12,22 +12,30 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces High performance Linpack benchmark}}{19}{figure.caption.16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Wallclock runtime of the Held-Suarez configuration running at T21 resolution across all processor architectures. The vertical purple bar on the $y$ plane indicates the maximum number of processors available on a node of BCP3.\relax }}{31}{figure.caption.28}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Wallclock runtime of the Grey-Mars configuration across all processor architectures. Vertical coloured bars on the $y$ plane indicate the maximum number of processors available on a node for each cluster.\relax }}{32}{figure.caption.29}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Wallclock runtime of the Held-Suarez configuration running at T42 resolution across all processor architectures. The vertical coloured bars on the $y$ plane indicate the maximum number of processor cores available on a node of each cluster.\relax }}{33}{figure.caption.31}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Wallclock runtime of the Grey-Mars configuration across all processor architectures. Vertical coloured bars on the $y$ plane indicate the maximum number of processors available on a node for each cluster.\relax }}{34}{figure.caption.32}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Wallclock runtime of the Held-Suarez configuration running at T85 resolution across all processor architectures. The vertical coloured bars on the $y$ plane indicate the maximum number of processors available on a node of each cluster.\relax }}{35}{figure.caption.34}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Runtimes for the Held-Suarez and Grey-Mars configurations using different compilers.\relax }}{37}{figure.caption.36}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Cost per grid point for the Held-Suarez and Grey-Mars configurations at T21 and T42 resolutions.\relax }}{38}{figure.caption.37}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Roofline model of Isca on Intel hardware}}{39}{figure.caption.38}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Contiguous and non-contiguous memory access}}{41}{figure.caption.39}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Two-dimensional data layout in Fortran}}{43}{figure.caption.43}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Performance comparison of FFTW and Temperton's FFT}}{45}{figure.caption.46}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Roofline model comparing single and double precision arithmetic}}{46}{figure.caption.47}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Performance comparison of varied precision of floating point numbers}}{47}{figure.caption.48}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Communication matrices for Held-Suarez and Grey-Mars}}{49}{figure.caption.49}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Comparison of the time spent in MPI}}{50}{figure.caption.50}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Parallel speedup relative to serial performance for the Held-Suarez configuration running at T21 resolution}}{33}{figure.caption.29}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Wallclock runtime of the Grey-Mars configuration running at T21 resolution}}{34}{figure.caption.30}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Wallclock runtime of the Held-Suarez configuration running at T42 resolution}}{34}{figure.caption.31}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Speedup of the Held-Suarez configuration running at T42 resolution relative to serial runtime across all processor architectures.\relax }}{35}{figure.caption.32}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Wallclock runtime of the Held-Suarez configuration running at T85 resolution across all processor architectures.\relax }}{35}{figure.caption.33}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Wallclock runtime of the Held-Suarez configuration running at T85 resolution across all processor architectures. \relax }}{36}{figure.caption.34}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Performance comparison using different compilers}}{37}{figure.caption.35}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Speedup for the vectorised and scalar code. \relax }}{38}{figure.caption.36}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Cost per grid point for the Held-Suarez and Grey-Mars configurations at T21 and T42 resolutions.\relax }}{39}{figure.caption.37}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Percentage of runtime spent in MPI across processes}}{40}{figure.caption.38}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Communication matrix for the Grey-Mars model configuration}}{41}{figure.caption.39}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Variation in runtimes for the Held-Suarez configuration running at T42 resolution.\relax }}{42}{figure.caption.40}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Variation in runtimes for the Grey-Mars configuration running at T42 resolution.\relax }}{43}{figure.caption.41}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Roofline model of Isca on Intel hardware}}{44}{figure.caption.42}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Contiguous and non-contiguous memory access}}{47}{figure.caption.43}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Two-dimensional data layout in Fortran}}{49}{figure.caption.47}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Speedup of FFTW relative to Temperton's FFT}}{51}{figure.caption.51}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Performance comparison of FFTW and Temperton's FFT}}{51}{figure.caption.52}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Roofline model comparing single and double precision arithmetic}}{53}{figure.caption.53}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Performance comparison of varied precision of floating point numbers}}{53}{figure.caption.54}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
