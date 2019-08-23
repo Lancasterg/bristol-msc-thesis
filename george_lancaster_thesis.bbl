@@ -185,6 +185,12 @@ S.~Behling, R.~Bell, P.~Farrell, H.~Holthoff, F.~O’Connell, and W.~Weir,
 C.~Carvalho, ``The gap between processor and memory speeds,'' in {\em Proc. of
   IEEE International Conference on Control and Automation}, 2002.
 
+\bibitem{temperton1980fft}
+C.~Temperton, ``Very fast real fourier transform,'' Jan. 1980.
+
+\bibitem{ecmwf2015emoslib}
+S.~Siemen, ``Routines for fast-fourier transform (fft),'' Sep. 2015.
+
 \bibitem{frigo2005design}
 M.~Frigo and S.~G. Johnson, ``The design and implementation of fftw3,'' {\em
   Proceedings of the IEEE}, vol.~93, no.~2, pp.~216--231, 2005.
@@ -201,5 +207,15 @@ J.~W. Cooley and J.~W. Tukey, ``An algorithm for the machine calculation of
 M.~T. Heideman, D.~H. Johnson, and C.~S. Burrus, ``Gauss and the history of the
   fast fourier transform,'' {\em Archive for history of exact sciences},
   vol.~34, no.~3, pp.~265--277, 1985.
+
+\bibitem{gentleman1966fast}
+W.~M. Gentleman and G.~Sande, ``Fast fourier transforms: for fun and profit,''
+  in {\em Proceedings of the November 7-10, 1966, fall joint computer
+  conference}, pp.~563--578, ACM, 1966.
+
+\bibitem{parnas1972criteria}
+D.~L. Parnas, ``On the criteria to be used in decomposing systems into
+  modules,'' {\em Communications of the ACM}, vol.~15, no.~12, pp.~1053--1058,
+  1972.
 
 \end{thebibliography}

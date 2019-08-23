@@ -130,6 +130,7 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Cluster benchmarks}{18}{section.4.1}}
+\newlabel{sec:cluster-bench}{{4.1}{18}{Cluster benchmarks}{section.4.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}STREAM TRIAD}{18}{subsection.4.1.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces STREAM TRIAD benchmark}}{18}{figure.caption.15}}
 \newlabel{fig:bandwidth}{{4.1}{18}{STREAM TRIAD benchmark}{figure.caption.15}{}}
@@ -257,69 +258,89 @@
 \newlabel{fig:variation-comparison-mars-t42}{{7.13}{43}{Variation in runtimes for the Grey-Mars configuration running at T42 resolution.\relax }{figure.caption.41}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.6.2}Conclusions and discussion}{43}{subsection.7.6.2}}
 \@writefile{toc}{\contentsline {section}{\numberline {7.7}Experiment F: Roofline model analysis}{43}{section.7.7}}
+\citation{temperton1980fft}
+\citation{ecmwf2015emoslib}
 \@writefile{lof}{\contentsline {figure}{\numberline {7.14}{\ignorespaces Roofline model of Isca on Intel hardware}}{44}{figure.caption.42}}
 \newlabel{fig:roofline}{{7.14}{44}{Roofline model of Isca on Intel hardware}{figure.caption.42}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.7.1}Conclusions and discussion}{44}{subsection.7.7.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.8}Summary}{44}{section.7.8}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Optimisation}{46}{chapter.8}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:optimiations}{{8}{46}{Optimisation}{chapter.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.1}FFT optimisation}{46}{section.8.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {8.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code\relax }}{46}{table.caption.44}}
-\newlabel{tbl:force-vec}{{8.1}{46}{Runtime spent inside two compute kernels for both scalar and vector code\relax }{table.caption.44}{}}
-\newlabel{fig:Ng1}{{8.1a}{47}{\relax }{figure.caption.43}{}}
-\newlabel{sub@fig:Ng1}{{a}{47}{\relax }{figure.caption.43}{}}
-\newlabel{fig:Ng2}{{8.1b}{47}{\relax }{figure.caption.43}{}}
-\newlabel{sub@fig:Ng2}{{b}{47}{\relax }{figure.caption.43}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Contiguous and non-contiguous memory access}}{47}{figure.caption.43}}
-\newlabel{fig:vector-registers}{{8.1}{47}{Contiguous and non-contiguous memory access}{figure.caption.43}{}}
+\newlabel{fig:Ng1}{{7.15a}{44}{\relax }{figure.caption.43}{}}
+\newlabel{sub@fig:Ng1}{{a}{44}{\relax }{figure.caption.43}{}}
+\newlabel{fig:Ng2}{{7.15b}{45}{\relax }{figure.caption.44}{}}
+\newlabel{sub@fig:Ng2}{{b}{45}{\relax }{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.15}{\ignorespaces Contiguous and non-contiguous memory access}}{45}{figure.caption.44}}
+\newlabel{fig:vector-registers}{{7.15}{45}{Contiguous and non-contiguous memory access}{figure.caption.44}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code\relax }}{45}{table.caption.45}}
+\newlabel{tbl:force-vec}{{7.1}{45}{Runtime spent inside two compute kernels for both scalar and vector code\relax }{table.caption.45}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.8}Summary}{45}{section.7.8}}
 \citation{frigo2005design}
+\citation{frigo2005design}
+\citation{frigo2005design}
+\citation{frigo2003fftw}
 \citation{frigo2005design}
 \citation{frigo2005design}
 \citation{frigo2003fftw}
 \citation{cooley1965algorithm}
 \citation{heideman1985gauss}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.1}FFTW}{48}{subsection.8.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Cooley-Tukey algorithm}{48}{section*.45}}
-\@writefile{toc}{\contentsline {subsubsection}{Implementation}{49}{section*.46}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Two-dimensional data layout in Fortran}}{49}{figure.caption.47}}
-\newlabel{fig:memalign}{{8.2}{49}{Two-dimensional data layout in Fortran}{figure.caption.47}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Verification}{50}{section*.48}}
-\@writefile{toc}{\contentsline {subsubsection}{Methodology}{50}{section*.49}}
-\@writefile{toc}{\contentsline {subsubsection}{Results and discussion}{50}{section*.50}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces Speedup of FFTW relative to Temperton's FFT}}{51}{figure.caption.51}}
-\newlabel{fig:fft-speedup}{{8.3}{51}{Speedup of FFTW relative to Temperton's FFT}{figure.caption.51}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.4}{\ignorespaces Performance comparison of FFTW and Temperton's FFT}}{51}{figure.caption.52}}
-\newlabel{fig:fft-times}{{8.4}{51}{Performance comparison of FFTW and Temperton's FFT}{figure.caption.52}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.2}Floating point precision}{52}{section.8.2}}
-\newlabel{sec:floating-pont}{{8.2}{52}{Floating point precision}{section.8.2}{}}
+\citation{frigo2005design}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Optimisation}{47}{chapter.8}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:optimiations}{{8}{47}{Optimisation}{chapter.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}FFT optimisation}{47}{section.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.1}The fastest Fourier transform in the west}{47}{subsection.8.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Cooley-Tukey algorithm}{47}{section*.46}}
+\citation{gentleman1966fast}
+\citation{frigo2005design}
+\citation{frigo2005design}
+\citation{frigo2005design}
+\citation{frigo2003fftw}
+\@writefile{toc}{\contentsline {subsubsection}{One-dimensional real-data DFT}{48}{section*.47}}
+\newlabel{eq:fftw-forward}{{8.1}{48}{One-dimensional real-data DFT}{equation.8.1.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{One-dimensional complex-data DFT}{48}{section*.48}}
+\newlabel{eq:fftw-backward}{{8.2}{48}{One-dimensional complex-data DFT}{equation.8.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.2}Implementation}{48}{subsection.8.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Two-dimensional data layout in Fortran}}{49}{figure.caption.49}}
+\newlabel{fig:memalign}{{8.1}{49}{Two-dimensional data layout in Fortran}{figure.caption.49}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.3}Verification of results}{49}{subsection.8.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.4}Performance analysis}{49}{subsection.8.1.4}}
+\citation{parnas1972criteria}
+\@writefile{toc}{\contentsline {subsubsection}{Methodology}{50}{section*.50}}
+\@writefile{toc}{\contentsline {subsubsection}{Results}{50}{section*.51}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Speedup of FFTW relative to Temperton's FFT}}{50}{figure.caption.52}}
+\newlabel{fig:fft-speedup}{{8.2}{50}{Speedup of FFTW relative to Temperton's FFT}{figure.caption.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces Performance comparison of FFTW and Temperton's FFT}}{51}{figure.caption.53}}
+\newlabel{fig:fft-times}{{8.3}{51}{Performance comparison of FFTW and Temperton's FFT}{figure.caption.53}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Conclusions and discussion}{51}{section*.54}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Floating point precision}{51}{section.8.2}}
+\newlabel{sec:floating-pont}{{8.2}{51}{Floating point precision}{section.8.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.2.1}Methodology}{52}{subsection.8.2.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.2.2}Results}{52}{subsection.8.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2.3}Discussion}{52}{subsection.8.2.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.5}{\ignorespaces Roofline model comparing single and double precision arithmetic}}{53}{figure.caption.53}}
-\newlabel{default}{{8.5}{53}{Roofline model comparing single and double precision arithmetic}{figure.caption.53}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces Performance comparison of varied precision of floating point numbers}}{53}{figure.caption.54}}
-\newlabel{fig:precision}{{8.6}{53}{Performance comparison of varied precision of floating point numbers}{figure.caption.54}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.3}Load imbalance}{55}{section.8.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.4}Memory Leaks}{55}{section.8.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.5}Conclusions}{55}{section.8.5}}
-\@writefile{toc}{\contentsline {part}{III\hspace  {1em}Reflection, Critical Analysis and Conclusion}{56}{part.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusion and Critical Analysis}{57}{chapter.9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.4}{\ignorespaces Roofline model comparing single and double precision arithmetic}}{52}{figure.caption.55}}
+\newlabel{default}{{8.4}{52}{Roofline model comparing single and double precision arithmetic}{figure.caption.55}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.5}{\ignorespaces Performance comparison of varied precision of floating point numbers}}{53}{figure.caption.56}}
+\newlabel{fig:precision}{{8.5}{53}{Performance comparison of varied precision of floating point numbers}{figure.caption.56}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2.3}Discussion}{53}{subsection.8.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.3}Both optimisations}{54}{section.8.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces default\relax }}{54}{figure.caption.57}}
+\newlabel{default}{{8.6}{54}{default\relax }{figure.caption.57}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.4}Memory Leaks}{54}{section.8.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.5}Conclusions}{54}{section.8.5}}
+\@writefile{toc}{\contentsline {part}{III\hspace  {1em}Reflection, Critical Analysis and Conclusion}{55}{part.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusion and Critical Analysis}{56}{chapter.9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {9.1}Benchmarking and performance analysis}{57}{section.9.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.1}Hardware benchmarking}{57}{subsection.9.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.2}Application benchmarking}{57}{subsection.9.1.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.2}Load imbalance}{57}{section.9.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.3}Optimisation}{58}{section.9.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {9.4}Further work}{58}{section.9.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.1}Benchmarking and performance analysis}{56}{section.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.1}Hardware benchmarking}{56}{subsection.9.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.2}Application benchmarking}{56}{subsection.9.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.2}Load imbalance}{56}{section.9.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.3}Optimisation}{57}{section.9.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.4}Further work}{57}{section.9.4}}
 \bibstyle{ieeetr}
 \bibdata{citations.bib}
-\@writefile{toc}{\contentsline {chapter}{\numberline {10}Reflection}{59}{chapter.10}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {10}Reflection}{58}{chapter.10}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {10.1}Challenges}{59}{section.10.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.1}Challenges}{58}{section.10.1}}
 \bibcite{vallis2018isca}{1}
 \bibcite{penn2017thermal}{2}
 \bibcite{thomson2018atmospheric}{3}
@@ -358,35 +379,39 @@
 \bibcite{arm2019practices}{36}
 \bibcite{behling2001power4}{37}
 \bibcite{carvalho2002gap}{38}
-\bibcite{frigo2005design}{39}
-\bibcite{frigo2003fftw}{40}
-\bibcite{cooley1965algorithm}{41}
-\bibcite{heideman1985gauss}{42}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Porting code changes}{63}{appendix.A}}
+\bibcite{temperton1980fft}{39}
+\bibcite{ecmwf2015emoslib}{40}
+\bibcite{frigo2005design}{41}
+\bibcite{frigo2003fftw}{42}
+\bibcite{cooley1965algorithm}{43}
+\bibcite{heideman1985gauss}{44}
+\bibcite{gentleman1966fast}{45}
+\bibcite{parnas1972criteria}{46}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Porting code changes}{62}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{apdx:porting}{{A}{63}{Porting code changes}{appendix.A}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Isambard}{63}{section.A.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {A.2.1}Error 1}{63}{subsection.A.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {A.2.2}Error 2}{63}{subsection.A.2.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Code listings}{64}{appendix.B}}
+\newlabel{apdx:porting}{{A}{62}{Porting code changes}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Isambard}{62}{section.A.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2.1}Error 1}{62}{subsection.A.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2.2}Error 2}{62}{subsection.A.2.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Code listings}{63}{appendix.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{apdx:codelisting}{{B}{64}{Code listings}{appendix.B}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.1}Grid to Fourier subroutine}{64}{section.B.1}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.1}Code used to perform an FFT using the FFTW library. This subroutine can be found in the new \texttt  {fftw.F90} module, and transforms a 2D data structure from the spacial domain to frequency domain.}{64}{lstlisting.B.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.3}Program to time FFT}{64}{section.B.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}Compile environment scripts}{66}{appendix.C}}
+\newlabel{apdx:codelisting}{{B}{63}{Code listings}{appendix.B}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.1}Grid to Fourier subroutine}{63}{section.B.1}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {B.1}Code used to perform an FFT using the FFTW library. This subroutine can be found in the new \texttt  {fftw.F90} module, and transforms a 2D data structure from the spacial domain to frequency domain.}{63}{lstlisting.B.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.3}Program to time FFT}{63}{section.B.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Compile environment scripts}{65}{appendix.C}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{apdx:compile-env}{{C}{66}{Compile environment scripts}{appendix.C}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.1}Isambard GNU}{66}{section.C.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.3}BCP3 Intel}{66}{section.C.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {D}Job submission scripts}{68}{appendix.D}}
+\newlabel{apdx:compile-env}{{C}{65}{Compile environment scripts}{appendix.C}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.1}Isambard GNU}{65}{section.C.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.3}BCP3 Intel}{65}{section.C.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {D}Job submission scripts}{67}{appendix.D}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{apx:submission}{{D}{68}{Job submission scripts}{appendix.D}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.1}BCP3 (PBS)}{68}{section.D.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.3}BluePebble (PBS Pro)}{68}{section.D.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.5}Isambard (PBS Pro)}{68}{section.D.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.7}BCP4 (SLURM)}{68}{section.D.7}}
+\newlabel{apx:submission}{{D}{67}{Job submission scripts}{appendix.D}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.1}BCP3 (PBS)}{67}{section.D.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.3}BluePebble (PBS Pro)}{67}{section.D.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.5}Isambard (PBS Pro)}{67}{section.D.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.7}BCP4 (SLURM)}{67}{section.D.7}}

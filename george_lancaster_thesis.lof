@@ -27,13 +27,14 @@
 \contentsline {figure}{\numberline {7.12}{\ignorespaces Variation in runtimes for the Held-Suarez configuration running at T42 resolution.\relax }}{42}{figure.caption.40}
 \contentsline {figure}{\numberline {7.13}{\ignorespaces Variation in runtimes for the Grey-Mars configuration running at T42 resolution.\relax }}{43}{figure.caption.41}
 \contentsline {figure}{\numberline {7.14}{\ignorespaces Roofline model of Isca on Intel hardware}}{44}{figure.caption.42}
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Contiguous and non-contiguous memory access}}{45}{figure.caption.44}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Contiguous and non-contiguous memory access}}{47}{figure.caption.43}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Two-dimensional data layout in Fortran}}{49}{figure.caption.47}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Speedup of FFTW relative to Temperton's FFT}}{51}{figure.caption.51}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Performance comparison of FFTW and Temperton's FFT}}{51}{figure.caption.52}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Roofline model comparing single and double precision arithmetic}}{53}{figure.caption.53}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Performance comparison of varied precision of floating point numbers}}{53}{figure.caption.54}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Two-dimensional data layout in Fortran}}{49}{figure.caption.49}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Speedup of FFTW relative to Temperton's FFT}}{50}{figure.caption.52}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Performance comparison of FFTW and Temperton's FFT}}{51}{figure.caption.53}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Roofline model comparing single and double precision arithmetic}}{52}{figure.caption.55}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Performance comparison of varied precision of floating point numbers}}{53}{figure.caption.56}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces default\relax }}{54}{figure.caption.57}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

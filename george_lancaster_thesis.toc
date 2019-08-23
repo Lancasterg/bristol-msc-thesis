@@ -93,44 +93,48 @@
 \contentsline {subsection}{\numberline {7.6.2}Conclusions and discussion}{43}{subsection.7.6.2}
 \contentsline {section}{\numberline {7.7}Experiment F: Roofline model analysis}{43}{section.7.7}
 \contentsline {subsection}{\numberline {7.7.1}Conclusions and discussion}{44}{subsection.7.7.1}
-\contentsline {section}{\numberline {7.8}Summary}{44}{section.7.8}
-\contentsline {chapter}{\numberline {8}Optimisation}{46}{chapter.8}
-\contentsline {section}{\numberline {8.1}FFT optimisation}{46}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}FFTW}{48}{subsection.8.1.1}
-\contentsline {subsubsection}{Cooley-Tukey algorithm}{48}{section*.45}
-\contentsline {subsubsection}{Implementation}{49}{section*.46}
-\contentsline {subsubsection}{Verification}{50}{section*.48}
-\contentsline {subsubsection}{Methodology}{50}{section*.49}
-\contentsline {subsubsection}{Results and discussion}{50}{section*.50}
-\contentsline {section}{\numberline {8.2}Floating point precision}{52}{section.8.2}
+\contentsline {section}{\numberline {7.8}Summary}{45}{section.7.8}
+\contentsline {chapter}{\numberline {8}Optimisation}{47}{chapter.8}
+\contentsline {section}{\numberline {8.1}FFT optimisation}{47}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}The fastest Fourier transform in the west}{47}{subsection.8.1.1}
+\contentsline {subsubsection}{Cooley-Tukey algorithm}{47}{section*.46}
+\contentsline {subsubsection}{One-dimensional real-data DFT}{48}{section*.47}
+\contentsline {subsubsection}{One-dimensional complex-data DFT}{48}{section*.48}
+\contentsline {subsection}{\numberline {8.1.2}Implementation}{48}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Verification of results}{49}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Performance analysis}{49}{subsection.8.1.4}
+\contentsline {subsubsection}{Methodology}{50}{section*.50}
+\contentsline {subsubsection}{Results}{50}{section*.51}
+\contentsline {subsubsection}{Conclusions and discussion}{51}{section*.54}
+\contentsline {section}{\numberline {8.2}Floating point precision}{51}{section.8.2}
 \contentsline {subsection}{\numberline {8.2.1}Methodology}{52}{subsection.8.2.1}
 \contentsline {subsection}{\numberline {8.2.2}Results}{52}{subsection.8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}Discussion}{52}{subsection.8.2.3}
-\contentsline {section}{\numberline {8.3}Load imbalance}{55}{section.8.3}
-\contentsline {section}{\numberline {8.4}Memory Leaks}{55}{section.8.4}
-\contentsline {section}{\numberline {8.5}Conclusions}{55}{section.8.5}
-\contentsline {part}{III\hspace {1em}Reflection, Critical Analysis and Conclusion}{56}{part.3}
-\contentsline {chapter}{\numberline {9}Conclusion and Critical Analysis}{57}{chapter.9}
-\contentsline {section}{\numberline {9.1}Benchmarking and performance analysis}{57}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Hardware benchmarking}{57}{subsection.9.1.1}
-\contentsline {subsection}{\numberline {9.1.2}Application benchmarking}{57}{subsection.9.1.2}
-\contentsline {section}{\numberline {9.2}Load imbalance}{57}{section.9.2}
-\contentsline {section}{\numberline {9.3}Optimisation}{58}{section.9.3}
-\contentsline {section}{\numberline {9.4}Further work}{58}{section.9.4}
-\contentsline {chapter}{\numberline {10}Reflection}{59}{chapter.10}
-\contentsline {section}{\numberline {10.1}Challenges}{59}{section.10.1}
-\contentsline {chapter}{\numberline {A}Porting code changes}{63}{appendix.A}
-\contentsline {section}{\numberline {A.1}Isambard}{63}{section.A.1}
-\contentsline {subsection}{\numberline {A.2.1}Error 1}{63}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Error 2}{63}{subsection.A.2.2}
-\contentsline {chapter}{\numberline {B}Code listings}{64}{appendix.B}
-\contentsline {section}{\numberline {B.1}Grid to Fourier subroutine}{64}{section.B.1}
-\contentsline {section}{\numberline {B.3}Program to time FFT}{64}{section.B.3}
-\contentsline {chapter}{\numberline {C}Compile environment scripts}{66}{appendix.C}
-\contentsline {section}{\numberline {C.1}Isambard GNU}{66}{section.C.1}
-\contentsline {section}{\numberline {C.3}BCP3 Intel}{66}{section.C.3}
-\contentsline {chapter}{\numberline {D}Job submission scripts}{68}{appendix.D}
-\contentsline {section}{\numberline {D.1}BCP3 (PBS)}{68}{section.D.1}
-\contentsline {section}{\numberline {D.3}BluePebble (PBS Pro)}{68}{section.D.3}
-\contentsline {section}{\numberline {D.5}Isambard (PBS Pro)}{68}{section.D.5}
-\contentsline {section}{\numberline {D.7}BCP4 (SLURM)}{68}{section.D.7}
+\contentsline {subsection}{\numberline {8.2.3}Discussion}{53}{subsection.8.2.3}
+\contentsline {section}{\numberline {8.3}Both optimisations}{54}{section.8.3}
+\contentsline {section}{\numberline {8.4}Memory Leaks}{54}{section.8.4}
+\contentsline {section}{\numberline {8.5}Conclusions}{54}{section.8.5}
+\contentsline {part}{III\hspace {1em}Reflection, Critical Analysis and Conclusion}{55}{part.3}
+\contentsline {chapter}{\numberline {9}Conclusion and Critical Analysis}{56}{chapter.9}
+\contentsline {section}{\numberline {9.1}Benchmarking and performance analysis}{56}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Hardware benchmarking}{56}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Application benchmarking}{56}{subsection.9.1.2}
+\contentsline {section}{\numberline {9.2}Load imbalance}{56}{section.9.2}
+\contentsline {section}{\numberline {9.3}Optimisation}{57}{section.9.3}
+\contentsline {section}{\numberline {9.4}Further work}{57}{section.9.4}
+\contentsline {chapter}{\numberline {10}Reflection}{58}{chapter.10}
+\contentsline {section}{\numberline {10.1}Challenges}{58}{section.10.1}
+\contentsline {chapter}{\numberline {A}Porting code changes}{62}{appendix.A}
+\contentsline {section}{\numberline {A.1}Isambard}{62}{section.A.1}
+\contentsline {subsection}{\numberline {A.2.1}Error 1}{62}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Error 2}{62}{subsection.A.2.2}
+\contentsline {chapter}{\numberline {B}Code listings}{63}{appendix.B}
+\contentsline {section}{\numberline {B.1}Grid to Fourier subroutine}{63}{section.B.1}
+\contentsline {section}{\numberline {B.3}Program to time FFT}{63}{section.B.3}
+\contentsline {chapter}{\numberline {C}Compile environment scripts}{65}{appendix.C}
+\contentsline {section}{\numberline {C.1}Isambard GNU}{65}{section.C.1}
+\contentsline {section}{\numberline {C.3}BCP3 Intel}{65}{section.C.3}
+\contentsline {chapter}{\numberline {D}Job submission scripts}{67}{appendix.D}
+\contentsline {section}{\numberline {D.1}BCP3 (PBS)}{67}{section.D.1}
+\contentsline {section}{\numberline {D.3}BluePebble (PBS Pro)}{67}{section.D.3}
+\contentsline {section}{\numberline {D.5}Isambard (PBS Pro)}{67}{section.D.5}
+\contentsline {section}{\numberline {D.7}BCP4 (SLURM)}{67}{section.D.7}

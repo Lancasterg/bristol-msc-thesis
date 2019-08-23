@@ -17,6 +17,13 @@ Warning--entry type for "gfdl2019fms" isn't style-file defined
 --line 798 of file citations.bib
 Warning--entry type for "lancaster2019github" isn't style-file defined
 --line 818 of file citations.bib
+I was expecting a `,' or a `}'---line 839 of file citations.bib
+ : 
+ : journal={Special topics of applied mathematics: Functional Analysis, Numerical Analysis and Optimisation},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "ecmwf2015emoslib" isn't style-file defined
+--line 842 of file citations.bib
 Warning--empty institution in balaji2002fms
 Warning--there's a number but no series in bjerknes1910dynamic
 Warning--empty institution in chris2011avx
@@ -25,46 +32,47 @@ Warning--empty institution in thunderprocessor2018brief
 Warning--empty journal in dongarra2008linpack
 Warning--empty institution in arm2019practices
 Warning--empty institution in behling2001power4
+Warning--empty journal in temperton1980fft
 Warning--empty journal in frigo2003fftw
-You've used 42 entries,
+You've used 46 entries,
             1876 wiz_defined-function locations,
-            717 strings with 11353 characters,
-and the built_in function-call counts, 10797 in all, are:
-= -- 1007
-> -- 540
+            739 strings with 11810 characters,
+and the built_in function-call counts, 11749 in all, are:
+= -- 1106
+> -- 560
 < -- 0
-+ -- 199
-- -- 157
-* -- 839
-:= -- 1599
-add.period$ -- 45
-call.type$ -- 42
-change.case$ -- 45
++ -- 208
+- -- 162
+* -- 898
+:= -- 1722
+add.period$ -- 49
+call.type$ -- 46
+change.case$ -- 49
 chr.to.int$ -- 0
-cite$ -- 51
-duplicate$ -- 500
-empty$ -- 968
-format.name$ -- 157
-if$ -- 2549
+cite$ -- 56
+duplicate$ -- 552
+empty$ -- 1071
+format.name$ -- 162
+if$ -- 2786
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 32
-newline$ -- 132
-num.names$ -- 42
-pop$ -- 139
+int.to.str$ -- 46
+missing$ -- 35
+newline$ -- 144
+num.names$ -- 46
+pop$ -- 158
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 362
+skip$ -- 401
 stack$ -- 0
-substring$ -- 604
-swap$ -- 193
+substring$ -- 676
+swap$ -- 213
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 102
-width$ -- 44
-write$ -- 397
-(There were 16 warnings)
+warning$ -- 10
+while$ -- 112
+width$ -- 48
+write$ -- 432
+(There was 1 error message)
