@@ -28,7 +28,7 @@
 
 @book{fortran1991standard,
   title={Fortran 90 ISO/IEC 1539 : 1991},
-  author={American National Standard Programming},
+  author={{American National Standard Programming}},
   year={1991},
   publisher={Carnegie}
 }
@@ -54,7 +54,7 @@
   }
 
 @online{ xeon2680v4,
-	author={Intel Corporation},
+	author={{Intel Corporation}},
 	year={2019},
 	title={Intel Xeon Processor E5-2680 v4 product specification},
 	url={https://ark.intel.com/content/www/us/en/ark/products/91754/intel-xeon-processor-e5-2680-v4-35m-cache-2-40-ghz.html},
@@ -63,7 +63,7 @@
 }
 % Info on spatial resolution 
  @online{top500,
-  author = {The Top 500 Project},
+  author = {{The Top 500 Project}},
   year={2018},
   title = {November 2018 - The 52nd edition of the TOP500 list},
   url={https://www.top500.org/lists/2018/11/},
@@ -73,7 +73,7 @@
 
 % Isca Github Repo
  @online{isca2019github,
-  author = {Execlim},
+  author = {{Execlim}},
   year={2018},
   title = {Isca: Idealized GCM from the University of Exeter },
   url={https://github.com/ExeClim/Isca},
@@ -111,7 +111,7 @@
 
 % Arm blade server brief
 @techreport{thunderserver2018brief,
-     author={Cavium},
+     author={{Cavium}},
      title={CN99XX Chassis Development Kit (CDK) Product Brief}, year={2018},
      source={https://www.marvell.com/documents/839obcddz6y6p8f40gl1/},
      publisher={Cavium},
@@ -158,7 +158,7 @@
  }
 
 @techreport{intel2019avx,
-    Author = {Intel Corporation},
+    Author = {{Intel Corporation}},
     Title = { Intel Architecture Instruction Set Extensions and Future Features Programming Reference},
     Year = {2019},
     Month = {Apr.},
@@ -783,7 +783,7 @@ month = {Jan.},
 title = {HPL – a Portable Implementation of the High-Performance Linpack Benchmark for Distributed-Memory Computers}
 }
   
-  
+  %%%% Held-Suarez stuff
 @article{held1994proposal,
   title={A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models},
   author={Held, Isaac M and Suarez, Max J},
@@ -795,10 +795,42 @@ title = {HPL – a Portable Implementation of the High-Performance Linpack Bench
   publisher={American Meteorological Society}
 }
 
+@article{wan2008ensemble,
+  title={Ensemble Held-Suarez test with a spectral transform model: Variability, sensitivity, and convergence},
+  author={Wan, Hui and Giorgetta, Marco A and Bonaventura, Luca},
+  journal={Monthly Weather Review},
+  volume={136},
+  number={3},
+  pages={1075--1092},
+  year={2008}
+}
+@article{duben2014benchmark,
+  title={Benchmark tests for numerical weather forecasts on inexact hardware},
+  author={D{\"u}ben, Peter D and Palmer, TN},
+  journal={Monthly Weather Review},
+  volume={142},
+  number={10},
+  pages={3809--3829},
+  year={2014}
+}
+
+@article{taylor1998performance,
+  title={Performance of a spectral element atmospheric model (SEAM) on the HP Exemplar SPP2000},
+  author={Taylor, Mark and Loft, Richard and Tribbia, Joseph},
+  journal={NCAR TN},
+  volume={439},
+  year={1998}
+}
+
+
+
+
+
+
 @online{ gfdl2019fms,
   author = {GFDL},
   year={2019},
-  title = {STREAM memory-bandwidth benchmark},
+  title = {Flexible Modeling System (FMS)},
   url={https://www.gfdl.noaa.gov/fms/},
   month={Jul.},
   lastaccessed={August 11, 2019}
@@ -835,7 +867,7 @@ title = {HPL – a Portable Implementation of the High-Performance Linpack Bench
 author = {Temperton, C},
 year = {1980},
 month = {Jan.},
-title = {Very Fast Real Fourier Transform}
+title = {Very Fast Real Fourier Transform},
 journal={Special topics of applied mathematics: Functional Analysis, Numerical Analysis and Optimisation},
 }
 
@@ -869,6 +901,361 @@ journal={Special topics of applied mathematics: Functional Analysis, Numerical A
   publisher={ACM}
 }
 
+@article{aa2011armv8,
+  title={Armv8 instruction set overview},
+  author={AA Group and others},
+  journal={vol. PRD03-GENC-010197},
+  volume={15},
+  number={11},
+  year={2011}
+}
+
+@online{reinders2015intel,
+  title={Intel AVX-512 Instructions},
+  author={Reinders, J},
+  journal={vol. PRD03-GENC-010197},
+  volume={15},
+  number={11},
+  year={2013}
+}
+
+@online{reinders2013intel,
+  author={Reinders, J},
+  year={2013},
+  title = {Intel AVX-512 Instructions},
+  url={https://software.intel.com/en-us/articles/intel-avx-512-instructions},
+  month={Jul.},
+  lastaccessed={August 23, 2019}
+  }
+
+@article{goldberg1991every,
+  title={What every computer scientist should know about floating-point arithmetic},
+  author={Goldberg, David},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={23},
+  number={1},
+  pages={5--48},
+  year={1991},
+  publisher={ACM}
+}
+
+@book{ieee1985ieee,
+  title={IEEE standard for binary floating-point arithmetic},
+  author={{IEEE Computer Society. Standards Committee and American National Standards Institute}},
+  volume={754},
+  year={1985},
+  publisher={IEEE}
+}
+
+@article{kumar1994analyzing,
+  title={Analyzing scalability of parallel algorithms and architectures},
+  author={Kumar, Vijay P. and Gupta, Anshul},
+  journal={Journal of parallel and distributed computing},
+  volume={22},
+  number={3},
+  pages={379--391},
+  year={1994},
+  publisher={Elsevier}
+}
+
+% MPI standard
+@techreport{mpi2015standard,
+    author={Message Passing Interface Forum},
+    title={MPI: A Message-Passing Interface StandardVersion 3.1},
+    year={2015},
+    source={https://www.mpi-forum.org/docs/mpi-3.1/mpi31-report.pdf},
+    publisher={University of Tennessee},
+    address={Knoxville, TN, USA}
+}
+
+
+@techreport{grun2010introduction,
+  title={Introduction to InfiniBand},
+  author={Grun, Paul},
+  source={https://www.mellanox.com/pdf/whitepapers/IB_Intro_WP_190.pdf},
+  journal={White paper, InfiniBand Trade Association},
+  year={2010},
+  address={Santa Clara,  CA, USA}
+}
+
+
+@techreport{intel2017avx,
+  title={Intel Architecture Instruction Set Extensions and Future Features Programming Reference},
+  author={{Intel Corporation}},
+  source={https://software.intel.com/sites/default/files/managed/c5/15/architecture-instruction-set-extensions-programming-reference.pdf},
+  journal={White paper, InfiniBand Trade Association},
+  year={2019},
+  month={May},
+  address={Santa Clara,  CA, USA}
+}
+
+
+@article{laskar1993chaotic,
+  title={The chaotic obliquity of the planets},
+  author={Laskar, Jacques and Robutel, Philippe},
+  journal={Nature},
+  volume={361},
+  number={6413},
+  pages={608},
+  year={1993},
+  publisher={Nature Publishing Group}
+}
+
+@article{bader2008climate,
+  title={Climate models: an assessment of strengths and limitations},
+  author={Bader, David C and Covey, Curtis and Gutowski Jr, William J and Held, Isaac M and Miller, Ronald L and Tokmakian, Robin T and Zhang, Minghua H and others},
+  year={2008},
+  publisher={US Department of Energy Publications}
+}
+
+
+@inproceedings{mcintosh2017tealeaf,
+  title={TeaLeaf: a mini-application to enable design-space explorations for iterative sparse linear solvers},
+  author={McIntosh-Smith, Simon and Martineau, Matthew and Deakin, Tom and Pawelczak, Grzegorz and Gaudin, Wayne and Garrett, Paul and Liu, Wei and Smedley-Stevenson, Richard and Beckingsale, David},
+  booktitle={2017 IEEE International Conference on Cluster Computing (CLUSTER)},
+  pages={842--849},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{mallinson2013cloverleaf,
+  title={Cloverleaf: Preparing hydrodynamics codes for exascale},
+  author={Mallinson, AC and Beckingsale, David A and Gaudin, WP and Herdman, JA and Levesque, JM and Jarvis, Stephen A},
+  journal={The Cray User Group},
+  volume={2013},
+  year={2013}
+}
+
+@article{rew1990netcdf,
+  title={NetCDF: an interface for scientific data access},
+  author={Rew, Russ and Davis, Glenn},
+  journal={IEEE computer graphics and applications},
+  volume={10},
+  number={4},
+  pages={76--82},
+  year={1990},
+  publisher={IEEE}
+}
+
+
+@article{singleton1967method,
+  title={A method for computing the fast Fourier transform with auxiliary memory and limited high-speed storage},
+  author={Singleton, R},
+  journal={IEEE Transactions on Audio and Electroacoustics},
+  volume={15},
+  number={2},
+  pages={91--98},
+  year={1967},
+  publisher={IEEE}
+}
+
+@article{sorensen1987real,
+  title={Real-valued fast Fourier transform algorithms},
+  author={Sorensen, H V and Jones, D and Heideman, Michael and Burrus, C},
+  journal={IEEE Transactions on acoustics, speech, and signal processing},
+  volume={35},
+  number={6},
+  pages={849--863},
+  year={1987},
+  publisher={IEEE}
+}
+
+@inproceedings{frigo1998fftw,
+  title={FFTW: An adaptive software architecture for the FFT},
+  author={Frigo, Matteo and Johnson, Steven G},
+  booktitle={Proceedings of the 1998 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP'98 (Cat. No. 98CH36181)},
+  volume={3},
+  pages={1381--1384},
+  year={1998},
+  organization={IEEE}
+}
+
+@article{evans2012evaluating,
+  title={Evaluating the performance of a WRF physics ensemble over South-East Australia},
+  author={Evans, Jason P and Ekstr{\"o}m, Marie and Ji, Fei},
+  journal={Climate Dynamics},
+  volume={39},
+  number={6},
+  pages={1241--1258},
+  year={2012},
+  publisher={Springer}
+}
+
+
+@article{okimoto2009high,
+  title={High-performance drug discovery: computational screening by combining docking and molecular dynamics simulations},
+  author={Okimoto, Noriaki and Futatsugi, Noriyuki and Fuji, Hideyoshi and Suenaga, Atsushi and Morimoto, Gentaro and Yanai, Ryoko and Ohno, Yousuke and Narumi, Tetsu and Taiji, Makoto},
+  journal={PLoS computational biology},
+  volume={5},
+  number={10},
+  pages={e1000528},
+  year={2009},
+  publisher={Public Library of Science}
+}
+
+@inproceedings{jouppi2017datacenter,
+  title={In-datacenter performance analysis of a tensor processing unit},
+  author={Jouppi, Norman P and Young, Cliff and Patil, Nishant and Patterson, David and Agrawal, Gaurav and Bajwa, Raminder and Bates, Sarah and Bhatia, Suresh and Boden, Nan and Borchers, Al and others},
+  booktitle={2017 ACM/IEEE 44th Annual International Symposium on Computer Architecture},
+  pages={1--12},
+  year={2017},
+  organization={IEEE}
+}
+
+@misc{bretherton2012national,
+  title={A national strategy for advancing climate modeling},
+  author={Bretherton, Chris and Balaji, V and Delworth, T and Dickinson, RE and Edmonds, JA and Famiglietti, JS and Smarr, LL},
+  year={2012},
+  publisher={Washington, DC: The National Academies Press}
+}
+
+@incollection{bourke1988spectral,
+  title={Spectral methods in global climate and weather prediction models},
+  author={Bourke, William},
+  booktitle={Physically-Based Modelling and Simulation of Climate and Climatic Change},
+  pages={169--220},
+  year={1988},
+  publisher={Springer}
+}
+
+
+@article{orszag1974fourier,
+  title={Fourier series on spheres},
+  author={Orszag, Steven A},
+  journal={Monthly Weather Review},
+  volume={102},
+  number={1},
+  pages={56--75},
+  year={1974},
+  doi={10.1175/1520-0493(1974)102<0056\%3AFSOS>2.0.CO\%3B2}
+}
+
+@book{girard1982short,
+  title={Short and medium range forecast differences between a spectral and grid point model: An extensive quasi-operational comparison},
+  author={Girard, C and Jarraud, M},
+  year={1982},
+  publisher={European Centre for Medium Range Weather Forecasts},
+  doi={10.1007/BF01027467}
+}
+@book{goosse2010introduction,
+  title={Introduction to climate dynamics and climate modeling},
+  author={Goosse, Hugues and Barriat, Pierre-Yves and Loutre, Marie-France and Zunz, Violette},
+  year={2010},
+  publisher={Centre de recherche sur la Terre et le climat Georges Lema{\^\i}tre-UCLouvain}
+}
+@article{van2011numpy,
+  title={The NumPy array: a structure for efficient numerical computation},
+  author={Van Der Walt, Stefan and Colbert, S Chris and Varoquaux, Gael},
+  journal={Computing in Science \& Engineering},
+  volume={13},
+  number={2},
+  pages={22},
+  year={2011},
+  publisher={IEEE Computer Society}
+}
+
+@article{peterson2009f2py,
+  title={F2PY: a tool for connecting Fortran and Python programs},
+  author={Peterson, Pearu},
+  journal={International Journal of Computational Science and Engineering},
+  volume={4},
+  number={4},
+  pages={296--305},
+  year={2009},
+  publisher={Inderscience Publishers}
+}
+@online{wardf90nml,
+  title={f90nml-A Python module for Fortran namelists},
+  author={Ward, Marshall L},
+  year={2019},
+  month={Jun.},
+  lastaccessed={Aug 25, 2019},
+  url={https://pypi.org/project/f90nml/}
+}
+
+@online{ronacher2008jinja2,
+  title={Jinja2 Documentation},
+  author={Ronacher, Armin},
+  year={2017},
+  month={Sep.},
+  lastaccessed={Aug 25, 2019},
+  url={https://buildmedia.readthedocs.org/media/pdf/jinja2/latest/jinja2.pdf} 
+}
+
+@online{moffat2017sh,
+  title={sh: a full-fledged subprocess replacement for Python},
+  author={Moffat, Andrew},
+  year={2017},
+  month={Jun.},
+  lastaccessed={Aug 25, 2019},
+  url={https://pypi.org/project/sh/} 
+}
+
+
+@article{flynn1972some,
+  title={Some computer organizations and their effectiveness},
+  author={Flynn, Michael J},
+  journal={IEEE transactions on computers},
+  volume={100},
+  number={9},
+  pages={948--960},
+  year={1972},
+  publisher={IEEE}
+}
+
+@article{gottschlag2018mechanism,
+  title={Mechanism to Mitigate AVX-Induced Frequency Reduction},
+  author={Gottschlag, Mathias and Bellosa, Frank},
+  journal={arXiv preprint arXiv:1901.04982},
+  year={2018}
+}
+
+@online{puma2018,
+  title={Program to compare any variables common to two NetCDF files.},
+  author={Johnson, M and Williams, G},
+  year={2009},
+  month={Jun.},
+  lastaccessed={Aug 25, 2019},
+  url={https://puma.nerc.ac.uk/svn/UniCiCles_svn/UniCiCles/trunk/glimmer-cism/utils/} 
+}
+
+@book{meeus1991astronomical,
+  title={{Astronomical algorithms}},
+  author={Meeus, Jean H},
+  year={1991},
+  publisher={Willmann-Bell, Incorporated}
+}
+
+@techreport{milfeld2014hpc,
+    author={Milfeld, Kent},
+    title={Parallel Optimization for HPC}, 
+    year={2014},
+    source={https://portal.tacc.utexas.edu/documents/13601/1055052/Parallel_Comp_Stampede-Opt_Scale_3.pdf/d68d3c72-4af6-4847-bb78-9a68f7c3bf1c},
+    publisher={Texas Advanced Computing Center},
+    address={Austin, TX, USA}
+}
+
+@inproceedings{yoshida2018fujitsu,
+  title={Fujitsu high performance cpu for the post-k computer},
+  author={Yoshida, Toshio},
+  booktitle={Hot Chips 30 Symposium (HCS), Series Hot Chips},
+  volume={18},
+  year={2018}
+}
+
+@article{schmunk2015panoply,
+  title={Panoply netcdf, hdf and grib data viewer},
+  author={Schmunk, Robert B},
+  journal={National Aeronautics and Space Administration-Goddard Institute for Space Studies},
+  year={2015}
+}
+
+@book{lahey1994fortran,
+  title={Fortran 90 programming},
+  author={Lahey, Thomas M and Ellis, TM},
+  year={1994},
+  publisher={Addison-Wesley Longman Publishing Co., Inc.}
+}
 
 
 

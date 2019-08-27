@@ -7,6 +7,54 @@ G.~K. Vallis, G.~Colyer, R.~Geen, E.~Gerber, M.~Jucker, P.~Maher, A.~Paterson,
   levels of complexity,'' {\em Geoscientific Model Development}, vol.~11,
   pp.~843--859, Oct. 2018.
 
+\bibitem{calore2018advanced}
+E.~Calore, F.~Mantovani, and D.~Ruiz, ``Advanced performance analysis of hpc
+  workloads on cavium thunderx,'' in {\em 2018 International Conference on High
+  Performance Computing \& Simulation (HPCS)}, pp.~375--382, IEEE, Jul. 2018.
+
+\bibitem{mcintosh2018performance}
+S.~McIntosh-Smith, J.~Price, T.~Deakin, and A.~Poenaru, ``A performance
+  analysis of the first generation of hpc-optimized arm processors,'' {\em
+  Concurrency and Computation: Practice and Experience}, p.~e5110, May. 2018.
+
+\bibitem{okimoto2009high}
+N.~Okimoto, N.~Futatsugi, H.~Fuji, A.~Suenaga, G.~Morimoto, R.~Yanai, Y.~Ohno,
+  T.~Narumi, and M.~Taiji, ``High-performance drug discovery: computational
+  screening by combining docking and molecular dynamics simulations,'' {\em
+  PLoS computational biology}, vol.~5, no.~10, p.~e1000528, 2009.
+
+\bibitem{jouppi2017datacenter}
+N.~P. Jouppi, C.~Young, N.~Patil, D.~Patterson, G.~Agrawal, R.~Bajwa, S.~Bates,
+  S.~Bhatia, N.~Boden, A.~Borchers, {\em et~al.}, ``In-datacenter performance
+  analysis of a tensor processing unit,'' in {\em 2017 ACM/IEEE 44th Annual
+  International Symposium on Computer Architecture}, pp.~1--12, IEEE, 2017.
+
+\bibitem{bretherton2012national}
+C.~Bretherton, V.~Balaji, T.~Delworth, R.~Dickinson, J.~Edmonds,
+  J.~Famiglietti, and L.~Smarr, ``A national strategy for advancing climate
+  modeling,'' 2012.
+
+\bibitem{asanovic2006landscape}
+K.~Asanović, R.~Bodik, B.~C. Catanzaro, J.~J. Gebis, P.~Husbands, K.~Keutzer,
+  D.~A. Patterson, W.~L. Plishker, J.~Shalf, S.~W. Williams, and K.~A. Yelick,
+  ``The landscape of parallel computing research: A view from berkeley,'' Tech.
+  Rep. UCB/EECS-2006-183, EECS Department, University of California, Berkley
+  CA, USA, Dec 2006.
+
+\bibitem{becker1995beowulf}
+D.~J. Becker, T.~Sterling, D.~Savarese, J.~E. Dorband, U.~A. Ranawak, and C.~V.
+  Packer, ``Beowulf: A parallel workstation for scientific computation,'' in
+  {\em Proceedings, International Conference on Parallel Processing}, vol.~95,
+  pp.~11--14, 1995.
+
+\bibitem{evans2012evaluating}
+J.~P. Evans, M.~Ekstr{\"o}m, and F.~Ji, ``Evaluating the performance of a wrf
+  physics ensemble over south-east australia,'' {\em Climate Dynamics},
+  vol.~39, no.~6, pp.~1241--1258, 2012.
+
+\bibitem{isca2019github}
+{Execlim}, ``Isca: Idealized gcm from the university of exeter,'' Dec. 2018.
+
 \bibitem{penn2017thermal}
 J.~Penn and G.~K. Vallis, ``The thermal phase curve offset on tidally and
   nontidally locked exoplanets: A shallow water model,'' {\em The Astrophysical
@@ -40,7 +88,7 @@ R.~Farneti and G.~K. Vallis, ``An intermediate complexity climate model
   Model Development}, vol.~2, pp.~73--88, Jul. 2009.
 
 \bibitem{gfdl2019fms}
-GFDL, ``Stream memory-bandwidth benchmark,'' Jul. 2019.
+GFDL, ``Flexible modeling system (fms),'' Jul. 2019.
 
 \bibitem{bjerknes1910dynamic}
 V.~Bjerknes, J.~W. Sandström, and O.~D. Devik, {\em Dynamic meteorology and
@@ -56,12 +104,110 @@ C.~L. Godske and V.~Bjerknes, {\em Dynamic meteorology and weather
   forecasting}, vol.~605.
 \newblock American Meteorological Society, 1957.
 
+\bibitem{mcintosh2014performance}
+S.~McIntosh-Smith, M.~Boulton, D.~Curran, and J.~Price, ``On the performance
+  portability of structured grid codes on many-core computer architectures,''
+  in {\em International Supercomputing Conference}, pp.~53--75, Springer, Jun.
+  2014.
+
+\bibitem{bourke1988spectral}
+W.~Bourke, ``Spectral methods in global climate and weather prediction
+  models,'' in {\em Physically-Based Modelling and Simulation of Climate and
+  Climatic Change}, pp.~169--220, Springer, 1988.
+
+\bibitem{orszag1974fourier}
+S.~A. Orszag, ``Fourier series on spheres,'' {\em Monthly Weather Review},
+  vol.~102, no.~1, pp.~56--75, 1974.
+
 \bibitem{bart1998coordinate}
 B.~Geerts, ``Coordinate systems of numerical weather prediction models,'' Apr.
   1998.
 
-\bibitem{isca2019github}
-Execlim, ``Isca: Idealized gcm from the university of exeter,'' Dec. 2018.
+\bibitem{goosse2010introduction}
+H.~Goosse, P.-Y. Barriat, M.-F. Loutre, and V.~Zunz, {\em Introduction to
+  climate dynamics and climate modeling}.
+\newblock Centre de recherche sur la Terre et le climat Georges
+  Lema{\^\i}tre-UCLouvain, 2010.
+
+\bibitem{colella2007performance}
+P.~Colella, J.~Bell, N.~Keen, T.~Ligocki, M.~Lijewski, and B.~Van~Straalen,
+  ``Performance and scaling of locally-structured grid methods for partial
+  differential equations,'' in {\em Journal of Physics: Conference Series},
+  vol.~78, p.~012013, IOP Publishing, Jun. 2007.
+
+\bibitem{bader2008climate}
+D.~C. Bader, C.~Covey, W.~J. Gutowski~Jr, I.~M. Held, R.~L. Miller, R.~T.
+  Tokmakian, M.~H. Zhang, {\em et~al.}, ``Climate models: an assessment of
+  strengths and limitations,'' 2008.
+
+\bibitem{singleton1967method}
+R.~Singleton, ``A method for computing the fast fourier transform with
+  auxiliary memory and limited high-speed storage,'' {\em IEEE Transactions on
+  Audio and Electroacoustics}, vol.~15, no.~2, pp.~91--98, 1967.
+
+\bibitem{cooley1965algorithm}
+J.~W. Cooley and J.~W. Tukey, ``An algorithm for the machine calculation of
+  complex fourier series,'' {\em Mathematics of computation}, vol.~19, no.~90,
+  pp.~297--301, 1965.
+
+\bibitem{sorensen1987real}
+H.~V. Sorensen, D.~Jones, M.~Heideman, and C.~Burrus, ``Real-valued fast
+  fourier transform algorithms,'' {\em IEEE Transactions on acoustics, speech,
+  and signal processing}, vol.~35, no.~6, pp.~849--863, 1987.
+
+\bibitem{frigo1998fftw}
+M.~Frigo and S.~G. Johnson, ``Fftw: An adaptive software architecture for the
+  fft,'' in {\em Proceedings of the 1998 IEEE International Conference on
+  Acoustics, Speech and Signal Processing, ICASSP'98 (Cat. No. 98CH36181)},
+  vol.~3, pp.~1381--1384, IEEE, 1998.
+
+\bibitem{frigo2005design}
+M.~Frigo and S.~G. Johnson, ``The design and implementation of fftw3,'' {\em
+  Proceedings of the IEEE}, vol.~93, no.~2, pp.~216--231, 2005.
+
+\bibitem{frigo2003fftw}
+M.~Frigo, S.~G. Johnson, {\em et~al.}, ``Fftw for version 3.3.8,'' May 2018.
+
+\bibitem{heideman1985gauss}
+M.~T. Heideman, D.~H. Johnson, and C.~S. Burrus, ``Gauss and the history of the
+  fast fourier transform,'' {\em Archive for history of exact sciences},
+  vol.~34, no.~3, pp.~265--277, 1985.
+
+\bibitem{gentleman1966fast}
+W.~M. Gentleman and G.~Sande, ``Fast fourier transforms: for fun and profit,''
+  in {\em Proceedings of the November 7-10, 1966, fall joint computer
+  conference}, pp.~563--578, ACM, 1966.
+
+\bibitem{mpi2015standard}
+M.~P.~I. Forum, ``Mpi: A message-passing interface standardversion 3.1,'' tech.
+  rep., Knoxville, TN, USA, 2015.
+
+\bibitem{rew1990netcdf}
+R.~Rew and G.~Davis, ``Netcdf: an interface for scientific data access,'' {\em
+  IEEE computer graphics and applications}, vol.~10, no.~4, pp.~76--82, 1990.
+
+\bibitem{schmunk2015panoply}
+R.~B. Schmunk, ``Panoply netcdf, hdf and grib data viewer,'' {\em National
+  Aeronautics and Space Administration-Goddard Institute for Space Studies},
+  2015.
+
+\bibitem{van2011numpy}
+S.~Van Der~Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a
+  structure for efficient numerical computation,'' {\em Computing in Science \&
+  Engineering}, vol.~13, no.~2, p.~22, 2011.
+
+\bibitem{moffat2017sh}
+A.~Moffat, ``sh: a full-fledged subprocess replacement for python,'' Jun. 2017.
+
+\bibitem{ronacher2008jinja2}
+A.~Ronacher, ``Jinja2 documentation,'' Sep. 2017.
+
+\bibitem{wardf90nml}
+M.~L. Ward, ``f90nml-a python module for fortran namelists,'' Jun. 2019.
+
+\bibitem{flynn1972some}
+M.~J. Flynn, ``Some computer organizations and their effectiveness,'' {\em IEEE
+  transactions on computers}, vol.~100, no.~9, pp.~948--960, 1972.
 
 \bibitem{6877473}
 N.~Rajovic, P.~M. Carpenter, I.~Gelado, N.~Puzovic, A.~Ramirez, and M.~Valero,
@@ -81,27 +227,25 @@ C.~Lomont, ``Introduction to intel advanced vector extensions,'' tech. rep.,
   Santa Clara, CA, USA, 2011.
 
 \bibitem{intel2019avx}
-I.~Corporation, ``Intel architecture instruction set extensions and future
+{Intel Corporation}, ``Intel architecture instruction set extensions and future
   features programming reference,'' tech. rep., Santa Clara, CA, USA, Apr.
   2019.
 
 \bibitem{xeon2680v4}
-I.~Corporation, ``Intel xeon processor e5-2680 v4 product specification,'' Jan.
-  2019.
+{Intel Corporation}, ``Intel xeon processor e5-2680 v4 product specification,''
+  Jan. 2019.
 
-\bibitem{mccalpin1995memory}
-J.~D. McCalpin {\em et~al.}, ``Memory bandwidth and machine balance in current
-  high performance computers,'' {\em IEEE computer society technical committee
-  on computer architecture (TCCA) newsletter}, vol.~2, Dec. 1995.
+\bibitem{gottschlag2018mechanism}
+M.~Gottschlag and F.~Bellosa, ``Mechanism to mitigate avx-induced frequency
+  reduction,'' {\em arXiv preprint arXiv:1901.04982}, 2018.
+
+\bibitem{arm2018white}
+A.~Holdings, ``Case study: Gw4 alliance puts arm architecture to the test for
+  hpc,'' tech. rep., Cambridge, United Kingdom, 2018.
 
 \bibitem{thunderprocessor2018brief}
 Cavium, ``Thunderx2 cn99xx product brief,'' tech. rep., San Jose, CA, USA,
   2018.
-
-\bibitem{mcintosh2018performance}
-S.~McIntosh-Smith, J.~Price, T.~Deakin, and A.~Poenaru, ``A performance
-  analysis of the first generation of hpc-optimized arm processors,'' {\em
-  Concurrency and Computation: Practice and Experience}, p.~e5110, May. 2018.
 
 \bibitem{kindratenko2011trends}
 V.~Kindratenko and P.~Trancoso, ``Trends in high-performance computing,'' {\em
@@ -117,11 +261,6 @@ N.~Rajovic, A.~Rico, F.~Mantovani, D.~Ruiz, J.~O. Vilarrubi, C.~Gomez,
   An alternative approach for hpc systems,'' in {\em Proceedings of the
   International Conference for High Performance Computing, Networking, Storage
   and Analysis}, SC '16, (Piscataway, NJ, USA), pp.~38--50, IEEE Press, 2016.
-
-\bibitem{calore2018advanced}
-E.~Calore, F.~Mantovani, and D.~Ruiz, ``Advanced performance analysis of hpc
-  workloads on cavium thunderx,'' in {\em 2018 International Conference on High
-  Performance Computing \& Simulation (HPCS)}, pp.~375--382, IEEE, Jul. 2018.
 
 \bibitem{stephens2017arm}
 N.~Stephens, S.~Biles, M.~Boettcher, J.~Eapen, M.~Eyole, G.~Gabrielli,
@@ -139,6 +278,11 @@ A.~Rico, J.~A. Joao, C.~Adeniyi-Jones, and E.~Van~Hensbergen, ``Arm hpc
 G.~E. Moore {\em et~al.}, ``Cramming more components onto integrated
   circuits,'' {\em Electronics}, vol.~38, pp.~33--35, Apr. 1965.
 
+\bibitem{mccalpin1995memory}
+J.~D. McCalpin {\em et~al.}, ``Memory bandwidth and machine balance in current
+  high performance computers,'' {\em IEEE computer society technical committee
+  on computer architecture (TCCA) newsletter}, vol.~2, Dec. 1995.
+
 \bibitem{patterson1997case}
 D.~Patterson, T.~Anderson, N.~Cardwell, R.~Fromm, K.~Keeton, C.~Kozyrakis,
   R.~Thomas, and K.~Yelick, ``A case for intelligent ram,'' {\em IEEE micro},
@@ -152,21 +296,75 @@ A.~Petitet, R.~C.~Whaley, J.~Dongarra, and A.~Cleary, ``Hpl – a portable
   implementation of the high-performance linpack benchmark for
   distributed-memory computers,'' Jan. 2008.
 
+\bibitem{kumar1994analyzing}
+V.~P. Kumar and A.~Gupta, ``Analyzing scalability of parallel algorithms and
+  architectures,'' {\em Journal of parallel and distributed computing},
+  vol.~22, no.~3, pp.~379--391, 1994.
+
 \bibitem{schmidt2007benchmark}
 M.~Schmidt, ``A benchmark for the parallel code used in fms and mom-4,'' {\em
   Ocean Modelling}, vol.~17, pp.~49--67, Dec. 2007.
 
+\bibitem{williams2009roofline}
+S.~Williams, A.~Waterman, and D.~Patterson, ``Roofline: An insightful visual
+  performance model for floating-point programs and multicore architectures,''
+  {\em Communications of the ACM - A Direct Path to Dependable Software},
+  vol.~52, pp.~65--76, Apr. 2009.
+
 \bibitem{fortran1991standard}
-A.~N.~S. Programming, {\em Fortran 90 ISO/IEC 1539 : 1991}.
+{American National Standard Programming}, {\em Fortran 90 ISO/IEC 1539 : 1991}.
 \newblock Carnegie, 1991.
 
 \bibitem{gnu2019conversion}
 GNU, ``Implicit conversion between logical and integer,'' Jul. 2019.
 
+\bibitem{goldberg1991every}
+D.~Goldberg, ``What every computer scientist should know about floating-point
+  arithmetic,'' {\em ACM Computing Surveys (CSUR)}, vol.~23, no.~1, pp.~5--48,
+  1991.
+
+\bibitem{ieee1985ieee}
+{IEEE Computer Society. Standards Committee and American National Standards
+  Institute}, {\em IEEE standard for binary floating-point arithmetic},
+  vol.~754.
+\newblock IEEE, 1985.
+
+\bibitem{puma2018}
+M.~Johnson and G.~Williams, ``Program to compare any variables common to two
+  netcdf files.,'' Jun. 2009.
+
 \bibitem{held1994proposal}
 I.~M. Held and M.~J. Suarez, ``A proposal for the intercomparison of the
   dynamical cores of atmospheric general circulation models,'' {\em Bulletin of
   the american Meteorological society}, vol.~75, no.~10, pp.~1825--1830, 1994.
+
+\bibitem{wan2008ensemble}
+H.~Wan, M.~A. Giorgetta, and L.~Bonaventura, ``Ensemble held-suarez test with a
+  spectral transform model: Variability, sensitivity, and convergence,'' {\em
+  Monthly Weather Review}, vol.~136, no.~3, pp.~1075--1092, 2008.
+
+\bibitem{duben2014benchmark}
+P.~D. D{\"u}ben and T.~Palmer, ``Benchmark tests for numerical weather
+  forecasts on inexact hardware,'' {\em Monthly Weather Review}, vol.~142,
+  no.~10, pp.~3809--3829, 2014.
+
+\bibitem{taylor1998performance}
+M.~Taylor, R.~Loft, and J.~Tribbia, ``Performance of a spectral element
+  atmospheric model (seam) on the hp exemplar spp2000,'' {\em NCAR TN},
+  vol.~439, 1998.
+
+\bibitem{laskar1993chaotic}
+J.~Laskar and P.~Robutel, ``The chaotic obliquity of the planets,'' {\em
+  Nature}, vol.~361, no.~6413, p.~608, 1993.
+
+\bibitem{foster1994load}
+I.~T. Foster and B.~R. Toonen, ``Load-balancing algorithms for climate
+  models,'' in {\em Proceedings of IEEE Scalable High Performance Computing
+  Conference}, pp.~674--681, IEEE, Jul. 1994.
+
+\bibitem{meeus1991astronomical}
+J.~H. Meeus, {\em {Astronomical algorithms}}.
+\newblock Willmann-Bell, Incorporated, 1991.
 
 \bibitem{lancaster2019github}
 G.~Lancaster, ``A collection of scripts for automating runtime and trace data
@@ -175,6 +373,21 @@ G.~Lancaster, ``A collection of scripts for automating runtime and trace data
 \bibitem{arm2019practices}
 X.~Guo, C.~Morales, O.~Saastad, A.~Shamakina, W.~Rijks, and V.~Weinberg, ``Best
   practice guide - arm64,'' tech. rep., Germany, 2019.
+
+\bibitem{milfeld2014hpc}
+K.~Milfeld, ``Parallel optimization for hpc,'' tech. rep., Austin, TX, USA,
+  2014.
+
+\bibitem{grun2010introduction}
+P.~Grun, ``Introduction to infiniband,'' tech. rep., Santa Clara, CA, USA,
+  2010.
+
+\bibitem{reinders2013intel}
+J.~Reinders, ``Intel avx-512 instructions,'' Jul. 2013.
+
+\bibitem{intel2017avx}
+{Intel Corporation}, ``Intel architecture instruction set extensions and future
+  features programming reference,'' tech. rep., Santa Clara, CA, USA, May 2019.
 
 \bibitem{behling2001power4}
 S.~Behling, R.~Bell, P.~Farrell, H.~Holthoff, F.~O’Connell, and W.~Weir,
@@ -186,36 +399,45 @@ C.~Carvalho, ``The gap between processor and memory speeds,'' in {\em Proc. of
   IEEE International Conference on Control and Automation}, 2002.
 
 \bibitem{temperton1980fft}
-C.~Temperton, ``Very fast real fourier transform,'' Jan. 1980.
+C.~Temperton, ``Very fast real fourier transform,'' {\em Special topics of
+  applied mathematics: Functional Analysis, Numerical Analysis and
+  Optimisation}, Jan. 1980.
 
 \bibitem{ecmwf2015emoslib}
 S.~Siemen, ``Routines for fast-fourier transform (fft),'' Sep. 2015.
 
-\bibitem{frigo2005design}
-M.~Frigo and S.~G. Johnson, ``The design and implementation of fftw3,'' {\em
-  Proceedings of the IEEE}, vol.~93, no.~2, pp.~216--231, 2005.
-
-\bibitem{frigo2003fftw}
-M.~Frigo, S.~G. Johnson, {\em et~al.}, ``Fftw for version 3.3.8,'' May 2018.
-
-\bibitem{cooley1965algorithm}
-J.~W. Cooley and J.~W. Tukey, ``An algorithm for the machine calculation of
-  complex fourier series,'' {\em Mathematics of computation}, vol.~19, no.~90,
-  pp.~297--301, 1965.
-
-\bibitem{heideman1985gauss}
-M.~T. Heideman, D.~H. Johnson, and C.~S. Burrus, ``Gauss and the history of the
-  fast fourier transform,'' {\em Archive for history of exact sciences},
-  vol.~34, no.~3, pp.~265--277, 1985.
-
-\bibitem{gentleman1966fast}
-W.~M. Gentleman and G.~Sande, ``Fast fourier transforms: for fun and profit,''
-  in {\em Proceedings of the November 7-10, 1966, fall joint computer
-  conference}, pp.~563--578, ACM, 1966.
+\bibitem{lahey1994fortran}
+T.~M. Lahey and T.~Ellis, {\em Fortran 90 programming}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., 1994.
 
 \bibitem{parnas1972criteria}
 D.~L. Parnas, ``On the criteria to be used in decomposing systems into
   modules,'' {\em Communications of the ACM}, vol.~15, no.~12, pp.~1053--1058,
   1972.
+
+\bibitem{aa2011armv8}
+A.~Group {\em et~al.}, ``Armv8 instruction set overview,'' {\em vol.
+  PRD03-GENC-010197}, vol.~15, no.~11, 2011.
+
+\bibitem{yoshida2018fujitsu}
+T.~Yoshida, ``Fujitsu high performance cpu for the post-k computer,'' in {\em
+  Hot Chips 30 Symposium (HCS), Series Hot Chips}, vol.~18, 2018.
+
+\bibitem{mcintosh2017tealeaf}
+S.~McIntosh-Smith, M.~Martineau, T.~Deakin, G.~Pawelczak, W.~Gaudin,
+  P.~Garrett, W.~Liu, R.~Smedley-Stevenson, and D.~Beckingsale, ``Tealeaf: a
+  mini-application to enable design-space explorations for iterative sparse
+  linear solvers,'' in {\em 2017 IEEE International Conference on Cluster
+  Computing (CLUSTER)}, pp.~842--849, IEEE, 2017.
+
+\bibitem{mallinson2013cloverleaf}
+A.~Mallinson, D.~A. Beckingsale, W.~Gaudin, J.~Herdman, J.~Levesque, and S.~A.
+  Jarvis, ``Cloverleaf: Preparing hydrodynamics codes for exascale,'' {\em The
+  Cray User Group}, vol.~2013, 2013.
+
+\bibitem{peterson2009f2py}
+P.~Peterson, ``F2py: a tool for connecting fortran and python programs,'' {\em
+  International Journal of Computational Science and Engineering}, vol.~4,
+  no.~4, pp.~296--305, 2009.
 
 \end{thebibliography}

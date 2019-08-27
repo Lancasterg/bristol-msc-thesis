@@ -1,16 +1,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Hardware specifications of the target HPC systems}}{15}{table.caption.11}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Hardware specifications of the target HPC systems}}{15}{table.caption.17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Compilers and MPI libraries used for benchmarking\relax }}{22}{table.caption.22}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Compilers and MPI libraries used for benchmarking\relax }}{22}{table.caption.28}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Resolutions and their compatible core counts}}{30}{table.caption.27}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Number of processor cores used to measure the performance of different compilers at the T21 and T42 resolutions.\relax }}{31}{table.caption.28}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Resolutions and their compatible core counts}}{30}{table.caption.33}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Number of processor cores used to measure the performance of different compilers}}{31}{table.caption.34}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code\relax }}{45}{table.caption.45}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code\relax }}{45}{table.caption.51}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {9.1}{\ignorespaces Hardware comparison of the Cavium ThunderX2 and Fujitsu's A64FX. As the A64FX is under development, this information is subject to change.\relax }}{55}{table.caption.68}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

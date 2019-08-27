@@ -1,122 +1,117 @@
 \BOOKMARK [-1][-]{part.1}{I Introduction and Background}{}% 1
 \BOOKMARK [0][-]{chapter.1}{Introduction}{part.1}% 2
 \BOOKMARK [1][-]{section.1.1}{High Performance Computing}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Aims and Objectives}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.3}{Contributions}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.4}{Heading}{chapter.1}% 6
-\BOOKMARK [0][-]{chapter.2}{Climate modelling}{part.1}% 7
-\BOOKMARK [1][-]{section.2.1}{The Isca climate model}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.1.1}{Global Circulation Model \(GCM\)}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.2}{Domain decomposition}{section.2.1}% 10
-\BOOKMARK [2][-]{subsection.2.1.3}{Fast Fourier Transform \(FFT\)}{section.2.1}% 11
-\BOOKMARK [1][-]{section.2.2}{Software architecture}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.1}{General overview}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.2}{Dependencies}{section.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.3}{Fortran Libraries}{section.2.2}% 15
-\BOOKMARK [2][-]{subsection.2.2.4}{Python Libraries}{section.2.2}% 16
+\BOOKMARK [1][-]{section.1.2}{Climate modelling}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Aims and Objectives}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{Hypotheses}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.5}{Contributions}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Climate modelling}{part.1}% 8
+\BOOKMARK [1][-]{section.2.1}{The Isca climate model}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.1.1}{Global Circulation Model}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.2}{Domain decomposition}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.3}{Fast Fourier Transform}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.4}{The Fastest Fourier Transform in the West}{section.2.1}% 13
+\BOOKMARK [1][-]{section.2.2}{Software architecture}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.1}{General overview}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.2}{Dependencies}{section.2.2}% 16
 \BOOKMARK [0][-]{chapter.3}{HPC hardware and parallel processing}{part.1}% 17
 \BOOKMARK [1][-]{section.3.1}{Parallel processing}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.1.1}{Flynns Taxonomy}{section.3.1}% 19
-\BOOKMARK [2][-]{subsection.3.1.2}{Data-level parallelism \(SIMD\)}{section.3.1}% 20
-\BOOKMARK [2][-]{subsection.3.1.3}{Message passing}{section.3.1}% 21
-\BOOKMARK [2][-]{subsection.3.1.4}{Hardware}{section.3.1}% 22
-\BOOKMARK [1][-]{section.3.2}{HPC clusters}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.2.1}{BlueCrystal phase 3 \(BCP3\)}{section.3.2}% 24
-\BOOKMARK [2][-]{subsection.3.2.2}{BlueCrystal phase 4 \(BCP4\)}{section.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.2.3}{BluePebble \(BP\)}{section.3.2}% 26
-\BOOKMARK [2][-]{subsection.3.2.4}{Isambard}{section.3.2}% 27
-\BOOKMARK [0][-]{chapter.4}{Benchmarking and performance analysis}{part.1}% 28
-\BOOKMARK [1][-]{section.4.1}{Cluster benchmarks}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.1.1}{STREAM TRIAD}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.2}{High Performance Linpack \(HPLinpack\)}{section.4.1}% 31
-\BOOKMARK [1][-]{section.4.2}{Application benchmarking}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.2.1}{Performance metrics}{section.4.2}% 33
-\BOOKMARK [0][-]{chapter.5}{Porting}{part.1}% 34
-\BOOKMARK [1][-]{section.5.1}{Compilers and MPI libraries}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.1.1}{GNU Compiler Collection \(GCC\)}{section.5.1}% 36
-\BOOKMARK [2][-]{subsection.5.1.2}{Intel Compiler Collection \(ICC\)}{section.5.1}% 37
-\BOOKMARK [2][-]{subsection.5.1.3}{Cray Compiling Environment \(CCE\)}{section.5.1}% 38
-\BOOKMARK [2][-]{subsection.5.1.4}{Discussion}{section.5.1}% 39
-\BOOKMARK [1][-]{section.5.2}{Cluster feedback}{chapter.5}% 40
-\BOOKMARK [2][-]{subsection.5.2.1}{Stack size}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.2}{Strict processor enforcement}{section.5.2}% 42
-\BOOKMARK [1][-]{section.5.3}{Libraries and dependencies}{chapter.5}% 43
-\BOOKMARK [1][-]{section.5.4}{Development tools}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.5}{Verification of results}{chapter.5}% 45
-\BOOKMARK [2][-]{subsection.5.5.1}{Units of last place}{section.5.5}% 46
-\BOOKMARK [2][-]{subsection.5.5.2}{Program verifcation}{section.5.5}% 47
-\BOOKMARK [-1][-]{part.2}{II Benchmarking, performance analysis and optimisation}{}% 48
-\BOOKMARK [0][-]{chapter.6}{Experimental Methodology}{part.2}% 49
-\BOOKMARK [1][-]{section.6.1}{Model configurations}{chapter.6}% 50
-\BOOKMARK [2][-]{subsection.6.1.1}{Held-Suarez test case}{section.6.1}% 51
-\BOOKMARK [2][-]{subsection.6.1.2}{Grey-Mars test case}{section.6.1}% 52
-\BOOKMARK [2][-]{subsection.6.1.3}{Domain decomposition}{section.6.1}% 53
-\BOOKMARK [1][-]{section.6.2}{Automated data collection}{chapter.6}% 54
-\BOOKMARK [2][-]{subsection.6.2.1}{Job submission}{section.6.2}% 55
-\BOOKMARK [1][-]{section.6.3}{Experiments}{chapter.6}% 56
-\BOOKMARK [2][-]{subsection.6.3.1}{Experiment A: Scaling study}{section.6.3}% 57
-\BOOKMARK [2][-]{subsection.6.3.2}{Experiment B: Compiler comparison}{section.6.3}% 58
-\BOOKMARK [2][-]{subsection.6.3.3}{Experiment C: Vectorisation analysis}{section.6.3}% 59
-\BOOKMARK [2][-]{subsection.6.3.4}{Experiment D: Communication analysis}{section.6.3}% 60
-\BOOKMARK [2][-]{subsection.6.3.5}{Experiment E: Runtime variation}{section.6.3}% 61
-\BOOKMARK [2][-]{subsection.6.3.6}{Experiment F: Roofline analysis}{section.6.3}% 62
-\BOOKMARK [0][-]{chapter.7}{Results}{part.2}% 63
-\BOOKMARK [1][-]{section.7.1}{Experiment A: Scaling study}{chapter.7}% 64
-\BOOKMARK [2][-]{subsection.7.1.1}{Results}{section.7.1}% 65
-\BOOKMARK [2][-]{subsection.7.1.2}{Conclusions and discussion}{section.7.1}% 66
-\BOOKMARK [1][-]{section.7.2}{Experiment B: Compiler comparison}{chapter.7}% 67
-\BOOKMARK [2][-]{subsection.7.2.1}{Results}{section.7.2}% 68
-\BOOKMARK [2][-]{subsection.7.2.2}{Conclusions and discussion}{section.7.2}% 69
-\BOOKMARK [1][-]{section.7.3}{Experiment C: Vectorisation analysis}{chapter.7}% 70
-\BOOKMARK [2][-]{subsection.7.3.1}{Results}{section.7.3}% 71
-\BOOKMARK [2][-]{subsection.7.3.2}{Conclusions and discussion}{section.7.3}% 72
-\BOOKMARK [1][-]{section.7.4}{Experiment D: Computation rate}{chapter.7}% 73
-\BOOKMARK [2][-]{subsection.7.4.1}{Results}{section.7.4}% 74
-\BOOKMARK [2][-]{subsection.7.4.2}{Conclusions and discussion}{section.7.4}% 75
-\BOOKMARK [1][-]{section.7.5}{Experiment E: Time spent in the MPI library}{chapter.7}% 76
-\BOOKMARK [2][-]{subsection.7.5.1}{Results}{section.7.5}% 77
-\BOOKMARK [2][-]{subsection.7.5.2}{Conclusions and discussion}{section.7.5}% 78
-\BOOKMARK [1][-]{section.7.6}{Experiment E: Runtime variation}{chapter.7}% 79
-\BOOKMARK [2][-]{subsection.7.6.1}{Results}{section.7.6}% 80
-\BOOKMARK [2][-]{subsection.7.6.2}{Conclusions and discussion}{section.7.6}% 81
-\BOOKMARK [1][-]{section.7.7}{Experiment F: Roofline model analysis}{chapter.7}% 82
-\BOOKMARK [2][-]{subsection.7.7.1}{Conclusions and discussion}{section.7.7}% 83
-\BOOKMARK [1][-]{section.7.8}{Summary}{chapter.7}% 84
-\BOOKMARK [0][-]{chapter.8}{Optimisation}{part.2}% 85
-\BOOKMARK [1][-]{section.8.1}{FFT optimisation}{chapter.8}% 86
-\BOOKMARK [2][-]{subsection.8.1.1}{The fastest Fourier transform in the west}{section.8.1}% 87
-\BOOKMARK [2][-]{subsection.8.1.2}{Implementation}{section.8.1}% 88
-\BOOKMARK [2][-]{subsection.8.1.3}{Verification of results}{section.8.1}% 89
-\BOOKMARK [2][-]{subsection.8.1.4}{Performance analysis}{section.8.1}% 90
-\BOOKMARK [1][-]{section.8.2}{Floating point precision}{chapter.8}% 91
-\BOOKMARK [2][-]{subsection.8.2.1}{Methodology}{section.8.2}% 92
-\BOOKMARK [2][-]{subsection.8.2.2}{Results}{section.8.2}% 93
-\BOOKMARK [2][-]{subsection.8.2.3}{Discussion}{section.8.2}% 94
-\BOOKMARK [1][-]{section.8.3}{Both optimisations}{chapter.8}% 95
-\BOOKMARK [1][-]{section.8.4}{Memory Leaks}{chapter.8}% 96
-\BOOKMARK [1][-]{section.8.5}{Conclusions}{chapter.8}% 97
-\BOOKMARK [-1][-]{part.3}{III Reflection, Critical Analysis and Conclusion}{}% 98
-\BOOKMARK [0][-]{chapter.9}{Conclusion and Critical Analysis}{part.3}% 99
-\BOOKMARK [1][-]{section.9.1}{Benchmarking and performance analysis}{chapter.9}% 100
-\BOOKMARK [2][-]{subsection.9.1.1}{Hardware benchmarking}{section.9.1}% 101
-\BOOKMARK [2][-]{subsection.9.1.2}{Application benchmarking}{section.9.1}% 102
-\BOOKMARK [1][-]{section.9.2}{Load imbalance}{chapter.9}% 103
-\BOOKMARK [1][-]{section.9.3}{Optimisation}{chapter.9}% 104
-\BOOKMARK [1][-]{section.9.4}{Further work}{chapter.9}% 105
-\BOOKMARK [0][-]{chapter.10}{Reflection}{part.3}% 106
-\BOOKMARK [1][-]{section.10.1}{Challenges}{chapter.10}% 107
-\BOOKMARK [0][-]{appendix.A}{Porting code changes}{part.3}% 108
-\BOOKMARK [1][-]{section.A.1}{Isambard}{appendix.A}% 109
-\BOOKMARK [2][-]{subsection.A.2.1}{Error 1}{section.A.1}% 110
-\BOOKMARK [2][-]{subsection.A.2.2}{Error 2}{section.A.1}% 111
-\BOOKMARK [0][-]{appendix.B}{Code listings}{part.3}% 112
-\BOOKMARK [1][-]{section.B.1}{Grid to Fourier subroutine}{appendix.B}% 113
-\BOOKMARK [1][-]{section.B.3}{Program to time FFT}{appendix.B}% 114
-\BOOKMARK [0][-]{appendix.C}{Compile environment scripts}{part.3}% 115
-\BOOKMARK [1][-]{section.C.1}{Isambard GNU}{appendix.C}% 116
-\BOOKMARK [1][-]{section.C.3}{BCP3 Intel}{appendix.C}% 117
-\BOOKMARK [0][-]{appendix.D}{Job submission scripts}{part.3}% 118
-\BOOKMARK [1][-]{section.D.1}{BCP3 \(PBS\)}{appendix.D}% 119
-\BOOKMARK [1][-]{section.D.3}{BluePebble \(PBS Pro\)}{appendix.D}% 120
-\BOOKMARK [1][-]{section.D.5}{Isambard \(PBS Pro\)}{appendix.D}% 121
-\BOOKMARK [1][-]{section.D.7}{BCP4 \(SLURM\)}{appendix.D}% 122
+\BOOKMARK [2][-]{subsection.3.1.1}{Flynn's Taxonomy}{section.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.1.2}{Instruction-level parallelism \(SIMD\)}{section.3.1}% 20
+\BOOKMARK [1][-]{section.3.2}{HPC clusters}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.2.1}{BlueCrystal phase 3}{section.3.2}% 22
+\BOOKMARK [2][-]{subsection.3.2.2}{BlueCrystal phase 4}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.3}{BluePebble}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.4}{Isambard}{section.3.2}% 25
+\BOOKMARK [0][-]{chapter.4}{Benchmarking and performance analysis}{part.1}% 26
+\BOOKMARK [1][-]{section.4.1}{Cluster benchmarks}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.1.1}{STREAM TRIAD}{section.4.1}% 28
+\BOOKMARK [2][-]{subsection.4.1.2}{High Performance Linpack}{section.4.1}% 29
+\BOOKMARK [1][-]{section.4.2}{Application benchmarking}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.2.1}{Performance metrics}{section.4.2}% 31
+\BOOKMARK [0][-]{chapter.5}{Porting}{part.1}% 32
+\BOOKMARK [1][-]{section.5.1}{Compilers and MPI libraries}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.1.1}{GNU Compiler Collection}{section.5.1}% 34
+\BOOKMARK [2][-]{subsection.5.1.2}{Intel Compiler Collection}{section.5.1}% 35
+\BOOKMARK [2][-]{subsection.5.1.3}{Cray Compiling Environment}{section.5.1}% 36
+\BOOKMARK [2][-]{subsection.5.1.4}{Discussion}{section.5.1}% 37
+\BOOKMARK [1][-]{section.5.2}{Cluster feedback}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{Stack size}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.2}{Strict processor enforcement}{section.5.2}% 40
+\BOOKMARK [1][-]{section.5.3}{Libraries and dependencies}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.4}{Development tools}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.5}{Verification of results}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.5.1}{Units of last place}{section.5.5}% 44
+\BOOKMARK [2][-]{subsection.5.5.2}{Program verifcation}{section.5.5}% 45
+\BOOKMARK [-1][-]{part.2}{II Benchmarking, performance analysis and optimisation}{}% 46
+\BOOKMARK [0][-]{chapter.6}{Experimental Methodology}{part.2}% 47
+\BOOKMARK [1][-]{section.6.1}{Model configurations}{chapter.6}% 48
+\BOOKMARK [2][-]{subsection.6.1.1}{Held-Suarez test case}{section.6.1}% 49
+\BOOKMARK [2][-]{subsection.6.1.2}{Grey-Mars test case}{section.6.1}% 50
+\BOOKMARK [2][-]{subsection.6.1.3}{Domain decomposition}{section.6.1}% 51
+\BOOKMARK [1][-]{section.6.2}{Automated data collection}{chapter.6}% 52
+\BOOKMARK [2][-]{subsection.6.2.1}{Job submission}{section.6.2}% 53
+\BOOKMARK [1][-]{section.6.3}{Experiments}{chapter.6}% 54
+\BOOKMARK [2][-]{subsection.6.3.1}{Experiment A: Scaling study}{section.6.3}% 55
+\BOOKMARK [2][-]{subsection.6.3.2}{Experiment B: Compiler comparison}{section.6.3}% 56
+\BOOKMARK [2][-]{subsection.6.3.3}{Experiment C: Vectorisation analysis}{section.6.3}% 57
+\BOOKMARK [2][-]{subsection.6.3.4}{Experiment D: Communication analysis}{section.6.3}% 58
+\BOOKMARK [2][-]{subsection.6.3.5}{Experiment E: Runtime variation}{section.6.3}% 59
+\BOOKMARK [2][-]{subsection.6.3.6}{Experiment F: Roofline analysis}{section.6.3}% 60
+\BOOKMARK [0][-]{chapter.7}{Results}{part.2}% 61
+\BOOKMARK [1][-]{section.7.1}{Experiment A: Scaling study}{chapter.7}% 62
+\BOOKMARK [2][-]{subsection.7.1.1}{Results}{section.7.1}% 63
+\BOOKMARK [2][-]{subsection.7.1.2}{Conclusions and discussion}{section.7.1}% 64
+\BOOKMARK [1][-]{section.7.2}{Experiment B: Compiler comparison}{chapter.7}% 65
+\BOOKMARK [2][-]{subsection.7.2.1}{Results}{section.7.2}% 66
+\BOOKMARK [2][-]{subsection.7.2.2}{Conclusions and discussion}{section.7.2}% 67
+\BOOKMARK [1][-]{section.7.3}{Experiment C: Vectorisation analysis}{chapter.7}% 68
+\BOOKMARK [2][-]{subsection.7.3.1}{Results}{section.7.3}% 69
+\BOOKMARK [2][-]{subsection.7.3.2}{Conclusions and discussion}{section.7.3}% 70
+\BOOKMARK [1][-]{section.7.4}{Experiment D: Computation rate}{chapter.7}% 71
+\BOOKMARK [2][-]{subsection.7.4.1}{Results}{section.7.4}% 72
+\BOOKMARK [2][-]{subsection.7.4.2}{Conclusions and discussion}{section.7.4}% 73
+\BOOKMARK [1][-]{section.7.5}{Experiment E: Time spent in the MPI library}{chapter.7}% 74
+\BOOKMARK [2][-]{subsection.7.5.1}{Results}{section.7.5}% 75
+\BOOKMARK [2][-]{subsection.7.5.2}{Conclusions and discussion}{section.7.5}% 76
+\BOOKMARK [1][-]{section.7.6}{Experiment E: Runtime variation}{chapter.7}% 77
+\BOOKMARK [2][-]{subsection.7.6.1}{Results}{section.7.6}% 78
+\BOOKMARK [2][-]{subsection.7.6.2}{Conclusions and discussion}{section.7.6}% 79
+\BOOKMARK [1][-]{section.7.7}{Experiment F: Roofline model analysis}{chapter.7}% 80
+\BOOKMARK [2][-]{subsection.7.7.1}{Conclusions and discussion}{section.7.7}% 81
+\BOOKMARK [1][-]{section.7.8}{Summary}{chapter.7}% 82
+\BOOKMARK [0][-]{chapter.8}{Optimisation}{part.2}% 83
+\BOOKMARK [1][-]{section.8.1}{FFT optimisation}{chapter.8}% 84
+\BOOKMARK [2][-]{subsection.8.1.1}{Implementation}{section.8.1}% 85
+\BOOKMARK [2][-]{subsection.8.1.2}{Verification of results}{section.8.1}% 86
+\BOOKMARK [2][-]{subsection.8.1.3}{Performance analysis}{section.8.1}% 87
+\BOOKMARK [1][-]{section.8.2}{Optimisation B: Single-precision floating point numbers}{chapter.8}% 88
+\BOOKMARK [2][-]{subsection.8.2.1}{Implementation}{section.8.2}% 89
+\BOOKMARK [2][-]{subsection.8.2.2}{Performance analysis}{section.8.2}% 90
+\BOOKMARK [2][-]{subsection.8.2.3}{Conclusions and discussion}{section.8.2}% 91
+\BOOKMARK [2][-]{subsection.8.2.4}{Verification of results}{section.8.2}% 92
+\BOOKMARK [1][-]{section.8.3}{FFTW with single-precision variables}{chapter.8}% 93
+\BOOKMARK [2][-]{subsection.8.3.1}{Performance analysis}{section.8.3}% 94
+\BOOKMARK [1][-]{section.8.4}{Conclusions}{chapter.8}% 95
+\BOOKMARK [0][-]{chapter.9}{Performance projection}{part.2}% 96
+\BOOKMARK [1][-]{section.9.1}{Hardware performance estimation}{chapter.9}% 97
+\BOOKMARK [2][-]{subsection.9.1.1}{Floating point performance}{section.9.1}% 98
+\BOOKMARK [2][-]{subsection.9.1.2}{Memory-bandwidth}{section.9.1}% 99
+\BOOKMARK [1][-]{section.9.2}{Application performance}{chapter.9}% 100
+\BOOKMARK [2][-]{subsection.9.2.1}{Vector performance}{section.9.2}% 101
+\BOOKMARK [1][-]{section.9.3}{Conclusion}{chapter.9}% 102
+\BOOKMARK [-1][-]{part.3}{III Reflection, Critical Evaluation and Conclusion}{}% 103
+\BOOKMARK [0][-]{chapter.10}{Reflection}{part.3}% 104
+\BOOKMARK [1][-]{section.10.1}{The Fortran programming language}{chapter.10}% 105
+\BOOKMARK [1][-]{section.10.2}{Compilation of the model}{chapter.10}% 106
+\BOOKMARK [1][-]{section.10.3}{Data collection}{chapter.10}% 107
+\BOOKMARK [0][-]{chapter.11}{Critical evaluation and conclusion}{part.3}% 108
+\BOOKMARK [1][-]{section.11.1}{Critical evaluation}{chapter.11}% 109
+\BOOKMARK [2][-]{subsection.11.1.1}{Areas of improvement}{section.11.1}% 110
+\BOOKMARK [2][-]{subsection.11.1.2}{Conclusion}{section.11.1}% 111
+\BOOKMARK [1][-]{section.11.2}{Further work}{chapter.11}% 112
+\BOOKMARK [0][-]{section.11.2}{Bibliography}{part.3}% 113
+\BOOKMARK [0][-]{appendix.A}{Porting code changes}{part.3}% 114
+\BOOKMARK [0][-]{appendix.B}{Code listings}{part.3}% 115
+\BOOKMARK [0][-]{appendix.C}{Compile environment scripts}{part.3}% 116
+\BOOKMARK [0][-]{appendix.D}{Job submission scripts}{part.3}% 117
