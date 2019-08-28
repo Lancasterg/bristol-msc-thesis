@@ -29,6 +29,8 @@ Warning--entry type for "moffat2017sh" isn't style-file defined
 --line 1185 of file citations.bib
 Warning--entry type for "puma2018" isn't style-file defined
 --line 1213 of file citations.bib
+Warning--entry type for "bach2015est" isn't style-file defined
+--line 1260 of file citations.bib
 Warning--empty institution in balaji2002fms
 Warning--there's a number but no series in bjerknes1910dynamic
 Warning--can't use both volume and number fields in colella2007performance
@@ -45,45 +47,45 @@ Warning--empty institution in milfeld2014hpc
 Warning--empty institution in grun2010introduction
 Warning--empty institution in intel2017avx
 Warning--empty institution in behling2001power4
-You've used 92 entries,
+You've used 94 entries,
             1876 wiz_defined-function locations,
-            971 strings with 19796 characters,
-and the built_in function-call counts, 23040 in all, are:
-= -- 2186
-> -- 1050
+            979 strings with 20059 characters,
+and the built_in function-call counts, 23497 in all, are:
+= -- 2232
+> -- 1058
 < -- 1
-+ -- 393
-- -- 301
-* -- 1712
-:= -- 3351
-add.period$ -- 99
-call.type$ -- 92
-change.case$ -- 96
++ -- 397
+- -- 303
+* -- 1739
+:= -- 3407
+add.period$ -- 101
+call.type$ -- 94
+change.case$ -- 98
 chr.to.int$ -- 0
-cite$ -- 108
-duplicate$ -- 1126
-empty$ -- 2158
-format.name$ -- 301
-if$ -- 5512
+cite$ -- 110
+duplicate$ -- 1151
+empty$ -- 2213
+format.name$ -- 303
+if$ -- 5628
 int.to.chr$ -- 0
-int.to.str$ -- 92
-missing$ -- 73
-newline$ -- 286
-num.names$ -- 92
-pop$ -- 324
+int.to.str$ -- 94
+missing$ -- 74
+newline$ -- 292
+num.names$ -- 94
+pop$ -- 337
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 776
+skip$ -- 795
 stack$ -- 0
-substring$ -- 1280
-swap$ -- 427
+substring$ -- 1312
+swap$ -- 436
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 16
-while$ -- 219
-width$ -- 94
-write$ -- 873
-(There were 29 warnings)
+while$ -- 224
+width$ -- 96
+write$ -- 890
+(There were 30 warnings)

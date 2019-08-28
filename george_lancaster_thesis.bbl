@@ -423,6 +423,14 @@ A.~Group {\em et~al.}, ``Armv8 instruction set overview,'' {\em vol.
 T.~Yoshida, ``Fujitsu high performance cpu for the post-k computer,'' in {\em
   Hot Chips 30 Symposium (HCS), Series Hot Chips}, vol.~18, 2018.
 
+\bibitem{bach2015est}
+M.~Bach, ``Estimating cpu performance using amdahl's law,'' May. 2015.
+
+\bibitem{amdahl1967validity}
+G.~M. Amdahl, ``Validity of the single processor approach to achieving large
+  scale computing capabilities,'' in {\em Proceedings of the April 18-20, 1967,
+  spring joint computer conference}, pp.~483--485, ACM, Apr. 1967.
+
 \bibitem{mcintosh2017tealeaf}
 S.~McIntosh-Smith, M.~Martineau, T.~Deakin, G.~Pawelczak, W.~Gaudin,
   P.~Garrett, W.~Liu, R.~Smedley-Stevenson, and D.~Beckingsale, ``Tealeaf: a

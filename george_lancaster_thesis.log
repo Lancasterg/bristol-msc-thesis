@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.17)  27 AUG 2019 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.17)  28 AUG 2019 12:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1429,7 +1429,7 @@ LaTeX Info: Redefining \nameref on input line 144.
 
 
 (./george_lancaster_thesis.glsdefs)
-<img/frontmatter_64327.pdf, id=476, 597.51233pt x 845.03705pt>
+<img/frontmatter_64327.pdf, id=484, 597.51233pt x 845.03705pt>
 File: img/frontmatter_64327.pdf Graphic file (type pdf)
 <use img/frontmatter_64327.pdf>
 Package pdftex.def Info: img/frontmatter_64327.pdf  used on input line 149.
@@ -1438,7 +1438,7 @@ File: img/frontmatter_64327.pdf Graphic file (type pdf)
 <use img/frontmatter_64327.pdf>
 Package pdftex.def Info: img/frontmatter_64327.pdf  used on input line 149.
 (pdftex.def)             Requested size: 597.51086pt x 845.03497pt.
-<img/frontmatter_64327.pdf, id=479, page=1, 597.51233pt x 845.03705pt>
+<img/frontmatter_64327.pdf, id=487, page=1, 597.51233pt x 845.03705pt>
 File: img/frontmatter_64327.pdf Graphic file (type pdf)
 <use img/frontmatter_64327.pdf, page 1>
 Package pdftex.def Info: img/frontmatter_64327.pdf , page1 used on input line 1
@@ -1469,7 +1469,7 @@ Package pdftex.def Info: img/frontmatter_64327.pdf , page1 used on input line 1
 \openout4 = `george_lancaster_thesis.ist'.
 
  <./img/frontmatter_64327.pdf>]
-<img/frontmatter_64327.pdf, id=491, page=2, 597.51233pt x 845.03705pt>
+<img/frontmatter_64327.pdf, id=499, page=2, 597.51233pt x 845.03705pt>
 File: img/frontmatter_64327.pdf Graphic file (type pdf)
 <use img/frontmatter_64327.pdf, page 2>
 Package pdftex.def Info: img/frontmatter_64327.pdf , page2 used on input line 1
@@ -1651,14 +1651,14 @@ Chapter 2.
 [5
 
 ]
-<img/sphere-decomp.pdf, id=826, 351.63269pt x 293.20139pt>
+<img/sphere-decomp.pdf, id=842, 351.63269pt x 293.20139pt>
 File: img/sphere-decomp.pdf Graphic file (type pdf)
 <use img/sphere-decomp.pdf>
 Package pdftex.def Info: img/sphere-decomp.pdf  used on input line 292.
 (pdftex.def)             Requested size: 224.22035pt x 186.96373pt.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 9.29993pt on input line 293.
-<img/waves.png, id=827, 351.4731pt x 293.1753pt>
+<img/waves.png, id=843, 351.4731pt x 293.1753pt>
 File: img/waves.png Graphic file (type png)
 <use img/waves.png>
 Package pdftex.def Info: img/waves.png  used on input line 298.
@@ -1688,7 +1688,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-<img/isca_flow.pdf, id=918, 384.47638pt x 493.845pt>
+<img/isca_flow.pdf, id=933, 384.47638pt x 493.845pt>
 File: img/isca_flow.pdf Graphic file (type pdf)
 <use img/isca_flow.pdf>
 Package pdftex.def Info: img/isca_flow.pdf  used on input line 370.
@@ -1713,7 +1713,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 8.36993pt on input line 383.
-<img/comm_pattern.pdf, id=942, 474.81387pt x 45.2892pt>
+<img/comm_pattern.pdf, id=957, 474.81387pt x 45.2892pt>
 File: img/comm_pattern.pdf Graphic file (type pdf)
 <use img/comm_pattern.pdf>
 Package pdftex.def Info: img/comm_pattern.pdf  used on input line 411.
@@ -1731,7 +1731,7 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/comm_pattern.pdf): PDF
  inclusion: invalid other resource which is no dict (key 'ProcSets', type <arra
 y>); ignored.
 >]
-<img/flux_t_in_atmos_daily.png, id=986, 883.3pt x 578.16pt>
+<img/flux_t_in_atmos_daily.png, id=1001, 883.3pt x 578.16pt>
 File: img/flux_t_in_atmos_daily.png Graphic file (type png)
 <use img/flux_t_in_atmos_daily.png>
 Package pdftex.def Info: img/flux_t_in_atmos_daily.png  used on input line 431.
@@ -1753,11 +1753,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12]
 Chapter 3.
-<img/Flynns.pdf, id=1013, 478.66827pt x 399.41219pt>
+<img/Flynns.pdf, id=1028, 474.81387pt x 399.41219pt>
 File: img/Flynns.pdf Graphic file (type pdf)
 <use img/Flynns.pdf>
 Package pdftex.def Info: img/Flynns.pdf  used on input line 479.
-(pdftex.def)             Requested size: 362.37569pt x 302.38017pt.
+(pdftex.def)             Requested size: 362.37569pt x 304.82408pt.
 [13
 
 ]
@@ -1780,7 +1780,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15]
-<img/thunderx2.pdf, id=1076, 546.12032pt x 444.70139pt>
+<img/thunderx2.pdf, id=1091, 546.12032pt x 444.70139pt>
 File: img/thunderx2.pdf Graphic file (type pdf)
 <use img/thunderx2.pdf>
 Package pdftex.def Info: img/thunderx2.pdf  used on input line 550.
@@ -1806,7 +1806,7 @@ clusion: invalid other resource which is no dict (key 'ProcSets', type <array>)
 ; ignored.
 >]
 Chapter 4.
-<img/stream-triad.pdf, id=1117, 462.52798pt x 346.89601pt>
+<img/stream-triad.pdf, id=1132, 462.52798pt x 346.89601pt>
 File: img/stream-triad.pdf Graphic file (type pdf)
 <use img/stream-triad.pdf>
 Package pdftex.def Info: img/stream-triad.pdf  used on input line 572.
@@ -1814,7 +1814,7 @@ Package pdftex.def Info: img/stream-triad.pdf  used on input line 572.
 [18
 
  <./img/stream-triad.pdf>]
-<img/hpl.pdf, id=1151, 462.52798pt x 346.89601pt>
+<img/hpl.pdf, id=1166, 462.52798pt x 346.89601pt>
 File: img/hpl.pdf Graphic file (type pdf)
 <use img/hpl.pdf>
 Package pdftex.def Info: img/hpl.pdf  used on input line 594.
@@ -1913,13 +1913,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [32]
 Chapter 7.
-<img/speedup-T21-Held_suarez.pdf, id=1327, 505.89pt x 252.945pt>
+<img/speedup-T21-Held_suarez.pdf, id=1342, 505.89pt x 252.945pt>
 File: img/speedup-T21-Held_suarez.pdf Graphic file (type pdf)
 <use img/speedup-T21-Held_suarez.pdf>
 Package pdftex.def Info: img/speedup-T21-Held_suarez.pdf  used on input line 88
 1.
 (pdftex.def)             Requested size: 452.9679pt x 226.48665pt.
-<img/scaling_graph_T21_Grey_mars.pdf, id=1330, 505.89pt x 252.945pt>
+<img/scaling_graph_T21_Grey_mars.pdf, id=1345, 505.89pt x 252.945pt>
 File: img/scaling_graph_T21_Grey_mars.pdf Graphic file (type pdf)
 <use img/scaling_graph_T21_Grey_mars.pdf>
 Package pdftex.def Info: img/scaling_graph_T21_Grey_mars.pdf  used on input lin
@@ -1928,7 +1928,7 @@ e 892.
 [33
 
  <./img/speedup-T21-Held_suarez.pdf>]
-<img/scaling_graph_T42_Held_suarez.pdf, id=1352, 505.89pt x 252.945pt>
+<img/scaling_graph_T42_Held_suarez.pdf, id=1367, 505.89pt x 252.945pt>
 File: img/scaling_graph_T42_Held_suarez.pdf Graphic file (type pdf)
 <use img/scaling_graph_T42_Held_suarez.pdf>
 Package pdftex.def Info: img/scaling_graph_T42_Held_suarez.pdf  used on input l
@@ -1948,19 +1948,19 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/scaling_graph_T42_Held
 _suarez.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-<img/speedup-T42-Held_suarez.pdf, id=1389, 505.89pt x 252.945pt>
+<img/speedup-T42-Held_suarez.pdf, id=1404, 505.89pt x 252.945pt>
 File: img/speedup-T42-Held_suarez.pdf Graphic file (type pdf)
 <use img/speedup-T42-Held_suarez.pdf>
 Package pdftex.def Info: img/speedup-T42-Held_suarez.pdf  used on input line 91
 6.
 (pdftex.def)             Requested size: 452.9679pt x 226.48665pt.
-<img/scaling_graph_T85_Held_suarez.pdf, id=1395, 505.89pt x 252.945pt>
+<img/scaling_graph_T85_Held_suarez.pdf, id=1410, 505.89pt x 252.945pt>
 File: img/scaling_graph_T85_Held_suarez.pdf Graphic file (type pdf)
 <use img/scaling_graph_T85_Held_suarez.pdf>
 Package pdftex.def Info: img/scaling_graph_T85_Held_suarez.pdf  used on input l
 ine 924.
 (pdftex.def)             Requested size: 425.79092pt x 212.90077pt.
-<img/speedup-T85-Held_suarez.pdf, id=1396, 505.89pt x 252.945pt>
+<img/speedup-T85-Held_suarez.pdf, id=1411, 505.89pt x 252.945pt>
 File: img/speedup-T85-Held_suarez.pdf Graphic file (type pdf)
 <use img/speedup-T85-Held_suarez.pdf>
 Package pdftex.def Info: img/speedup-T85-Held_suarez.pdf  used on input line 94
@@ -1987,7 +1987,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [36 <./img/speedup-T85-Held_suarez.pdf>]
-<img/compiler-comparison.pdf, id=1457, 650.43pt x 433.62pt>
+<img/compiler-comparison.pdf, id=1472, 650.43pt x 433.62pt>
 File: img/compiler-comparison.pdf Graphic file (type pdf)
 <use img/compiler-comparison.pdf>
 Package pdftex.def Info: img/compiler-comparison.pdf  used on input line 979.
@@ -2000,7 +2000,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [37 <./img/compiler-comparison.pdf>]
-<img/speedup-vector.pdf, id=1470, 505.89pt x 216.81pt>
+<img/speedup-vector.pdf, id=1485, 505.89pt x 216.81pt>
 File: img/speedup-vector.pdf Graphic file (type pdf)
 <use img/speedup-vector.pdf>
 Package pdftex.def Info: img/speedup-vector.pdf  used on input line 993.
@@ -2013,7 +2013,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [38 <./img/speedup-vector.pdf>]
-<img/cost-per-grid-point.pdf, id=1489, 578.16pt x 433.62pt>
+<img/cost-per-grid-point.pdf, id=1504, 578.16pt x 433.62pt>
 File: img/cost-per-grid-point.pdf Graphic file (type pdf)
 <use img/cost-per-grid-point.pdf>
 Package pdftex.def Info: img/cost-per-grid-point.pdf  used on input line 1014.
@@ -2026,7 +2026,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [39 <./img/cost-per-grid-point.pdf>]
-<img/mpi-barrier-time.pdf, id=1535, 505.89pt x 216.81pt>
+<img/mpi-barrier-time.pdf, id=1550, 505.89pt x 216.81pt>
 File: img/mpi-barrier-time.pdf Graphic file (type pdf)
 <use img/mpi-barrier-time.pdf>
 Package pdftex.def Info: img/mpi-barrier-time.pdf  used on input line 1033.
@@ -2039,7 +2039,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40 <./img/mpi-barrier-time.pdf>]
-<img/comm_mat_grey-mars.pdf, id=1550, 462.52798pt x 346.89601pt>
+<img/comm_mat_grey-mars.pdf, id=1565, 462.52798pt x 346.89601pt>
 File: img/comm_mat_grey-mars.pdf Graphic file (type pdf)
 <use img/comm_mat_grey-mars.pdf>
 Package pdftex.def Info: img/comm_mat_grey-mars.pdf  used on input line 1043.
@@ -2052,13 +2052,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [41 <./img/comm_mat_grey-mars.pdf>]
-<img/held_suarez-variation.pdf, id=1572, 505.89pt x 289.08pt>
+<img/held_suarez-variation.pdf, id=1587, 505.89pt x 289.08pt>
 File: img/held_suarez-variation.pdf Graphic file (type pdf)
 <use img/held_suarez-variation.pdf>
 Package pdftex.def Info: img/held_suarez-variation.pdf  used on input line 1067
 .
 (pdftex.def)             Requested size: 362.37569pt x 207.07439pt.
-<img/grey_mars-variation.pdf, id=1574, 505.89pt x 289.08pt>
+<img/grey_mars-variation.pdf, id=1589, 505.89pt x 289.08pt>
 File: img/grey_mars-variation.pdf Graphic file (type pdf)
 <use img/grey_mars-variation.pdf>
 Package pdftex.def Info: img/grey_mars-variation.pdf  used on input line 1075.
@@ -2071,7 +2071,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [42 <./img/held_suarez-variation.pdf>]
-<img/roofline_model_bluepebble.pdf, id=1597, 722.7pt x 433.62pt>
+<img/roofline_model_bluepebble.pdf, id=1612, 722.7pt x 433.62pt>
 File: img/roofline_model_bluepebble.pdf Graphic file (type pdf)
 <use img/roofline_model_bluepebble.pdf>
 Package pdftex.def Info: img/roofline_model_bluepebble.pdf  used on input line 
@@ -2085,7 +2085,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [43 <./img/grey_mars-variation.pdf>]
-<img/tikz-img/vector_registers_contiguous/vector_registers.pdf, id=1621, 357.03
+<img/tikz-img/vector_registers_contiguous/vector_registers.pdf, id=1636, 357.03
 389pt x 135.17802pt>
 File: img/tikz-img/vector_registers_contiguous/vector_registers.pdf Graphic fil
 e (type pdf)
@@ -2093,7 +2093,7 @@ e (type pdf)
 Package pdftex.def Info: img/tikz-img/vector_registers_contiguous/vector_regist
 ers.pdf  used on input line 1110.
 (pdftex.def)             Requested size: 407.66833pt x 154.34793pt.
-<img/tikz-img/vector_registers_noncontiguous/vector_registers.pdf, id=1622, 357
+<img/tikz-img/vector_registers_noncontiguous/vector_registers.pdf, id=1637, 357
 .03389pt x 135.17802pt>
 File: img/tikz-img/vector_registers_noncontiguous/vector_registers.pdf Graphic 
 file (type pdf)
@@ -2139,7 +2139,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 1194.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.35999pt on input line 1194.
-<img/tikz-img/data_layout/data_layout.pdf, id=1679, 357.03389pt x 155.99579pt>
+<img/tikz-img/data_layout/data_layout.pdf, id=1695, 357.03389pt x 155.99579pt>
 File: img/tikz-img/data_layout/data_layout.pdf Graphic file (type pdf)
 <use img/tikz-img/data_layout/data_layout.pdf>
 Package pdftex.def Info: img/tikz-img/data_layout/data_layout.pdf  used on inpu
@@ -2148,7 +2148,7 @@ t line 1204.
 [47
 
  <./img/tikz-img/data_layout/data_layout.pdf>]
-<img/speedup-fft.pdf, id=1699, 505.89pt x 234.8775pt>
+<img/speedup-fft.pdf, id=1714, 505.89pt x 234.8775pt>
 File: img/speedup-fft.pdf Graphic file (type pdf)
 <use img/speedup-fft.pdf>
 Package pdftex.def Info: img/speedup-fft.pdf  used on input line 1229.
@@ -2161,7 +2161,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48]
-<img/compare_fft.pdf, id=1709, 722.7pt x 433.62pt>
+<img/compare_fft.pdf, id=1724, 722.7pt x 433.62pt>
 File: img/compare_fft.pdf Graphic file (type pdf)
 <use img/compare_fft.pdf>
 Package pdftex.def Info: img/compare_fft.pdf  used on input line 1240.
@@ -2192,7 +2192,7 @@ Overfull \hbox (8.7857pt too wide) in paragraph at lines 1292--1293
 /Byte) and float-ing point per-for-mance (GFLOP-
  []
 
-<img/roofline_model_bluepebble_precision.pdf, id=1745, 722.7pt x 433.62pt>
+<img/roofline_model_bluepebble_precision.pdf, id=1760, 722.7pt x 433.62pt>
 File: img/roofline_model_bluepebble_precision.pdf Graphic file (type pdf)
 <use img/roofline_model_bluepebble_precision.pdf>
 Package pdftex.def Info: img/roofline_model_bluepebble_precision.pdf  used on i
@@ -2205,7 +2205,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [50]
-<img/single-double-precision.pdf, id=1755, 578.16pt x 289.08pt>
+<img/single-double-precision.pdf, id=1770, 578.16pt x 289.08pt>
 File: img/single-double-precision.pdf Graphic file (type pdf)
 <use img/single-double-precision.pdf>
 Package pdftex.def Info: img/single-double-precision.pdf  used on input line 13
@@ -2224,7 +2224,7 @@ ion.pdf
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/single-double-precisio
 n.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<img/speedup-vector-sp.pdf, id=1783, 505.89pt x 216.81pt>
+<img/speedup-vector-sp.pdf, id=1798, 505.89pt x 216.81pt>
 File: img/speedup-vector-sp.pdf Graphic file (type pdf)
 <use img/speedup-vector-sp.pdf>
 Package pdftex.def Info: img/speedup-vector-sp.pdf  used on input line 1317.
@@ -2237,12 +2237,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [52 <./img/speedup-vector-sp.pdf>]
-<img/opt_comparison.pdf, id=1800, 722.7pt x 289.08pt>
+<img/opt_comparison.pdf, id=1815, 722.7pt x 289.08pt>
 File: img/opt_comparison.pdf Graphic file (type pdf)
 <use img/opt_comparison.pdf>
 Package pdftex.def Info: img/opt_comparison.pdf  used on input line 1347.
 (pdftex.def)             Requested size: 452.9679pt x 181.18622pt.
-<img/speedup-opt.pdf, id=1801, 722.7pt x 289.08pt>
+<img/speedup-opt.pdf, id=1816, 722.7pt x 289.08pt>
 File: img/speedup-opt.pdf Graphic file (type pdf)
 <use img/speedup-opt.pdf>
 Package pdftex.def Info: img/speedup-opt.pdf  used on input line 1355.
@@ -2270,27 +2270,42 @@ Chapter 9.
 [55
 
 ]
+<img/a64fx-estimate.pdf, id=1866, 505.89pt x 252.945pt>
+File: img/a64fx-estimate.pdf Graphic file (type pdf)
+<use img/a64fx-estimate.pdf>
+Package pdftex.def Info: img/a64fx-estimate.pdf  used on input line 1436.
+(pdftex.def)             Requested size: 452.9679pt x 226.48665pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56] [57
+[56 <./img/a64fx-estimate.pdf>]
+<img/a64fx-projection.pdf, id=1909, 505.89pt x 252.945pt>
+File: img/a64fx-projection.pdf Graphic file (type pdf)
+<use img/a64fx-projection.pdf>
+Package pdftex.def Info: img/a64fx-projection.pdf  used on input line 1468.
+(pdftex.def)             Requested size: 452.9679pt x 226.48665pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57 <./img/a64fx-projection.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58] [59
 
 ]
 Chapter 10.
-[58
-
-]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[59]
-Chapter 11.
 [60
 
 ]
@@ -2300,14 +2315,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[61] (./george_lancaster_thesis.bbl
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[62] [63
+[61]
+Chapter 11.
+[62
 
 ]
 
@@ -2316,14 +2326,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64]
+[63] (./george_lancaster_thesis.bbl
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[65]
+[64] [65
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2337,7 +2349,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[67])
+[67]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2345,28 +2357,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [68]
-Appendix A.
-[69
-
-]
-Appendix B.
-[70
-
-]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[71]
-Appendix C.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [72
+[69])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70]
+Appendix A.
+[71
+
+]
+Appendix B.
+[72
 
 ]
 
@@ -2376,8 +2386,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [73]
-Appendix D.
-[74
+Appendix C.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) [74
 
 ]
 
@@ -2387,26 +2402,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [75]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1856.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1856.
+Appendix D.
+[76
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[77]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1909.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1909.
  (./george_lancaster_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1856.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1856.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1909.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1909.
 
-Package rerunfilecheck Info: File `george_lancaster_thesis.out' has not changed
-.
-(rerunfilecheck)             Checksum: 4111427C54ACA1D49AC8191949EAC14D;8366.
 
+
+Package rerunfilecheck Warning: File `george_lancaster_thesis.out' has changed.
+
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `george_lancaster_thesis.out':
+(rerunfilecheck)             Before: 98C1E095099B33AC5F2DA3FD2BCD2BE7;8499
+(rerunfilecheck)             After:  0AD19C6E368B571798D7D6B4E247FD8D;8503.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1856.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1909.
  ) 
 Here is how much of TeX's memory you used:
- 27798 strings out of 492649
- 480600 string characters out of 6129622
- 784583 words of memory out of 5000000
- 30418 multiletter control sequences out of 15000+600000
+ 27830 strings out of 492649
+ 481232 string characters out of 6129622
+ 786178 words of memory out of 5000000
+ 30436 multiletter control sequences out of 15000+600000
  56687 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,99p,2003b,1937s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2485,27 +2517,30 @@ placed by a fixed one
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
 usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2018/texmf-dist/font
-s/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/urw/ncntrsbk/uncri8a.pfb>
-Output written on george_lancaster_thesis.pdf (84 pages, 1845092 bytes).
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on george_lancaster_thesis.pdf (86 pages, 1948760 bytes).
 PDF statistics:
- 2364 PDF objects out of 2487 (max. 8388607)
- 2118 compressed objects within 22 object streams
- 652 named destinations out of 1000 (max. 500000)
- 1139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2447 PDF objects out of 2487 (max. 8388607)
+ 2191 compressed objects within 22 object streams
+ 664 named destinations out of 1000 (max. 500000)
+ 1165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

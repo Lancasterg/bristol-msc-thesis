@@ -38,6 +38,8 @@
 \contentsline {figure}{\numberline {8.7}{\ignorespaces Runtimes of all optimisations}}{53}{figure.caption.65}
 \contentsline {figure}{\numberline {8.8}{\ignorespaces Speedup of performance optimisations relative to the unmodified model.\relax }}{53}{figure.caption.66}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Non-linear least squares regression }}{56}{figure.caption.69}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Projected performance of the A64FX compared to the measured performance of the ThunderX2 running the Held-Suarez configuration at T42 resolution. \relax }}{57}{figure.caption.70}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

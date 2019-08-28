@@ -1380,7 +1380,9 @@ Despite the improvement of the FFT, there is very little scope for optimisation 
 % Chapter performance projection
 %
 \chapter{Performance projection}
-Using the results from the experiments carried out in Chapter \ref{chap:results}, the performance of Isca has been projected to Fujitsu's A64FX Arm processor, which is planned to be debuted in the Post-K supercomputer in 2021 \cite{yoshida2018fujitsu}. Most notably, the A64FX will be the first production processor to use the new Arm \gls{sve} instruction set architecture, which allows for 512-bit SIMD registers. Estimating the performance of unreleased hardware is challenging as manufacturers often release optimistic performance estimations to generate interest in their devices. This chapter aims to use the literature published by Fujitsu to estimate the raw performance of of the A64FX processor. This information is then used to project the performance of Isca to the A64FX.
+Using the results from the experiments carried out in Chapter \ref{chap:results}, the performance of Isca has been projected to Fujitsu's A64FX Arm processor, which is planned to be debuted in the Post-K supercomputer in 2021 \cite{yoshida2018fujitsu}. Most notably, it will be the first production processor to use the new Arm \gls{sve} instruction set architecture, which allows for SIMD operations using 512-bit vector registers. Estimating the performance of unreleased hardware is challenging as manufacturers often release optimistic performance estimations to generate interest in their devices.
+\par
+This chapter aims to use the literature published by Fujitsu to estimate the raw performance of of the A64FX processor. This information is then used to project the performance of Isca to the A64FX using a simple performance model based on Amdhal's law \cite{bach2015est}.
 
 \section{Hardware performance estimation}
 
@@ -1408,24 +1410,75 @@ Memory bandwidth (GB/s)				& 240			& 1024			\\
 \end{table}%
 
 \subsection{Floating point performance}
-Using Equation \ref{equ:perf}, a dual socket configuration of the A64FX is calculated to provide a theoretical peak floating point performance of 2,688 GFLOPS, which is a 2,150.4 GFLOP improvement over the ThunderX2. This estimation has been calculated assuming that all operations are performed using the full width of 512-bit vector registers, which is highly unlikely for real applications. 
+Using Equation \ref{equ:perf}, a dual socket configuration of the A64FX is calculated to provide a theoretical peak floating point performance of 2,688 GFLOPS, which is a 2,150.4 GFLOP improvement over the ThunderX2. This estimation has been calculated assuming that all operations are performed using the full width of the 512-bit vector registers, which is highly unlikely for real applications. 
 \par
-The A64FX is expected to have a low clock rate of between 1.7-1.9 GHz. This is much lower than the Skylake processor, which must decrease its clock speed when using its 512-bit vector registers. It is not unreasonable to assume that the A64FX will not implement dynamic frequency scaling as teh base clock rate is already low. 
+The A64FX is expected to have a low clock rate of between 1.7-1.9 GHz. This is much lower than the Skylake processor, which must decrease its clock speed when using its 512-bit vector registers. It is not unreasonable to assume that the A64FX will not implement dynamic frequency scaling as the base clock rate is already low. 
 
 \subsection{Memory-bandwidth}
 When announced, Fujitsu claimed that the processor will deliver a peak memory bandwidth of 1024 GB/s (Table \ref{table:armcomp}) \cite{yoshida2018fujitsu}. STREAM TRIAD results can expect to achieve 80\% of peak performance, resulting in a functional memory bandwidth of 819.2 GB/s. 
 
-\section{Application performance}
-To estimate performance of Isca on the A64FX, it is important to consider the performance of the ThunderX2 processor only, as it is the only processor tested that uses the Armv8 instruction set architecture.
-
-\subsection{Vector performance}
-The performance gain attributed to SIMD registers on the ThunderX2 is on average 1.035$\times$ faster than the scalar code. We can therefore assume that the performance gain will be twice that for a vector width of 256 bits, and quadruple that for a width of 512 bits. Consequently, we can estimate that the A64FX will see between a 1.1$\times$ and 1.2$\times$ performance gain from the use of SIMD instructions. This estimate is reasonable, as the Isca code does not heavily rely on vectorisation for performance. 
+\section{Isca performance estimation}
+To estimate performance of Isca on the A64FX, it is important to consider only the performance of the ThunderX2 processor, as it is the only processor tested in this study that uses the Armv8 instruction set architecture.
 
 
-The Held-Suarez model configuration running at T42 resolution was found to have an operational intensity of 0.11 FLOP/Byte, and a total floating point performance of 1.54 GFLOPS (Figure \ref{fig:roofline}). The T42 resolution operates over 8192 grid points, and performs calculations at a rate of 0.11 seconds per grid point per iteration. From this, we can determine that the model requires 169.4 floating point operations per grid cell. 1.54 * 0.11
+\subsection{Scalar estimation}
+The degree to which the number of processor cores affects the runtime of a parallel code can be calculated. In 1967, Gene Amdahl proposed Amdhal's law, which governs the theoretical speedup in latency of a code when run in parallel \cite{amdahl1967validity}. It states that the theoretical speedup of a parallel task ($S$) is dominated by the fraction of the task that must run in serial ($p$). It is formally expressed in Equation \ref{equ:amdahl}.
+
+\begin{equation}
+	S(n) = \frac{1}{(1-p) + \frac{p}{n}}
+	\label{equ:amdahl}
+\end{equation}
+
+To estimate performance, we first need to find the amount of speedup possible applied to the proportion of execution time that can benefit from additional compute resources $\frac{p}{n}$. This can be done using non-linear least squares regression by treating Amdhal's law as an objective function of speedup. This method calculates the parallel fraction of the code as $p = 0.9776 +/- 0.0011$.
+\par
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\textwidth]{img/a64fx-estimate.pdf}
+\caption[Non-linear least squares regression ]{Non-linear least squares regression applied to the speedup of the scalar ThunderX2 code relative to one processor core.}
+\label{default}
+\end{center}
+\end{figure}
+
+\par
+To estimate the performance of a processor, the number of cores effectively utilised to run the code in parallel $e$ must be calculated using Equation \ref{equ:effective-cores}, whereby $m$ refers to the maximum number of cores on the processor.
+\begin{equation}
+e = \frac{1}{(1-p) + \frac{1}{m}}
+\label{equ:effective-cores}
+\end{equation}
+\par
+We then calculate the scalar floating point performance of the processor. Assuming a base clock frequency $f$ of 1.8 GHz for the A64FX, the number of floating point operations can be estimated to be 59.47 for the ThunderX2 and 59.59 for the A64FX (Equation \ref{eq:flop-est}).
+\begin{equation}
+G = f \cdot e
+\label{eq:flop-est}
+\end{equation}
+\par
+The wallclock runtime of the A64FX, $R_{A}$ can be estimated using the floating point performance of both the ThunderX2, $G_{T}$ and A64FX, $G_{A}$ for each core count and runtime of the ThunderX2 $R_T$ (Equation \ref{equ:fpa}).
+\begin{equation}
+R_{A} = \frac{G_{T}}{G_{A}} \cdot R_{T}
+\label{equ:fpa}
+\end{equation}
+
+\subsection{Vector estimation}
+Thus far, all calculations have used the unvectorised benchmark of the ThunderX2. The predicted wallclock runtime $R_{A}$ must be adjusted to account for the 512-bit registers found in the A64FX. On the ThunderX2, the code compiled to use SIMD is on average 1.035$\times$ faster than the scalar code. We can therefore assume that the performance gain will be twice that for a vector width of 256 bits, and quadruple that for a width of 512 bits. Consequently, we can estimate that the A64FX will see between a 1.1$\times$ and 1.2$\times$ performance gain from the use of SIMD instructions and this can be applied to scale the estimate $R_{A}$. This estimate is reasonable, as the Isca code does not heavily rely on vectorisation for performance. 
+
+\subsection{Results}
+It is estimated that Isca will run faster on the A64FX than the ThunderX2, providing an approximate 1.17$\times$ +/-10\% performance speedup relative to the ThunderX2 at all core counts (Figure \ref{fig:projection}). 
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=\textwidth]{img/a64fx-projection.pdf}
+\caption{Projected performance of the A64FX compared to the measured performance of the ThunderX2 running the Held-Suarez configuration at T42 resolution. }
+\label{fig:projection}
+\end{center}
+\end{figure}
+
+
+
+
+
+%The Held-Suarez model configuration running at T42 resolution was found to have an operational intensity of 0.11 FLOP/Byte, and a total floating point performance of 1.54 GFLOPS (Figure \ref{fig:roofline}). The T42 resolution operates over 8192 grid points, and performs calculations at a rate of 0.11 seconds per grid point per iteration. From this, we can determine that the model requires 169.4 floating point operations per grid cell. 1.54 * 0.11
 
 \section{Conclusion}
-These estimates are more of a thought experiment than a methodical performance model of the Isca code. However, they provide an interesting insight into the real-life performance of the future of Arm server hardware. 
+These estimates are more of a thought experiment than a methodical performance model of the Isca code, using only the speed and estimated vector gain of the processor whilst not taking the memory-bandwidth into account. However, they provide an interesting insight into the performance of the future of Arm server hardware running a production scientific code. 
 
 
 %\begin{figure}[htbp]
