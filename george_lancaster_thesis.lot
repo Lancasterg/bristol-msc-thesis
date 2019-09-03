@@ -1,21 +1,43 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Hardware specifications of the target HPC systems}}{15}{table.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.1}{\ignorespaces Hardware specifications of the target HPC systems}}{15}{table.caption.19}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Compilers and MPI libraries used for benchmarking\relax }}{22}{table.caption.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.1}{\ignorespaces Compilers and MPI libraries used for benchmarking.\relax }}{22}{table.caption.30}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Resolutions and their compatible core counts}}{30}{table.caption.33}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Number of processor cores used to measure the performance of different compilers}}{31}{table.caption.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Resolutions and their compatible core counts}}{29}{table.caption.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Number of processor cores used to measure the performance of different compilers}}{31}{table.caption.36}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code\relax }}{45}{table.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code.\relax }}{46}{table.caption.55}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {9.1}{\ignorespaces Hardware comparison of the Cavium ThunderX2 and Fujitsu's A64FX. As the A64FX is under development, this information is subject to change.\relax }}{55}{table.caption.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {9.1}{\ignorespaces Comparison of ThunderX2 and A64FX hardware features}}{56}{table.caption.72}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

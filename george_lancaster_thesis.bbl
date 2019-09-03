@@ -1,451 +1,3807 @@
-\begin{thebibliography}{10}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{vallis2018isca}{article}{}
+      \name{author}{10}{}{%
+        {{hash=5c2c3d58b09c611de81dd9321c06504a}{%
+           family={Vallis},
+           familyi={V\bibinitperiod},
+           given={Geoffrey\bibnamedelima K},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=7722e8915227e6c07017c4b17235d33e}{%
+           family={Colyer},
+           familyi={C\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9e36247191da1c7e475970b3f1ab03eb}{%
+           family={Geen},
+           familyi={G\bibinitperiod},
+           given={Ruth},
+           giveni={R\bibinitperiod}}}%
+        {{hash=39d027405a0fe5265dcdea46d939fa65}{%
+           family={Gerber},
+           familyi={G\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a65b37c16ea70032e9a01d1aee1c2f3e}{%
+           family={Jucker},
+           familyi={J\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=868169ac1435df44fa09dd0b1bcf7412}{%
+           family={Maher},
+           familyi={M\bibinitperiod},
+           given={Penelope},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3511d7eaf1771addd4eb5cf76f7cde37}{%
+           family={Paterson},
+           familyi={P\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1b92db8debd5b7bf282dcee0b0f0f88}{%
+           family={Pietschnig},
+           familyi={P\bibinitperiod},
+           given={Marianne},
+           giveni={M\bibinitperiod}}}%
+        {{hash=13e8d0656feb993703b5c8c1cf920e35}{%
+           family={Penn},
+           familyi={P\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=24a119dde0a539d8cd7ef1bbafc562fd}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={Stephen\bibnamedelima I},
+           giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9f6db0fb32f8a9e2a304c2dfced5734}
+      \strng{fullhash}{6a1242548b3db86670fdc4fa55dc9e6a}
+      \strng{bibnamehash}{a9f6db0fb32f8a9e2a304c2dfced5734}
+      \strng{authorbibnamehash}{a9f6db0fb32f8a9e2a304c2dfced5734}
+      \strng{authornamehash}{a9f6db0fb32f8a9e2a304c2dfced5734}
+      \strng{authorfullhash}{6a1242548b3db86670fdc4fa55dc9e6a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geoscientific Model Development}
+      \field{month}{10}
+      \field{number}{3}
+      \field{title}{Isca, v1.0: a framework for the global modelling of the atmospheres of Earth and other planets at varying levels of complexity}
+      \field{volume}{11}
+      \field{year}{2018}
+      \field{pages}{843\bibrangedash 859}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.5194/gmd-11-843-2018
+      \endverb
+    \endentry
+    \entry{calore2018advanced}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=1b23c4fab712a4482c5de192c1e422fb}{%
+           family={Calore},
+           familyi={C\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+        {{hash=760e0ca8b306c783b3ee6757496ce756}{%
+           family={Mantovani},
+           familyi={M\bibinitperiod},
+           given={Filippo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3de2537a3c56694188d6219bd1c3cd09}{%
+           family={Ruiz},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{66d6758185fb5084a7394ffb4f011563}
+      \strng{fullhash}{66d6758185fb5084a7394ffb4f011563}
+      \strng{bibnamehash}{66d6758185fb5084a7394ffb4f011563}
+      \strng{authorbibnamehash}{66d6758185fb5084a7394ffb4f011563}
+      \strng{authornamehash}{66d6758185fb5084a7394ffb4f011563}
+      \strng{authorfullhash}{66d6758185fb5084a7394ffb4f011563}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 International Conference on High Performance Computing \& Simulation (HPCS)}
+      \field{month}{7}
+      \field{title}{Advanced performance analysis of HPC workloads on Cavium ThunderX}
+      \field{year}{2018}
+      \field{pages}{375\bibrangedash 382}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/HPCS.2018.00068
+      \endverb
+    \endentry
+    \entry{mcintosh2018performance}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e3f38b14b64f22da420f4abea95f782b}{%
+           family={McIntosh-Smith},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d5a7337bf429550d6c7241340c5fbd04}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6bf8da3e4fb1a56f8e081a507d05e4f1}{%
+           family={Deakin},
+           familyi={D\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ae637a0ca6acb9be4e9cf0ee04ada95d}{%
+           family={Poenaru},
+           familyi={P\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{114a5941f38f434938403e6458f22afb}
+      \strng{fullhash}{2fb7bf50c93e7411b6e030700c5637db}
+      \strng{bibnamehash}{114a5941f38f434938403e6458f22afb}
+      \strng{authorbibnamehash}{114a5941f38f434938403e6458f22afb}
+      \strng{authornamehash}{114a5941f38f434938403e6458f22afb}
+      \strng{authorfullhash}{2fb7bf50c93e7411b6e030700c5637db}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Concurrency and Computation: Practice and Experience}
+      \field{month}{5}
+      \field{title}{A performance analysis of the first generation of HPC-optimized Arm processors}
+      \field{year}{2018}
+      \field{pages}{e5110}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/cpe.5110
+      \endverb
+    \endentry
+    \entry{okimoto2009high}{article}{}
+      \name{author}{9}{}{%
+        {{hash=bfe5084d3da7b3a9030ca54c470f687d}{%
+           family={Okimoto},
+           familyi={O\bibinitperiod},
+           given={Noriaki},
+           giveni={N\bibinitperiod}}}%
+        {{hash=67d6ab9448f66bd6c2acd9f56a1a507a}{%
+           family={Futatsugi},
+           familyi={F\bibinitperiod},
+           given={Noriyuki},
+           giveni={N\bibinitperiod}}}%
+        {{hash=74b265349358483efc8f8e8ba7a36812}{%
+           family={Fuji},
+           familyi={F\bibinitperiod},
+           given={Hideyoshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=adbdbd8487686859869bdb47a8451c47}{%
+           family={Suenaga},
+           familyi={S\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f7eb3b05095b47fbad7eb42f7f03047c}{%
+           family={Morimoto},
+           familyi={M\bibinitperiod},
+           given={Gentaro},
+           giveni={G\bibinitperiod}}}%
+        {{hash=311fe840d8067c6fa2a8f21977d1f2ac}{%
+           family={Yanai},
+           familyi={Y\bibinitperiod},
+           given={Ryoko},
+           giveni={R\bibinitperiod}}}%
+        {{hash=21d23c65c5fb7d51fbe967d79d81c453}{%
+           family={Ohno},
+           familyi={O\bibinitperiod},
+           given={Yousuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=465be101223d6d7e3e2af41bcf010209}{%
+           family={Narumi},
+           familyi={N\bibinitperiod},
+           given={Tetsu},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7c191613a4d19bc5e553cd5bc7c91529}{%
+           family={Taiji},
+           familyi={T\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{f75bb16322f9459e48e4e28942de95e5}
+      \strng{fullhash}{eadea30ca6fc1e24d0b61ed74d776fa9}
+      \strng{bibnamehash}{f75bb16322f9459e48e4e28942de95e5}
+      \strng{authorbibnamehash}{f75bb16322f9459e48e4e28942de95e5}
+      \strng{authornamehash}{f75bb16322f9459e48e4e28942de95e5}
+      \strng{authorfullhash}{eadea30ca6fc1e24d0b61ed74d776fa9}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS computational biology}
+      \field{number}{10}
+      \field{title}{High-performance drug discovery: computational screening by combining docking and molecular dynamics simulations}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{e1000528}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pcbi.1000528.t001
+      \endverb
+    \endentry
+    \entry{jouppi2017datacenter}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=378efd1b0453f13bfc624f12b9393fe5}{%
+           family={Jouppi},
+           familyi={J\bibinitperiod},
+           given={Norman\bibnamedelima P},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=2b3412c48bab46f41faab78455fce0e1}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Cliff},
+           giveni={C\bibinitperiod}}}%
+        {{hash=98e48fd2ef83c15cb4e696e6243eef05}{%
+           family={Patil},
+           familyi={P\bibinitperiod},
+           given={Nishant},
+           giveni={N\bibinitperiod}}}%
+        {{hash=64f58317379ddd1a24e0e6cba85ae78c}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=74807a6d988186a9817a547408d8bb77}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Gaurav},
+           giveni={G\bibinitperiod}}}%
+        {{hash=120d928debde9c8a2bc6ac015f623e8c}{%
+           family={Bajwa},
+           familyi={B\bibinitperiod},
+           given={Raminder},
+           giveni={R\bibinitperiod}}}%
+        {{hash=eafee5821b3a759eeb4350ecb60b1973}{%
+           family={Bates},
+           familyi={B\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=158bf7535f376e882773db8f6306f5e7}{%
+           family={Bhatia},
+           familyi={B\bibinitperiod},
+           given={Suresh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=20809ed2e8eff0197b2917012f6d7b04}{%
+           family={Boden},
+           familyi={B\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=38dc630b1c85638854dae68766a3a267}{%
+           family={Borchers},
+           familyi={B\bibinitperiod},
+           given={Al},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2ea3ef4b293ce7c63106008d28ec0f84}
+      \strng{fullhash}{502e56a13c7cfc9247b3ed0fbb06b99e}
+      \strng{bibnamehash}{2ea3ef4b293ce7c63106008d28ec0f84}
+      \strng{authorbibnamehash}{2ea3ef4b293ce7c63106008d28ec0f84}
+      \strng{authornamehash}{2ea3ef4b293ce7c63106008d28ec0f84}
+      \strng{authorfullhash}{502e56a13c7cfc9247b3ed0fbb06b99e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 ACM/IEEE 44th Annual International Symposium on Computer Architecture}
+      \field{title}{In-datacenter performance analysis of a tensor processing unit}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/3079856.3080246
+      \endverb
+    \endentry
+    \entry{bretherton2012national}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=2dad4d110b063820ff96390c9863d176}{%
+           family={Bretherton},
+           familyi={B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=caacffd06f6357e7dcd5c2c52ec55d10}{%
+           family={Balaji},
+           familyi={B\bibinitperiod},
+           given={V},
+           giveni={V\bibinitperiod}}}%
+        {{hash=4e6c85da6e4a556577adb73d111474ab}{%
+           family={Delworth},
+           familyi={D\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5cdd687a2b02c147ffd922e2318de9d3}{%
+           family={Dickinson},
+           familyi={D\bibinitperiod},
+           given={RE},
+           giveni={R\bibinitperiod}}}%
+        {{hash=49ee5adb6dbf5020f3b67c64d56bccc9}{%
+           family={Edmonds},
+           familyi={E\bibinitperiod},
+           given={JA},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1f4a9f95290759f4a2af209e92d3c4a8}{%
+           family={Famiglietti},
+           familyi={F\bibinitperiod},
+           given={JS},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7c1ef9351ab47f729f8f82fb31dd211c}{%
+           family={Smarr},
+           familyi={S\bibinitperiod},
+           given={LL},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Washington, DC: The National Academies Press}%
+      }
+      \strng{namehash}{1bca5a091e83d9b7b001b36a1ef13523}
+      \strng{fullhash}{82e352103f1790e1ccf0f1a227d6ce4f}
+      \strng{bibnamehash}{1bca5a091e83d9b7b001b36a1ef13523}
+      \strng{authorbibnamehash}{1bca5a091e83d9b7b001b36a1ef13523}
+      \strng{authornamehash}{1bca5a091e83d9b7b001b36a1ef13523}
+      \strng{authorfullhash}{82e352103f1790e1ccf0f1a227d6ce4f}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A national strategy for advancing climate modeling}
+      \field{year}{2012}
+      \verb{doi}
+      \verb 10.17226/13430
+      \endverb
+    \endentry
+    \entry{asanovic2006landscape}{report}{}
+      \name{author}{11}{}{%
+        {{hash=ab8b3b256286cedf287deca6326c7db0}{%
+           family={Asanovic},
+           familyi={A\bibinitperiod},
+           given={Krste},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f0c9c6893c57b5e0bed055fa63999ca7}{%
+           family={Bodik},
+           familyi={B\bibinitperiod},
+           given={Ras},
+           giveni={R\bibinitperiod}}}%
+        {{hash=adcea98caf5f2b2f0634b59c3ff369d2}{%
+           family={Catanzaro},
+           familyi={C\bibinitperiod},
+           given={Bryan\bibnamedelima Christopher},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a605c713e46806130dbe31ea8690d844}{%
+           family={Gebis},
+           familyi={G\bibinitperiod},
+           given={Joseph\bibnamedelima James},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f64dee7c0835252d1c945e8bac717e14}{%
+           family={Husbands},
+           familyi={H\bibinitperiod},
+           given={Parry},
+           giveni={P\bibinitperiod}}}%
+        {{hash=994177386e5a63171a7be588e97df7e5}{%
+           family={Keutzer},
+           familyi={K\bibinitperiod},
+           given={Kurt},
+           giveni={K\bibinitperiod}}}%
+        {{hash=165ddeb6402743c450e450cdc7bbb9ff}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8a8ec9f575895711fa86721a52eec79c}{%
+           family={Plishker},
+           familyi={P\bibinitperiod},
+           given={William\bibnamedelima Lester},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=8411e32c5282692ec8fb33ae8efc7b3a}{%
+           family={Shalf},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=89ca0d8cdc746be819d0d7e29363e1a8}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Samuel\bibnamedelima Webb},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=f089d2eee0268f98a01c22843ec9ca8f}{%
+           family={Yelick},
+           familyi={Y\bibinitperiod},
+           given={Katherine\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {EECS Department, University of California}%
+      }
+      \list{location}{1}{%
+        {Berkley CA, USA}%
+      }
+      \strng{namehash}{1aa4ce0007f6bc49c8bec0491a075972}
+      \strng{fullhash}{1931a63949e7c5a34719bc4dc888b2ca}
+      \strng{bibnamehash}{1aa4ce0007f6bc49c8bec0491a075972}
+      \strng{authorbibnamehash}{1aa4ce0007f6bc49c8bec0491a075972}
+      \strng{authornamehash}{1aa4ce0007f6bc49c8bec0491a075972}
+      \strng{authorfullhash}{1931a63949e7c5a34719bc4dc888b2ca}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{number}{UCB/EECS-2006-183}
+      \field{title}{The Landscape of Parallel Computing Research: A View from Berkeley}
+      \field{type}{techreport}
+      \field{year}{2006}
+    \endentry
+    \entry{becker1995beowulf}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=04b09f1619d0ddb430e4ed2d9fd4c13e}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Donald\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b49388ecb22068f005861ed9049530d8}{%
+           family={Sterling},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a08b08cdb16537c3ad75aa912dee3c74}{%
+           family={Savarese},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f6e490b1e7bf0e8f34b380abcb851d21}{%
+           family={Dorband},
+           familyi={D\bibinitperiod},
+           given={John\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=6f00ce3328487fef3eb4faca39a80860}{%
+           family={Ranawak},
+           familyi={R\bibinitperiod},
+           given={Udaya\bibnamedelima A.},
+           giveni={U\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=3dfd83dc3e883cab85a27fa948287c77}{%
+           family={Packer},
+           familyi={P\bibinitperiod},
+           given={Charles\bibnamedelima V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{aa3d7659813d0b8ccf5d6f105c14bdce}
+      \strng{fullhash}{34250aef59689eeca94a0484e82c6cd0}
+      \strng{bibnamehash}{aa3d7659813d0b8ccf5d6f105c14bdce}
+      \strng{authorbibnamehash}{aa3d7659813d0b8ccf5d6f105c14bdce}
+      \strng{authornamehash}{aa3d7659813d0b8ccf5d6f105c14bdce}
+      \strng{authorfullhash}{34250aef59689eeca94a0484e82c6cd0}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings, International Conference on Parallel Processing}
+      \field{title}{BEOWULF: A parallel workstation for scientific computation}
+      \field{volume}{95}
+      \field{year}{1995}
+      \field{pages}{11\bibrangedash 14}
+      \range{pages}{4}
+    \endentry
+    \entry{beowulf14reed}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=e4e958702549111feba3dee13ffd6b46}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Annapolis MD, USA}%
+      }
+      \strng{namehash}{e4e958702549111feba3dee13ffd6b46}
+      \strng{fullhash}{e4e958702549111feba3dee13ffd6b46}
+      \strng{bibnamehash}{e4e958702549111feba3dee13ffd6b46}
+      \strng{authorbibnamehash}{e4e958702549111feba3dee13ffd6b46}
+      \strng{authornamehash}{e4e958702549111feba3dee13ffd6b46}
+      \strng{authorfullhash}{e4e958702549111feba3dee13ffd6b46}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 20 Years of Beowulf Workshop on Honor of Thomas Sterling's 65th Birthday}
+      \field{month}{10}
+      \field{title}{Beowulf Clusters: From Research Curiosity to Exascale}
+      \field{year}{2015}
+      \field{pages}{28\bibrangedash 33}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/2737909.2737913
+      \endverb
+    \endentry
+    \entry{evans2012evaluating}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2ed713f6c3aeb1f1d96c53fdc4921d33}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Jason\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=5593d902f962f01efbe76ad896240317}{%
+           family={Ekstr{\"{o}}m},
+           familyi={E\bibinitperiod},
+           given={Marie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bf6b37c334a6d8dc6126ea5e0d71d844}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{780272674904edb73c5f05e71317f27e}
+      \strng{fullhash}{780272674904edb73c5f05e71317f27e}
+      \strng{bibnamehash}{780272674904edb73c5f05e71317f27e}
+      \strng{authorbibnamehash}{780272674904edb73c5f05e71317f27e}
+      \strng{authornamehash}{780272674904edb73c5f05e71317f27e}
+      \strng{authorfullhash}{780272674904edb73c5f05e71317f27e}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Climate Dynamics}
+      \field{number}{6}
+      \field{title}{Evaluating the performance of a WRF physics ensemble over South-East Australia}
+      \field{volume}{39}
+      \field{year}{2012}
+      \field{pages}{1241\bibrangedash 1258}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s00382-011-1244-5
+      \endverb
+    \endentry
+    \entry{isca2019github}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0657cb258a470d0b42d442f9bf1a2308}{%
+           family={{Execlim}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0657cb258a470d0b42d442f9bf1a2308}
+      \strng{fullhash}{0657cb258a470d0b42d442f9bf1a2308}
+      \strng{bibnamehash}{0657cb258a470d0b42d442f9bf1a2308}
+      \strng{authorbibnamehash}{0657cb258a470d0b42d442f9bf1a2308}
+      \strng{authornamehash}{0657cb258a470d0b42d442f9bf1a2308}
+      \strng{authorfullhash}{0657cb258a470d0b42d442f9bf1a2308}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Isca: Idealized GCM from the University of Exeter}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://github.com/ExeClim/Isca
+      \endverb
+      \verb{url}
+      \verb https://github.com/ExeClim/Isca
+      \endverb
+    \endentry
+    \entry{penn2017thermal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=13e8d0656feb993703b5c8c1cf920e35}{%
+           family={Penn},
+           familyi={P\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5c2c3d58b09c611de81dd9321c06504a}{%
+           family={Vallis},
+           familyi={V\bibinitperiod},
+           given={Geoffrey\bibnamedelima K},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{a54403d847b648ae123b8955c46f9067}
+      \strng{fullhash}{a54403d847b648ae123b8955c46f9067}
+      \strng{bibnamehash}{a54403d847b648ae123b8955c46f9067}
+      \strng{authorbibnamehash}{a54403d847b648ae123b8955c46f9067}
+      \strng{authornamehash}{a54403d847b648ae123b8955c46f9067}
+      \strng{authorfullhash}{a54403d847b648ae123b8955c46f9067}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{number}{2}
+      \field{title}{The thermal phase curve offset on tidally and nontidally locked exoplanets: A shallow water model}
+      \field{volume}{842}
+      \field{year}{2017}
+      \field{pages}{101}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/1538-4357/aa756e
+      \endverb
+    \endentry
+    \entry{thomson2018atmospheric}{article}{}
+      \name{author}{2}{}{%
+        {{hash=24a119dde0a539d8cd7ef1bbafc562fd}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={Stephen\bibnamedelima I},
+           giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=5c2c3d58b09c611de81dd9321c06504a}{%
+           family={Vallis},
+           familyi={V\bibinitperiod},
+           given={Geoffrey\bibnamedelima K},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{4f9f27898eef6600110a5fdf52cd893f}
+      \strng{fullhash}{4f9f27898eef6600110a5fdf52cd893f}
+      \strng{bibnamehash}{4f9f27898eef6600110a5fdf52cd893f}
+      \strng{authorbibnamehash}{4f9f27898eef6600110a5fdf52cd893f}
+      \strng{authornamehash}{4f9f27898eef6600110a5fdf52cd893f}
+      \strng{authorfullhash}{4f9f27898eef6600110a5fdf52cd893f}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{number}{12}
+      \field{title}{Atmospheric response to SST anomalies. Part I: Background-state dependence, teleconnections, and local effects in winter}
+      \field{volume}{75}
+      \field{year}{2018}
+      \field{pages}{4107\bibrangedash 4124}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1175/JAS-D-17-0297.1
+      \endverb
+    \endentry
+    \entry{geen2018regime}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9e36247191da1c7e475970b3f1ab03eb}{%
+           family={Geen},
+           familyi={G\bibinitperiod},
+           given={Ruth},
+           giveni={R\bibinitperiod}}}%
+        {{hash=923af79c8217ed9fa03c8675373b3063}{%
+           family={Lambert},
+           familyi={L\bibinitperiod},
+           given={FH},
+           giveni={F\bibinitperiod}}}%
+        {{hash=57739c2c9950dd32a5750684e7f8eac3}{%
+           family={Vallis},
+           familyi={V\bibinitperiod},
+           given={GK},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{4429bb7e961e6076b6a302639b9b9df7}
+      \strng{fullhash}{4429bb7e961e6076b6a302639b9b9df7}
+      \strng{bibnamehash}{4429bb7e961e6076b6a302639b9b9df7}
+      \strng{authorbibnamehash}{4429bb7e961e6076b6a302639b9b9df7}
+      \strng{authornamehash}{4429bb7e961e6076b6a302639b9b9df7}
+      \strng{authorfullhash}{4429bb7e961e6076b6a302639b9b9df7}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Climate}
+      \field{number}{8}
+      \field{title}{Regime change behavior during Asian monsoon onset}
+      \field{volume}{31}
+      \field{year}{2018}
+      \field{pages}{3327\bibrangedash 3348}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1175/JCLI-D-17-0118.1
+      \endverb
+    \endentry
+    \entry{balaji2002fms}{report}{}
+      \name{author}{1}{}{%
+        {{hash=9c064c658fe67164e8457d5e551a47a3}{%
+           family={Balaji},
+           familyi={B\bibinitperiod},
+           given={Venkatramani},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Princeton, NJ, USA}%
+      }
+      \list{publisher}{1}{%
+        {Geophysical Fluid Dynamics Laboratory}%
+      }
+      \strng{namehash}{9c064c658fe67164e8457d5e551a47a3}
+      \strng{fullhash}{9c064c658fe67164e8457d5e551a47a3}
+      \strng{bibnamehash}{9c064c658fe67164e8457d5e551a47a3}
+      \strng{authorbibnamehash}{9c064c658fe67164e8457d5e551a47a3}
+      \strng{authornamehash}{9c064c658fe67164e8457d5e551a47a3}
+      \strng{authorfullhash}{9c064c658fe67164e8457d5e551a47a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The FMS Manual: A developer's guide to the GFDL Flexible Modeling System}
+      \field{type}{techreport}
+      \field{year}{2002}
+    \endentry
+    \entry{donner2011dynamical}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=6f29920f0676f069c598f1acdd132427}{%
+           family={Donner},
+           familyi={D\bibinitperiod},
+           given={Leo\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=655de97f7de9af9e08acfd3c9746fe2f}{%
+           family={Wyman},
+           familyi={W\bibinitperiod},
+           given={Bruce\bibnamedelima L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=32675e053862c834568ac9023d99b164}{%
+           family={Hemler},
+           familyi={H\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=edc1d4fb84046c7e17fd4cc57534764d}{%
+           family={Horowitz},
+           familyi={H\bibinitperiod},
+           given={Larry\bibnamedelima W.},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=2fe4b988abd570f3500c2bb073b23bbc}{%
+           family={Ming},
+           familyi={M\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c7a7a826b23381cf98a59161f42cf24e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f75388bcd777b2471e496265ec186630}{%
+           family={Golaz},
+           familyi={G\bibinitperiod},
+           given={Jean-Christophe},
+           giveni={J\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=e874f456f2236d3c158a2fe0fa4d35cf}{%
+           family={Ginoux},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2a1f7c6b95d1907d7c4b7ca59164866a}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={S-J},
+           giveni={S\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=d09844db4e424d2e3c99d4f3f6a6ef62}{%
+           family={Schwarzkopf},
+           familyi={S\bibinitperiod},
+           given={M\bibnamedelima Daniel},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Meteorological Society}%
+      }
+      \strng{namehash}{a17be3d47e2124241c02036c8ed5bd0e}
+      \strng{fullhash}{299db1381683b54e0e8a6402c9dbad30}
+      \strng{bibnamehash}{a17be3d47e2124241c02036c8ed5bd0e}
+      \strng{authorbibnamehash}{a17be3d47e2124241c02036c8ed5bd0e}
+      \strng{authornamehash}{a17be3d47e2124241c02036c8ed5bd0e}
+      \strng{authorfullhash}{299db1381683b54e0e8a6402c9dbad30}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Climate}
+      \field{month}{7}
+      \field{number}{13}
+      \field{title}{The dynamical core, physical parameterizations, and basic simulation characteristics of the atmospheric component AM3 of the GFDL global coupled model CM3}
+      \field{volume}{24}
+      \field{year}{2011}
+      \field{pages}{3484\bibrangedash 3519}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1175/2011JCLI3955.1
+      \endverb
+    \endentry
+    \entry{farneti2009intermediate}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3b66d19186beb30f0cdf1c8d570881f5}{%
+           family={Farneti},
+           familyi={F\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=00b4b3b17d8f1513a23d109d11435712}{%
+           family={Vallis},
+           familyi={V\bibinitperiod},
+           given={Geoffrey\bibnamedelima K.},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{690f5c3fedb23002f6831fb4646c437e}
+      \strng{fullhash}{690f5c3fedb23002f6831fb4646c437e}
+      \strng{bibnamehash}{690f5c3fedb23002f6831fb4646c437e}
+      \strng{authorbibnamehash}{690f5c3fedb23002f6831fb4646c437e}
+      \strng{authornamehash}{690f5c3fedb23002f6831fb4646c437e}
+      \strng{authorfullhash}{690f5c3fedb23002f6831fb4646c437e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geoscientific Model Development}
+      \field{month}{7}
+      \field{number}{2}
+      \field{title}{An Intermediate Complexity Climate Model (ICCMp1) based on the GFDL flexible modelling system}
+      \field{volume}{2}
+      \field{year}{2009}
+      \field{pages}{73\bibrangedash 88}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.5194/gmd-2-73-2009
+      \endverb
+    \endentry
+    \entry{gfdl2019fms}{online}{}
+      \name{author}{1}{}{%
+        {{hash=75b93dc927c31a94587bc6fab54f03a8}{%
+           family={GFDL},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{75b93dc927c31a94587bc6fab54f03a8}
+      \strng{fullhash}{75b93dc927c31a94587bc6fab54f03a8}
+      \strng{bibnamehash}{75b93dc927c31a94587bc6fab54f03a8}
+      \strng{authorbibnamehash}{75b93dc927c31a94587bc6fab54f03a8}
+      \strng{authornamehash}{75b93dc927c31a94587bc6fab54f03a8}
+      \strng{authorfullhash}{75b93dc927c31a94587bc6fab54f03a8}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{Flexible Modeling System (FMS)}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.gfdl.noaa.gov/fms/
+      \endverb
+      \verb{url}
+      \verb https://www.gfdl.noaa.gov/fms/
+      \endverb
+    \endentry
+    \entry{bjerknes1910dynamic}{book}{}
+      \name{author}{3}{}{%
+        {{hash=9fedee66e3a2a6ff203bfeb5edbfc27e}{%
+           family={Bjerknes},
+           familyi={B\bibinitperiod},
+           given={Vilhelm},
+           giveni={V\bibinitperiod}}}%
+        {{hash=88dbe631411ac6dbe267c0b578539788}{%
+           family={Sandstrom},
+           familyi={S\bibinitperiod},
+           given={Johan\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=473aee5bc7f35cedaabdf03258492219}{%
+           family={Devik},
+           familyi={D\bibinitperiod},
+           given={Olaf\bibnamedelima D.},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Carnegie}%
+      }
+      \strng{namehash}{a58d1558814d65620f7dbe84867347e9}
+      \strng{fullhash}{a58d1558814d65620f7dbe84867347e9}
+      \strng{bibnamehash}{a58d1558814d65620f7dbe84867347e9}
+      \strng{authorbibnamehash}{a58d1558814d65620f7dbe84867347e9}
+      \strng{authornamehash}{a58d1558814d65620f7dbe84867347e9}
+      \strng{authorfullhash}{a58d1558814d65620f7dbe84867347e9}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{88}
+      \field{title}{Dynamic meteorology and hydrography}
+      \field{year}{1910}
+    \endentry
+    \entry{edwards2011history}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e67b3c5929eaacf1442e67e7035f012}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={Paul\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{9e67b3c5929eaacf1442e67e7035f012}
+      \strng{fullhash}{9e67b3c5929eaacf1442e67e7035f012}
+      \strng{bibnamehash}{9e67b3c5929eaacf1442e67e7035f012}
+      \strng{authorbibnamehash}{9e67b3c5929eaacf1442e67e7035f012}
+      \strng{authornamehash}{9e67b3c5929eaacf1442e67e7035f012}
+      \strng{authorfullhash}{9e67b3c5929eaacf1442e67e7035f012}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wiley Interdisciplinary Reviews: Climate Change}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{History of climate modeling}
+      \field{volume}{2}
+      \field{year}{2011}
+      \field{pages}{128\bibrangedash 139}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/wcc.95
+      \endverb
+    \endentry
+    \entry{godske1957dynamic}{book}{}
+      \name{author}{2}{}{%
+        {{hash=6ed905a6331cb0492b5cfebac221ffd8}{%
+           family={Godske},
+           familyi={G\bibinitperiod},
+           given={Carl\bibnamedelima Ludvig},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=9fedee66e3a2a6ff203bfeb5edbfc27e}{%
+           family={Bjerknes},
+           familyi={B\bibinitperiod},
+           given={Vilhelm},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Meteorological Society}%
+      }
+      \strng{namehash}{1246ae678b2aacfc47867da594fdeb60}
+      \strng{fullhash}{1246ae678b2aacfc47867da594fdeb60}
+      \strng{bibnamehash}{1246ae678b2aacfc47867da594fdeb60}
+      \strng{authorbibnamehash}{1246ae678b2aacfc47867da594fdeb60}
+      \strng{authornamehash}{1246ae678b2aacfc47867da594fdeb60}
+      \strng{authorfullhash}{1246ae678b2aacfc47867da594fdeb60}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dynamic meteorology and weather forecasting}
+      \field{volume}{605}
+      \field{year}{1957}
+      \verb{doi}
+      \verb 10.1002/qj.49708335818
+      \endverb
+    \endentry
+    \entry{mcintosh2014performance}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=e3f38b14b64f22da420f4abea95f782b}{%
+           family={McIntosh-Smith},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1700253ae72f7ad3ff4dd9105c23f8a5}{%
+           family={Boulton},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=994fb58042b12c1c9ae4c37953f90027}{%
+           family={Curran},
+           familyi={C\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d5a7337bf429550d6c7241340c5fbd04}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Leipzig ,Germany}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{114a5941f38f434938403e6458f22afb}
+      \strng{fullhash}{d017c3a99028ba52e8da245136f8c650}
+      \strng{bibnamehash}{114a5941f38f434938403e6458f22afb}
+      \strng{authorbibnamehash}{114a5941f38f434938403e6458f22afb}
+      \strng{authornamehash}{114a5941f38f434938403e6458f22afb}
+      \strng{authorfullhash}{d017c3a99028ba52e8da245136f8c650}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Supercomputing Conference}
+      \field{month}{6}
+      \field{title}{On the performance portability of structured grid codes on many-core computer architectures}
+      \field{year}{2014}
+      \field{pages}{53\bibrangedash 75}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/978-3-319-07518-1_4
+      \endverb
+    \endentry
+    \entry{bourke1988spectral}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=3e0b7be09a9e56e98569dca07bab3f45}{%
+           family={Bourke},
+           familyi={B\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3e0b7be09a9e56e98569dca07bab3f45}
+      \strng{fullhash}{3e0b7be09a9e56e98569dca07bab3f45}
+      \strng{bibnamehash}{3e0b7be09a9e56e98569dca07bab3f45}
+      \strng{authorbibnamehash}{3e0b7be09a9e56e98569dca07bab3f45}
+      \strng{authornamehash}{3e0b7be09a9e56e98569dca07bab3f45}
+      \strng{authorfullhash}{3e0b7be09a9e56e98569dca07bab3f45}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Physically-Based Modelling and Simulation of Climate and Climatic Change}
+      \field{title}{Spectral methods in global climate and weather prediction models}
+      \field{year}{1988}
+      \field{pages}{169\bibrangedash 220}
+      \range{pages}{52}
+      \verb{doi}
+      \verb 10.1007/978-94-009-3041-4_4
+      \endverb
+    \endentry
+    \entry{orszag1974fourier}{article}{}
+      \name{author}{1}{}{%
+        {{hash=17d5986128676c0abfdee61f304e01a3}{%
+           family={Orszag},
+           familyi={O\bibinitperiod},
+           given={Steven\bibnamedelima A},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{17d5986128676c0abfdee61f304e01a3}
+      \strng{fullhash}{17d5986128676c0abfdee61f304e01a3}
+      \strng{bibnamehash}{17d5986128676c0abfdee61f304e01a3}
+      \strng{authorbibnamehash}{17d5986128676c0abfdee61f304e01a3}
+      \strng{authornamehash}{17d5986128676c0abfdee61f304e01a3}
+      \strng{authorfullhash}{17d5986128676c0abfdee61f304e01a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Weather Review}
+      \field{number}{1}
+      \field{title}{Fourier series on spheres}
+      \field{volume}{102}
+      \field{year}{1974}
+      \field{pages}{56\bibrangedash 75}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1175/1520-0493(1974)102<0056\%3AFSOS>2.0.CO\%3B2
+      \endverb
+    \endentry
+    \entry{bart1998coordinate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f31ec5dc90c6e528f2a3e771bc475f92}{%
+           family={Geerts},
+           familyi={G\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{f31ec5dc90c6e528f2a3e771bc475f92}
+      \strng{fullhash}{f31ec5dc90c6e528f2a3e771bc475f92}
+      \strng{bibnamehash}{f31ec5dc90c6e528f2a3e771bc475f92}
+      \strng{authorbibnamehash}{f31ec5dc90c6e528f2a3e771bc475f92}
+      \strng{authornamehash}{f31ec5dc90c6e528f2a3e771bc475f92}
+      \strng{authorfullhash}{f31ec5dc90c6e528f2a3e771bc475f92}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Coordinate systems of numerical weather prediction models}
+      \field{year}{1998}
+      \verb{urlraw}
+      \verb http://www-das.uwyo.edu/~geerts/cwx/notes/chap15/coord.html
+      \endverb
+      \verb{url}
+      \verb http://www-das.uwyo.edu/~geerts/cwx/notes/chap15/coord.html
+      \endverb
+    \endentry
+    \entry{goosse2010introduction}{book}{}
+      \name{author}{4}{}{%
+        {{hash=3f6b9bdf2bd8daeea838e0ab29339b25}{%
+           family={Goosse},
+           familyi={G\bibinitperiod},
+           given={Hugues},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9700519af0bc0c2df644a784cc2c00b5}{%
+           family={Barriat},
+           familyi={B\bibinitperiod},
+           given={Pierre-Yves},
+           giveni={P\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=c7352cdb177a7faffc46931ef6c6b278}{%
+           family={Loutre},
+           familyi={L\bibinitperiod},
+           given={Marie-France},
+           giveni={M\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=8dee9157a2c9c57aa9aa53b0e29cf979}{%
+           family={Zunz},
+           familyi={Z\bibinitperiod},
+           given={Violette},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Centre de recherche sur la Terre et le climat Georges Lema{\^{\i{}}}tre-UCLouvain}%
+      }
+      \strng{namehash}{3d848bdfeb4566707c99dd096d0ab65f}
+      \strng{fullhash}{3e4cd7897f75d99a6c2a9f8d9c20c7fc}
+      \strng{bibnamehash}{3d848bdfeb4566707c99dd096d0ab65f}
+      \strng{authorbibnamehash}{3d848bdfeb4566707c99dd096d0ab65f}
+      \strng{authornamehash}{3d848bdfeb4566707c99dd096d0ab65f}
+      \strng{authorfullhash}{3e4cd7897f75d99a6c2a9f8d9c20c7fc}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to climate dynamics and climate modeling}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb http://www.climate.be/textbook
+      \endverb
+      \verb{url}
+      \verb http://www.climate.be/textbook
+      \endverb
+    \endentry
+    \entry{colella2007performance}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=c41785440d0a194370dd86cca9827c37}{%
+           family={Colella},
+           familyi={C\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5301389a61dcb0afa9bddf182c3bc69d}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=760ee3ab1fe892589e7b0154308d43a4}{%
+           family={Keen},
+           familyi={K\bibinitperiod},
+           given={Noel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=8ee951e00a69e4008b456d634039663d}{%
+           family={Ligocki},
+           familyi={L\bibinitperiod},
+           given={Terry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ecd7b7a38a254e722527da1fce7fa309}{%
+           family={Lijewski},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d411931a005bb200424469d17c04d640}{%
+           family={Van\bibnamedelima Straalen},
+           familyi={V\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{bfffa662a0f70ccdf1e968443663451d}
+      \strng{fullhash}{81837d1c787f4746d2862d37dd451756}
+      \strng{bibnamehash}{bfffa662a0f70ccdf1e968443663451d}
+      \strng{authorbibnamehash}{bfffa662a0f70ccdf1e968443663451d}
+      \strng{authornamehash}{bfffa662a0f70ccdf1e968443663451d}
+      \strng{authorfullhash}{81837d1c787f4746d2862d37dd451756}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Journal of Physics: Conference Series}
+      \field{month}{6}
+      \field{number}{1}
+      \field{title}{Performance and scaling of locally-structured grid methods for partial differential equations}
+      \field{volume}{78}
+      \field{year}{2007}
+      \field{pages}{012013}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/78/1/012013
+      \endverb
+    \endentry
+    \entry{bader2008climate}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{7}{}{%
+        {{hash=c15d912f7d0f368b33aba21a61ca1443}{%
+           family={Bader},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=120f54890373c0f416de1d72f37c90fd}{%
+           family={Covey},
+           familyi={C\bibinitperiod},
+           given={Curtis},
+           giveni={C\bibinitperiod}}}%
+        {{hash=03116dda8cc1493158c45756c5030d62}{%
+           family={Gutowski\bibnamedelima Jr},
+           familyi={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={William\bibnamedelima J},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3d4110067d1644212ec8132b5594e919}{%
+           family={Held},
+           familyi={H\bibinitperiod},
+           given={Isaac\bibnamedelima M},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6c10d316e2a42c0a12345cf16cab1870}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Ronald\bibnamedelima L},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=807eb36621225d1192dfd3f412badf5e}{%
+           family={Tokmakian},
+           familyi={T\bibinitperiod},
+           given={Robin\bibnamedelima T},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=e2a0237e5b448e2deb102f92a6e5ef1b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Minghua\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {US Department of Energy Publications}%
+      }
+      \strng{namehash}{ab547f9b4ef68caeac07bd0a2bca2187}
+      \strng{fullhash}{06f835874fbae21d1953d5971b31a683}
+      \strng{bibnamehash}{ab547f9b4ef68caeac07bd0a2bca2187}
+      \strng{authorbibnamehash}{ab547f9b4ef68caeac07bd0a2bca2187}
+      \strng{authornamehash}{ab547f9b4ef68caeac07bd0a2bca2187}
+      \strng{authorfullhash}{06f835874fbae21d1953d5971b31a683}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Climate models: an assessment of strengths and limitations}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1009&context=usdoepub
+      \endverb
+      \verb{url}
+      \verb https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1009&context=usdoepub
+      \endverb
+    \endentry
+    \entry{singleton1967method}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4293f179937171ab796919190a574860}{%
+           family={Singleton},
+           familyi={S\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4293f179937171ab796919190a574860}
+      \strng{fullhash}{4293f179937171ab796919190a574860}
+      \strng{bibnamehash}{4293f179937171ab796919190a574860}
+      \strng{authorbibnamehash}{4293f179937171ab796919190a574860}
+      \strng{authornamehash}{4293f179937171ab796919190a574860}
+      \strng{authorfullhash}{4293f179937171ab796919190a574860}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Audio and Electroacoustics}
+      \field{number}{2}
+      \field{title}{A method for computing the fast Fourier transform with auxiliary memory and limited high-speed storage}
+      \field{volume}{15}
+      \field{year}{1967}
+      \field{pages}{91\bibrangedash 98}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/TAU.1967.1161906
+      \endverb
+    \endentry
+    \entry{cooley1965algorithm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6a9689c982f8ad2f2d89c3844e68acc8}{%
+           family={Cooley},
+           familyi={C\bibinitperiod},
+           given={James\bibnamedelima W},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c99ac4f51f724609cb8cfb078ab6aa64}{%
+           family={Tukey},
+           familyi={T\bibinitperiod},
+           given={John\bibnamedelima W},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{92ecf02b0741fd26876aceded1b4e789}
+      \strng{fullhash}{92ecf02b0741fd26876aceded1b4e789}
+      \strng{bibnamehash}{92ecf02b0741fd26876aceded1b4e789}
+      \strng{authorbibnamehash}{92ecf02b0741fd26876aceded1b4e789}
+      \strng{authornamehash}{92ecf02b0741fd26876aceded1b4e789}
+      \strng{authorfullhash}{92ecf02b0741fd26876aceded1b4e789}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics of computation}
+      \field{number}{90}
+      \field{title}{An algorithm for the machine calculation of complex Fourier series}
+      \field{volume}{19}
+      \field{year}{1965}
+      \field{pages}{297\bibrangedash 301}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1090/S0025-5718-1965-0178586-1
+      \endverb
+    \endentry
+    \entry{sorensen1987real}{article}{}
+      \name{author}{4}{}{%
+        {{hash=935c850c36b3f9111f0d0cd33d09aa64}{%
+           family={Sorensen},
+           familyi={S\bibinitperiod},
+           given={H\bibnamedelima V},
+           giveni={H\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=0d47db4e16f37728e919030d807803e0}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9ee9b02572b44be21e9c5953b927951f}{%
+           family={Heideman},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=617a7a1086f561e6730271bb85402df3}{%
+           family={Burrus},
+           familyi={B\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ec2214ca4a7201bd60124fc1720b61d6}
+      \strng{fullhash}{44b06056a5da040fc1939bf6e5a1c705}
+      \strng{bibnamehash}{ec2214ca4a7201bd60124fc1720b61d6}
+      \strng{authorbibnamehash}{ec2214ca4a7201bd60124fc1720b61d6}
+      \strng{authornamehash}{ec2214ca4a7201bd60124fc1720b61d6}
+      \strng{authorfullhash}{44b06056a5da040fc1939bf6e5a1c705}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on acoustics, speech, and signal processing}
+      \field{number}{6}
+      \field{title}{Real-valued fast Fourier transform algorithms}
+      \field{volume}{35}
+      \field{year}{1987}
+      \field{pages}{849\bibrangedash 863}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/TASSP.1987.1165220
+      \endverb
+    \endentry
+    \entry{frigo1998fftw}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=26a5a1c098bdade790e2ee41c62dd36b}{%
+           family={Frigo},
+           familyi={F\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1f7f0238e98e9657d18036fcc92ce04c}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Steven\bibnamedelima G},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{fullhash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{bibnamehash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{authorbibnamehash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{authornamehash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{authorfullhash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 1998 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP'98 (Cat. No. 98CH36181)}
+      \field{title}{FFTW: An adaptive software architecture for the FFT}
+      \field{volume}{3}
+      \field{year}{1998}
+      \field{pages}{1381\bibrangedash 1384}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICASSP.1998.681704
+      \endverb
+    \endentry
+    \entry{frigo2005design}{article}{}
+      \name{author}{2}{}{%
+        {{hash=26a5a1c098bdade790e2ee41c62dd36b}{%
+           family={Frigo},
+           familyi={F\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1f7f0238e98e9657d18036fcc92ce04c}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Steven\bibnamedelima G},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{fullhash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{bibnamehash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{authorbibnamehash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{authornamehash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \strng{authorfullhash}{336b3e95296a9f1f1cd2cb07e27e6115}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{2}
+      \field{title}{The design and implementation of FFTW3}
+      \field{volume}{93}
+      \field{year}{2005}
+      \field{pages}{216\bibrangedash 231}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/JPROC.2004.840301
+      \endverb
+    \endentry
+    \entry{frigo2003fftw}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=26a5a1c098bdade790e2ee41c62dd36b}{%
+           family={Frigo},
+           familyi={F\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1f7f0238e98e9657d18036fcc92ce04c}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Steven\bibnamedelima G},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Massachusetts Institute of Technology}%
+      }
+      \strng{namehash}{1b35038ffd72680cccb96048831c8948}
+      \strng{fullhash}{1b35038ffd72680cccb96048831c8948}
+      \strng{bibnamehash}{1b35038ffd72680cccb96048831c8948}
+      \strng{authorbibnamehash}{1b35038ffd72680cccb96048831c8948}
+      \strng{authornamehash}{1b35038ffd72680cccb96048831c8948}
+      \strng{authorfullhash}{1b35038ffd72680cccb96048831c8948}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{FFTW for version 3.3.8}
+      \field{year}{2018}
+    \endentry
+    \entry{heideman1985gauss}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7c5723e2768909ff28e583aef3bae5c1}{%
+           family={Heideman},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima T},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=584575bddde484936ecc3c1ad94c362d}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Don\bibnamedelima H},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=77c1e32ecf62043ba9cf78be5c8cf521}{%
+           family={Burrus},
+           familyi={B\bibinitperiod},
+           given={C\bibnamedelima Sidney},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{cfc2461335ca397d2b53f2e6c56eb131}
+      \strng{fullhash}{cfc2461335ca397d2b53f2e6c56eb131}
+      \strng{bibnamehash}{cfc2461335ca397d2b53f2e6c56eb131}
+      \strng{authorbibnamehash}{cfc2461335ca397d2b53f2e6c56eb131}
+      \strng{authornamehash}{cfc2461335ca397d2b53f2e6c56eb131}
+      \strng{authorfullhash}{cfc2461335ca397d2b53f2e6c56eb131}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Archive for history of exact sciences}
+      \field{number}{3}
+      \field{title}{Gauss and the history of the fast Fourier transform}
+      \field{volume}{34}
+      \field{year}{1985}
+      \field{pages}{265\bibrangedash 277}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/BF00348431
+      \endverb
+    \endentry
+    \entry{gentleman1966fast}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=188b2b5ddf7e0eb21e64de6e78117289}{%
+           family={Gentleman},
+           familyi={G\bibinitperiod},
+           given={W\bibnamedelima Morven},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=656221b95068cfb6885bc4459d25b35e}{%
+           family={Sande},
+           familyi={S\bibinitperiod},
+           given={Gordon},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{451bfa2a86cd6ef41c42cecd8bd50732}
+      \strng{fullhash}{451bfa2a86cd6ef41c42cecd8bd50732}
+      \strng{bibnamehash}{451bfa2a86cd6ef41c42cecd8bd50732}
+      \strng{authorbibnamehash}{451bfa2a86cd6ef41c42cecd8bd50732}
+      \strng{authornamehash}{451bfa2a86cd6ef41c42cecd8bd50732}
+      \strng{authorfullhash}{451bfa2a86cd6ef41c42cecd8bd50732}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the November 7-10, 1966, fall joint computer conference}
+      \field{title}{Fast Fourier Transforms: for fun and profit}
+      \field{year}{1966}
+      \field{pages}{563\bibrangedash 578}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 1464291.1464352
+      \endverb
+    \endentry
+    \entry{mpi2015standard}{report}{}
+      \name{author}{1}{}{%
+        {{hash=81843a6c9a1ae56a400e6fdeb68e7df1}{%
+           family={{Message Passing Interface Forum}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Knoxville, TN, USA}%
+      }
+      \list{publisher}{1}{%
+        {University of Tennessee}%
+      }
+      \strng{namehash}{81843a6c9a1ae56a400e6fdeb68e7df1}
+      \strng{fullhash}{81843a6c9a1ae56a400e6fdeb68e7df1}
+      \strng{bibnamehash}{81843a6c9a1ae56a400e6fdeb68e7df1}
+      \strng{authorbibnamehash}{81843a6c9a1ae56a400e6fdeb68e7df1}
+      \strng{authornamehash}{81843a6c9a1ae56a400e6fdeb68e7df1}
+      \strng{authorfullhash}{81843a6c9a1ae56a400e6fdeb68e7df1}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{MPI: A Message-Passing Interface StandardVersion 3.1}
+      \field{type}{techreport}
+      \field{year}{2015}
+    \endentry
+    \entry{rew1990netcdf}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d87e4f947b4cc51dfce171acbd43d7d0}{%
+           family={Rew},
+           familyi={R\bibinitperiod},
+           given={Russ},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3f2080643298bc1c7e5f14614c837e06}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{cd2adfc8f2e29107d8bfc87309c5555b}
+      \strng{fullhash}{cd2adfc8f2e29107d8bfc87309c5555b}
+      \strng{bibnamehash}{cd2adfc8f2e29107d8bfc87309c5555b}
+      \strng{authorbibnamehash}{cd2adfc8f2e29107d8bfc87309c5555b}
+      \strng{authornamehash}{cd2adfc8f2e29107d8bfc87309c5555b}
+      \strng{authorfullhash}{cd2adfc8f2e29107d8bfc87309c5555b}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE computer graphics and applications}
+      \field{number}{4}
+      \field{title}{NetCDF: an interface for scientific data access}
+      \field{volume}{10}
+      \field{year}{1990}
+      \field{pages}{76\bibrangedash 82}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/38.56302
+      \endverb
+    \endentry
+    \entry{schmunk2015panoply}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ed172712864d2fbb91476e0e9799ef6d}{%
+           family={Schmunk},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima B},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed172712864d2fbb91476e0e9799ef6d}
+      \strng{fullhash}{ed172712864d2fbb91476e0e9799ef6d}
+      \strng{bibnamehash}{ed172712864d2fbb91476e0e9799ef6d}
+      \strng{authorbibnamehash}{ed172712864d2fbb91476e0e9799ef6d}
+      \strng{authornamehash}{ed172712864d2fbb91476e0e9799ef6d}
+      \strng{authorfullhash}{ed172712864d2fbb91476e0e9799ef6d}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{National Aeronautics and Space Administration-Goddard Institute for Space Studies}
+      \field{title}{Panoply netcdf, hdf and grib data viewer}
+      \field{year}{2015}
+    \endentry
+    \entry{van2011numpy}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f6c3a126a7abb99c75a42d6002ca6539}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Walt},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=86fb6e231be73253b7814de93488ac1e}{%
+           family={Colbert},
+           familyi={C\bibinitperiod},
+           given={S\bibnamedelima Chris},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8dfd6b3615de2946b6e0c1772b3b5827}{%
+           family={Varoquaux},
+           familyi={V\bibinitperiod},
+           given={Gael},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{b6638f4eaeae1d0cba98979bcb0a4785}
+      \strng{fullhash}{b6638f4eaeae1d0cba98979bcb0a4785}
+      \strng{bibnamehash}{b6638f4eaeae1d0cba98979bcb0a4785}
+      \strng{authorbibnamehash}{b6638f4eaeae1d0cba98979bcb0a4785}
+      \strng{authornamehash}{b6638f4eaeae1d0cba98979bcb0a4785}
+      \strng{authorfullhash}{b6638f4eaeae1d0cba98979bcb0a4785}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computing in Science \& Engineering}
+      \field{number}{2}
+      \field{title}{The NumPy array: a structure for efficient numerical computation}
+      \field{volume}{13}
+      \field{year}{2011}
+      \field{pages}{22}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/MCSE.2011.37
+      \endverb
+    \endentry
+    \entry{moffat2017sh}{online}{}
+      \name{author}{1}{}{%
+        {{hash=38ecdf42707eb1392cf020a0d465bf66}{%
+           family={Moffat},
+           familyi={M\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{38ecdf42707eb1392cf020a0d465bf66}
+      \strng{fullhash}{38ecdf42707eb1392cf020a0d465bf66}
+      \strng{bibnamehash}{38ecdf42707eb1392cf020a0d465bf66}
+      \strng{authorbibnamehash}{38ecdf42707eb1392cf020a0d465bf66}
+      \strng{authornamehash}{38ecdf42707eb1392cf020a0d465bf66}
+      \strng{authorfullhash}{38ecdf42707eb1392cf020a0d465bf66}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{sh: a full-fledged subprocess replacement for Python}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://pypi.org/project/sh/
+      \endverb
+      \verb{url}
+      \verb https://pypi.org/project/sh/
+      \endverb
+    \endentry
+    \entry{ronacher2008jinja2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a7224aeeab1874f7a2968578c0f953ee}{%
+           family={Ronacher},
+           familyi={R\bibinitperiod},
+           given={Armin},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7224aeeab1874f7a2968578c0f953ee}
+      \strng{fullhash}{a7224aeeab1874f7a2968578c0f953ee}
+      \strng{bibnamehash}{a7224aeeab1874f7a2968578c0f953ee}
+      \strng{authorbibnamehash}{a7224aeeab1874f7a2968578c0f953ee}
+      \strng{authornamehash}{a7224aeeab1874f7a2968578c0f953ee}
+      \strng{authorfullhash}{a7224aeeab1874f7a2968578c0f953ee}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{Jinja2 Documentation}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://buildmedia.readthedocs.org/media/pdf/jinja2/latest/jinja2.pdf
+      \endverb
+      \verb{url}
+      \verb https://buildmedia.readthedocs.org/media/pdf/jinja2/latest/jinja2.pdf
+      \endverb
+    \endentry
+    \entry{wardf90nml}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8108741e0961295b401d21533867fe0a}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Marshall\bibnamedelima L},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{8108741e0961295b401d21533867fe0a}
+      \strng{fullhash}{8108741e0961295b401d21533867fe0a}
+      \strng{bibnamehash}{8108741e0961295b401d21533867fe0a}
+      \strng{authorbibnamehash}{8108741e0961295b401d21533867fe0a}
+      \strng{authornamehash}{8108741e0961295b401d21533867fe0a}
+      \strng{authorfullhash}{8108741e0961295b401d21533867fe0a}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{f90nml-A Python module for Fortran namelists}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://pypi.org/project/f90nml/
+      \endverb
+      \verb{url}
+      \verb https://pypi.org/project/f90nml/
+      \endverb
+    \endentry
+    \entry{flynn1972some}{article}{}
+      \name{author}{1}{}{%
+        {{hash=66d2cf7e415720b0918b4466478f4f05}{%
+           family={Flynn},
+           familyi={F\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{66d2cf7e415720b0918b4466478f4f05}
+      \strng{fullhash}{66d2cf7e415720b0918b4466478f4f05}
+      \strng{bibnamehash}{66d2cf7e415720b0918b4466478f4f05}
+      \strng{authorbibnamehash}{66d2cf7e415720b0918b4466478f4f05}
+      \strng{authornamehash}{66d2cf7e415720b0918b4466478f4f05}
+      \strng{authorfullhash}{66d2cf7e415720b0918b4466478f4f05}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on computers}
+      \field{number}{9}
+      \field{title}{Some computer organizations and their effectiveness}
+      \field{volume}{100}
+      \field{year}{1972}
+      \field{pages}{948\bibrangedash 960}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TC.1972.5009071
+      \endverb
+    \endentry
+    \entry{6877473}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=83c852c37d6950813fd1574aedfa2c6c}{%
+           family={Rajovic},
+           familyi={R\bibinitperiod},
+           given={Nikola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=8e994d1e5b7b77874f3f6288e63b356b}{%
+           family={Carpenter},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a9788428463a398c533a2925b6882315}{%
+           family={Gelado},
+           familyi={G\bibinitperiod},
+           given={Isaac},
+           giveni={I\bibinitperiod}}}%
+        {{hash=465345d3d7382dfe22f48c39d356958e}{%
+           family={Puzovic},
+           familyi={P\bibinitperiod},
+           given={Nikola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e834948ea38f11acdcee02543ba7dbec}{%
+           family={Ramirez},
+           familyi={R\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7267b29627e0f33514ec7f314d002572}{%
+           family={Valero},
+           familyi={V\bibinitperiod},
+           given={Mateo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Denver, Colorado}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{2af3aa33e849d70c08a3b0cc85998250}
+      \strng{fullhash}{e2cc1116b2ffb55a3f77e5846de2e50e}
+      \strng{bibnamehash}{2af3aa33e849d70c08a3b0cc85998250}
+      \strng{authorbibnamehash}{2af3aa33e849d70c08a3b0cc85998250}
+      \strng{authornamehash}{2af3aa33e849d70c08a3b0cc85998250}
+      \strng{authorfullhash}{e2cc1116b2ffb55a3f77e5846de2e50e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis}
+      \field{isbn}{978-1-4503-2378-9}
+      \field{month}{11}
+      \field{series}{SC '13}
+      \field{title}{Supercomputing with Commodity CPUs: Are Mobile SoCs Ready for HPC?}
+      \field{year}{2013}
+      \field{pages}{41\bibrangedash 53}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/2503210.2503281
+      \endverb
+    \endentry
+    \entry{conte2000long}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=3f8115bee7aa6e2c58decae1dd91abea}{%
+           family={Conte},
+           familyi={C\bibinitperiod},
+           given={Gianni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8810d3e8842f6378be09979b824a794e}{%
+           family={Tommesani},
+           familyi={T\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=174037a81bc21e8e64758918e059b957}{%
+           family={Zanichelli},
+           familyi={Z\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d43f604ab449f96e7495279b9777583e}
+      \strng{fullhash}{d43f604ab449f96e7495279b9777583e}
+      \strng{bibnamehash}{d43f604ab449f96e7495279b9777583e}
+      \strng{authorbibnamehash}{d43f604ab449f96e7495279b9777583e}
+      \strng{authornamehash}{d43f604ab449f96e7495279b9777583e}
+      \strng{authorfullhash}{d43f604ab449f96e7495279b9777583e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings Fifth IEEE International Workshop on Computer Architectures for Machine Perception}
+      \field{month}{9}
+      \field{title}{The long and winding road to high-performance image processing with MMX/SSE}
+      \field{year}{2000}
+      \field{pages}{302\bibrangedash 310}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/CAMP.2000.875989
+      \endverb
+    \endentry
+    \entry{chris2011avx}{report}{}
+      \name{author}{1}{}{%
+        {{hash=f8e49e78ba2c8fe80c5afe93d763ef48}{%
+           family={Lomont},
+           familyi={L\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Santa Clara, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Intel}%
+      }
+      \strng{namehash}{f8e49e78ba2c8fe80c5afe93d763ef48}
+      \strng{fullhash}{f8e49e78ba2c8fe80c5afe93d763ef48}
+      \strng{bibnamehash}{f8e49e78ba2c8fe80c5afe93d763ef48}
+      \strng{authorbibnamehash}{f8e49e78ba2c8fe80c5afe93d763ef48}
+      \strng{authornamehash}{f8e49e78ba2c8fe80c5afe93d763ef48}
+      \strng{authorfullhash}{f8e49e78ba2c8fe80c5afe93d763ef48}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Intel Advanced Vector Extensions}
+      \field{type}{techreport}
+      \field{year}{2011}
+    \endentry
+    \entry{intel2019avx}{report}{}
+      \name{author}{1}{}{%
+        {{hash=d01f15e44e778d65f4aef36734633ce6}{%
+           family={{Intel Corporation}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Santa Clara, CA, USA}%
+      }
+      \strng{namehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{fullhash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{bibnamehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{authorbibnamehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{authornamehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{authorfullhash}{d01f15e44e778d65f4aef36734633ce6}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Intel Architecture Instruction Set Extensions and Future Features Programming Reference}
+      \field{type}{techreport}
+      \field{year}{2019}
+    \endentry
+    \entry{xeon2680v4}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d01f15e44e778d65f4aef36734633ce6}{%
+           family={{Intel Corporation}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{fullhash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{bibnamehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{authorbibnamehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{authornamehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{authorfullhash}{d01f15e44e778d65f4aef36734633ce6}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{Intel Xeon Processor E5-2680 v4 product specification}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://ark.intel.com/content/www/us/en/ark/products/91754/intel-xeon-processor-e5-2680-v4-35m-cache-2-40-ghz.html
+      \endverb
+      \verb{url}
+      \verb https://ark.intel.com/content/www/us/en/ark/products/91754/intel-xeon-processor-e5-2680-v4-35m-cache-2-40-ghz.html
+      \endverb
+    \endentry
+    \entry{gottschlag2018mechanism}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f79bd105db557cf7504955c2e411167f}{%
+           family={Gottschlag},
+           familyi={G\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0b751768f42680d6d1d66ffe0e720d7a}{%
+           family={Bellosa},
+           familyi={B\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d2d018f6c22a731885c46dde940ba42}
+      \strng{fullhash}{6d2d018f6c22a731885c46dde940ba42}
+      \strng{bibnamehash}{6d2d018f6c22a731885c46dde940ba42}
+      \strng{authorbibnamehash}{6d2d018f6c22a731885c46dde940ba42}
+      \strng{authornamehash}{6d2d018f6c22a731885c46dde940ba42}
+      \strng{authorfullhash}{6d2d018f6c22a731885c46dde940ba42}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1901.04982}
+      \field{title}{Mechanism to Mitigate AVX-Induced Frequency Reduction}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1901.04982
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1901.04982
+      \endverb
+    \endentry
+    \entry{arm2018white}{report}{}
+      \name{author}{1}{}{%
+        {{hash=e8784b36174fa54dd21dd2c5fb444aeb}{%
+           family={{Arm Holdings}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {Arm Holdings}%
+      }
+      \strng{namehash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{fullhash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{bibnamehash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{authorbibnamehash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{authornamehash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{authorfullhash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Case study: GW4 Alliance puts Arm architecture to the test for HPC}
+      \field{type}{techreport}
+      \field{year}{2018}
+    \endentry
+    \entry{thunderprocessor2018brief}{report}{}
+      \name{author}{1}{}{%
+        {{hash=a4c1e27fab0b2b67f256378630992161}{%
+           family={{Cavium}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Jose, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Cavium}%
+      }
+      \strng{namehash}{a4c1e27fab0b2b67f256378630992161}
+      \strng{fullhash}{a4c1e27fab0b2b67f256378630992161}
+      \strng{bibnamehash}{a4c1e27fab0b2b67f256378630992161}
+      \strng{authorbibnamehash}{a4c1e27fab0b2b67f256378630992161}
+      \strng{authornamehash}{a4c1e27fab0b2b67f256378630992161}
+      \strng{authorfullhash}{a4c1e27fab0b2b67f256378630992161}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ThunderX2 CN99XX Product Brief}
+      \field{type}{techreport}
+      \field{year}{2018}
+    \endentry
+    \entry{kindratenko2011trends}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1873db9d2d8d88dcab7c0f2c823c8dbf}{%
+           family={Kindratenko},
+           familyi={K\bibinitperiod},
+           given={Volodymyr},
+           giveni={V\bibinitperiod}}}%
+        {{hash=24809ca20bb389316fa67506bd8df275}{%
+           family={Trancoso},
+           familyi={T\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{b9814b3e7dff61c56bbe45ea8957e789}
+      \strng{fullhash}{b9814b3e7dff61c56bbe45ea8957e789}
+      \strng{bibnamehash}{b9814b3e7dff61c56bbe45ea8957e789}
+      \strng{authorbibnamehash}{b9814b3e7dff61c56bbe45ea8957e789}
+      \strng{authornamehash}{b9814b3e7dff61c56bbe45ea8957e789}
+      \strng{authorfullhash}{b9814b3e7dff61c56bbe45ea8957e789}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computing in Science \& Engineering}
+      \field{month}{4}
+      \field{number}{3}
+      \field{title}{Trends in high-performance computing}
+      \field{volume}{13}
+      \field{year}{2011}
+      \field{pages}{92}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/MCSE.2011.52
+      \endverb
+    \endentry
+    \entry{Rajovic:2016:MPA:3014904.3014955}{inproceedings}{}
+      \name{author}{34}{}{%
+        {{hash=83c852c37d6950813fd1574aedfa2c6c}{%
+           family={Rajovic},
+           familyi={R\bibinitperiod},
+           given={Nikola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e615cc59188f6b60755e161085d038f8}{%
+           family={Rico},
+           familyi={R\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=760e0ca8b306c783b3ee6757496ce756}{%
+           family={Mantovani},
+           familyi={M\bibinitperiod},
+           given={Filippo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3de2537a3c56694188d6219bd1c3cd09}{%
+           family={Ruiz},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=983cd10eea61d48eef9b582ab71eca96}{%
+           family={Vilarrubi},
+           familyi={V\bibinitperiod},
+           given={Josep\bibnamedelima Oriol},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=52d6cc6f00e1a949a4fa28acc70f74d1}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Constantino},
+           giveni={C\bibinitperiod}}}%
+        {{hash=088fc591ccf4095e6742a337bfdbb2eb}{%
+           family={Backes},
+           familyi={B\bibinitperiod},
+           given={Luna},
+           giveni={L\bibinitperiod}}}%
+        {{hash=83e9df05effdbb213041c3e5d7685eb0}{%
+           family={Nieto},
+           familyi={N\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c0ac99f4a7de597b9d71126e869be817}{%
+           family={Servat},
+           familyi={S\bibinitperiod},
+           given={Harald},
+           giveni={H\bibinitperiod}}}%
+        {{hash=84226bf1ec941a6bd1d1be0bdab1b543}{%
+           family={Martorell},
+           familyi={M\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod}}}%
+        {{hash=570b65ebb735aed8f598724170d87e33}{%
+           family={Labarta},
+           familyi={L\bibinitperiod},
+           given={Jesus},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f4585e422be02de79ad8a367f5f98051}{%
+           family={Ayguade},
+           familyi={A\bibinitperiod},
+           given={Eduard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8d1fbe2ae72f78b8bbb1528ec4b2cc08}{%
+           family={Adeniyi-Jones},
+           familyi={A\bibinithyphendelim J\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8e0b0aac9cbf1fced100c676a105baf7}{%
+           family={Derradji},
+           familyi={D\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=63feeeaaa725219d0a06a227e0988774}{%
+           family={Gloaguen},
+           familyi={G\bibinitperiod},
+           given={Herve},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d7dc23c40258c22e01593f063a8130db}{%
+           family={Lanucara},
+           familyi={L\bibinitperiod},
+           given={Piero},
+           giveni={P\bibinitperiod}}}%
+        {{hash=99904a58b220c5dcb3a96a1b95c2fdac}{%
+           family={Sanna},
+           familyi={S\bibinitperiod},
+           given={Nico},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b9119c0a1349866b4006d1b1e30d477a}{%
+           family={Mehaut},
+           familyi={M\bibinitperiod},
+           given={Jean-Francois},
+           giveni={J\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=eab57fa0617980c52e771263655f6b55}{%
+           family={Pouget},
+           familyi={P\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f4fe6b4d77156546a163d16787c55867}{%
+           family={Videau},
+           familyi={V\bibinitperiod},
+           given={Brice},
+           giveni={B\bibinitperiod}}}%
+        {{hash=62a5299361c012db639a094864a11385}{%
+           family={Boyer},
+           familyi={B\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=315b63984a1ce5e406c884430d1846a1}{%
+           family={Allalen},
+           familyi={A\bibinitperiod},
+           given={Momme},
+           giveni={M\bibinitperiod}}}%
+        {{hash=20e1fa8647a0e67827bfc8a0b291f4da}{%
+           family={Auweter},
+           familyi={A\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1bd3211a97813a9ee6655e0021a4b747}{%
+           family={Brayford},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=28883a3b741b4c56471146af2fa5fd86}{%
+           family={Tafani},
+           familyi={T\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=daf01be2146749c8d39fc92e851ddda0}{%
+           family={Weinberg},
+           familyi={W\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+        {{hash=8580f08fbfb7161632a7cc30c3f92fd4}{%
+           family={Br\"{o}mmel},
+           familyi={B\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9b73698c3c8dddd52afa60ed28ef4a32}{%
+           family={Halver},
+           familyi={H\bibinitperiod},
+           given={Ren{\'{e}}},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e895c3084cc7e1ac453fddc678908951}{%
+           family={Meinke},
+           familyi={M\bibinitperiod},
+           given={Jan\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=f5a4b08500fbf74a6c68aacae89c7136}{%
+           family={Beivide},
+           familyi={B\bibinitperiod},
+           given={Ramon},
+           giveni={R\bibinitperiod}}}%
+        {{hash=57d6cf3d172942831d6fb6d50ab3e4ee}{%
+           family={Benito},
+           familyi={B\bibinitperiod},
+           given={Mariano},
+           giveni={M\bibinitperiod}}}%
+        {{hash=72659483747c486e00676406dde594fe}{%
+           family={Vallejo},
+           familyi={V\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7267b29627e0f33514ec7f314d002572}{%
+           family={Valero},
+           familyi={V\bibinitperiod},
+           given={Mateo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e834948ea38f11acdcee02543ba7dbec}{%
+           family={Ramirez},
+           familyi={R\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Salt Lake City, Utah}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Press}%
+      }
+      \strng{namehash}{2af3aa33e849d70c08a3b0cc85998250}
+      \strng{fullhash}{b19ca65b32b4d603a837e571923aa1b4}
+      \strng{bibnamehash}{2af3aa33e849d70c08a3b0cc85998250}
+      \strng{authorbibnamehash}{2af3aa33e849d70c08a3b0cc85998250}
+      \strng{authornamehash}{2af3aa33e849d70c08a3b0cc85998250}
+      \strng{authorfullhash}{b19ca65b32b4d603a837e571923aa1b4}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis}
+      \field{isbn}{978-1-4673-8815-3}
+      \field{series}{SC '16}
+      \field{title}{The Mont-blanc Prototype: An Alternative Approach for HPC Systems}
+      \field{year}{2016}
+      \field{pages}{38\bibrangedash 50}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/SC.2016.37
+      \endverb
+    \endentry
+    \entry{stephens2017arm}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=ec88756117026d226d20d25f9f33d1da}{%
+           family={Stephens},
+           familyi={S\bibinitperiod},
+           given={Nigel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=bd3ac953048bfac3870508936e2c3add}{%
+           family={Biles},
+           familyi={B\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod}}}%
+        {{hash=84e4e3ba34721031152a74e23c57d1f9}{%
+           family={Boettcher},
+           familyi={B\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dce571baec31e60057898bdb567119c1}{%
+           family={Eapen},
+           familyi={E\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9b05f350528971c021a397291973fcb2}{%
+           family={Eyole},
+           familyi={E\bibinitperiod},
+           given={Mbou},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bd092cf9260b6bcefbf1f5ec3c9b748c}{%
+           family={Gabrielli},
+           familyi={G\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a580136fa215fd9fbd3fd79bfa79966d}{%
+           family={Horsnell},
+           familyi={H\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fad7ca9f6477ea91d0900e25dd8eea29}{%
+           family={Magklis},
+           familyi={M\bibinitperiod},
+           given={Grigorios},
+           giveni={G\bibinitperiod}}}%
+        {{hash=eb20783786d7c8a24fc8bdb77050da2f}{%
+           family={Martinez},
+           familyi={M\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=11c4329abdf49bcafde229fba2ef3072}{%
+           family={Premillieu},
+           familyi={P\bibinitperiod},
+           given={Nathanael},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e3f688c526692f49c12198d429d52dad}
+      \strng{fullhash}{d3cd0fc76deef315335719082a9c545c}
+      \strng{bibnamehash}{e3f688c526692f49c12198d429d52dad}
+      \strng{authorbibnamehash}{e3f688c526692f49c12198d429d52dad}
+      \strng{authornamehash}{e3f688c526692f49c12198d429d52dad}
+      \strng{authorfullhash}{d3cd0fc76deef315335719082a9c545c}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Micro}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{The ARM scalable vector extension}
+      \field{volume}{37}
+      \field{year}{2017}
+      \field{pages}{26\bibrangedash 39}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/MM.2017.35
+      \endverb
+    \endentry
+    \entry{rico2017arm}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=e615cc59188f6b60755e161085d038f8}{%
+           family={Rico},
+           familyi={R\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5ff0aaccd92f564360af7aac892a9b3a}{%
+           family={Joao},
+           familyi={J\bibinitperiod},
+           given={Jos{\'{e}}\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8d1fbe2ae72f78b8bbb1528ec4b2cc08}{%
+           family={Adeniyi-Jones},
+           familyi={A\bibinithyphendelim J\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4a502e0e7209bf8bec4b04f73bbd2f52}{%
+           family={Van\bibnamedelima Hensbergen},
+           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sienna, Italy}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{d6d225243d44e084fada851523fb65d4}
+      \strng{fullhash}{ac4624264cd24698ffc96d07d40a78ca}
+      \strng{bibnamehash}{d6d225243d44e084fada851523fb65d4}
+      \strng{authorbibnamehash}{d6d225243d44e084fada851523fb65d4}
+      \strng{authornamehash}{d6d225243d44e084fada851523fb65d4}
+      \strng{authorfullhash}{ac4624264cd24698ffc96d07d40a78ca}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Computing Frontiers Conference}
+      \field{month}{5}
+      \field{title}{ARM HPC Ecosystem and the Reemergence of Vectors}
+      \field{year}{2017}
+      \field{pages}{329\bibrangedash 334}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/3075564.3095086
+      \endverb
+    \endentry
+    \entry{moore1965cramming}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=9c50084c68d91fab87727bc63f4551bf}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Gordon\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{2bb847962029b8018b70e1069b1fbb83}
+      \strng{fullhash}{2bb847962029b8018b70e1069b1fbb83}
+      \strng{bibnamehash}{2bb847962029b8018b70e1069b1fbb83}
+      \strng{authorbibnamehash}{2bb847962029b8018b70e1069b1fbb83}
+      \strng{authornamehash}{2bb847962029b8018b70e1069b1fbb83}
+      \strng{authorfullhash}{2bb847962029b8018b70e1069b1fbb83}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics}
+      \field{month}{4}
+      \field{number}{8}
+      \field{title}{Cramming more components onto integrated circuits}
+      \field{volume}{38}
+      \field{year}{1965}
+      \field{pages}{33\bibrangedash 35}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1109/N-SSC.2006.4785860
+      \endverb
+    \endentry
+    \entry{mccalpin1995memory}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=a29f65c5863e161e47765c4b5c960c20}{%
+           family={McCalpin},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{fullhash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{bibnamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{authorbibnamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{authornamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{authorfullhash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE computer society technical committee on computer architecture (TCCA) newsletter}
+      \field{month}{12}
+      \field{number}{19--25}
+      \field{title}{Memory bandwidth and machine balance in current high performance computers}
+      \field{volume}{2}
+      \field{year}{1995}
+    \endentry
+    \entry{patterson1997case}{article}{}
+      \name{author}{8}{}{%
+        {{hash=64f58317379ddd1a24e0e6cba85ae78c}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5915e05c4f16e804b19fbd1b6d1253ca}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=057724ca9fc8c7b17fa850624808c3e5}{%
+           family={Cardwell},
+           familyi={C\bibinitperiod},
+           given={Neal},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ce4c559c72f89f2203287ec0b0a6179d}{%
+           family={Fromm},
+           familyi={F\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e71eb8b5f93f95b3c7000c5247d7216e}{%
+           family={Keeton},
+           familyi={K\bibinitperiod},
+           given={Kimberly},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0c77973b9d2b0678e383bc50eeb0d783}{%
+           family={Kozyrakis},
+           familyi={K\bibinitperiod},
+           given={Christoforos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2322bad0ce400e96befce02c0c5fa9d2}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Randi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=25640d959d1bf65555c260fb1f07c09c}{%
+           family={Yelick},
+           familyi={Y\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{8b3c2b2b185248740d5a9d106250800f}
+      \strng{fullhash}{63b9831eab57a4a2ea8d0bbddfec148a}
+      \strng{bibnamehash}{8b3c2b2b185248740d5a9d106250800f}
+      \strng{authorbibnamehash}{8b3c2b2b185248740d5a9d106250800f}
+      \strng{authornamehash}{8b3c2b2b185248740d5a9d106250800f}
+      \strng{authorfullhash}{63b9831eab57a4a2ea8d0bbddfec148a}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE micro}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{A case for intelligent RAM}
+      \field{volume}{17}
+      \field{year}{1997}
+      \field{pages}{34\bibrangedash 44}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/40.592312
+      \endverb
+    \endentry
+    \entry{stream2019github}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ce5e0c46978e0c4d608a9db95b282ab7}{%
+           family={Hammond},
+           familyi={H\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce5e0c46978e0c4d608a9db95b282ab7}
+      \strng{fullhash}{ce5e0c46978e0c4d608a9db95b282ab7}
+      \strng{bibnamehash}{ce5e0c46978e0c4d608a9db95b282ab7}
+      \strng{authorbibnamehash}{ce5e0c46978e0c4d608a9db95b282ab7}
+      \strng{authornamehash}{ce5e0c46978e0c4d608a9db95b282ab7}
+      \strng{authorfullhash}{ce5e0c46978e0c4d608a9db95b282ab7}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{STREAM memory-bandwidth benchmark}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://github.com/jeffhammond/STREAM
+      \endverb
+      \verb{url}
+      \verb https://github.com/jeffhammond/STREAM
+      \endverb
+    \endentry
+    \entry{dongarra2008linpack}{article}{}
+      \name{author}{4}{}{%
+        {{hash=82653b0e8447d6571a4e179dd232d7f4}{%
+           family={Petitet},
+           familyi={P\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d99703aadbfa4524d034f0f5f3421446}{%
+           family={C.\bibnamedelimi Whaley},
+           familyi={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b57e9502ada0493415564206d6641312}{%
+           family={Dongarra},
+           familyi={D\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e8bc7334acc4c415c9bdc13fa678de00}{%
+           family={Cleary},
+           familyi={C\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e24be1363d0a79d58de52c6f027b4fc5}
+      \strng{fullhash}{e57cd9645ef27ae64d598f16fbf656c3}
+      \strng{bibnamehash}{e24be1363d0a79d58de52c6f027b4fc5}
+      \strng{authorbibnamehash}{e24be1363d0a79d58de52c6f027b4fc5}
+      \strng{authornamehash}{e24be1363d0a79d58de52c6f027b4fc5}
+      \strng{authorfullhash}{e57cd9645ef27ae64d598f16fbf656c3}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{HPL - a Portable Implementation of the High-Performance Linpack Benchmark for Distributed-Memory Computers}
+      \field{year}{2008}
+    \endentry
+    \entry{kumar1994analyzing}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d9e4973d44b06df35bbc6e2e58a76004}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Vijay\bibnamedelima P.},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=eb28d32a9d24cc03164b0c6c1839959c}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Anshul},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{63570033272a4da8abd12c0bb20ac225}
+      \strng{fullhash}{63570033272a4da8abd12c0bb20ac225}
+      \strng{bibnamehash}{63570033272a4da8abd12c0bb20ac225}
+      \strng{authorbibnamehash}{63570033272a4da8abd12c0bb20ac225}
+      \strng{authornamehash}{63570033272a4da8abd12c0bb20ac225}
+      \strng{authorfullhash}{63570033272a4da8abd12c0bb20ac225}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of parallel and distributed computing}
+      \field{number}{3}
+      \field{title}{Analyzing scalability of parallel algorithms and architectures}
+      \field{volume}{22}
+      \field{year}{1994}
+      \field{pages}{379\bibrangedash 391}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1006/jpdc.1994.1099
+      \endverb
+    \endentry
+    \entry{schmidt2007benchmark}{article}{}
+      \name{author}{1}{}{%
+        {{hash=47cd4701eff4b8ea2da7f3018cbc4fa3}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{47cd4701eff4b8ea2da7f3018cbc4fa3}
+      \strng{fullhash}{47cd4701eff4b8ea2da7f3018cbc4fa3}
+      \strng{bibnamehash}{47cd4701eff4b8ea2da7f3018cbc4fa3}
+      \strng{authorbibnamehash}{47cd4701eff4b8ea2da7f3018cbc4fa3}
+      \strng{authornamehash}{47cd4701eff4b8ea2da7f3018cbc4fa3}
+      \strng{authorfullhash}{47cd4701eff4b8ea2da7f3018cbc4fa3}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ocean Modelling}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{A benchmark for the parallel code used in FMS and MOM-4}
+      \field{volume}{17}
+      \field{year}{2007}
+      \field{pages}{49\bibrangedash 67}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.ocemod.2006.11.002
+      \endverb
+    \endentry
+    \entry{williams2009roofline}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4fb8fbc5c4bfbbc94f80321c3336b71b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1cdbf6b1b2783ec44ba9770f07e6528f}{%
+           family={Waterman},
+           familyi={W\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=64f58317379ddd1a24e0e6cba85ae78c}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York NY, USA}%
+      }
+      \strng{namehash}{8fbf7ed9bc5abefeb2fdf60a347400ae}
+      \strng{fullhash}{8fbf7ed9bc5abefeb2fdf60a347400ae}
+      \strng{bibnamehash}{8fbf7ed9bc5abefeb2fdf60a347400ae}
+      \strng{authorbibnamehash}{8fbf7ed9bc5abefeb2fdf60a347400ae}
+      \strng{authornamehash}{8fbf7ed9bc5abefeb2fdf60a347400ae}
+      \strng{authorfullhash}{8fbf7ed9bc5abefeb2fdf60a347400ae}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM - A Direct Path to Dependable Software}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Roofline: An insightful visual performance model for floating-point programs and multicore architectures}
+      \field{volume}{52}
+      \field{year}{2009}
+      \field{pages}{65\bibrangedash 76}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/1498765.1498785
+      \endverb
+    \endentry
+    \entry{fortran1991standard}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1e0d031898f270ad77d9ef6155f56f0f}{%
+           family={{American National Standard Programming}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Carnegie}%
+      }
+      \strng{namehash}{1e0d031898f270ad77d9ef6155f56f0f}
+      \strng{fullhash}{1e0d031898f270ad77d9ef6155f56f0f}
+      \strng{bibnamehash}{1e0d031898f270ad77d9ef6155f56f0f}
+      \strng{authorbibnamehash}{1e0d031898f270ad77d9ef6155f56f0f}
+      \strng{authornamehash}{1e0d031898f270ad77d9ef6155f56f0f}
+      \strng{authorfullhash}{1e0d031898f270ad77d9ef6155f56f0f}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fortran 90 ISO/IEC 1539 : 1991}
+      \field{year}{1991}
+    \endentry
+    \entry{gnu2019conversion}{online}{}
+      \name{author}{1}{}{%
+        {{hash=aea847f5d1a17774645f4aac50ecf46f}{%
+           family={{GNU Project}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{aea847f5d1a17774645f4aac50ecf46f}
+      \strng{fullhash}{aea847f5d1a17774645f4aac50ecf46f}
+      \strng{bibnamehash}{aea847f5d1a17774645f4aac50ecf46f}
+      \strng{authorbibnamehash}{aea847f5d1a17774645f4aac50ecf46f}
+      \strng{authornamehash}{aea847f5d1a17774645f4aac50ecf46f}
+      \strng{authorfullhash}{aea847f5d1a17774645f4aac50ecf46f}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{Implicit conversion between logical and integer}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://gnu.huihoo.org/gcc/gcc-4.0.4/gfortran/Implicitly-interconvert-LOGICAL-and-INTEGER.html
+      \endverb
+      \verb{url}
+      \verb https://gnu.huihoo.org/gcc/gcc-4.0.4/gfortran/Implicitly-interconvert-LOGICAL-and-INTEGER.html
+      \endverb
+    \endentry
+    \entry{goldberg1991every}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d55a57c88a14828a53b9e8db48c889d1}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{fullhash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{bibnamehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authorbibnamehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authornamehash}{d55a57c88a14828a53b9e8db48c889d1}
+      \strng{authorfullhash}{d55a57c88a14828a53b9e8db48c889d1}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys (CSUR)}
+      \field{number}{1}
+      \field{title}{What every computer scientist should know about floating-point arithmetic}
+      \field{volume}{23}
+      \field{year}{1991}
+      \field{pages}{5\bibrangedash 48}
+      \range{pages}{44}
+      \verb{doi}
+      \verb 10.1145/103162.103163
+      \endverb
+    \endentry
+    \entry{ieee1985ieee}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0798f9ef136557dfc3a9ef4998454820}{%
+           family={{IEEE Computer Society. Standards Committee and American National Standards Institute}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0798f9ef136557dfc3a9ef4998454820}
+      \strng{fullhash}{0798f9ef136557dfc3a9ef4998454820}
+      \strng{bibnamehash}{0798f9ef136557dfc3a9ef4998454820}
+      \strng{authorbibnamehash}{0798f9ef136557dfc3a9ef4998454820}
+      \strng{authornamehash}{0798f9ef136557dfc3a9ef4998454820}
+      \strng{authorfullhash}{0798f9ef136557dfc3a9ef4998454820}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IEEE standard for binary floating-point arithmetic}
+      \field{volume}{754}
+      \field{year}{1985}
+    \endentry
+    \entry{puma2018}{online}{}
+      \name{author}{2}{}{%
+        {{hash=08d82841fe870d331e86c665ce0f7f68}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f4a9e8950eb282c0400166e00fe5a66c}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ab491aead386fc1059b5a0261dde139}
+      \strng{fullhash}{4ab491aead386fc1059b5a0261dde139}
+      \strng{bibnamehash}{4ab491aead386fc1059b5a0261dde139}
+      \strng{authorbibnamehash}{4ab491aead386fc1059b5a0261dde139}
+      \strng{authornamehash}{4ab491aead386fc1059b5a0261dde139}
+      \strng{authorfullhash}{4ab491aead386fc1059b5a0261dde139}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Program to compare any variables common to two NetCDF files.}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://puma.nerc.ac.uk/svn/UniCiCles_svn/UniCiCles/trunk/glimmer-cism/utils/
+      \endverb
+      \verb{url}
+      \verb https://puma.nerc.ac.uk/svn/UniCiCles_svn/UniCiCles/trunk/glimmer-cism/utils/
+      \endverb
+    \endentry
+    \entry{held1994proposal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3d4110067d1644212ec8132b5594e919}{%
+           family={Held},
+           familyi={H\bibinitperiod},
+           given={Isaac\bibnamedelima M},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=13fb5c382a41eec0c80f333c34b9f421}{%
+           family={Suarez},
+           familyi={S\bibinitperiod},
+           given={Max\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Meteorological Society}%
+      }
+      \strng{namehash}{f3057eea831448c0bca5af825d6566ac}
+      \strng{fullhash}{f3057eea831448c0bca5af825d6566ac}
+      \strng{bibnamehash}{f3057eea831448c0bca5af825d6566ac}
+      \strng{authorbibnamehash}{f3057eea831448c0bca5af825d6566ac}
+      \strng{authornamehash}{f3057eea831448c0bca5af825d6566ac}
+      \strng{authorfullhash}{f3057eea831448c0bca5af825d6566ac}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of the american Meteorological society}
+      \field{number}{10}
+      \field{title}{A proposal for the intercomparison of the dynamical cores of atmospheric general circulation models}
+      \field{volume}{75}
+      \field{year}{1994}
+      \field{pages}{1825\bibrangedash 1830}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1175/1520-0477(1994)075<1825:APFTIO>2.0.CO;2
+      \endverb
+    \endentry
+    \entry{wan2008ensemble}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ea271a2af8c5e4227cb651f23be47b05}{%
+           family={Wan},
+           familyi={W\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3a48c3b60888f7b56ef5c5f066cfbd2a}{%
+           family={Giorgetta},
+           familyi={G\bibinitperiod},
+           given={Marco\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0b6d1ec3813f059705cf5f22da6b15a5}{%
+           family={Bonaventura},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{d96759f68e90e595b17e7609c70e1f19}
+      \strng{fullhash}{d96759f68e90e595b17e7609c70e1f19}
+      \strng{bibnamehash}{d96759f68e90e595b17e7609c70e1f19}
+      \strng{authorbibnamehash}{d96759f68e90e595b17e7609c70e1f19}
+      \strng{authornamehash}{d96759f68e90e595b17e7609c70e1f19}
+      \strng{authorfullhash}{d96759f68e90e595b17e7609c70e1f19}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Weather Review}
+      \field{number}{3}
+      \field{title}{Ensemble Held-Suarez test with a spectral transform model: Variability, sensitivity, and convergence}
+      \field{volume}{136}
+      \field{year}{2008}
+      \field{pages}{1075\bibrangedash 1092}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1175/2007MWR2044.1
+      \endverb
+    \endentry
+    \entry{duben2014benchmark}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8e3b0fdcfd00125f914ab1c250dd2b38}{%
+           family={D{\"{u}}ben},
+           familyi={D\bibinitperiod},
+           given={Peter\bibnamedelima D},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=5f7e27c8ec2f51deb8968d2b01b677bb}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={TN},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{666a6b751d26edba8ad4ee12b011ecf7}
+      \strng{fullhash}{666a6b751d26edba8ad4ee12b011ecf7}
+      \strng{bibnamehash}{666a6b751d26edba8ad4ee12b011ecf7}
+      \strng{authorbibnamehash}{666a6b751d26edba8ad4ee12b011ecf7}
+      \strng{authornamehash}{666a6b751d26edba8ad4ee12b011ecf7}
+      \strng{authorfullhash}{666a6b751d26edba8ad4ee12b011ecf7}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly Weather Review}
+      \field{number}{10}
+      \field{title}{Benchmark tests for numerical weather forecasts on inexact hardware}
+      \field{volume}{142}
+      \field{year}{2014}
+      \field{pages}{3809\bibrangedash 3829}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1175/MWR-D-14-00110.1
+      \endverb
+    \endentry
+    \entry{taylor1998performance}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0a8a747591efdf29a9af62be9939051e}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=de2ea15f1c1c1d2be9791105addc953e}{%
+           family={Loft},
+           familyi={L\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=147378d90d0bd5238012d176a49573e8}{%
+           family={Tribbia},
+           familyi={T\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1573fbc92276dd820c5a2ba51ed623c6}
+      \strng{fullhash}{1573fbc92276dd820c5a2ba51ed623c6}
+      \strng{bibnamehash}{1573fbc92276dd820c5a2ba51ed623c6}
+      \strng{authorbibnamehash}{1573fbc92276dd820c5a2ba51ed623c6}
+      \strng{authornamehash}{1573fbc92276dd820c5a2ba51ed623c6}
+      \strng{authorfullhash}{1573fbc92276dd820c5a2ba51ed623c6}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NCAR TN}
+      \field{title}{Performance of a spectral element atmospheric model (SEAM) on the HP Exemplar SPP2000}
+      \field{volume}{439}
+      \field{year}{1998}
+      \verb{doi}
+      \verb 10.5065/D6PR7SX0
+      \endverb
+    \endentry
+    \entry{laskar1993chaotic}{article}{}
+      \name{author}{2}{}{%
+        {{hash=adfd1619078569285b80ed19757a8206}{%
+           family={Laskar},
+           familyi={L\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0d8bbc2e8a46e6ba9362432e068ae344}{%
+           family={Robutel},
+           familyi={R\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{3fd751c9e12e87a0044267131cad5112}
+      \strng{fullhash}{3fd751c9e12e87a0044267131cad5112}
+      \strng{bibnamehash}{3fd751c9e12e87a0044267131cad5112}
+      \strng{authorbibnamehash}{3fd751c9e12e87a0044267131cad5112}
+      \strng{authornamehash}{3fd751c9e12e87a0044267131cad5112}
+      \strng{authorfullhash}{3fd751c9e12e87a0044267131cad5112}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{6413}
+      \field{title}{The chaotic obliquity of the planets}
+      \field{volume}{361}
+      \field{year}{1993}
+      \field{pages}{608}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/361608a0
+      \endverb
+    \endentry
+    \entry{foster1994load}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=f5c91d41b3961ac3961b7f293f87e46d}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={Ian\bibnamedelima T.},
+           giveni={I\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=4f9af46ef3c1075518c5ca93ff3939a9}{%
+           family={Toonen},
+           familyi={T\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7b1d584a036f7cc45777781b1e07faa7}
+      \strng{fullhash}{7b1d584a036f7cc45777781b1e07faa7}
+      \strng{bibnamehash}{7b1d584a036f7cc45777781b1e07faa7}
+      \strng{authorbibnamehash}{7b1d584a036f7cc45777781b1e07faa7}
+      \strng{authornamehash}{7b1d584a036f7cc45777781b1e07faa7}
+      \strng{authorfullhash}{7b1d584a036f7cc45777781b1e07faa7}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of IEEE Scalable High Performance Computing Conference}
+      \field{month}{7}
+      \field{title}{Load-balancing algorithms for climate models}
+      \field{year}{1994}
+      \field{pages}{674\bibrangedash 681}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/SHPCC.1994.296706
+      \endverb
+    \endentry
+    \entry{meeus1991astronomical}{book}{}
+      \name{author}{1}{}{%
+        {{hash=01b652fff1b68c6510be823afdc32b6f}{%
+           family={Meeus},
+           familyi={M\bibinitperiod},
+           given={Jean\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Willmann-Bell, Incorporated}%
+      }
+      \strng{namehash}{01b652fff1b68c6510be823afdc32b6f}
+      \strng{fullhash}{01b652fff1b68c6510be823afdc32b6f}
+      \strng{bibnamehash}{01b652fff1b68c6510be823afdc32b6f}
+      \strng{authorbibnamehash}{01b652fff1b68c6510be823afdc32b6f}
+      \strng{authornamehash}{01b652fff1b68c6510be823afdc32b6f}
+      \strng{authorfullhash}{01b652fff1b68c6510be823afdc32b6f}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Astronomical algorithms}}
+      \field{year}{1991}
+    \endentry
+    \entry{lancaster2019github}{online}{}
+      \name{author}{1}{}{%
+        {{hash=50c1aaed1be3fa6b203d4e8d05eb18d7}{%
+           family={Lancaster},
+           familyi={L\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{50c1aaed1be3fa6b203d4e8d05eb18d7}
+      \strng{fullhash}{50c1aaed1be3fa6b203d4e8d05eb18d7}
+      \strng{bibnamehash}{50c1aaed1be3fa6b203d4e8d05eb18d7}
+      \strng{authorbibnamehash}{50c1aaed1be3fa6b203d4e8d05eb18d7}
+      \strng{authornamehash}{50c1aaed1be3fa6b203d4e8d05eb18d7}
+      \strng{authorfullhash}{50c1aaed1be3fa6b203d4e8d05eb18d7}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{A collection of scripts for automating runtime and trace data collection for the Isca climate model}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://github.com/Lancasterg/benchmark_isca
+      \endverb
+      \verb{url}
+      \verb https://github.com/Lancasterg/benchmark_isca
+      \endverb
+    \endentry
+    \entry{arm2019practices}{report}{}
+      \name{author}{6}{}{%
+        {{hash=d1cf3b5875e193af09fb48f09d5f8c55}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={X},
+           giveni={X\bibinitperiod}}}%
+        {{hash=10ee6f57ea480374bfcd9eedd25e7fcc}{%
+           family={Morales},
+           familyi={M\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=12e73b4173c6bf1a9af8d36fff6aba62}{%
+           family={Saastad},
+           familyi={S\bibinitperiod},
+           given={Ole},
+           giveni={O\bibinitperiod}}}%
+        {{hash=2f736d2014201ae546b0f1a7a2f2e4b8}{%
+           family={Shamakina},
+           familyi={S\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=98ea3a8d2013f3dea387f3c359f281fd}{%
+           family={Rijks},
+           familyi={R\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=2fb3feb89c3c9a347eecb7d9d82c4141}{%
+           family={Weinberg},
+           familyi={W\bibinitperiod},
+           given={V},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Germany}%
+      }
+      \list{publisher}{1}{%
+        {Partnership for Advanced Computing in Europe}%
+      }
+      \strng{namehash}{c40e7fe26dcd32ce7ef3711ba8c0ec08}
+      \strng{fullhash}{bdd79809653baa39d1416cae369a3935}
+      \strng{bibnamehash}{c40e7fe26dcd32ce7ef3711ba8c0ec08}
+      \strng{authorbibnamehash}{c40e7fe26dcd32ce7ef3711ba8c0ec08}
+      \strng{authornamehash}{c40e7fe26dcd32ce7ef3711ba8c0ec08}
+      \strng{authorfullhash}{bdd79809653baa39d1416cae369a3935}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Best Practice Guide - ARM64}
+      \field{type}{techreport}
+      \field{year}{2019}
+    \endentry
+    \entry{milfeld2014hpc}{report}{}
+      \name{author}{1}{}{%
+        {{hash=55567a8d9ccbf6083044a7a9c526baa1}{%
+           family={Milfeld},
+           familyi={M\bibinitperiod},
+           given={Kent},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Austin, TX, USA}%
+      }
+      \list{publisher}{1}{%
+        {Texas Advanced Computing Center}%
+      }
+      \strng{namehash}{55567a8d9ccbf6083044a7a9c526baa1}
+      \strng{fullhash}{55567a8d9ccbf6083044a7a9c526baa1}
+      \strng{bibnamehash}{55567a8d9ccbf6083044a7a9c526baa1}
+      \strng{authorbibnamehash}{55567a8d9ccbf6083044a7a9c526baa1}
+      \strng{authornamehash}{55567a8d9ccbf6083044a7a9c526baa1}
+      \strng{authorfullhash}{55567a8d9ccbf6083044a7a9c526baa1}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Parallel Optimization for HPC}
+      \field{type}{techreport}
+      \field{year}{2014}
+    \endentry
+    \entry{grun2010introduction}{report}{}
+      \name{author}{1}{}{%
+        {{hash=ac7c650ea39376bc9b81caaa14ef0187}{%
+           family={Grun},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Santa Clara, CA, USA}%
+      }
+      \strng{namehash}{ac7c650ea39376bc9b81caaa14ef0187}
+      \strng{fullhash}{ac7c650ea39376bc9b81caaa14ef0187}
+      \strng{bibnamehash}{ac7c650ea39376bc9b81caaa14ef0187}
+      \strng{authorbibnamehash}{ac7c650ea39376bc9b81caaa14ef0187}
+      \strng{authornamehash}{ac7c650ea39376bc9b81caaa14ef0187}
+      \strng{authorfullhash}{ac7c650ea39376bc9b81caaa14ef0187}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{White paper, InfiniBand Trade Association}
+      \field{title}{Introduction to InfiniBand}
+      \field{type}{techreport}
+      \field{year}{2010}
+    \endentry
+    \entry{reinders2013intel}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ad7505341fd5e86ebee4a89c4453b4b3}{%
+           family={Reinders},
+           familyi={R\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad7505341fd5e86ebee4a89c4453b4b3}
+      \strng{fullhash}{ad7505341fd5e86ebee4a89c4453b4b3}
+      \strng{bibnamehash}{ad7505341fd5e86ebee4a89c4453b4b3}
+      \strng{authorbibnamehash}{ad7505341fd5e86ebee4a89c4453b4b3}
+      \strng{authornamehash}{ad7505341fd5e86ebee4a89c4453b4b3}
+      \strng{authorfullhash}{ad7505341fd5e86ebee4a89c4453b4b3}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{Intel AVX-512 Instructions}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://software.intel.com/en-us/articles/intel-avx-512-instructions
+      \endverb
+      \verb{url}
+      \verb https://software.intel.com/en-us/articles/intel-avx-512-instructions
+      \endverb
+    \endentry
+    \entry{intel2017avx}{report}{}
+      \name{author}{1}{}{%
+        {{hash=d01f15e44e778d65f4aef36734633ce6}{%
+           family={{Intel Corporation}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Santa Clara, CA, USA}%
+      }
+      \strng{namehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{fullhash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{bibnamehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{authorbibnamehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{authornamehash}{d01f15e44e778d65f4aef36734633ce6}
+      \strng{authorfullhash}{d01f15e44e778d65f4aef36734633ce6}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{White paper, InfiniBand Trade Association}
+      \field{month}{5}
+      \field{title}{Intel Architecture Instruction Set Extensions and Future Features Programming Reference}
+      \field{type}{techreport}
+      \field{year}{2019}
+    \endentry
+    \entry{behling2001power4}{report}{}
+      \name{author}{6}{}{%
+        {{hash=466db76c1deca8de595a9ffdef8db1d0}{%
+           family={Behling},
+           familyi={B\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a844212b83944c5a30f4a8910326be13}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6dfb2c1b39eec1b0ffea1234ec092077}{%
+           family={Farrell},
+           familyi={F\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=59e26b7fee9f294b48cb409b9417f628}{%
+           family={Holthoff},
+           familyi={H\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ae7ea06fb1d8f005990dcd3ed3026259}{%
+           family={O'Connell},
+           familyi={O\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=263659db6b87ace763991e1dda34bf77}{%
+           family={Weir},
+           familyi={W\bibinitperiod},
+           given={Will},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Armonk, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {IBM redbooks}%
+      }
+      \strng{namehash}{406f5a9e4b0749ec2acd69bf35d3c5c5}
+      \strng{fullhash}{74bd7f28aa89a950d3e5cf26a06ae5bc}
+      \strng{bibnamehash}{406f5a9e4b0749ec2acd69bf35d3c5c5}
+      \strng{authorbibnamehash}{406f5a9e4b0749ec2acd69bf35d3c5c5}
+      \strng{authornamehash}{406f5a9e4b0749ec2acd69bf35d3c5c5}
+      \strng{authorfullhash}{74bd7f28aa89a950d3e5cf26a06ae5bc}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The POWER4 processor introduction and tuning guide}
+      \field{type}{techreport}
+      \field{year}{2001}
+    \endentry
+    \entry{carvalho2002gap}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=36083fee7f4cc8fcbaa09346e388068e}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{36083fee7f4cc8fcbaa09346e388068e}
+      \strng{fullhash}{36083fee7f4cc8fcbaa09346e388068e}
+      \strng{bibnamehash}{36083fee7f4cc8fcbaa09346e388068e}
+      \strng{authorbibnamehash}{36083fee7f4cc8fcbaa09346e388068e}
+      \strng{authornamehash}{36083fee7f4cc8fcbaa09346e388068e}
+      \strng{authorfullhash}{36083fee7f4cc8fcbaa09346e388068e}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. of IEEE International Conference on Control and Automation}
+      \field{title}{The gap between processor and memory speeds}
+      \field{year}{2002}
+    \endentry
+    \entry{temperton1980fft}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d7b29b0aee6945ee7b2de1799d3bc563}{%
+           family={Temperton},
+           familyi={T\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7b29b0aee6945ee7b2de1799d3bc563}
+      \strng{fullhash}{d7b29b0aee6945ee7b2de1799d3bc563}
+      \strng{bibnamehash}{d7b29b0aee6945ee7b2de1799d3bc563}
+      \strng{authorbibnamehash}{d7b29b0aee6945ee7b2de1799d3bc563}
+      \strng{authornamehash}{d7b29b0aee6945ee7b2de1799d3bc563}
+      \strng{authorfullhash}{d7b29b0aee6945ee7b2de1799d3bc563}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Special topics of applied mathematics: Functional Analysis, Numerical Analysis and Optimisation}
+      \field{month}{1}
+      \field{title}{Very Fast Real Fourier Transform}
+      \field{year}{1980}
+    \endentry
+    \entry{ecmwf2015emoslib}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6d87fea942a7c2df09c34ed7dc228bc8}{%
+           family={Siemen},
+           familyi={S\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d87fea942a7c2df09c34ed7dc228bc8}
+      \strng{fullhash}{6d87fea942a7c2df09c34ed7dc228bc8}
+      \strng{bibnamehash}{6d87fea942a7c2df09c34ed7dc228bc8}
+      \strng{authorbibnamehash}{6d87fea942a7c2df09c34ed7dc228bc8}
+      \strng{authornamehash}{6d87fea942a7c2df09c34ed7dc228bc8}
+      \strng{authorfullhash}{6d87fea942a7c2df09c34ed7dc228bc8}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{Routines for Fast-Fourier Transform (FFT)}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://confluence.ecmwf.int/display/EMOS/FFT+-+FFT991
+      \endverb
+      \verb{url}
+      \verb https://confluence.ecmwf.int/display/EMOS/FFT+-+FFT991
+      \endverb
+    \endentry
+    \entry{lahey1994fortran}{book}{}
+      \name{author}{2}{}{%
+        {{hash=440146d37c4dbd77a9a7085fa521f9c9}{%
+           family={Lahey},
+           familyi={L\bibinitperiod},
+           given={Thomas\bibnamedelima M},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=867a828c18b8a04099c73ed9ad25bd16}{%
+           family={Ellis},
+           familyi={E\bibinitperiod},
+           given={TM},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Longman Publishing Co., Inc.}%
+      }
+      \strng{namehash}{4516e25d80e7ecf1a517951f6a577af6}
+      \strng{fullhash}{4516e25d80e7ecf1a517951f6a577af6}
+      \strng{bibnamehash}{4516e25d80e7ecf1a517951f6a577af6}
+      \strng{authorbibnamehash}{4516e25d80e7ecf1a517951f6a577af6}
+      \strng{authornamehash}{4516e25d80e7ecf1a517951f6a577af6}
+      \strng{authorfullhash}{4516e25d80e7ecf1a517951f6a577af6}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fortran 90 programming}
+      \field{year}{1994}
+    \endentry
+    \entry{parnas1972criteria}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6f8fa5107f8139cd3dded62009b18e15}{%
+           family={Parnas},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima Lorge},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{6f8fa5107f8139cd3dded62009b18e15}
+      \strng{fullhash}{6f8fa5107f8139cd3dded62009b18e15}
+      \strng{bibnamehash}{6f8fa5107f8139cd3dded62009b18e15}
+      \strng{authorbibnamehash}{6f8fa5107f8139cd3dded62009b18e15}
+      \strng{authornamehash}{6f8fa5107f8139cd3dded62009b18e15}
+      \strng{authorfullhash}{6f8fa5107f8139cd3dded62009b18e15}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{12}
+      \field{title}{On the criteria to be used in decomposing systems into modules}
+      \field{volume}{15}
+      \field{year}{1972}
+      \field{pages}{1053\bibrangedash 1058}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/361598.361623
+      \endverb
+    \endentry
+    \entry{aa2011armv8}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e8784b36174fa54dd21dd2c5fb444aeb}{%
+           family={{Arm Holdings}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{fullhash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{bibnamehash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{authorbibnamehash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{authornamehash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \strng{authorfullhash}{e8784b36174fa54dd21dd2c5fb444aeb}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{vol. PRD03-GENC-010197}
+      \field{number}{11}
+      \field{title}{Armv8 instruction set overview}
+      \field{volume}{15}
+      \field{year}{2011}
+    \endentry
+    \entry{yoshida2018fujitsu}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=febbd1821cb3055c13b778e9c6aabe33}{%
+           family={Yoshida},
+           familyi={Y\bibinitperiod},
+           given={Toshio},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{febbd1821cb3055c13b778e9c6aabe33}
+      \strng{fullhash}{febbd1821cb3055c13b778e9c6aabe33}
+      \strng{bibnamehash}{febbd1821cb3055c13b778e9c6aabe33}
+      \strng{authorbibnamehash}{febbd1821cb3055c13b778e9c6aabe33}
+      \strng{authornamehash}{febbd1821cb3055c13b778e9c6aabe33}
+      \strng{authorfullhash}{febbd1821cb3055c13b778e9c6aabe33}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Hot Chips 30 Symposium (HCS), Series Hot Chips}
+      \field{title}{Fujitsu high performance cpu for the post-k computer}
+      \field{volume}{18}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.fujitsu.com/jp/Images/20180821hotchips30.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.fujitsu.com/jp/Images/20180821hotchips30.pdf
+      \endverb
+    \endentry
+    \entry{bach2015est}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5de9729de870ddcb741ea68941486612}{%
+           family={Bach},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5de9729de870ddcb741ea68941486612}
+      \strng{fullhash}{5de9729de870ddcb741ea68941486612}
+      \strng{bibnamehash}{5de9729de870ddcb741ea68941486612}
+      \strng{authorbibnamehash}{5de9729de870ddcb741ea68941486612}
+      \strng{authornamehash}{5de9729de870ddcb741ea68941486612}
+      \strng{authorfullhash}{5de9729de870ddcb741ea68941486612}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Estimating CPU Performance using Amdahl's Law}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.pugetsystems.com/labs/articles/Estimating-CPU-Performance-using-Amdahls-Law-619/
+      \endverb
+      \verb{url}
+      \verb https://www.pugetsystems.com/labs/articles/Estimating-CPU-Performance-using-Amdahls-Law-619/
+      \endverb
+    \endentry
+    \entry{amdahl1967validity}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=bc683e6c79d089d18b4bccd4d5a804d9}{%
+           family={Amdahl},
+           familyi={A\bibinitperiod},
+           given={Gene\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{bc683e6c79d089d18b4bccd4d5a804d9}
+      \strng{fullhash}{bc683e6c79d089d18b4bccd4d5a804d9}
+      \strng{bibnamehash}{bc683e6c79d089d18b4bccd4d5a804d9}
+      \strng{authorbibnamehash}{bc683e6c79d089d18b4bccd4d5a804d9}
+      \strng{authornamehash}{bc683e6c79d089d18b4bccd4d5a804d9}
+      \strng{authorfullhash}{bc683e6c79d089d18b4bccd4d5a804d9}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the April 18-20, 1967, spring joint computer conference}
+      \field{month}{4}
+      \field{title}{Validity of the single processor approach to achieving large scale computing capabilities}
+      \field{year}{1967}
+      \field{pages}{483\bibrangedash 485}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1145/1465482.1465560
+      \endverb
+    \endentry
+    \entry{mcintosh2017tealeaf}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=e3f38b14b64f22da420f4abea95f782b}{%
+           family={McIntosh-Smith},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a7855c9a664771b56e87eda1e7555e65}{%
+           family={Martineau},
+           familyi={M\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6bf8da3e4fb1a56f8e081a507d05e4f1}{%
+           family={Deakin},
+           familyi={D\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=814a1765a7336af4e587ed45147fc29c}{%
+           family={Pawelczak},
+           familyi={P\bibinitperiod},
+           given={Grzegorz},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bc7fae45839e215a0e42e4023a335a0c}{%
+           family={Gaudin},
+           familyi={G\bibinitperiod},
+           given={Wayne},
+           giveni={W\bibinitperiod}}}%
+        {{hash=271a1f3fa33a1daf0d733b353b64b4ac}{%
+           family={Garrett},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c0e0d23e2d09e45e6f51cc2bcea6d9f9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=3d5f068eea6107a9e4fa6b8c91f5bdf1}{%
+           family={Smedley-Stevenson},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=624d94bb5eb5b468c9fc6a6cb415321b}{%
+           family={Beckingsale},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{114a5941f38f434938403e6458f22afb}
+      \strng{fullhash}{1e3be8270028323e0c62e62058b77163}
+      \strng{bibnamehash}{114a5941f38f434938403e6458f22afb}
+      \strng{authorbibnamehash}{114a5941f38f434938403e6458f22afb}
+      \strng{authornamehash}{114a5941f38f434938403e6458f22afb}
+      \strng{authorfullhash}{1e3be8270028323e0c62e62058b77163}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE International Conference on Cluster Computing (CLUSTER)}
+      \field{title}{TeaLeaf: a mini-application to enable design-space explorations for iterative sparse linear solvers}
+      \field{year}{2017}
+      \field{pages}{842\bibrangedash 849}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CLUSTER.2017.105
+      \endverb
+    \endentry
+    \entry{mallinson2013cloverleaf}{article}{}
+      \name{author}{6}{}{%
+        {{hash=0f0d0764db48d9d5910231e6406ca0f8}{%
+           family={Mallinson},
+           familyi={M\bibinitperiod},
+           given={AC},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cba8752d121fa1cc1fe86382a37bb7bc}{%
+           family={Beckingsale},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima A},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ca52810ecafcdec7c7bac1206c5723f8}{%
+           family={Gaudin},
+           familyi={G\bibinitperiod},
+           given={WP},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b3cdfc99514bd139240d32cf4e39e1ee}{%
+           family={Herdman},
+           familyi={H\bibinitperiod},
+           given={JA},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7886e580f9e9db5f6b02796603fbea04}{%
+           family={Levesque},
+           familyi={L\bibinitperiod},
+           given={JM},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e80c21fc93d8842521d28efef3c24453}{%
+           family={Jarvis},
+           familyi={J\bibinitperiod},
+           given={Stephen\bibnamedelima A},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8655b17068b226ce8b5eea4fa9fdccc9}
+      \strng{fullhash}{dce43a3daa7cd9ed496072f53390344f}
+      \strng{bibnamehash}{8655b17068b226ce8b5eea4fa9fdccc9}
+      \strng{authorbibnamehash}{8655b17068b226ce8b5eea4fa9fdccc9}
+      \strng{authornamehash}{8655b17068b226ce8b5eea4fa9fdccc9}
+      \strng{authorfullhash}{dce43a3daa7cd9ed496072f53390344f}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Cray User Group}
+      \field{title}{Cloverleaf: Preparing hydrodynamics codes for exascale}
+      \field{volume}{2013}
+      \field{year}{2013}
+    \endentry
+    \entry{peterson2009f2py}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Pearu},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Inderscience Publishers}%
+      }
+      \strng{namehash}{3d6efaaa3d9682e20787eb06ff70a3d7}
+      \strng{fullhash}{3d6efaaa3d9682e20787eb06ff70a3d7}
+      \strng{bibnamehash}{3d6efaaa3d9682e20787eb06ff70a3d7}
+      \strng{authorbibnamehash}{3d6efaaa3d9682e20787eb06ff70a3d7}
+      \strng{authornamehash}{3d6efaaa3d9682e20787eb06ff70a3d7}
+      \strng{authorfullhash}{3d6efaaa3d9682e20787eb06ff70a3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computational Science and Engineering}
+      \field{number}{4}
+      \field{title}{F2PY: a tool for connecting Fortran and Python programs}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{296\bibrangedash 305}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1504/IJCSE.2009.029165
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem{vallis2018isca}
-G.~K. Vallis, G.~Colyer, R.~Geen, E.~Gerber, M.~Jucker, P.~Maher, A.~Paterson,
-  M.~Pietschnig, J.~Penn, and S.~I. Thomson, ``Isca, v1.0: a framework for the
-  global modelling of the atmospheres of earth and other planets at varying
-  levels of complexity,'' {\em Geoscientific Model Development}, vol.~11,
-  pp.~843--859, Oct. 2018.
-
-\bibitem{calore2018advanced}
-E.~Calore, F.~Mantovani, and D.~Ruiz, ``Advanced performance analysis of hpc
-  workloads on cavium thunderx,'' in {\em 2018 International Conference on High
-  Performance Computing \& Simulation (HPCS)}, pp.~375--382, IEEE, Jul. 2018.
-
-\bibitem{mcintosh2018performance}
-S.~McIntosh-Smith, J.~Price, T.~Deakin, and A.~Poenaru, ``A performance
-  analysis of the first generation of hpc-optimized arm processors,'' {\em
-  Concurrency and Computation: Practice and Experience}, p.~e5110, May. 2018.
-
-\bibitem{okimoto2009high}
-N.~Okimoto, N.~Futatsugi, H.~Fuji, A.~Suenaga, G.~Morimoto, R.~Yanai, Y.~Ohno,
-  T.~Narumi, and M.~Taiji, ``High-performance drug discovery: computational
-  screening by combining docking and molecular dynamics simulations,'' {\em
-  PLoS computational biology}, vol.~5, no.~10, p.~e1000528, 2009.
-
-\bibitem{jouppi2017datacenter}
-N.~P. Jouppi, C.~Young, N.~Patil, D.~Patterson, G.~Agrawal, R.~Bajwa, S.~Bates,
-  S.~Bhatia, N.~Boden, A.~Borchers, {\em et~al.}, ``In-datacenter performance
-  analysis of a tensor processing unit,'' in {\em 2017 ACM/IEEE 44th Annual
-  International Symposium on Computer Architecture}, pp.~1--12, IEEE, 2017.
-
-\bibitem{bretherton2012national}
-C.~Bretherton, V.~Balaji, T.~Delworth, R.~Dickinson, J.~Edmonds,
-  J.~Famiglietti, and L.~Smarr, ``A national strategy for advancing climate
-  modeling,'' 2012.
-
-\bibitem{asanovic2006landscape}
-K.~Asanović, R.~Bodik, B.~C. Catanzaro, J.~J. Gebis, P.~Husbands, K.~Keutzer,
-  D.~A. Patterson, W.~L. Plishker, J.~Shalf, S.~W. Williams, and K.~A. Yelick,
-  ``The landscape of parallel computing research: A view from berkeley,'' Tech.
-  Rep. UCB/EECS-2006-183, EECS Department, University of California, Berkley
-  CA, USA, Dec 2006.
-
-\bibitem{becker1995beowulf}
-D.~J. Becker, T.~Sterling, D.~Savarese, J.~E. Dorband, U.~A. Ranawak, and C.~V.
-  Packer, ``Beowulf: A parallel workstation for scientific computation,'' in
-  {\em Proceedings, International Conference on Parallel Processing}, vol.~95,
-  pp.~11--14, 1995.
-
-\bibitem{evans2012evaluating}
-J.~P. Evans, M.~Ekstr{\"o}m, and F.~Ji, ``Evaluating the performance of a wrf
-  physics ensemble over south-east australia,'' {\em Climate Dynamics},
-  vol.~39, no.~6, pp.~1241--1258, 2012.
-
-\bibitem{isca2019github}
-{Execlim}, ``Isca: Idealized gcm from the university of exeter,'' Dec. 2018.
-
-\bibitem{penn2017thermal}
-J.~Penn and G.~K. Vallis, ``The thermal phase curve offset on tidally and
-  nontidally locked exoplanets: A shallow water model,'' {\em The Astrophysical
-  Journal}, vol.~842, no.~2, p.~101, 2017.
-
-\bibitem{thomson2018atmospheric}
-S.~I. Thomson and G.~K. Vallis, ``Atmospheric response to sst anomalies. part
-  i: Background-state dependence, teleconnections, and local effects in
-  winter,'' {\em Journal of the Atmospheric Sciences}, vol.~75, no.~12,
-  pp.~4107--4124, 2018.
-
-\bibitem{geen2018regime}
-R.~Geen, F.~Lambert, and G.~Vallis, ``Regime change behavior during asian
-  monsoon onset,'' {\em Journal of Climate}, vol.~31, no.~8, pp.~3327--3348,
-  2018.
-
-\bibitem{balaji2002fms}
-V.~Balaji, ``The fms manual: A developer's guide to the gfdl flexible modeling
-  system,'' tech. rep., Princeton, NJ, USA, 2002.
-
-\bibitem{donner2011dynamical}
-L.~J. Donner, B.~L. Wyman, R.~S. Hemler, L.~W. Horowitz, Y.~Ming, M.~Zhao,
-  J.-C. Golaz, P.~Ginoux, S.-J. Lin, M.~D. Schwarzkopf, {\em et~al.}, ``The
-  dynamical core, physical parameterizations, and basic simulation
-  characteristics of the atmospheric component am3 of the gfdl global coupled
-  model cm3,'' {\em Journal of Climate}, vol.~24, pp.~3484--3519, Jul. 2011.
-
-\bibitem{farneti2009intermediate}
-R.~Farneti and G.~K. Vallis, ``An intermediate complexity climate model
-  (iccmp1) based on the gfdl flexible modelling system,'' {\em Geoscientific
-  Model Development}, vol.~2, pp.~73--88, Jul. 2009.
-
-\bibitem{gfdl2019fms}
-GFDL, ``Flexible modeling system (fms),'' Jul. 2019.
-
-\bibitem{bjerknes1910dynamic}
-V.~Bjerknes, J.~W. Sandström, and O.~D. Devik, {\em Dynamic meteorology and
-  hydrography}.
-\newblock No.~88, Carnegie, 1910.
-
-\bibitem{edwards2011history}
-P.~N. Edwards, ``History of climate modeling,'' {\em Wiley Interdisciplinary
-  Reviews: Climate Change}, vol.~2, pp.~128--139, Dec. 2011.
-
-\bibitem{godske1957dynamic}
-C.~L. Godske and V.~Bjerknes, {\em Dynamic meteorology and weather
-  forecasting}, vol.~605.
-\newblock American Meteorological Society, 1957.
-
-\bibitem{mcintosh2014performance}
-S.~McIntosh-Smith, M.~Boulton, D.~Curran, and J.~Price, ``On the performance
-  portability of structured grid codes on many-core computer architectures,''
-  in {\em International Supercomputing Conference}, pp.~53--75, Springer, Jun.
-  2014.
-
-\bibitem{bourke1988spectral}
-W.~Bourke, ``Spectral methods in global climate and weather prediction
-  models,'' in {\em Physically-Based Modelling and Simulation of Climate and
-  Climatic Change}, pp.~169--220, Springer, 1988.
-
-\bibitem{orszag1974fourier}
-S.~A. Orszag, ``Fourier series on spheres,'' {\em Monthly Weather Review},
-  vol.~102, no.~1, pp.~56--75, 1974.
-
-\bibitem{bart1998coordinate}
-B.~Geerts, ``Coordinate systems of numerical weather prediction models,'' Apr.
-  1998.
-
-\bibitem{goosse2010introduction}
-H.~Goosse, P.-Y. Barriat, M.-F. Loutre, and V.~Zunz, {\em Introduction to
-  climate dynamics and climate modeling}.
-\newblock Centre de recherche sur la Terre et le climat Georges
-  Lema{\^\i}tre-UCLouvain, 2010.
-
-\bibitem{colella2007performance}
-P.~Colella, J.~Bell, N.~Keen, T.~Ligocki, M.~Lijewski, and B.~Van~Straalen,
-  ``Performance and scaling of locally-structured grid methods for partial
-  differential equations,'' in {\em Journal of Physics: Conference Series},
-  vol.~78, p.~012013, IOP Publishing, Jun. 2007.
-
-\bibitem{bader2008climate}
-D.~C. Bader, C.~Covey, W.~J. Gutowski~Jr, I.~M. Held, R.~L. Miller, R.~T.
-  Tokmakian, M.~H. Zhang, {\em et~al.}, ``Climate models: an assessment of
-  strengths and limitations,'' 2008.
-
-\bibitem{singleton1967method}
-R.~Singleton, ``A method for computing the fast fourier transform with
-  auxiliary memory and limited high-speed storage,'' {\em IEEE Transactions on
-  Audio and Electroacoustics}, vol.~15, no.~2, pp.~91--98, 1967.
-
-\bibitem{cooley1965algorithm}
-J.~W. Cooley and J.~W. Tukey, ``An algorithm for the machine calculation of
-  complex fourier series,'' {\em Mathematics of computation}, vol.~19, no.~90,
-  pp.~297--301, 1965.
-
-\bibitem{sorensen1987real}
-H.~V. Sorensen, D.~Jones, M.~Heideman, and C.~Burrus, ``Real-valued fast
-  fourier transform algorithms,'' {\em IEEE Transactions on acoustics, speech,
-  and signal processing}, vol.~35, no.~6, pp.~849--863, 1987.
-
-\bibitem{frigo1998fftw}
-M.~Frigo and S.~G. Johnson, ``Fftw: An adaptive software architecture for the
-  fft,'' in {\em Proceedings of the 1998 IEEE International Conference on
-  Acoustics, Speech and Signal Processing, ICASSP'98 (Cat. No. 98CH36181)},
-  vol.~3, pp.~1381--1384, IEEE, 1998.
-
-\bibitem{frigo2005design}
-M.~Frigo and S.~G. Johnson, ``The design and implementation of fftw3,'' {\em
-  Proceedings of the IEEE}, vol.~93, no.~2, pp.~216--231, 2005.
-
-\bibitem{frigo2003fftw}
-M.~Frigo, S.~G. Johnson, {\em et~al.}, ``Fftw for version 3.3.8,'' May 2018.
-
-\bibitem{heideman1985gauss}
-M.~T. Heideman, D.~H. Johnson, and C.~S. Burrus, ``Gauss and the history of the
-  fast fourier transform,'' {\em Archive for history of exact sciences},
-  vol.~34, no.~3, pp.~265--277, 1985.
-
-\bibitem{gentleman1966fast}
-W.~M. Gentleman and G.~Sande, ``Fast fourier transforms: for fun and profit,''
-  in {\em Proceedings of the November 7-10, 1966, fall joint computer
-  conference}, pp.~563--578, ACM, 1966.
-
-\bibitem{mpi2015standard}
-M.~P.~I. Forum, ``Mpi: A message-passing interface standardversion 3.1,'' tech.
-  rep., Knoxville, TN, USA, 2015.
-
-\bibitem{rew1990netcdf}
-R.~Rew and G.~Davis, ``Netcdf: an interface for scientific data access,'' {\em
-  IEEE computer graphics and applications}, vol.~10, no.~4, pp.~76--82, 1990.
-
-\bibitem{schmunk2015panoply}
-R.~B. Schmunk, ``Panoply netcdf, hdf and grib data viewer,'' {\em National
-  Aeronautics and Space Administration-Goddard Institute for Space Studies},
-  2015.
-
-\bibitem{van2011numpy}
-S.~Van Der~Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a
-  structure for efficient numerical computation,'' {\em Computing in Science \&
-  Engineering}, vol.~13, no.~2, p.~22, 2011.
-
-\bibitem{moffat2017sh}
-A.~Moffat, ``sh: a full-fledged subprocess replacement for python,'' Jun. 2017.
-
-\bibitem{ronacher2008jinja2}
-A.~Ronacher, ``Jinja2 documentation,'' Sep. 2017.
-
-\bibitem{wardf90nml}
-M.~L. Ward, ``f90nml-a python module for fortran namelists,'' Jun. 2019.
-
-\bibitem{flynn1972some}
-M.~J. Flynn, ``Some computer organizations and their effectiveness,'' {\em IEEE
-  transactions on computers}, vol.~100, no.~9, pp.~948--960, 1972.
-
-\bibitem{6877473}
-N.~Rajovic, P.~M. Carpenter, I.~Gelado, N.~Puzovic, A.~Ramirez, and M.~Valero,
-  ``Supercomputing with commodity cpus: Are mobile socs ready for hpc?,'' in
-  {\em Proceedings of the International Conference on High Performance
-  Computing, Networking, Storage and Analysis}, SC '13, (New York, NY, USA),
-  pp.~41--53, ACM, Nov. 2013.
-
-\bibitem{conte2000long}
-G.~Conte, S.~Tommesani, and F.~Zanichelli, ``The long and winding road to
-  high-performance image processing with mmx/sse,'' in {\em Proceedings Fifth
-  IEEE International Workshop on Computer Architectures for Machine
-  Perception}, pp.~302--310, IEEE, Sept. 2000.
-
-\bibitem{chris2011avx}
-C.~Lomont, ``Introduction to intel advanced vector extensions,'' tech. rep.,
-  Santa Clara, CA, USA, 2011.
-
-\bibitem{intel2019avx}
-{Intel Corporation}, ``Intel architecture instruction set extensions and future
-  features programming reference,'' tech. rep., Santa Clara, CA, USA, Apr.
-  2019.
-
-\bibitem{xeon2680v4}
-{Intel Corporation}, ``Intel xeon processor e5-2680 v4 product specification,''
-  Jan. 2019.
-
-\bibitem{gottschlag2018mechanism}
-M.~Gottschlag and F.~Bellosa, ``Mechanism to mitigate avx-induced frequency
-  reduction,'' {\em arXiv preprint arXiv:1901.04982}, 2018.
-
-\bibitem{arm2018white}
-A.~Holdings, ``Case study: Gw4 alliance puts arm architecture to the test for
-  hpc,'' tech. rep., Cambridge, United Kingdom, 2018.
-
-\bibitem{thunderprocessor2018brief}
-Cavium, ``Thunderx2 cn99xx product brief,'' tech. rep., San Jose, CA, USA,
-  2018.
-
-\bibitem{kindratenko2011trends}
-V.~Kindratenko and P.~Trancoso, ``Trends in high-performance computing,'' {\em
-  Computing in Science \& Engineering}, vol.~13, p.~92, Apr. 2011.
-
-\bibitem{Rajovic:2016:MPA:3014904.3014955}
-N.~Rajovic, A.~Rico, F.~Mantovani, D.~Ruiz, J.~O. Vilarrubi, C.~Gomez,
-  L.~Backes, D.~Nieto, H.~Servat, X.~Martorell, J.~Labarta, E.~Ayguade,
-  C.~Adeniyi-Jones, S.~Derradji, H.~Gloaguen, P.~Lanucara, N.~Sanna, J.-F.
-  Mehaut, K.~Pouget, B.~Videau, E.~Boyer, M.~Allalen, A.~Auweter, D.~Brayford,
-  D.~Tafani, V.~Weinberg, D.~Br\"{o}mmel, R.~Halver, J.~H. Meinke, R.~Beivide,
-  M.~Benito, E.~Vallejo, M.~Valero, and A.~Ramirez, ``The mont-blanc prototype:
-  An alternative approach for hpc systems,'' in {\em Proceedings of the
-  International Conference for High Performance Computing, Networking, Storage
-  and Analysis}, SC '16, (Piscataway, NJ, USA), pp.~38--50, IEEE Press, 2016.
-
-\bibitem{stephens2017arm}
-N.~Stephens, S.~Biles, M.~Boettcher, J.~Eapen, M.~Eyole, G.~Gabrielli,
-  M.~Horsnell, G.~Magklis, A.~Martinez, N.~Premillieu, {\em et~al.}, ``The arm
-  scalable vector extension,'' {\em IEEE Micro}, vol.~37, pp.~26--39, Apr.
-  2017.
-
-\bibitem{rico2017arm}
-A.~Rico, J.~A. Joao, C.~Adeniyi-Jones, and E.~Van~Hensbergen, ``Arm hpc
-  ecosystem and the reemergence of vectors,'' in {\em Proceedings of the
-  Computing Frontiers Conference}, (New York NY, USA), pp.~329--334, ACM, ACM,
-  May. 2017.
-
-\bibitem{moore1965cramming}
-G.~E. Moore {\em et~al.}, ``Cramming more components onto integrated
-  circuits,'' {\em Electronics}, vol.~38, pp.~33--35, Apr. 1965.
-
-\bibitem{mccalpin1995memory}
-J.~D. McCalpin {\em et~al.}, ``Memory bandwidth and machine balance in current
-  high performance computers,'' {\em IEEE computer society technical committee
-  on computer architecture (TCCA) newsletter}, vol.~2, Dec. 1995.
-
-\bibitem{patterson1997case}
-D.~Patterson, T.~Anderson, N.~Cardwell, R.~Fromm, K.~Keeton, C.~Kozyrakis,
-  R.~Thomas, and K.~Yelick, ``A case for intelligent ram,'' {\em IEEE micro},
-  vol.~17, pp.~34--44, Apr. 1997.
-
-\bibitem{stream2019github}
-J.~Hammond, ``Stream memory-bandwidth benchmark,'' Jul. 2019.
-
-\bibitem{dongarra2008linpack}
-A.~Petitet, R.~C.~Whaley, J.~Dongarra, and A.~Cleary, ``Hpl – a portable
-  implementation of the high-performance linpack benchmark for
-  distributed-memory computers,'' Jan. 2008.
-
-\bibitem{kumar1994analyzing}
-V.~P. Kumar and A.~Gupta, ``Analyzing scalability of parallel algorithms and
-  architectures,'' {\em Journal of parallel and distributed computing},
-  vol.~22, no.~3, pp.~379--391, 1994.
-
-\bibitem{schmidt2007benchmark}
-M.~Schmidt, ``A benchmark for the parallel code used in fms and mom-4,'' {\em
-  Ocean Modelling}, vol.~17, pp.~49--67, Dec. 2007.
-
-\bibitem{williams2009roofline}
-S.~Williams, A.~Waterman, and D.~Patterson, ``Roofline: An insightful visual
-  performance model for floating-point programs and multicore architectures,''
-  {\em Communications of the ACM - A Direct Path to Dependable Software},
-  vol.~52, pp.~65--76, Apr. 2009.
-
-\bibitem{fortran1991standard}
-{American National Standard Programming}, {\em Fortran 90 ISO/IEC 1539 : 1991}.
-\newblock Carnegie, 1991.
-
-\bibitem{gnu2019conversion}
-GNU, ``Implicit conversion between logical and integer,'' Jul. 2019.
-
-\bibitem{goldberg1991every}
-D.~Goldberg, ``What every computer scientist should know about floating-point
-  arithmetic,'' {\em ACM Computing Surveys (CSUR)}, vol.~23, no.~1, pp.~5--48,
-  1991.
-
-\bibitem{ieee1985ieee}
-{IEEE Computer Society. Standards Committee and American National Standards
-  Institute}, {\em IEEE standard for binary floating-point arithmetic},
-  vol.~754.
-\newblock IEEE, 1985.
-
-\bibitem{puma2018}
-M.~Johnson and G.~Williams, ``Program to compare any variables common to two
-  netcdf files.,'' Jun. 2009.
-
-\bibitem{held1994proposal}
-I.~M. Held and M.~J. Suarez, ``A proposal for the intercomparison of the
-  dynamical cores of atmospheric general circulation models,'' {\em Bulletin of
-  the american Meteorological society}, vol.~75, no.~10, pp.~1825--1830, 1994.
-
-\bibitem{wan2008ensemble}
-H.~Wan, M.~A. Giorgetta, and L.~Bonaventura, ``Ensemble held-suarez test with a
-  spectral transform model: Variability, sensitivity, and convergence,'' {\em
-  Monthly Weather Review}, vol.~136, no.~3, pp.~1075--1092, 2008.
-
-\bibitem{duben2014benchmark}
-P.~D. D{\"u}ben and T.~Palmer, ``Benchmark tests for numerical weather
-  forecasts on inexact hardware,'' {\em Monthly Weather Review}, vol.~142,
-  no.~10, pp.~3809--3829, 2014.
-
-\bibitem{taylor1998performance}
-M.~Taylor, R.~Loft, and J.~Tribbia, ``Performance of a spectral element
-  atmospheric model (seam) on the hp exemplar spp2000,'' {\em NCAR TN},
-  vol.~439, 1998.
-
-\bibitem{laskar1993chaotic}
-J.~Laskar and P.~Robutel, ``The chaotic obliquity of the planets,'' {\em
-  Nature}, vol.~361, no.~6413, p.~608, 1993.
-
-\bibitem{foster1994load}
-I.~T. Foster and B.~R. Toonen, ``Load-balancing algorithms for climate
-  models,'' in {\em Proceedings of IEEE Scalable High Performance Computing
-  Conference}, pp.~674--681, IEEE, Jul. 1994.
-
-\bibitem{meeus1991astronomical}
-J.~H. Meeus, {\em {Astronomical algorithms}}.
-\newblock Willmann-Bell, Incorporated, 1991.
-
-\bibitem{lancaster2019github}
-G.~Lancaster, ``A collection of scripts for automating runtime and trace data
-  collection for the isca climate model,'' Aug. 2019.
-
-\bibitem{arm2019practices}
-X.~Guo, C.~Morales, O.~Saastad, A.~Shamakina, W.~Rijks, and V.~Weinberg, ``Best
-  practice guide - arm64,'' tech. rep., Germany, 2019.
-
-\bibitem{milfeld2014hpc}
-K.~Milfeld, ``Parallel optimization for hpc,'' tech. rep., Austin, TX, USA,
-  2014.
-
-\bibitem{grun2010introduction}
-P.~Grun, ``Introduction to infiniband,'' tech. rep., Santa Clara, CA, USA,
-  2010.
-
-\bibitem{reinders2013intel}
-J.~Reinders, ``Intel avx-512 instructions,'' Jul. 2013.
-
-\bibitem{intel2017avx}
-{Intel Corporation}, ``Intel architecture instruction set extensions and future
-  features programming reference,'' tech. rep., Santa Clara, CA, USA, May 2019.
-
-\bibitem{behling2001power4}
-S.~Behling, R.~Bell, P.~Farrell, H.~Holthoff, F.~O’Connell, and W.~Weir,
-  ``The power4 processor introduction and tuning guide,'' tech. rep., Armonk,
-  NY, USA, 2001.
-
-\bibitem{carvalho2002gap}
-C.~Carvalho, ``The gap between processor and memory speeds,'' in {\em Proc. of
-  IEEE International Conference on Control and Automation}, 2002.
-
-\bibitem{temperton1980fft}
-C.~Temperton, ``Very fast real fourier transform,'' {\em Special topics of
-  applied mathematics: Functional Analysis, Numerical Analysis and
-  Optimisation}, Jan. 1980.
-
-\bibitem{ecmwf2015emoslib}
-S.~Siemen, ``Routines for fast-fourier transform (fft),'' Sep. 2015.
-
-\bibitem{lahey1994fortran}
-T.~M. Lahey and T.~Ellis, {\em Fortran 90 programming}.
-\newblock Addison-Wesley Longman Publishing Co., Inc., 1994.
-
-\bibitem{parnas1972criteria}
-D.~L. Parnas, ``On the criteria to be used in decomposing systems into
-  modules,'' {\em Communications of the ACM}, vol.~15, no.~12, pp.~1053--1058,
-  1972.
-
-\bibitem{aa2011armv8}
-A.~Group {\em et~al.}, ``Armv8 instruction set overview,'' {\em vol.
-  PRD03-GENC-010197}, vol.~15, no.~11, 2011.
-
-\bibitem{yoshida2018fujitsu}
-T.~Yoshida, ``Fujitsu high performance cpu for the post-k computer,'' in {\em
-  Hot Chips 30 Symposium (HCS), Series Hot Chips}, vol.~18, 2018.
-
-\bibitem{bach2015est}
-M.~Bach, ``Estimating cpu performance using amdahl's law,'' May. 2015.
-
-\bibitem{amdahl1967validity}
-G.~M. Amdahl, ``Validity of the single processor approach to achieving large
-  scale computing capabilities,'' in {\em Proceedings of the April 18-20, 1967,
-  spring joint computer conference}, pp.~483--485, ACM, Apr. 1967.
-
-\bibitem{mcintosh2017tealeaf}
-S.~McIntosh-Smith, M.~Martineau, T.~Deakin, G.~Pawelczak, W.~Gaudin,
-  P.~Garrett, W.~Liu, R.~Smedley-Stevenson, and D.~Beckingsale, ``Tealeaf: a
-  mini-application to enable design-space explorations for iterative sparse
-  linear solvers,'' in {\em 2017 IEEE International Conference on Cluster
-  Computing (CLUSTER)}, pp.~842--849, IEEE, 2017.
-
-\bibitem{mallinson2013cloverleaf}
-A.~Mallinson, D.~A. Beckingsale, W.~Gaudin, J.~Herdman, J.~Levesque, and S.~A.
-  Jarvis, ``Cloverleaf: Preparing hydrodynamics codes for exascale,'' {\em The
-  Cray User Group}, vol.~2013, 2013.
-
-\bibitem{peterson2009f2py}
-P.~Peterson, ``F2py: a tool for connecting fortran and python programs,'' {\em
-  International Journal of Computational Science and Engineering}, vol.~4,
-  no.~4, pp.~296--305, 2009.
-
-\end{thebibliography}

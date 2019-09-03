@@ -1,0 +1,659 @@
+\begin{thebibliography}{94}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Amdahl(1967)]{amdahl1967validity}
+G.~M. Amdahl.
+\newblock Validity of the single processor approach to achieving large scale
+  computing capabilities.
+\newblock In \emph{Proceedings of the April 18-20, 1967, spring joint computer
+  conference}, pages 483--485. ACM, Apr. 1967.
+\newblock \doi{10.1145/1465482.1465560}.
+\newblock URL \url{https://doi.org/10.1145/1465482.1465560}.
+
+\bibitem[{American National Standard Programming}(1991)]{fortran1991standard}
+{American National Standard Programming}.
+\newblock \emph{Fortran 90 ISO/IEC 1539 : 1991}.
+\newblock Carnegie, 1991.
+
+\bibitem[{Arm Holdings}(2011)]{aa2011armv8}
+{Arm Holdings}.
+\newblock Armv8 instruction set overview.
+\newblock \emph{vol. PRD03-GENC-010197}, 15\penalty0 (11), 2011.
+
+\bibitem[{Arm Holdings}(2018)]{arm2018white}
+{Arm Holdings}.
+\newblock Case study: Gw4 alliance puts arm architecture to the test for hpc.
+\newblock Technical report, Cambridge, United Kingdom, 2018.
+
+\bibitem[Asanović et~al.(2006)Asanović, Bodik, Catanzaro, Gebis, Husbands,
+  Keutzer, Patterson, Plishker, Shalf, Williams, and
+  Yelick]{asanovic2006landscape}
+K.~Asanović, R.~Bodik, B.~C. Catanzaro, J.~J. Gebis, P.~Husbands, K.~Keutzer,
+  D.~A. Patterson, W.~L. Plishker, J.~Shalf, S.~W. Williams, and K.~A. Yelick.
+\newblock The landscape of parallel computing research: A view from berkeley.
+\newblock Technical Report UCB/EECS-2006-183, EECS Department, University of
+  California, Berkley CA, USA, Dec 2006.
+
+\bibitem[Bach(2015)]{bach2015est}
+M.~Bach.
+\newblock Estimating cpu performance using amdahl's law, May. 2015.
+\newblock URL
+  \url{https://www.pugetsystems.com/labs/articles/Estimating-CPU-Performance-using-Amdahls-Law-619/}.
+
+\bibitem[Bader et~al.(2008)Bader, Covey, Gutowski~Jr, Held, Miller, Tokmakian,
+  Zhang, et~al.]{bader2008climate}
+D.~C. Bader, C.~Covey, W.~J. Gutowski~Jr, I.~M. Held, R.~L. Miller, R.~T.
+  Tokmakian, M.~H. Zhang, et~al.
+\newblock Climate models: an assessment of strengths and limitations.
+\newblock 2008.
+
+\bibitem[Balaji(2002)]{balaji2002fms}
+V.~Balaji.
+\newblock The fms manual: A developer's guide to the gfdl flexible modeling
+  system.
+\newblock Technical report, Princeton, NJ, USA, 2002.
+
+\bibitem[Becker et~al.(1995)Becker, Sterling, Savarese, Dorband, Ranawak, and
+  Packer]{becker1995beowulf}
+D.~J. Becker, T.~Sterling, D.~Savarese, J.~E. Dorband, U.~A. Ranawak, and C.~V.
+  Packer.
+\newblock Beowulf: A parallel workstation for scientific computation.
+\newblock In \emph{Proceedings, International Conference on Parallel
+  Processing}, volume~95, pages 11--14, 1995.
+
+\bibitem[Behling et~al.(2001)Behling, Bell, Farrell, Holthoff, O’Connell, and
+  Weir]{behling2001power4}
+S.~Behling, R.~Bell, P.~Farrell, H.~Holthoff, F.~O’Connell, and W.~Weir.
+\newblock The power4 processor introduction and tuning guide.
+\newblock Technical report, Armonk, NY, USA, 2001.
+
+\bibitem[Bjerknes et~al.(1910)Bjerknes, Sandström, and
+  Devik]{bjerknes1910dynamic}
+V.~Bjerknes, J.~W. Sandström, and O.~D. Devik.
+\newblock \emph{Dynamic meteorology and hydrography}.
+\newblock Number~88. Carnegie, 1910.
+
+\bibitem[Bourke(1988)]{bourke1988spectral}
+W.~Bourke.
+\newblock Spectral methods in global climate and weather prediction models.
+\newblock In \emph{Physically-Based Modelling and Simulation of Climate and
+  Climatic Change}, pages 169--220. Springer, 1988.
+
+\bibitem[Bretherton et~al.(2012)Bretherton, Balaji, Delworth, Dickinson,
+  Edmonds, Famiglietti, and Smarr]{bretherton2012national}
+C.~Bretherton, V.~Balaji, T.~Delworth, R.~Dickinson, J.~Edmonds,
+  J.~Famiglietti, and L.~Smarr.
+\newblock A national strategy for advancing climate modeling, 2012.
+
+\bibitem[Calore et~al.(2018)Calore, Mantovani, and Ruiz]{calore2018advanced}
+E.~Calore, F.~Mantovani, and D.~Ruiz.
+\newblock Advanced performance analysis of hpc workloads on cavium thunderx.
+\newblock In \emph{2018 International Conference on High Performance Computing
+  \& Simulation (HPCS)}, pages 375--382. IEEE, Jul. 2018.
+\newblock \doi{10.1109/HPCS.2018.00068}.
+\newblock URL \url{https:doi.org/10.1109/HPCS.2018.00068}.
+
+\bibitem[Carvalho(2002)]{carvalho2002gap}
+C.~Carvalho.
+\newblock The gap between processor and memory speeds.
+\newblock In \emph{Proc. of IEEE International Conference on Control and
+  Automation}, 2002.
+
+\bibitem[{Cavium}(2018)]{thunderprocessor2018brief}
+{Cavium}.
+\newblock Thunderx2 cn99xx product brief.
+\newblock Technical report, San Jose, CA, USA, 2018.
+
+\bibitem[Colella et~al.(2007)Colella, Bell, Keen, Ligocki, Lijewski, and
+  Van~Straalen]{colella2007performance}
+P.~Colella, J.~Bell, N.~Keen, T.~Ligocki, M.~Lijewski, and B.~Van~Straalen.
+\newblock Performance and scaling of locally-structured grid methods for
+  partial differential equations.
+\newblock In \emph{Journal of Physics: Conference Series}, volume~78, page
+  012013. IOP Publishing, Jun. 2007.
+\newblock \doi{10.1088/1742-6596/78/1/012013}.
+\newblock URL \url{https://doi.org/10.1088/1742-6596/78/1/012013}.
+
+\bibitem[Conte et~al.(2000)Conte, Tommesani, and Zanichelli]{conte2000long}
+G.~Conte, S.~Tommesani, and F.~Zanichelli.
+\newblock The long and winding road to high-performance image processing with
+  mmx/sse.
+\newblock In \emph{Proceedings Fifth IEEE International Workshop on Computer
+  Architectures for Machine Perception}, pages 302--310. IEEE, Sept. 2000.
+\newblock \doi{10.1109/CAMP.2000.875989}.
+\newblock URL \url{https://doi.org/10.1109/CAMP.2000.875989}.
+
+\bibitem[Cooley and Tukey(1965)]{cooley1965algorithm}
+J.~W. Cooley and J.~W. Tukey.
+\newblock An algorithm for the machine calculation of complex fourier series.
+\newblock \emph{Mathematics of computation}, 19\penalty0 (90):\penalty0
+  297--301, 1965.
+
+\bibitem[Donner et~al.(2011)Donner, Wyman, Hemler, Horowitz, Ming, Zhao, Golaz,
+  Ginoux, Lin, Schwarzkopf, et~al.]{donner2011dynamical}
+L.~J. Donner, B.~L. Wyman, R.~S. Hemler, L.~W. Horowitz, Y.~Ming, M.~Zhao,
+  J.-C. Golaz, P.~Ginoux, S.-J. Lin, M.~D. Schwarzkopf, et~al.
+\newblock The dynamical core, physical parameterizations, and basic simulation
+  characteristics of the atmospheric component am3 of the gfdl global coupled
+  model cm3.
+\newblock \emph{Journal of Climate}, 24\penalty0 (13):\penalty0 3484--3519,
+  Jul. 2011.
+\newblock \doi{10.1175/2011JCLI3955.1}.
+\newblock URL \url{https://doi.org/10.1175/2011JCLI3955.1}.
+
+\bibitem[D{\"u}ben and Palmer(2014)]{duben2014benchmark}
+P.~D. D{\"u}ben and T.~Palmer.
+\newblock Benchmark tests for numerical weather forecasts on inexact hardware.
+\newblock \emph{Monthly Weather Review}, 142\penalty0 (10):\penalty0
+  3809--3829, 2014.
+
+\bibitem[Edwards(2011)]{edwards2011history}
+P.~N. Edwards.
+\newblock History of climate modeling.
+\newblock \emph{Wiley Interdisciplinary Reviews: Climate Change}, 2\penalty0
+  (1):\penalty0 128--139, Dec. 2011.
+\newblock \doi{10.1002/wcc.95}.
+\newblock URL \url{https://doi.org/10.1002/wcc.95}.
+
+\bibitem[Evans et~al.(2012)Evans, Ekstr{\"o}m, and Ji]{evans2012evaluating}
+J.~P. Evans, M.~Ekstr{\"o}m, and F.~Ji.
+\newblock Evaluating the performance of a wrf physics ensemble over south-east
+  australia.
+\newblock \emph{Climate Dynamics}, 39\penalty0 (6):\penalty0 1241--1258, 2012.
+
+\bibitem[{Execlim}(2018)]{isca2019github}
+{Execlim}.
+\newblock Isca: Idealized gcm from the university of exeter, Dec. 2018.
+\newblock URL \url{https://github.com/ExeClim/Isca}.
+
+\bibitem[Farneti and Vallis(2009)]{farneti2009intermediate}
+R.~Farneti and G.~K. Vallis.
+\newblock An intermediate complexity climate model (iccmp1) based on the gfdl
+  flexible modelling system.
+\newblock \emph{Geoscientific Model Development}, 2\penalty0 (2):\penalty0
+  73--88, Jul. 2009.
+\newblock \doi{10.5194/gmd-2-73-2009}.
+\newblock URL \url{https://doi.org/10.5194/gmd-2-73-2009}.
+
+\bibitem[Flynn(1972)]{flynn1972some}
+M.~J. Flynn.
+\newblock Some computer organizations and their effectiveness.
+\newblock \emph{IEEE transactions on computers}, 100\penalty0 (9):\penalty0
+  948--960, 1972.
+
+\bibitem[Forum(2015)]{mpi2015standard}
+M.~P.~I. Forum.
+\newblock Mpi: A message-passing interface standardversion 3.1.
+\newblock Technical report, Knoxville, TN, USA, 2015.
+
+\bibitem[Foster and Toonen(1994)]{foster1994load}
+I.~T. Foster and B.~R. Toonen.
+\newblock Load-balancing algorithms for climate models.
+\newblock In \emph{Proceedings of IEEE Scalable High Performance Computing
+  Conference}, pages 674--681. IEEE, Jul. 1994.
+\newblock \doi{10.1109/SHPCC.1994.296706}.
+\newblock URL \url{https://doi.org/10.1109/SHPCC.1994.296706}.
+
+\bibitem[Frigo and Johnson(1998)]{frigo1998fftw}
+M.~Frigo and S.~G. Johnson.
+\newblock Fftw: An adaptive software architecture for the fft.
+\newblock In \emph{Proceedings of the 1998 IEEE International Conference on
+  Acoustics, Speech and Signal Processing, ICASSP'98 (Cat. No. 98CH36181)},
+  volume~3, pages 1381--1384. IEEE, 1998.
+
+\bibitem[Frigo and Johnson(2005)]{frigo2005design}
+M.~Frigo and S.~G. Johnson.
+\newblock The design and implementation of fftw3.
+\newblock \emph{Proceedings of the IEEE}, 93\penalty0 (2):\penalty0 216--231,
+  2005.
+
+\bibitem[Frigo et~al.(2018)Frigo, Johnson, et~al.]{frigo2003fftw}
+M.~Frigo, S.~G. Johnson, et~al.
+\newblock Fftw for version 3.3.8.
+\newblock May 2018.
+
+\bibitem[Geen et~al.(2018)Geen, Lambert, and Vallis]{geen2018regime}
+R.~Geen, F.~Lambert, and G.~Vallis.
+\newblock Regime change behavior during asian monsoon onset.
+\newblock \emph{Journal of Climate}, 31\penalty0 (8):\penalty0 3327--3348,
+  2018.
+
+\bibitem[Geerts(1998)]{bart1998coordinate}
+B.~Geerts.
+\newblock Coordinate systems of numerical weather prediction models, Apr. 1998.
+\newblock URL
+  \url{http://www-das.uwyo.edu/~geerts/cwx/notes/chap15/coord.html}.
+
+\bibitem[Gentleman and Sande(1966)]{gentleman1966fast}
+W.~M. Gentleman and G.~Sande.
+\newblock Fast fourier transforms: for fun and profit.
+\newblock In \emph{Proceedings of the November 7-10, 1966, fall joint computer
+  conference}, pages 563--578. ACM, 1966.
+\newblock \doi{1464291.1464352}.
+
+\bibitem[GFDL(2019)]{gfdl2019fms}
+GFDL.
+\newblock Flexible modeling system (fms), Jul. 2019.
+\newblock URL \url{https://www.gfdl.noaa.gov/fms/}.
+
+\bibitem[GNU(2019)]{gnu2019conversion}
+GNU.
+\newblock Implicit conversion between logical and integer, Jul. 2019.
+\newblock URL
+  \url{https://gnu.huihoo.org/gcc/gcc-4.0.4/gfortran/Implicitly-interconvert-LOGICAL-and-INTEGER.html}.
+
+\bibitem[Godske and Bjerknes(1957)]{godske1957dynamic}
+C.~L. Godske and V.~Bjerknes.
+\newblock \emph{Dynamic meteorology and weather forecasting}, volume 605.
+\newblock American Meteorological Society, 1957.
+\newblock \doi{10.1002/qj.49708335818}.
+\newblock URL \url{https://doi.org/10.1002/qj.49708335818}.
+
+\bibitem[Goldberg(1991)]{goldberg1991every}
+D.~Goldberg.
+\newblock What every computer scientist should know about floating-point
+  arithmetic.
+\newblock \emph{ACM Computing Surveys (CSUR)}, 23\penalty0 (1):\penalty0 5--48,
+  1991.
+
+\bibitem[Goosse et~al.(2010)Goosse, Barriat, Loutre, and
+  Zunz]{goosse2010introduction}
+H.~Goosse, P.-Y. Barriat, M.-F. Loutre, and V.~Zunz.
+\newblock \emph{Introduction to climate dynamics and climate modeling}.
+\newblock Centre de recherche sur la Terre et le climat Georges
+  Lema{\^\i}tre-UCLouvain, 2010.
+
+\bibitem[Gottschlag and Bellosa(2018)]{gottschlag2018mechanism}
+M.~Gottschlag and F.~Bellosa.
+\newblock Mechanism to mitigate avx-induced frequency reduction.
+\newblock \emph{arXiv preprint arXiv:1901.04982}, 2018.
+
+\bibitem[Grun(2010)]{grun2010introduction}
+P.~Grun.
+\newblock Introduction to infiniband.
+\newblock Technical report, Santa Clara, CA, USA, 2010.
+
+\bibitem[Guo et~al.(2019)Guo, Morales, Saastad, Shamakina, Rijks, and
+  Weinberg]{arm2019practices}
+X.~Guo, C.~Morales, O.~Saastad, A.~Shamakina, W.~Rijks, and V.~Weinberg.
+\newblock Best practice guide - arm64.
+\newblock Technical report, Germany, 2019.
+
+\bibitem[Hammond(2019)]{stream2019github}
+J.~Hammond.
+\newblock Stream memory-bandwidth benchmark, Jul. 2019.
+\newblock URL \url{https://github.com/jeffhammond/STREAM}.
+
+\bibitem[Heideman et~al.(1985)Heideman, Johnson, and Burrus]{heideman1985gauss}
+M.~T. Heideman, D.~H. Johnson, and C.~S. Burrus.
+\newblock Gauss and the history of the fast fourier transform.
+\newblock \emph{Archive for history of exact sciences}, 34\penalty0
+  (3):\penalty0 265--277, 1985.
+
+\bibitem[Held and Suarez(1994)]{held1994proposal}
+I.~M. Held and M.~J. Suarez.
+\newblock A proposal for the intercomparison of the dynamical cores of
+  atmospheric general circulation models.
+\newblock \emph{Bulletin of the american Meteorological society}, 75\penalty0
+  (10):\penalty0 1825--1830, 1994.
+
+\bibitem[{IEEE Computer Society. Standards Committee and American National
+  Standards Institute}(1985)]{ieee1985ieee}
+{IEEE Computer Society. Standards Committee and American National Standards
+  Institute}.
+\newblock \emph{IEEE standard for binary floating-point arithmetic}, volume
+  754.
+\newblock IEEE, 1985.
+
+\bibitem[{Intel Corporation}(2019{\natexlab{a}})]{intel2017avx}
+{Intel Corporation}.
+\newblock Intel architecture instruction set extensions and future features
+  programming reference.
+\newblock Technical report, Santa Clara, CA, USA, May 2019{\natexlab{a}}.
+
+\bibitem[{Intel Corporation}(2019{\natexlab{b}})]{intel2019avx}
+{Intel Corporation}.
+\newblock Intel architecture instruction set extensions and future features
+  programming reference.
+\newblock Technical report, Santa Clara, CA, USA, Apr. 2019{\natexlab{b}}.
+
+\bibitem[{Intel Corporation}(2019{\natexlab{c}})]{xeon2680v4}
+{Intel Corporation}.
+\newblock Intel xeon processor e5-2680 v4 product specification, Jan.
+  2019{\natexlab{c}}.
+\newblock URL
+  \url{https://ark.intel.com/content/www/us/en/ark/products/91754/intel-xeon-processor-e5-2680-v4-35m-cache-2-40-ghz.html}.
+
+\bibitem[Johnson and Williams(2009)]{puma2018}
+M.~Johnson and G.~Williams.
+\newblock Program to compare any variables common to two netcdf files., Jun.
+  2009.
+\newblock URL
+  \url{https://puma.nerc.ac.uk/svn/UniCiCles_svn/UniCiCles/trunk/glimmer-cism/utils/}.
+
+\bibitem[Jouppi et~al.(2017)Jouppi, Young, Patil, Patterson, Agrawal, Bajwa,
+  Bates, Bhatia, Boden, Borchers, et~al.]{jouppi2017datacenter}
+N.~P. Jouppi, C.~Young, N.~Patil, D.~Patterson, G.~Agrawal, R.~Bajwa, S.~Bates,
+  S.~Bhatia, N.~Boden, A.~Borchers, et~al.
+\newblock In-datacenter performance analysis of a tensor processing unit.
+\newblock In \emph{2017 ACM/IEEE 44th Annual International Symposium on
+  Computer Architecture}, pages 1--12. IEEE, 2017.
+
+\bibitem[Kindratenko and Trancoso(2011)]{kindratenko2011trends}
+V.~Kindratenko and P.~Trancoso.
+\newblock Trends in high-performance computing.
+\newblock \emph{Computing in Science \& Engineering}, 13\penalty0 (3):\penalty0
+  92, Apr. 2011.
+\newblock \doi{10.1109/MCSE.2011.52}.
+\newblock URL \url{https://doi.org/10.1109/MCSE.2011.52}.
+
+\bibitem[Kumar and Gupta(1994)]{kumar1994analyzing}
+V.~P. Kumar and A.~Gupta.
+\newblock Analyzing scalability of parallel algorithms and architectures.
+\newblock \emph{Journal of parallel and distributed computing}, 22\penalty0
+  (3):\penalty0 379--391, 1994.
+
+\bibitem[Lahey and Ellis(1994)]{lahey1994fortran}
+T.~M. Lahey and T.~Ellis.
+\newblock \emph{Fortran 90 programming}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., 1994.
+
+\bibitem[Lancaster(2019)]{lancaster2019github}
+G.~Lancaster.
+\newblock A collection of scripts for automating runtime and trace data
+  collection for the isca climate model, Aug. 2019.
+\newblock URL \url{https://github.com/Lancasterg/benchmark_isca}.
+
+\bibitem[Laskar and Robutel(1993)]{laskar1993chaotic}
+J.~Laskar and P.~Robutel.
+\newblock The chaotic obliquity of the planets.
+\newblock \emph{Nature}, 361\penalty0 (6413):\penalty0 608, 1993.
+
+\bibitem[Lomont(2011)]{chris2011avx}
+C.~Lomont.
+\newblock Introduction to intel advanced vector extensions.
+\newblock Technical report, Santa Clara, CA, USA, 2011.
+
+\bibitem[Mallinson et~al.(2013)Mallinson, Beckingsale, Gaudin, Herdman,
+  Levesque, and Jarvis]{mallinson2013cloverleaf}
+A.~Mallinson, D.~A. Beckingsale, W.~Gaudin, J.~Herdman, J.~Levesque, and S.~A.
+  Jarvis.
+\newblock Cloverleaf: Preparing hydrodynamics codes for exascale.
+\newblock \emph{The Cray User Group}, 2013, 2013.
+
+\bibitem[McCalpin et~al.(1995)]{mccalpin1995memory}
+J.~D. McCalpin et~al.
+\newblock Memory bandwidth and machine balance in current high performance
+  computers.
+\newblock \emph{IEEE computer society technical committee on computer
+  architecture (TCCA) newsletter}, 2\penalty0 (19--25), Dec. 1995.
+
+\bibitem[McIntosh-Smith et~al.(2014)McIntosh-Smith, Boulton, Curran, and
+  Price]{mcintosh2014performance}
+S.~McIntosh-Smith, M.~Boulton, D.~Curran, and J.~Price.
+\newblock On the performance portability of structured grid codes on many-core
+  computer architectures.
+\newblock In \emph{International Supercomputing Conference}, pages 53--75.
+  Springer, Jun. 2014.
+\newblock \doi{10.1007/978-3-319-07518-1_4}.
+\newblock URL \url{https://doi.org/10.1007/978-3-319-07518-1_4}.
+
+\bibitem[McIntosh-Smith et~al.(2017)McIntosh-Smith, Martineau, Deakin,
+  Pawelczak, Gaudin, Garrett, Liu, Smedley-Stevenson, and
+  Beckingsale]{mcintosh2017tealeaf}
+S.~McIntosh-Smith, M.~Martineau, T.~Deakin, G.~Pawelczak, W.~Gaudin,
+  P.~Garrett, W.~Liu, R.~Smedley-Stevenson, and D.~Beckingsale.
+\newblock Tealeaf: a mini-application to enable design-space explorations for
+  iterative sparse linear solvers.
+\newblock In \emph{2017 IEEE International Conference on Cluster Computing
+  (CLUSTER)}, pages 842--849. IEEE, 2017.
+
+\bibitem[McIntosh-Smith et~al.(2018)McIntosh-Smith, Price, Deakin, and
+  Poenaru]{mcintosh2018performance}
+S.~McIntosh-Smith, J.~Price, T.~Deakin, and A.~Poenaru.
+\newblock A performance analysis of the first generation of hpc-optimized arm
+  processors.
+\newblock \emph{Concurrency and Computation: Practice and Experience}, page
+  e5110, May. 2018.
+\newblock \doi{10.1002/cpe.5110}.
+\newblock URL \url{https://doi.org/10.1002/cpe.5110}.
+
+\bibitem[Meeus(1991)]{meeus1991astronomical}
+J.~H. Meeus.
+\newblock \emph{{Astronomical algorithms}}.
+\newblock Willmann-Bell, Incorporated, 1991.
+
+\bibitem[Milfeld(2014)]{milfeld2014hpc}
+K.~Milfeld.
+\newblock Parallel optimization for hpc.
+\newblock Technical report, Austin, TX, USA, 2014.
+
+\bibitem[Moffat(2017)]{moffat2017sh}
+A.~Moffat.
+\newblock sh: a full-fledged subprocess replacement for python, Jun. 2017.
+\newblock URL \url{https://pypi.org/project/sh/}.
+
+\bibitem[Moore et~al.(1965)]{moore1965cramming}
+G.~E. Moore et~al.
+\newblock Cramming more components onto integrated circuits.
+\newblock \emph{Electronics}, 38\penalty0 (8):\penalty0 33--35, Apr. 1965.
+\newblock URL \url{https://ieeexplore.ieee.org/document/4785860}.
+
+\bibitem[Okimoto et~al.(2009)Okimoto, Futatsugi, Fuji, Suenaga, Morimoto,
+  Yanai, Ohno, Narumi, and Taiji]{okimoto2009high}
+N.~Okimoto, N.~Futatsugi, H.~Fuji, A.~Suenaga, G.~Morimoto, R.~Yanai, Y.~Ohno,
+  T.~Narumi, and M.~Taiji.
+\newblock High-performance drug discovery: computational screening by combining
+  docking and molecular dynamics simulations.
+\newblock \emph{PLoS computational biology}, 5\penalty0 (10):\penalty0
+  e1000528, 2009.
+
+\bibitem[Orszag(1974)]{orszag1974fourier}
+S.~A. Orszag.
+\newblock Fourier series on spheres.
+\newblock \emph{Monthly Weather Review}, 102\penalty0 (1):\penalty0 56--75,
+  1974.
+\newblock \doi{10.1175/1520-0493(1974)102<0056\%3AFSOS>2.0.CO\%3B2}.
+
+\bibitem[Parnas(1972)]{parnas1972criteria}
+D.~L. Parnas.
+\newblock On the criteria to be used in decomposing systems into modules.
+\newblock \emph{Communications of the ACM}, 15\penalty0 (12):\penalty0
+  1053--1058, 1972.
+
+\bibitem[Patterson et~al.(1997)Patterson, Anderson, Cardwell, Fromm, Keeton,
+  Kozyrakis, Thomas, and Yelick]{patterson1997case}
+D.~Patterson, T.~Anderson, N.~Cardwell, R.~Fromm, K.~Keeton, C.~Kozyrakis,
+  R.~Thomas, and K.~Yelick.
+\newblock A case for intelligent ram.
+\newblock \emph{IEEE micro}, 17\penalty0 (2):\penalty0 34--44, Apr. 1997.
+\newblock \doi{10.1109/40.592312}.
+\newblock URL \url{https://doi.org/10.1109/40.592312}.
+
+\bibitem[Penn and Vallis(2017)]{penn2017thermal}
+J.~Penn and G.~K. Vallis.
+\newblock The thermal phase curve offset on tidally and nontidally locked
+  exoplanets: A shallow water model.
+\newblock \emph{The Astrophysical Journal}, 842\penalty0 (2):\penalty0 101,
+  2017.
+
+\bibitem[Peterson(2009)]{peterson2009f2py}
+P.~Peterson.
+\newblock F2py: a tool for connecting fortran and python programs.
+\newblock \emph{International Journal of Computational Science and
+  Engineering}, 4\penalty0 (4):\penalty0 296--305, 2009.
+
+\bibitem[Petitet et~al.(2008)Petitet, C.~Whaley, Dongarra, and
+  Cleary]{dongarra2008linpack}
+A.~Petitet, R.~C.~Whaley, J.~Dongarra, and A.~Cleary.
+\newblock Hpl – a portable implementation of the high-performance linpack
+  benchmark for distributed-memory computers.
+\newblock Jan. 2008.
+
+\bibitem[Rajovic et~al.(2013)Rajovic, Carpenter, Gelado, Puzovic, Ramirez, and
+  Valero]{6877473}
+N.~Rajovic, P.~M. Carpenter, I.~Gelado, N.~Puzovic, A.~Ramirez, and M.~Valero.
+\newblock Supercomputing with commodity cpus: Are mobile socs ready for hpc?
+\newblock In \emph{Proceedings of the International Conference on High
+  Performance Computing, Networking, Storage and Analysis}, SC '13, pages
+  41--53, New York, NY, USA, Nov. 2013. ACM.
+\newblock ISBN 978-1-4503-2378-9.
+\newblock \doi{10.1145/2503210.2503281}.
+\newblock URL \url{http://doi.acm.org/10.1145/2503210.2503281}.
+
+\bibitem[Rajovic et~al.(2016)Rajovic, Rico, Mantovani, Ruiz, Vilarrubi, Gomez,
+  Backes, Nieto, Servat, Martorell, Labarta, Ayguade, Adeniyi-Jones, Derradji,
+  Gloaguen, Lanucara, Sanna, Mehaut, Pouget, Videau, Boyer, Allalen, Auweter,
+  Brayford, Tafani, Weinberg, Br\"{o}mmel, Halver, Meinke, Beivide, Benito,
+  Vallejo, Valero, and Ramirez]{Rajovic:2016:MPA:3014904.3014955}
+N.~Rajovic, A.~Rico, F.~Mantovani, D.~Ruiz, J.~O. Vilarrubi, C.~Gomez,
+  L.~Backes, D.~Nieto, H.~Servat, X.~Martorell, J.~Labarta, E.~Ayguade,
+  C.~Adeniyi-Jones, S.~Derradji, H.~Gloaguen, P.~Lanucara, N.~Sanna, J.-F.
+  Mehaut, K.~Pouget, B.~Videau, E.~Boyer, M.~Allalen, A.~Auweter, D.~Brayford,
+  D.~Tafani, V.~Weinberg, D.~Br\"{o}mmel, R.~Halver, J.~H. Meinke, R.~Beivide,
+  M.~Benito, E.~Vallejo, M.~Valero, and A.~Ramirez.
+\newblock The mont-blanc prototype: An alternative approach for hpc systems.
+\newblock In \emph{Proceedings of the International Conference for High
+  Performance Computing, Networking, Storage and Analysis}, SC '16, pages
+  38--50, Piscataway, NJ, USA, 2016. IEEE Press.
+\newblock ISBN 978-1-4673-8815-3.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=3014904.3014955}.
+
+\bibitem[Reinders(2013)]{reinders2013intel}
+J.~Reinders.
+\newblock Intel avx-512 instructions, Jul. 2013.
+\newblock URL
+  \url{https://software.intel.com/en-us/articles/intel-avx-512-instructions}.
+
+\bibitem[Rew and Davis(1990)]{rew1990netcdf}
+R.~Rew and G.~Davis.
+\newblock Netcdf: an interface for scientific data access.
+\newblock \emph{IEEE computer graphics and applications}, 10\penalty0
+  (4):\penalty0 76--82, 1990.
+
+\bibitem[Rico et~al.(2017)Rico, Joao, Adeniyi-Jones, and
+  Van~Hensbergen]{rico2017arm}
+A.~Rico, J.~A. Joao, C.~Adeniyi-Jones, and E.~Van~Hensbergen.
+\newblock Arm hpc ecosystem and the reemergence of vectors.
+\newblock In \emph{Proceedings of the Computing Frontiers Conference}, pages
+  329--334, New York NY, USA, May. 2017. ACM, ACM.
+\newblock \doi{10.1145/3075564.3095086}.
+\newblock URL \url{https::/doi.org/10.1145/3075564.3095086}.
+
+\bibitem[Ronacher(2017)]{ronacher2008jinja2}
+A.~Ronacher.
+\newblock Jinja2 documentation, Sep. 2017.
+\newblock URL
+  \url{https://buildmedia.readthedocs.org/media/pdf/jinja2/latest/jinja2.pdf}.
+
+\bibitem[Schmidt(2007)]{schmidt2007benchmark}
+M.~Schmidt.
+\newblock A benchmark for the parallel code used in fms and mom-4.
+\newblock \emph{Ocean Modelling}, 17\penalty0 (1):\penalty0 49--67, Dec. 2007.
+\newblock \doi{10.1016/j.ocemod.2006.11.002}.
+\newblock URL \url{https://doi.org/10.1016/j.ocemod.2006.11.002}.
+
+\bibitem[Schmunk(2015)]{schmunk2015panoply}
+R.~B. Schmunk.
+\newblock Panoply netcdf, hdf and grib data viewer.
+\newblock \emph{National Aeronautics and Space Administration-Goddard Institute
+  for Space Studies}, 2015.
+
+\bibitem[Siemen(2015)]{ecmwf2015emoslib}
+S.~Siemen.
+\newblock Routines for fast-fourier transform (fft), Sep. 2015.
+\newblock URL \url{https://confluence.ecmwf.int/display/EMOS/FFT+-+FFT991}.
+
+\bibitem[Singleton(1967)]{singleton1967method}
+R.~Singleton.
+\newblock A method for computing the fast fourier transform with auxiliary
+  memory and limited high-speed storage.
+\newblock \emph{IEEE Transactions on Audio and Electroacoustics}, 15\penalty0
+  (2):\penalty0 91--98, 1967.
+
+\bibitem[Sorensen et~al.(1987)Sorensen, Jones, Heideman, and
+  Burrus]{sorensen1987real}
+H.~V. Sorensen, D.~Jones, M.~Heideman, and C.~Burrus.
+\newblock Real-valued fast fourier transform algorithms.
+\newblock \emph{IEEE Transactions on acoustics, speech, and signal processing},
+  35\penalty0 (6):\penalty0 849--863, 1987.
+
+\bibitem[Stephens et~al.(2017)Stephens, Biles, Boettcher, Eapen, Eyole,
+  Gabrielli, Horsnell, Magklis, Martinez, Premillieu, et~al.]{stephens2017arm}
+N.~Stephens, S.~Biles, M.~Boettcher, J.~Eapen, M.~Eyole, G.~Gabrielli,
+  M.~Horsnell, G.~Magklis, A.~Martinez, N.~Premillieu, et~al.
+\newblock The arm scalable vector extension.
+\newblock \emph{IEEE Micro}, 37\penalty0 (2):\penalty0 26--39, Apr. 2017.
+\newblock \doi{10.1109/MM.2017.35}.
+\newblock URL \url{https://doi.org/10.1109/MM.2017.35}.
+
+\bibitem[Taylor et~al.(1998)Taylor, Loft, and Tribbia]{taylor1998performance}
+M.~Taylor, R.~Loft, and J.~Tribbia.
+\newblock Performance of a spectral element atmospheric model (seam) on the hp
+  exemplar spp2000.
+\newblock \emph{NCAR TN}, 439, 1998.
+
+\bibitem[Temperton(1980)]{temperton1980fft}
+C.~Temperton.
+\newblock Very fast real fourier transform.
+\newblock \emph{Special topics of applied mathematics: Functional Analysis,
+  Numerical Analysis and Optimisation}, Jan. 1980.
+
+\bibitem[Thomson and Vallis(2018)]{thomson2018atmospheric}
+S.~I. Thomson and G.~K. Vallis.
+\newblock Atmospheric response to sst anomalies. part i: Background-state
+  dependence, teleconnections, and local effects in winter.
+\newblock \emph{Journal of the Atmospheric Sciences}, 75\penalty0
+  (12):\penalty0 4107--4124, 2018.
+
+\bibitem[Vallis et~al.(2018)Vallis, Colyer, Geen, Gerber, Jucker, Maher,
+  Paterson, Pietschnig, Penn, and Thomson]{vallis2018isca}
+G.~K. Vallis, G.~Colyer, R.~Geen, E.~Gerber, M.~Jucker, P.~Maher, A.~Paterson,
+  M.~Pietschnig, J.~Penn, and S.~I. Thomson.
+\newblock Isca, v1.0: a framework for the global modelling of the atmospheres
+  of earth and other planets at varying levels of complexity.
+\newblock \emph{Geoscientific Model Development}, 11\penalty0 (3):\penalty0
+  843--859, Oct. 2018.
+\newblock \doi{10.5194/gmd-11-843-2018}.
+\newblock URL \url{https://doi.org/10.5194/gmd-11-843-2018}.
+
+\bibitem[Van Der~Walt et~al.(2011)Van Der~Walt, Colbert, and
+  Varoquaux]{van2011numpy}
+S.~Van Der~Walt, S.~C. Colbert, and G.~Varoquaux.
+\newblock The numpy array: a structure for efficient numerical computation.
+\newblock \emph{Computing in Science \& Engineering}, 13\penalty0 (2):\penalty0
+  22, 2011.
+
+\bibitem[Wan et~al.(2008)Wan, Giorgetta, and Bonaventura]{wan2008ensemble}
+H.~Wan, M.~A. Giorgetta, and L.~Bonaventura.
+\newblock Ensemble held-suarez test with a spectral transform model:
+  Variability, sensitivity, and convergence.
+\newblock \emph{Monthly Weather Review}, 136\penalty0 (3):\penalty0 1075--1092,
+  2008.
+
+\bibitem[Ward(2019)]{wardf90nml}
+M.~L. Ward.
+\newblock f90nml-a python module for fortran namelists, Jun. 2019.
+\newblock URL \url{https://pypi.org/project/f90nml/}.
+
+\bibitem[Williams et~al.(2009)Williams, Waterman, and
+  Patterson]{williams2009roofline}
+S.~Williams, A.~Waterman, and D.~Patterson.
+\newblock Roofline: An insightful visual performance model for floating-point
+  programs and multicore architectures.
+\newblock \emph{Communications of the ACM - A Direct Path to Dependable
+  Software}, 52\penalty0 (4):\penalty0 65--76, Apr. 2009.
+\newblock \doi{10.1145/1498765.1498785}.
+\newblock URL \url{https://doi.org/10.1145/1498765.1498785}.
+
+\bibitem[Yoshida(2018)]{yoshida2018fujitsu}
+T.~Yoshida.
+\newblock Fujitsu high performance cpu for the post-k computer.
+\newblock In \emph{Hot Chips 30 Symposium (HCS), Series Hot Chips}, volume~18,
+  2018.
+
+\end{thebibliography}
