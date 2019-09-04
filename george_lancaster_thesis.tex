@@ -82,7 +82,7 @@
 \newacronym{simd}{SIMD}{Single Instruction Multiple Data}
 \newacronym{mimd}{MIMD}{Multiple Instruction Multiple Data}
 \newacronym{netcdf}{NetCDF}{Network Common Data Form}
-
+\newacronym{bridge}{BRIDGE}{Bristol Research Initiative for the Dynamic Global Environment}
 
 
 
@@ -153,13 +153,13 @@
 \includepdf[pages=-]{img/frontmatter_64327.pdf}
 \chapter*{Executive summary}
 %based on the laws of physics to
-Climate models use systems of dynamical equations to simulate the changes in global atmospheric behaviour over time. They are computationally demanding and sometimes require many model years of simulation before significant scientific phenomena are captured. To minimise runtimes they are often run in parallel on modern many-core systems, using distributed and shared-memory programming techniques. Isca is an example of one such model, used by the meteorology research group at University of Bristol \cite{vallis2018isca}.
+Climate models use systems of dynamical equations to simulate the changes in global atmospheric behaviour over time. They are computationally demanding and sometimes require many model years of simulation before significant scientific phenomena are captured. To minimise runtimes they are often run in parallel on modern many-core systems, using distributed and shared-memory programming techniques. Isca is an example of one such model, used by the Bristol Research Initiative for the Dynamic Global Environment (BRIDGE) \cite{vallis2018isca}.
 \par
-Many climate modelling codes are bound by memory-bandwidth. The Cavium ThunderX2 is a new server processor based on the ARMv8 architecture. The recent release of the processor has prompted a wave of research to evaluate its performance \cite{calore2018advanced,mcintosh2018performance}. Due to the high memory-bandwidth of the processor, it has seen success when running climate modelling codes such as Isca, and is one of four high performance processors used in this research project.
+Many scientific codes are bound by memory-bandwidth. The Cavium ThunderX2 is a new server processor based on the ARMv8 architecture. The recent release of the processor has prompted a wave of research to evaluate its performance \cite{calore2018advanced,mcintosh2018performance}. Due to the high memory-bandwidth of the processor, it has seen success when running climate modelling codes such as Isca, and is one of four high performance processors used in this research project.
 \par
-The main focus of this thesis was to port and optimise Isca on multiple supercomputer clusters, with the aim of presenting an extensive performance analysis of the model. This has allowed for suitable optimisations to be identified, implemented and tested, with successful optimisations integrated back into the codebase. Optimisations include using the Fastest Fourier Transform in the West (FFTW) library to replace a 38-year-old bespoke Fast Fourier Transform, and compiling the model to use single-precision floating point numbers by default. When used together, both optimisations provide a performance improvement of up to 1.65$\times$ the unmodified code. 
+The main focus of this thesis was to port and optimise Isca on multiple supercomputer clusters, with the aim of presenting an extensive performance analysis of the model. This has allowed for suitable optimisations to be identified, implemented and tested, with successful optimisations integrated back into the codebase. Optimisations include using the Fastest Fourier Transform in the West (FFTW) library to replace a 38-year-old bespoke Fast Fourier Transform. The FFTW library has been specifically designed to utilise the wide vector registers on modern processors and adapts to the hardware on which it is run. Additionally, the model has been compiled to use single-precision floating point numbers by default. When used together, both optimisations provide a performance improvement of up to 1.78$\times$ the unmodified code. 
 \par
-This project has successfully provided ports of Isca to four supercomputers, making over 14,000 cores available for climate research at the University of Bristol. Additionally, the meteorological research group at the University of Bristol has purchased a dedicated £10,000 compute node for the BluePebble supercomputer as a direct result of the work presented in this thesis. 
+This project has successfully provided ports of Isca to four supercomputers, making over 14,000 additional cores available for climate research at the University of Bristol. Additionally, the BRIDGE research group at the University of Bristol has purchased a dedicated £10,000 compute node for the BluePebble supercomputer as a direct result of the work presented in this thesis. 
 \par
 This document is structured into three parts:
 \begin{description}
@@ -224,10 +224,10 @@ Finally, I wish to thank my parents. My achievements were made possible because 
 Supercomputers are composed of many compute nodes, each containing a number of high performance server microprocessors \cite{becker1995beowulf, beowulf14reed}. The arms race between vendors of consumer hardware is driven by developments in the server market, and as such, the latest features available to modern processors are often demonstrated in server machines. Many scientific applications are based on legacy code that is rigorously tested and well understood. Rewriting such programs can be both expensive and time consuming, and in many cases there is no guarantee that the code can be improved. Recent improvements to computational hardware have been notoriously difficult to utilise, and therefore many scientific codes remain unoptimised throughout many years of service.
 
 \section{Climate modelling}
-Climate models are an important tool for understanding the global atmospheric behaviour of Earth and other celestial bodies. They provide a medium for the reproduction of past, present and future meteorological events, and offer insight into previously unobservable phenomena. However, complex simulations can take thousands of hours to return substantial results, limiting the speed of research. The demand for additional compute resources in academia is unrelenting, with queue times on some University of Bristol machines lasting upwards of several days. Many academics have tight deadlines to meet requirements for funding, and therefore the procurement of further resources is of the utmost importance.% to ensure that research is completed on time.
+Climate models are an important tool for understanding the global environmental behaviour of Earth and other celestial bodies. They provide a medium for the reproduction of past, present and future meteorological events, and offer insight into previously unobservable phenomena. However, complex simulations can take thousands of hours to return substantial results, limiting the speed of research. The demand for additional compute resources in academia is unrelenting, with queue times on some University of Bristol machines lasting upwards of several days. Many academics have tight deadlines to meet requirements for both funding and publication, and therefore the procurement of further resources is of the utmost importance.% to ensure that research is completed on time.
 \par
 %Many of these parameters are well defined by observation, however there are equally many that are
-Climate models are governed by numerous parameters, many of which are idealised and do not correspond to real-world processes. Selecting values for such parameters is non-trivial, and is usually achieved using a brute-force approach known as a ‘perturbed physics ensemble’ that involves running many simulations using a range of parameter configurations \cite{evans2012evaluating}. This strains supercomputer resources further, as jobs are typically submitted in large batches with each job taking many hours to complete.
+Climate models are governed by numerous parameters, many of which are idealised and do not correspond to real-world processes. Selecting values for such parameters is non-trivial, and is usually achieved using a brute-force approach known as a ‘perturbed physics ensemble’ that involves running many simulations using a range of parameter configurations \cite{evans2012evaluating}. This strains supercomputer resources further, as jobs are typically submitted in large batches with each job taking many cpu-hours to complete.
 
 %One of the aims of HPC is to fully utilise the advanced processing power of modern hardware.
 
@@ -238,7 +238,7 @@ This research project aims to present a comprehensive performance analysis of th
 	\item[Port Isca to three new HPC systems] Isca must be ported from the \gls{bcp4} supercomputer to three other \gls{hpc} systems: \gls{bcp3}, \gls{bp} and Isambard. \gls{bcp3}, \gls{bcp4} and \gls{bp} are based on the Intel x86-64 architecture, and Isambard is based on Arm's ARMv8 instruction set architecture. Isca is dependant on several libraries that are not yet available on the Arm machine. Identifying and porting these libraries comprises a significant part of the project.
 	\item[Characterisation of the Isca code] Isca must be benchmarked and profiled using a variety of performance analysis tools to identify the code’s limitations. The resulting data must be used to plan at least two performance optimisations. Additionally, runtimes on each system must be measured to determine how the total program runtime varies as a function of model resolution and number of processor cores. 
 	
-	\item[Optimisation of Isca] All identified performance optimisations must be implemented to a high standard. All code modifications must follow the same style and naming conventions as found in the rest of the codebase.
+	\item[Optimisation of Isca] All identified performance optimisations must be implemented to a high standard. To allow for integration, all code modifications must follow the same style and naming conventions as found in the rest of the codebase.
 	
 	\item[Analysis of Optimisations] To ensure that the optimisations improve the model’s performance, the optimised code must be recharacterised and compared to the unoptimised model. To be deemed successful, an optimisation must deliver a consistent improvement to performance. Additionally, it must generate the same output as the unoptimised code, verifying that the application logic is unchanged. It is also important to measure the performance portability of the optimisations, as a performance improvement on one machine may not carry over to another.
 	
@@ -248,25 +248,27 @@ This research project aims to present a comprehensive performance analysis of th
 This project investigates three hypotheses:
 
 \begin{description}
-\item[Hypothesis 1: ] Isca is not making use of the latest hardware features on modern processors, and this is affecting its performance. 
 
-\item[Hypothesis 2: ] Isca has hardware-limiting factors that can be identified and addressed to improve the overall performance of the code.
+\item[Hypothesis 1: ] Isca is not making use of the latest hardware features on modern processors, and this is limiting its performance. 
+
+\item[Hypothesis 2: ] Some of the hardware-limiting factors of Isca can be addressed to improve the overall performance of the code.
 
 \item[Hypothesis 3: ] The ThunderX2 processors will not perform as well as the Intel processors.
+
 \end{description}
 
 \section{Contributions}
 The work presented in this thesis makes the following contributions to the Isca codebase, and the wider area of high performance computing:
 \begin{description}
-	\item[Provision of additional compute resources] Prior to this research project, University of Bristol researchers could only access Isca on \gls{bcp4}, one of five supercomputers available to the university. By providing ports of Isca to other systems, over 14,000 additional cores have been made available for climate research. Not only has this eased congestion on \gls{bcp4}, it also makes Isca more accessible to other research groups outside of the university. Additionally, the meteorological research group at the University of Bristol has purchased a dedicated £10,000 compute node for the BluePebble supercomputer as a direct result of the work presented in this thesis. 
+	\item[Provision of additional compute resources] Prior to this research project, University of Bristol researchers could only access Isca on \gls{bcp4}, one of five supercomputers available to the university. By providing ports of Isca to other systems, over 14,000 additional cores have been made available for climate research. Not only has this eased congestion on \gls{bcp4}, it also makes Isca more accessible to other research groups outside of the university. Additionally, the \gls{bridge} at the Univerisity of Bristol has purchased a dedicated £10,000 compute node for the BluePebble supercomputer as a direct result of the work presented in this thesis. 
 
-	\item[Comprehensive performance analysis] A scaling study has been performed, which shows how the total program runtime varies as a function of cell resolution and number of processor cores. This is important for researchers as it allows them to make an informed decision when selecting the number of cores to run different model resolutions. Additionally, a number of performance bottlenecks have been identified, which contributes to the understanding of the limitations of the code. 
+	\item[Comprehensive performance analysis] A scaling study has been performed, which shows how the total program runtime varies as a function of model grid resolution and number of processor cores. This is important for researchers as it allows them to make an informed decision when selecting the number of cores to run different model resolutions. Additionally, a number of performance bottlenecks have been identified, which contributes to the understanding of the limitations of the code. 
 	
 	\item[Optimisation of legacy code for modern hardware] This research project demonstrates that Isca does not utilise many of the new hardware features available to modern processors. Specifically, there are many loops found within a bespoke \gls{fft} that do not make use of vector instructions. As a result of this observation, this \gls{fft} has been replaced with a call to the \gls{fftw} library, producing a code speedup of up to 1.17$\times$ the original implementation.
 	
 	\item[Optimisation of single-precision floating points numbers] By halving the default precision of floating point numbers Isca can better utilise vector registers. This presents a performance speedup of 1.69$\times$ the unmodified code, and a speedup of 1.78$\times$ when used together with \gls{fftw}. 
 	
-	\item[Contribution to hardware development] Recent developments in consumer mobile hardware have resulted in a new generation of \gls{hpc}-optimised Arm processors. This research project provides a comparison of these new processors and the current state-of-the-art Intel processors. This is vital to reduce the cost of components and to drive further innovation. This study is a continuation of previous work by other authors, and provides insight into the performance of the Arm hardware on a widely used scientific code \cite{mcintosh2018performance}.
+	\item[Contribution to hardware development] Recent developments in consumer mobile hardware have resulted in a new generation of \gls{hpc}-optimised Arm processors, which were designed to meet the low-power consumption requirements of exascale computing. This research project provides a comparison of these new processors and the current state-of-the-art Intel processors. This is vital to reduce the cost of components and to drive further innovation. This study is a continuation of previous work by other authors, and provides insight into the performance of the Arm hardware on a widely used scientific code \cite{mcintosh2018performance}.
 	
 	\item[Contribution to cluster development] The BluePebble cluster was still in its beta phase of development throughout this research project. All results collected on this machine have been used to influence important design decisions, including the default stack size limit and default memory limit for jobs submitted using the \gls{pbs} job scheduler. Additionally, all dependencies required by Isca have been installed as modules using the build configurations defined by this research project, and these are freely available to use by other users of the systems. 
 	
@@ -286,9 +288,9 @@ Software development for scientific applications is a multidisciplinary task, an
 \section{The Isca climate model}
 Isca is an open-source framework for the modelling of the global circulation of planetary atmospheres. It was developed over four years by the climatology research group at the University of Exeter, with version 1 of the model released in 2017 \cite{vallis2018isca}. The development of Isca was funded by the Natural Environment Research Council, the \gls{epsrc} and the UK Met Office \cite{vallis2018isca}.
 \par
-The main goal of Isca is to deliver a user-configurable climate model, that allows for the simulation of both simple and complex scenarios including those vastly different from Earth. The model has been used to provide evidence for numerous peer-reviewed publications, including the study of monsoons, tidally-locked planets and variations in the seasons  \cite{penn2017thermal, thomson2018atmospheric, geen2018regime}.
+The main goal for Isca is to provide a user-configurable climate model, that allows for the simulation of both simple and complex scenarios including those vastly different from Earth. The model has been used to provide evidence for numerous peer-reviewed publications, including the study of monsoons, tidally-locked planets and variations in the seasons  \cite{penn2017thermal, thomson2018atmospheric, geen2018regime}.
  \par
- The model itself spans over 260,000 significant lines of code, and is composed primarily of Fortran with some calls to ANSI C, and a Python interface for usability. Isca can be compiled and run on any system with \gls{netcdf} and \gls{mpi} libraries, although a supercomputer is required for anything more than simple experimentation \cite{vallis2018isca}. 
+ The model itself comprises over 260,000 significant lines of code, and is written primarily in Fortran with some calls to ANSI C, and a Python interface for usability. Isca can be compiled and run on any system with \gls{netcdf} and \gls{mpi} libraries, although a supercomputer is required for anything more than simple experimentation \cite{vallis2018isca}. 
  \par
 Considering its growing use as an academic research tool, it is of the utmost importance that Isca is portable to a wide variety of computer architectures, and maintains a degree of performance portability. This will allow for the model to be used for research at other institutions and will drive future development for Isca's global userbase.
 
@@ -299,7 +301,7 @@ Although Isca is a new model, much of the code responsible for atmospheric simul
 
 \subsection{Domain decomposition}
 \label{sec:spectral-domain}
-Grid-point models discretely represent data,  decomposing the problem domain into a three-dimensional structured grid, on which the primitive dynamical equations are applied at each time step of the simulation. Structured grid codes often have high spatial locality, with interactions between cells limited to adjacent neighbours only. This property allows for high scalability, due to various spatial decomposition methods that utilise distributed machines effectively \cite{mcintosh2014performance}. 
+Grid-point models discretely represent data,  decomposing the problem domain into a three-dimensional structured grid, on which the primitive dynamical equations are applied at each time step of the simulation. Structured grid codes often have high spatial locality in terms of computation, with interactions between cells limited to adjacent neighbours only. This property allows for high scalability, due to various spatial decomposition methods that utilise distributed machines effectively \cite{mcintosh2014performance}. 
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}{.5\textwidth}
@@ -327,9 +329,8 @@ The spatial resolution of a climate model describes the variation in the total a
 \par
 Climate models have a variable temporal resolution, which refers to the amount of model time that passes in the simulation between calculations. Similarly to spatial resolution, the computational intensity of the simulation is influenced by the granularity of the temporal resolution. Smaller time steps more accurately represent continuous time, but result in longer runtimes.
 \par
-Both grid-point and spectral models are usually classified as a strong scaling problem, for which the solution time varies with the number of processors for a fixed problem size \cite{colella2007performance}. This implies that the runtime decreases as the number of processor cores increases, however this is not always the case and is dependant on the problem domain.
-
-
+Both grid-point and spectral models are usually classified as a strong scaling problem, for which the solution time varies with the number of processors for a fixed problem size \cite{colella2007performance}.  Strong scaling is desirable but challenging, as many smaller resolutions are constrained by the number of grid points that can be allocated to a single processor. However, weak scaling can be satisfactory as larger problem sizes can recruit more parallel processing elements.
+%This implies that the runtime decreases as the number of processor cores increases, however this is not always the case and is dependant on the problem domain.
 \subsection{Fast Fourier Transform}
 The Isca model uses both grid-point and spectral methods for domain decomposition. A grid-point representation is used for time-stepping, and the physics simulation is applied in the spherical and frequency domains. To convert between these two states, an \gls{fft} is used to compute the \gls{dft} of the grid-point representation, and the \gls{idft} of the spectral representation. Although the cost of doing this transformation can be relatively high, it often results in a net computational saving, and can produce more accurate data at lower resolutions \cite{bader2008climate}. Spectral methods are one of the `seven dwarfs' of \gls{hpc} popularised by Asanovic \textit{et al.} in 2006, and describe operations applied to data in the frequency domain \cite{asanovic2006landscape} .
 \par
@@ -346,7 +347,7 @@ Although not a requirement of using \gls{fftw}, the input data should be contigu
 
 
 \subsubsection{Cooley-Tukey algorithm}
-Despite \gls{fftw} using many different \gls{fft} algorithms, the most commonly used is the Cooley-Tukey algorithm. This algorithm was popularised in 1965, however variations of the algorithm have been known as early as 1805 \cite{cooley1965algorithm, heideman1985gauss}. Proper implementation of the Cooley-Tukey algorithm results in a time complexity of $O(n\, \textrm{log}\, n)$. The algorithm is based on the assumption that a \gls{dft} of size $N = n_{1} \cdot n_{2}$ can be expressed as a two-dimensional \gls{dft} of size $n_{1} \times n_{2}$ \cite{frigo2005design}. The algorithm itself can be broken into three steps: 
+Despite \gls{fftw} using many different \gls{fft} algorithms, the most commonly used is the Cooley-Tukey algorithm. This algorithm was popularised in 1965, however variations of the algorithm have been known as early as 1805 \cite{cooley1965algorithm, heideman1985gauss}. Proper implementation of the Cooley-Tukey algorithm results in a time complexity of $O(n\, \textrm{log}\, n)$, where $n$ is the number of elements in the \gls{dft}. The algorithm is based on the assumption that a \gls{dft} of size $N = n_{1} \cdot n_{2}$ can be expressed as a two-dimensional \gls{dft} of size $n_{1} \times n_{2}$ \cite{frigo2005design}. The algorithm itself can be broken into three steps: 
 
 \begin{enumerate}
 	\item Perform $n_{1}$ \gls{dft}s of size $n_{2}$;
@@ -419,7 +420,7 @@ current  = future
 \par
 The atmosphere integration loop contains many subroutines, however of greatest interest is the \texttt{spectral\_dynamics} subroutine, which comprises around 95\% of the wallclock runtime of any given simulation (Listing \ref{code:atmos-integration}). This subroutine calculates values for various atmospheric variables, which involves  communication between processors and a number of \gls{fft}s. 
 \par
-Isca's spectral model decomposes the horizontal grid into latitude bands, with each band assigned to a processor. When only two processors are used the grid is split into Southern and Northern Hemispheres \cite{isca2019github}. This method of domain decomposition implies that atmospheric variables at the edge cases of each latitudinal band (halo points) must be exchanged with other processors in a process known as a synchronised halo exchange. This allows for parallelism in the Isca model at the cost of an additional overhead incurred by the communication itself. The halo exchange simply interrupts the computational flow of the program and allows for the exchange of the halo points before the simulation can resume (Figure \ref{fig:halo-exchange}).
+Isca's spectral model decomposes the horizontal grid into latitude bands, with each band assigned to a processor. When only two processors are used the grid is split into Southern and Northern Hemispheres \cite{isca2019github}. This method of domain decomposition implies that atmospheric variables at the edge cases of each latitudinal band (halo points) must be exchanged with other processors in a process known as a synchronised halo exchange. This allows for parallelism in the Isca model at the cost of an additional overhead incurred by the communication itself. The halo exchange interrupts the computational flow of the program and allows for the exchange of the halo points before the simulation can resume (Figure \ref{fig:halo-exchange}).
 
 \begin{figure}[htbp]
 \begin{center}
@@ -471,13 +472,13 @@ For simplicity, Isca uses a Python interface to create and run different model c
 
 
 \chapter{HPC hardware and parallel processing}
-There are many different techniques and processor designs that allow for a program to be run in parallel. This chapter presents a brief but thorough overview of some that have been used throughout this research project. 
+There are many different techniques and processor designs that allow for a program to be run in parallel. This chapter presents a brief but concise overview of two parallel processing techniques that are used by Isca and many other scientific codes, and provides details of the hardware that has been used throughout this research project.
 
 \section{Parallel processing}
 To allow for programs to be run in parallel, there are numerous different techniques that can be used. In order to improve the performance of a parallel code, an understanding of these techniques is essential.
 
 \subsection{Flynn's Taxonomy}
-Flynn's taxonomy is a classification of parallel computing architectures first proposed by Michael J. Flynn in 1966 \cite{flynn1972some}. It defines four unambiguous terms to describe the relationship between data and the technique by which it is processed. The entirety of Flynn's taxonomy is visualised in Figure \ref{fig:Flynn's}, and the following list details the architectures it describes.
+Flynn's taxonomy was first proposed by Michael J. Flynn in 1966 to provide a framework with which to place various methods of computation \cite{flynn1972some}. It defines four unambiguous terms to describe the relationship between data and the technique by which it is processed. The entirety of Flynn's taxonomy is visualised in Figure \ref{fig:Flynn's}, and the following list details the architectures it describes.
 
 \begin{description}
 	\item[Single Instruction Single Data (SISD)] refers to the most basic type of processing whereby a single instruction is applied to a single data item stored in memory. Code that uses this processing type is often referred to as scalar or serial. 
@@ -497,7 +498,7 @@ Flynn's taxonomy is a classification of parallel computing architectures first p
 \end{center}
 \end{figure}
 \par
-Like most scientific codes, Isca uses the \gls{simd} and \gls{mimd} approaches to parallelism. As discussed in Section \ref{sec:dependencies}, the model uses the MPI library to split the domain into latitude bands. Modern processors also have wider registers in order to apply an instruction-level parallelism technique whereby multiple data items are processed by a single instruction. 
+Like most scientific codes, Isca uses the \gls{simd} and \gls{mimd} approaches to parallelism. As discussed in Section \ref{sec:dependencies}, the model uses the MPI library to split the global domain into latitude bands with each band assigned to a processor. Modern processors also have wider registers in order to apply an instruction-level parallelism technique whereby multiple data items are processed by a single instruction. 
 
 \subsection{Instruction-level parallelism (SIMD)}
 From the 1970s to the early 1990s, high performance machines relied heavily on instruction level vector operations to compute in parallel \cite{6877473}. These machines used vector processors, and performed operations on one-dimensional arrays of data, rather than single data items using a \gls{simd} processor architecture \cite{conte2000long}. Many scientific codes from this time were written with this architecture in mind and it is likely that it influenced the design and implementation of the \gls{fms}. 
@@ -507,12 +508,15 @@ Instruction-level parallelism using \gls{simd} is becoming popular once again th
 Although \gls{avx}-512 has a higher throughput of operations per clock cycle, using wider vector registers results in greater power consumption, which in turn causes the processor to generate more heat. In order to maintain a suitable temperature, Intel processors perform dynamic frequency scaling in order to decrease the clock speed for the duration of the loop using the \gls{avx}-512 registers, often resulting in no overall performance gain over \gls{avx}-2 \cite{gottschlag2018mechanism}.
 \par
 In theory, SIMD can greatly improve the performance of scientific codes as a greater number of operations are applied per clock cycle. However, these performance gains can be difficult to realise in complex applications. Often, compute kernels do not align with the width of SIMD registers, and some kernels have dependencies which prevent a single operation from being applied to many data items. Therefore wider vector registers often provide only a small performance improvement in production applications.
-\par
 
+\subsection{Distributed-memory parallelism (MIMD)}
+Processor design has largely evolved since the 1990s when the \gls{fms} was under development. During this time, it was not uncommon to have just 1 or 2 processors per compute node \cite{becker1995beowulf}. This meant that many parallel codes were reliant on distributed memory programming techniques such as MPI to provide MIMD parallelism. To meet the compute requirements of exascale, compute nodes are now composed of a greater number of processor cores \cite{beowulf14reed, bergman2008exascale}. The definition of `massively parallel' has shifted over the past 20 years, and codes that were once reliant on message passing can now achieve the same level of scalability whilst utilising only the compute resources of a single node. 
+\par
+As a result of these developments many legacy high performance codes including Isca still use a distributed-memory approach to parallelism. However, many of these codes are now not run in multinode configurations as the cost of communication between compute nodes outweighs the performance gains of increased parallelism. 
 
 
 \section{HPC clusters}
-Throughout the course of this research project, Isca has been ported to and run on four different high-performance supercomputers. This section discusses these machines, and the features of their respective processor architectures. A full breakdown of the most important hardware features can be found in Table \ref{tbl:hardware}. \gls{bcp3}, \gls{bcp4} and \gls{bp} are all based on the well-established line of x86-64 Intel Xeon processors and Isambard is based on the ARM-v8 Cavium ThunderX2 processor.
+During the course of this research project, Isca has been ported to and run on four different high-performance supercomputers. This section discusses these machines, and the features of their respective processor architectures. A full breakdown of the most important hardware features can be found in Table \ref{tbl:hardware}. \gls{bcp3}, \gls{bcp4} and \gls{bp} are all based on the well-established line of x86-64 Intel Xeon processors and Isambard is based on the ARM-v8 Cavium ThunderX2 processor.
 \begin{table*}[!ht]
 \centering
 \caption[Hardware specifications of the target HPC systems]{Hardware specifications of the target HPC systems. }
@@ -554,8 +558,10 @@ A compute node of \gls{bcp4} contains two fourteen-core Broadwell Xeon E5-2680 v
 \gls{bp} contains two different types of compute node, both using Intel's Skylake architecture. The first contains two twelve-core Xeon Gold 6126 processors and the second contains two fourteen-core Xeon Gold 5120 processors. Both processors make use of \gls{avx}-512 instruction set. 
 
 
+
+
 \subsection{Isambard}
-The GW4 Alliance, which consists of the Universities of Bath, Bristol, Cardiff and Exeter, together with the UK Met Office and Cray Inc have worked together to deliver the Isambard supercomputer, which is the result of a £3m award by the \gls{epsrc} \cite{arm2018white}. Isambard provides multiple advanced architectures, however the focus of this research project is the Arm-based Cavium ThunderX2 processor, which forms the basis of the machine. Each of Isambard's 168 compute nodes contain 64 ARMv8 cores in a dual-socket configuration \cite{thunderprocessor2018brief}. 
+The GW4 Alliance, which consists of the Universities of Bath, Bristol, Cardiff and Exeter, together with the UK Met Office and Cray Inc have worked together to deliver the Isambard supercomputer, which is the result of a £3m award by the \gls{epsrc} \cite{arm2018white}. Isambard provides multiple advanced architectures, however the focus of this research project is the Arm-based Cavium ThunderX2 processor, which forms the majority of the machine. Each of Isambard's 168 compute nodes contain 64 ARMv8 cores in a dual-socket configuration \cite{thunderprocessor2018brief}. 
 
 %An important feature of the ThunderX2 is that it has eight memory controllers per socket, which results in a peak theoretical memory-bandwidth in excess of 250 GB/s \cite{mcintosh2018performance}. 
 
@@ -565,7 +571,7 @@ Arm primarily designs processors for mobile devices and has only recently produc
 \par
 Arm processors have inherently low power consumption as they were originally designed for mobile devices. Because of this, the European Mont-Blanc project began to investigate the potential of the Arm architecture for \gls{hpc} in 2011 \cite{Rajovic:2016:MPA:3014904.3014955}. This project proved to be successful, however the study uncovered some problems with the architecture that have since been addressed during the development of the ThunderX2. ThunderX is a line of 64-bit many-core server microprocessors developed by Cavium as a result of over 8 years of work by the Mont-Blanc project and other contributors. The ThunderX2 was first released in early 2018 as the successor to the ThunderX, and is the first generation of Arm-based server microprocessors intended for high performance computing. Initial studies have found that the ThunderX2 presents as a real alternative to current offerings by vendors of desktop hardware, finding that the processor delivers competitive levels of performance to Intel's line of Xeon processors \cite{calore2018advanced, mcintosh2018performance}. 
 \par
-\begin{figure}[htbp]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=1\textwidth]{img/thunderx2.pdf}
 \caption[Block diagram of the Cavium ThunderX2 server microprocessor]{Block diagram of the Cavium ThunderX2 server microprocessor. Diagram redrawn from \cite{thunderprocessor2018brief}}
@@ -573,7 +579,7 @@ Arm processors have inherently low power consumption as they were originally des
 \end{center}
 \end{figure}
 \par
-The ThunderX2 uses the ARMv8.1 instruction set, which allows for the use of 128-bit NEON \gls{simd} vector registers. Perhaps the most interesting feature of the ThunderX2 as noted by McIntosh-Smith \textit{et al.} is its eight memory controllers per socket, which have been demonstrated to produce a memory bandwidth in excess of 250GB/s \cite{mcintosh2018performance}. The layout of the processor is shown in Figure \ref{fig:thunderx2}.
+The ThunderX2 uses the ARMv8.1 instruction set. This allows for the use of 128-bit NEON \gls{simd} registers, which is Arm's implementation of advanced SIMD extensions. Perhaps the most interesting feature of the ThunderX2 as noted by McIntosh-Smith \textit{et al.} is its eight memory controllers per socket, which have been demonstrated to produce a memory bandwidth in excess of 250GB/s \cite{mcintosh2018performance}. The layout of the processor is shown in Figure \ref{fig:thunderx2}.
 
 \subsubsection{A64FX}
 To meet the compute requirements of future \gls{hpc} workloads, Fujitsu has recently announced the next generation of Arm chips in their A64FX processor. The A64FX improves upon the NEON instruction set found in the ThunderX2 by introducing \gls{sve}, which allow for a flexible vector register length between 128 and 512 bits so that vector length can reflect the compute requirements of different use cases \cite{stephens2017arm, rico2017arm}. These processors have not yet been released, however this thesis provides an estimate of their performance based on the performance of the ThunderX2.
@@ -583,10 +589,10 @@ To meet the compute requirements of future \gls{hpc} workloads, Fujitsu has rece
 This chapter is an introduction to benchmarking both hardware and software, and describes some of the techniques and metrics used to benchmark the Isca code. 
 \section{Cluster benchmarks}
 \label{sec:cluster-bench}
-The STREAM TRIAD and \gls{hpl} benchmarks have been used to measure the peak memory bandwidth and floating point performance of each node configuration used in this study, respectively. This has been done to provide a relative performance overview of each processor architecture and to highlight the differences between them. 
+The STREAM TRIAD and \gls{hpl} benchmarks have been used respectively to measure the peak memory bandwidth and floating point performance of each node configuration used in this study \cite{mccalpin1995memory,dongarra2008linpack}. This has been done to provide a relative performance overview of each processor architecture and to highlight the differences between them. 
 
 \subsection{STREAM TRIAD}
-The speed of processors has increased exponentially over the past twenty years as described by Moore's law, which states that the number of transistors in a dense integrated circuit doubles approximately every two years  \cite{moore1965cramming}. In comparison, the speed of memory has only marginally improved as manufacturers have historically prioritised memory capacity over speed \cite{mccalpin1995memory,patterson1997case}. The result of this is that many scientific codes are no longer bound by compute, but by the rate at which data can be read from or stored to memory by the processor. The STREAM memory-bandwidth benchmark was introduced by John McCalpin in 1995 to address the limitations of the benchmarks of the time, and to measure processor performance by its peak memory bandwidth consumption rather than the rate of \gls{flops}.
+The speed of processors has increased exponentially over the past twenty years as described by Moore's law, which states that the number of transistors in a dense integrated circuit doubles approximately every two years  \cite{moore1965cramming}. In comparison, the speed of memory has only marginally improved as manufacturers have historically prioritised memory capacity over speed \cite{mccalpin1995memory,patterson1997case}. The result of this is that many scientific codes are no longer bound by compute, but by the rate at which data can be read from, or stored to memory by the processor. The STREAM memory-bandwidth benchmark was introduced by John McCalpin in 1995 to address the limitations of the benchmarks of the time, and to measure processor performance by its peak memory bandwidth consumption rather than the rate of \gls{flops}.
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=1\textwidth]{img/stream-triad.pdf}
@@ -597,7 +603,7 @@ The speed of processors has increased exponentially over the past twenty years a
 \par 
 As core counts and memory channels continue to grow, it becomes increasingly difficult to measure the memory bandwidth of modern processors, and results can greatly vary depending on the system configuration used to compile and run the benchmark. The results shown in Figure \ref{fig:bandwidth} were collected using the original STREAM benchmark code \cite{stream2019github}. The code was compiled using the Intel compiler with the same flags and environment variables on each cluster with the exception of the ThunderX2 processor, which used the GNU compiler. 
 \par
-The ThunderX2 processor has eight memory controllers per socket, and presents a peak STREAM TRIAD result in excess of 240 GB/s for a dual-socket configuration. In comparison, the Skylake processor provides a result of just 157 GB/s. This observation alone is a testament to the class leading memory bandwidth of the ThunderX2.
+The ThunderX2 processor has eight memory controllers per socket, and presents a peak STREAM TRIAD result in excess of 240 GB/s for a dual-socket configuration. In comparison, the Skylake processor provides a result of just 157 GB/s. This observation demonstrates the class leading memory bandwidth of the ThunderX2.
 
 \subsection{High Performance Linpack}
 The theoretical peak performance of a compute node can be calculated (Equation \ref{equ:perf}). $c$ denotes the processor speed in GHz, $p$ denotes the number of processor cores, $i$ denotes the number of instructions per clock cycle, and $o$ denotes the number of processors per node. 
@@ -607,8 +613,8 @@ GFLOPS = c \cdot p \cdot i \cdot o
 \label{equ:perf}
 \end{equation}
 \par
-Generally, the theoretical peak performance of a machine is unattainable. The \gls{hpl} benchmark aims to measure the attainable percentage of peak processor performance by solving a dense system of $n\times n$ linear equations \cite{dongarra2008linpack}. Figure \ref{fig:hpl} shows the actual performance measured using the \gls{hpl} benchmark compared to the peak theoretical machine performance calculated using Equation \ref{equ:perf}. 
-\par
+In general, the theoretical peak performance of a machine is unattainable. The \gls{hpl} benchmark aims to measure the attainable percentage of peak processor performance by solving a dense system of $n\times n$ linear equations \cite{dongarra2008linpack}. \gls{hpl} uses a large number of operations per memory access and so is constrained by the rate of operations rather than memory bandwidth. Figure \ref{fig:hpl} shows the actual performance measured using the \gls{hpl} benchmark compared to the peak theoretical machine performance calculated using Equation \ref{equ:perf}. 
+
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.85\textwidth]{img/hpl.pdf}
@@ -617,11 +623,13 @@ Generally, the theoretical peak performance of a machine is unattainable. The \g
 \end{center}
 \end{figure}
 \par
+Although the \gls{hpl} measured performance is much less than the theoretical peak performance, it is approximately proportional to the theoretical peak. This is confirmation that this benchmark is limited by the rate of operations as if it were constrained by memory-bandwidth, it would be expected that the ThunderX2 would outperform the Skylake processor.
+\par
 The performance measured using the \gls{hpl} benchmark is less than the theoretical performance in all cases. The large theoretical peak performance of the Skylake processor is attributed to its wide 512-bit vector registers, which can process 16 double-precision floating point numbers with a single instruction. The signifcantly smaller actual performance measurement is because the processor can only use \gls{avx}-512 at a reduced clock rate, and therefore the compilers performance model rarely opts to use these registers. 
 
 \section{Application benchmarking}
 \label{sec:app-benchmarking}
-Floating point performance and memory bandwidth are usually measured using idealised techniques like the STREAM and \gls{hpl} benchmarks, and may not provide the best metrics for a complex code like Isca. Although the model is computationally demanding there is also a large overhead cost incurred by communication. This includes tasks such as reading and writing files, the movement of data into contiguous memory and the transmission of data between processors. For this reason, the model can only be expected to achieve a fraction of the theoretical peak memory bandwidth and floating point performance reported in the previous section. Therefore, the following performance metrics have been defined, and are used throughout this study.
+Floating point performance and memory bandwidth are usually measured using synthetic benchmarks such as the STREAM and \gls{hpl} benchmarks, and may not provide the best metrics for a complex code like Isca. Although the model is computationally demanding there is also a large overhead cost incurred by communication. This includes tasks such as reading and writing files, the movement of data into contiguous memory and the transmission of data between processors. For this reason, the model can only be expected to achieve a fraction of the theoretical peak memory bandwidth and floating point performance reported in the previous section. Therefore, the following performance metrics have been defined, and are used throughout this study.
 \subsection{Performance metrics}
 
 \subsubsection{Wallclock runtime} 
@@ -660,8 +668,9 @@ I = \frac{W}{Q}
 For the analysis performed in this research project, $W$ denotes the number of \gls{flops}, and $Q$ denotes the total amount of memory transferred in Bytes. This results in operational intensity measured in FLOPS/Byte. 
 
 \subsubsection{Summary}
-To ensure simplicity, the wallclock runtime is the primary performance metric used throughout this paper. However, it is important to consider other metrics as they can uncover important features of the code that are overlooked by runtime alone. Values for all four metrics defined in this section have been calculated using the data collected as part of this research project. 
-
+To ensure simplicity, the wallclock runtime is the primary performance metric used throughout this report. However, it is important to consider other metrics as they can uncover important features of the code that are overlooked by runtime alone. Values for all four metrics defined in this section have been calculated using the data collected as part of this research project. 
+\par
+The hardware benchmarks presented in this chapter 
 
 
 
@@ -674,7 +683,7 @@ To ensure simplicity, the wallclock runtime is the primary performance metric us
 In the context of software development, porting refers to the process of modifying an existing codebase in order for it to run on a different system than it was originally written for. This chapter gives an overview of some of the tools and techniques used when porting Isca, and presents some of the challenges encountered in doing so. Many small changes have been made to the codebase to enable the model to compile and run using a selection of commonly-used compilers, some of which can be found in appendix \ref{apdx:porting}. 
 
 \section{Compilers and MPI libraries}
-To allow for the best comparison between processors, Isca was compiled using a number of different compilers and \gls{mpi} libraries. Table \ref{tbl:compilers} shows the different configurations used to compile Isca on each of the clusters used in this study. 
+Different compilers produce different instructions for the same code. To allow for the best comparison between processors, Isca was compiled using a number of different compilers and \gls{mpi} libraries to find the compiler that produces the fasted running executable for the given hardware. Table \ref{tbl:compilers} shows the different configurations used to compile Isca on each of the clusters used in this study. 
 
 \begin{table}[htp]
 \caption{Compilers and MPI libraries used for benchmarking.}
@@ -1088,7 +1097,7 @@ The longest communication times are measured when processes 8-15 transmit data t
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.9\textwidth]{img/mpi-barrier-time-grey-mars.pdf}
-\caption{Percentage of runtime spent inside the MPI library for each processor rank for the Grey-Mars configuration. Epoch 1 refers to time steps completed from model days 1 - 30, and epoch 13 refers to time steps completed from model days 390-420. These time periods are when Mars is approximately at opposing points in orbit relative to each other.}
+\caption[Percentage of runtime spent in the MPI library]{Percentage of runtime spent inside the MPI library for each processor rank for the Grey-Mars configuration. Epoch 1 refers to time steps completed from model days 1 - 30, and epoch 13 refers to time steps completed from model days 390-420. These time periods are when Mars is approximately at opposing points in orbit relative to each other.}
 \label{fig:grey-mars-comms}
 \end{center}
 \end{figure}
@@ -1582,7 +1591,7 @@ This chapter presents a reflection of the challenges encountered throughout the 
 \section{The Fortran programming language}
 The initial challenge was learning the Fortran programming language, having not used it prior to this project. This was complicated further by the size and complexity of the Isca codebase, which made it difficult to learn the language by example. Fortran behaves very differently from other more familiar programming languages like C and Python, and a long time was spent learning the intricacies of the language before any real development could take place. The process of learning the language involved writing many small toy programs to test the behaviour of different subroutines. 
 \par
-Despite the Fortran programming language first appearing in 1957, it is still used in the development of many high-performance codes, especially in the simulation of the physical sciences. Working on such a large Fortran codebase has developed a set of transferrable skills that can be used for other programming projects in the domain of HPC. 
+Despite the Fortran programming language first appearing in 1957, it is still used in the development of many high-performance codes, especially in the simulation of the physical sciences. Exposure to such a large Fortran codebase has developed a set of transferrable skills that can be used for other programming projects in the domain of HPC. 
 %Additionally, the NetCDF and FFTW libraries are used in many scientific codes, 
 
 %Learning a new programming language is a challenging process. 

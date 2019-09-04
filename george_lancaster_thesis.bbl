@@ -2054,6 +2054,82 @@
       \verb https://arxiv.org/abs/1901.04982
       \endverb
     \endentry
+    \entry{bergman2008exascale}{report}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=bd2bc10586e701abc66057b9556f7dc1}{%
+           family={Bergman},
+           familyi={B\bibinitperiod},
+           given={Keren},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3bfc94a29f58b307c2e2c21007c8b010}{%
+           family={Borkar},
+           familyi={B\bibinitperiod},
+           given={Shekhar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a8d91a2c390cd0affe1e2b7130a6dba8}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a69f6478c3c1537f8975f176085255b3}{%
+           family={Carlson},
+           familyi={C\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f352f442da245469318ee7648224df0f}{%
+           family={Dally},
+           familyi={D\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=02e99e9b9c512b92a4d3ae36ea3f4861}{%
+           family={Denneau},
+           familyi={D\bibinitperiod},
+           given={Monty},
+           giveni={M\bibinitperiod}}}%
+        {{hash=12e924b42707b21a268460811a0cdc8a}{%
+           family={Franzon},
+           familyi={F\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=495ebdcc51538334d23bcafab8739404}{%
+           family={Harrod},
+           familyi={H\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6c39bbdf70dd66f9658754fa549ad56d}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={Kerry},
+           giveni={K\bibinitperiod}}}%
+        {{hash=93f7aee37d29821d4d7da07be5c38686}{%
+           family={Hiller},
+           familyi={H\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Arlington, VA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Defense Advanced Research Projects Agency Information Processing Techniques Office}%
+      }
+      \strng{namehash}{bc21a683c72f66bbe013e3a1eb18c102}
+      \strng{fullhash}{7138ff91285d7ccebb8c952a4aa7af24}
+      \strng{bibnamehash}{bc21a683c72f66bbe013e3a1eb18c102}
+      \strng{authorbibnamehash}{bc21a683c72f66bbe013e3a1eb18c102}
+      \strng{authornamehash}{bc21a683c72f66bbe013e3a1eb18c102}
+      \strng{authorfullhash}{7138ff91285d7ccebb8c952a4aa7af24}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Exascale computing study: Technology challenges in achieving exascale systems}
+      \field{type}{techreport}
+      \field{volume}{15}
+      \field{year}{2008}
+    \endentry
     \entry{arm2018white}{report}{}
       \name{author}{1}{}{%
         {{hash=e8784b36174fa54dd21dd2c5fb444aeb}{%
@@ -2098,8 +2174,8 @@
       \strng{authorbibnamehash}{a4c1e27fab0b2b67f256378630992161}
       \strng{authornamehash}{a4c1e27fab0b2b67f256378630992161}
       \strng{authorfullhash}{a4c1e27fab0b2b67f256378630992161}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ThunderX2 CN99XX Product Brief}
@@ -2530,8 +2606,8 @@
       \strng{authorbibnamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
       \strng{authornamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
       \strng{authorfullhash}{6cd795ad0cfd88dbdf4a1a0c22681827}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE computer society technical committee on computer architecture (TCCA) newsletter}
@@ -2593,8 +2669,8 @@
       \strng{authorbibnamehash}{8b3c2b2b185248740d5a9d106250800f}
       \strng{authornamehash}{8b3c2b2b185248740d5a9d106250800f}
       \strng{authorfullhash}{63b9831eab57a4a2ea8d0bbddfec148a}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE micro}
@@ -2623,8 +2699,8 @@
       \strng{authorbibnamehash}{ce5e0c46978e0c4d608a9db95b282ab7}
       \strng{authornamehash}{ce5e0c46978e0c4d608a9db95b282ab7}
       \strng{authorfullhash}{ce5e0c46978e0c4d608a9db95b282ab7}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{7}
@@ -3180,8 +3256,8 @@
       \strng{authorbibnamehash}{50c1aaed1be3fa6b203d4e8d05eb18d7}
       \strng{authornamehash}{50c1aaed1be3fa6b203d4e8d05eb18d7}
       \strng{authorfullhash}{50c1aaed1be3fa6b203d4e8d05eb18d7}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{8}
@@ -3239,8 +3315,8 @@
       \strng{authorbibnamehash}{c40e7fe26dcd32ce7ef3711ba8c0ec08}
       \strng{authornamehash}{c40e7fe26dcd32ce7ef3711ba8c0ec08}
       \strng{authorfullhash}{bdd79809653baa39d1416cae369a3935}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Best Practice Guide - ARM64}
@@ -3399,8 +3475,8 @@
       \strng{authorbibnamehash}{406f5a9e4b0749ec2acd69bf35d3c5c5}
       \strng{authornamehash}{406f5a9e4b0749ec2acd69bf35d3c5c5}
       \strng{authorfullhash}{74bd7f28aa89a950d3e5cf26a06ae5bc}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The POWER4 processor introduction and tuning guide}
@@ -3421,8 +3497,8 @@
       \strng{authorbibnamehash}{36083fee7f4cc8fcbaa09346e388068e}
       \strng{authornamehash}{36083fee7f4cc8fcbaa09346e388068e}
       \strng{authorfullhash}{36083fee7f4cc8fcbaa09346e388068e}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proc. of IEEE International Conference on Control and Automation}
@@ -3443,8 +3519,8 @@
       \strng{authorbibnamehash}{d7b29b0aee6945ee7b2de1799d3bc563}
       \strng{authornamehash}{d7b29b0aee6945ee7b2de1799d3bc563}
       \strng{authorfullhash}{d7b29b0aee6945ee7b2de1799d3bc563}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Special topics of applied mathematics: Functional Analysis, Numerical Analysis and Optimisation}

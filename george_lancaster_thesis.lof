@@ -54,7 +54,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.11}{\ignorespaces Communication matrix for the Grey-Mars model configuration}}{41}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Percentage of runtime spent inside the MPI library for each processor rank for the Grey-Mars configuration. Epoch 1 refers to time steps completed from model days 1 - 30, and epoch 13 refers to time steps completed from model days 390-420. These time periods are when Mars is approximately at opposing points in orbit relative to each other.\relax }}{42}{figure.caption.49}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Percentage of runtime spent in the MPI library}}{42}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.13}{\ignorespaces Variation in runtimes for the Held-Suarez configuration running at T42 resolution.\relax }}{43}{figure.caption.50}
 \defcounter {refsection}{0}\relax 

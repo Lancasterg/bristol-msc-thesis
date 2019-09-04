@@ -52,19 +52,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Instruction-level parallelism (SIMD)}{14}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}Distributed-memory parallelism (MIMD)}{15}{subsection.3.1.3}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}HPC clusters}{15}{section.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}BlueCrystal phase 3}{15}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}BlueCrystal phase 4}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}BlueCrystal phase 4}{16}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}BluePebble}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}BluePebble}{16}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.4}Isambard}{16}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Cavium ThunderX2 Server Microprocessors}{16}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{A64FX}{16}{section*.22}
+\contentsline {subsubsection}{A64FX}{17}{section*.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Benchmarking and performance analysis}{18}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -100,7 +102,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Implicit type conversion}{23}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namelist read errors}{23}{section*.32}
+\contentsline {subsubsection}{Namelist read errors}{24}{section*.32}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Ambiguous arithmetic}{24}{section*.33}
 \defcounter {refsection}{0}\relax 
@@ -110,7 +112,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Stack size}{24}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Strict processor enforcement}{24}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Strict processor enforcement}{25}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Libraries and dependencies}{25}{section.5.3}
 \defcounter {refsection}{0}\relax 
@@ -120,7 +122,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.5.1}Units of last place}{25}{subsection.5.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Rounding errors}{25}{section*.34}
+\contentsline {subsubsection}{Rounding errors}{26}{section*.34}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.5.2}Program verifcation}{26}{subsection.5.5.2}
 \defcounter {refsection}{0}\relax 
