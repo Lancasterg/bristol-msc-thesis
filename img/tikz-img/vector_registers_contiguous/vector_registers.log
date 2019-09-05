@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.17)  1 AUG 2019 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.17)  5 SEP 2019 19:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -470,17 +470,17 @@ e
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./vector_registers.aux) ) 
 Here is how much of TeX's memory you used:
- 12584 strings out of 492649
- 260751 string characters out of 6129622
- 306866 words of memory out of 5000000
- 16243 multiletter control sequences out of 15000+600000
+ 12578 strings out of 492649
+ 260584 string characters out of 6129622
+ 305011 words of memory out of 5000000
+ 16237 multiletter control sequences out of 15000+600000
  4274 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,77p,428b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt9.pfb>
-Output written on vector_registers.pdf (1 page, 22472 bytes).
+Output written on vector_registers.pdf (1 page, 22358 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream

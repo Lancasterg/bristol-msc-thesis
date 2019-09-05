@@ -50,7 +50,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.9}{\ignorespaces Cost per grid point at T21 and T42 resoltuions}}{39}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Percentage of runtime spent in MPI across processes}}{40}{figure.caption.47}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Percentage of runtime spent in MPI across processes}}{41}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.11}{\ignorespaces Communication matrix for the Grey-Mars model configuration}}{41}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
@@ -58,11 +58,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.13}{\ignorespaces Variation in runtimes for the Held-Suarez configuration running at T42 resolution.\relax }}{43}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Variation in runtimes for the Grey-Mars configuration running at T42 resolution.\relax }}{43}{figure.caption.51}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Variation in runtimes for the Grey-Mars configuration running at T42 resolution.\relax }}{44}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Roofline model of Isca on Intel hardware}}{44}{figure.caption.52}
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Roofline model of Isca on Intel hardware}}{45}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.16}{\ignorespaces Contiguous and non-contiguous memory access}}{45}{figure.caption.54}
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Contiguous and non-contiguous memory access}}{46}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

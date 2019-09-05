@@ -102,7 +102,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Implicit type conversion}{23}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namelist read errors}{24}{section*.32}
+\contentsline {subsubsection}{Namelist read errors}{23}{section*.32}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Ambiguous arithmetic}{24}{section*.33}
 \defcounter {refsection}{0}\relax 
@@ -112,7 +112,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Stack size}{24}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Strict processor enforcement}{25}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Strict processor enforcement}{24}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Libraries and dependencies}{25}{section.5.3}
 \defcounter {refsection}{0}\relax 
@@ -124,7 +124,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Rounding errors}{26}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}Program verifcation}{26}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.2}Program verification}{26}{subsection.5.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Summary}{26}{section.5.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{II\hspace {1em}Benchmarking, performance analysis and optimisation}{27}{part.2}
 \defcounter {refsection}{0}\relax 
@@ -196,11 +198,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.6.1}Results}{43}{subsection.7.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.6.2}Conclusions and discussion}{44}{subsection.7.6.2}
+\contentsline {subsection}{\numberline {7.6.2}Conclusions and discussion}{43}{subsection.7.6.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.7}Experiment G: Roofline model analysis}{44}{section.7.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.7.1}Conclusions and discussion}{45}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.1}Conclusions and discussion}{44}{subsection.7.7.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.8}Summary}{46}{section.7.8}
 \defcounter {refsection}{0}\relax 
@@ -284,7 +286,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.3.1}Scaling}{64}{subsection.11.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3.2}Comparison with other models}{64}{subsection.11.3.2}
+\contentsline {subsection}{\numberline {11.3.2}Comparison with other models}{65}{subsection.11.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.3.3}Software architecture}{65}{subsection.11.3.3}
 \defcounter {refsection}{0}\relax 

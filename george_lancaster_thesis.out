@@ -43,85 +43,86 @@
 \BOOKMARK [1][-]{section.5.4}{Development tools}{chapter.5}% 43
 \BOOKMARK [1][-]{section.5.5}{Verification of results}{chapter.5}% 44
 \BOOKMARK [2][-]{subsection.5.5.1}{Units of last place}{section.5.5}% 45
-\BOOKMARK [2][-]{subsection.5.5.2}{Program verifcation}{section.5.5}% 46
-\BOOKMARK [-1][-]{part.2}{II Benchmarking, performance analysis and optimisation}{}% 47
-\BOOKMARK [0][-]{chapter.6}{Experimental Methodology}{part.2}% 48
-\BOOKMARK [1][-]{section.6.1}{Model configurations}{chapter.6}% 49
-\BOOKMARK [2][-]{subsection.6.1.1}{Held-Suarez test case}{section.6.1}% 50
-\BOOKMARK [2][-]{subsection.6.1.2}{Grey-Mars test case}{section.6.1}% 51
-\BOOKMARK [2][-]{subsection.6.1.3}{Domain decomposition}{section.6.1}% 52
-\BOOKMARK [1][-]{section.6.2}{Automated data collection}{chapter.6}% 53
-\BOOKMARK [2][-]{subsection.6.2.1}{Job submission}{section.6.2}% 54
-\BOOKMARK [1][-]{section.6.3}{Experiments}{chapter.6}% 55
-\BOOKMARK [2][-]{subsection.6.3.1}{Experiment A: Scaling study}{section.6.3}% 56
-\BOOKMARK [2][-]{subsection.6.3.2}{Experiment B: Compiler comparison}{section.6.3}% 57
-\BOOKMARK [2][-]{subsection.6.3.3}{Experiment C: Vectorisation analysis}{section.6.3}% 58
-\BOOKMARK [2][-]{subsection.6.3.4}{Experiment D: Computation rate}{section.6.3}% 59
-\BOOKMARK [2][-]{subsection.6.3.5}{Experiment E: Communication analysis}{section.6.3}% 60
-\BOOKMARK [2][-]{subsection.6.3.6}{Experiment F: Runtime variation}{section.6.3}% 61
-\BOOKMARK [2][-]{subsection.6.3.7}{Experiment G: Roofline analysis}{section.6.3}% 62
-\BOOKMARK [1][-]{section.6.4}{Summary}{chapter.6}% 63
-\BOOKMARK [0][-]{chapter.7}{Results}{part.2}% 64
-\BOOKMARK [1][-]{section.7.1}{Experiment A: Scaling study}{chapter.7}% 65
-\BOOKMARK [2][-]{subsection.7.1.1}{Results}{section.7.1}% 66
-\BOOKMARK [2][-]{subsection.7.1.2}{Conclusions and discussion}{section.7.1}% 67
-\BOOKMARK [1][-]{section.7.2}{Experiment B: Compiler comparison}{chapter.7}% 68
-\BOOKMARK [2][-]{subsection.7.2.1}{Results}{section.7.2}% 69
-\BOOKMARK [2][-]{subsection.7.2.2}{Conclusions and discussion}{section.7.2}% 70
-\BOOKMARK [1][-]{section.7.3}{Experiment C: Vectorisation analysis}{chapter.7}% 71
-\BOOKMARK [2][-]{subsection.7.3.1}{Results}{section.7.3}% 72
-\BOOKMARK [2][-]{subsection.7.3.2}{Conclusions and discussion}{section.7.3}% 73
-\BOOKMARK [1][-]{section.7.4}{Experiment D: Computation rate}{chapter.7}% 74
-\BOOKMARK [2][-]{subsection.7.4.1}{Results}{section.7.4}% 75
-\BOOKMARK [2][-]{subsection.7.4.2}{Conclusions and discussion}{section.7.4}% 76
-\BOOKMARK [1][-]{section.7.5}{Experiment E: Time spent in the MPI library}{chapter.7}% 77
-\BOOKMARK [2][-]{subsection.7.5.1}{Results}{section.7.5}% 78
-\BOOKMARK [2][-]{subsection.7.5.2}{Conclusions and discussion}{section.7.5}% 79
-\BOOKMARK [1][-]{section.7.6}{Experiment F: Runtime variation}{chapter.7}% 80
-\BOOKMARK [2][-]{subsection.7.6.1}{Results}{section.7.6}% 81
-\BOOKMARK [2][-]{subsection.7.6.2}{Conclusions and discussion}{section.7.6}% 82
-\BOOKMARK [1][-]{section.7.7}{Experiment G: Roofline model analysis}{chapter.7}% 83
-\BOOKMARK [2][-]{subsection.7.7.1}{Conclusions and discussion}{section.7.7}% 84
-\BOOKMARK [1][-]{section.7.8}{Summary}{chapter.7}% 85
-\BOOKMARK [0][-]{chapter.8}{Optimisation}{part.2}% 86
-\BOOKMARK [1][-]{section.8.1}{FFT optimisation}{chapter.8}% 87
-\BOOKMARK [2][-]{subsection.8.1.1}{Implementation}{section.8.1}% 88
-\BOOKMARK [2][-]{subsection.8.1.2}{Verification of results}{section.8.1}% 89
-\BOOKMARK [2][-]{subsection.8.1.3}{Performance analysis}{section.8.1}% 90
-\BOOKMARK [1][-]{section.8.2}{Optimisation B: Single-precision floating point numbers}{chapter.8}% 91
-\BOOKMARK [2][-]{subsection.8.2.1}{Implementation}{section.8.2}% 92
-\BOOKMARK [2][-]{subsection.8.2.2}{Performance analysis}{section.8.2}% 93
-\BOOKMARK [2][-]{subsection.8.2.3}{Conclusions and discussion}{section.8.2}% 94
-\BOOKMARK [2][-]{subsection.8.2.4}{Verification of results}{section.8.2}% 95
-\BOOKMARK [1][-]{section.8.3}{FFTW with single-precision variables}{chapter.8}% 96
-\BOOKMARK [2][-]{subsection.8.3.1}{Performance analysis}{section.8.3}% 97
-\BOOKMARK [1][-]{section.8.4}{Conclusions}{chapter.8}% 98
-\BOOKMARK [0][-]{chapter.9}{Performance projection}{part.2}% 99
-\BOOKMARK [1][-]{section.9.1}{Hardware performance estimation}{chapter.9}% 100
-\BOOKMARK [2][-]{subsection.9.1.1}{Floating point performance}{section.9.1}% 101
-\BOOKMARK [2][-]{subsection.9.1.2}{Memory-bandwidth}{section.9.1}% 102
-\BOOKMARK [1][-]{section.9.2}{Isca performance estimation}{chapter.9}% 103
-\BOOKMARK [2][-]{subsection.9.2.1}{Scalar estimation}{section.9.2}% 104
-\BOOKMARK [2][-]{subsection.9.2.2}{Vector estimation}{section.9.2}% 105
-\BOOKMARK [2][-]{subsection.9.2.3}{Results}{section.9.2}% 106
-\BOOKMARK [1][-]{section.9.3}{Conclusion}{chapter.9}% 107
-\BOOKMARK [-1][-]{part.3}{III Reflection, Critical Evaluation and Conclusion}{}% 108
-\BOOKMARK [0][-]{chapter.10}{Reflection}{part.3}% 109
-\BOOKMARK [1][-]{section.10.1}{The Fortran programming language}{chapter.10}% 110
-\BOOKMARK [1][-]{section.10.2}{Compilation of the model}{chapter.10}% 111
-\BOOKMARK [1][-]{section.10.3}{Data collection}{chapter.10}% 112
-\BOOKMARK [0][-]{chapter.11}{Critical evaluation and conclusion}{part.3}% 113
-\BOOKMARK [1][-]{section.11.1}{Areas of improvement}{chapter.11}% 114
-\BOOKMARK [1][-]{section.11.2}{Conclusion}{chapter.11}% 115
-\BOOKMARK [1][-]{section.11.3}{Further work}{chapter.11}% 116
-\BOOKMARK [2][-]{subsection.11.3.1}{Scaling}{section.11.3}% 117
-\BOOKMARK [2][-]{subsection.11.3.2}{Comparison with other models}{section.11.3}% 118
-\BOOKMARK [2][-]{subsection.11.3.3}{Software architecture}{section.11.3}% 119
-\BOOKMARK [2][-]{subsection.11.3.4}{Model configurations}{section.11.3}% 120
-\BOOKMARK [2][-]{subsection.11.3.5}{Performance projection}{section.11.3}% 121
-\BOOKMARK [2][-]{subsection.11.3.6}{Catalyst}{section.11.3}% 122
-\BOOKMARK [0][-]{subsection.11.3.6}{Bibliography}{part.3}% 123
-\BOOKMARK [0][-]{appendix.A}{Porting code changes}{part.3}% 124
-\BOOKMARK [0][-]{appendix.B}{Code listings}{part.3}% 125
-\BOOKMARK [0][-]{appendix.C}{Compile environment scripts}{part.3}% 126
-\BOOKMARK [0][-]{appendix.D}{Job submission scripts}{part.3}% 127
+\BOOKMARK [2][-]{subsection.5.5.2}{Program verification}{section.5.5}% 46
+\BOOKMARK [1][-]{section.5.6}{Summary}{chapter.5}% 47
+\BOOKMARK [-1][-]{part.2}{II Benchmarking, performance analysis and optimisation}{}% 48
+\BOOKMARK [0][-]{chapter.6}{Experimental Methodology}{part.2}% 49
+\BOOKMARK [1][-]{section.6.1}{Model configurations}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.1.1}{Held-Suarez test case}{section.6.1}% 51
+\BOOKMARK [2][-]{subsection.6.1.2}{Grey-Mars test case}{section.6.1}% 52
+\BOOKMARK [2][-]{subsection.6.1.3}{Domain decomposition}{section.6.1}% 53
+\BOOKMARK [1][-]{section.6.2}{Automated data collection}{chapter.6}% 54
+\BOOKMARK [2][-]{subsection.6.2.1}{Job submission}{section.6.2}% 55
+\BOOKMARK [1][-]{section.6.3}{Experiments}{chapter.6}% 56
+\BOOKMARK [2][-]{subsection.6.3.1}{Experiment A: Scaling study}{section.6.3}% 57
+\BOOKMARK [2][-]{subsection.6.3.2}{Experiment B: Compiler comparison}{section.6.3}% 58
+\BOOKMARK [2][-]{subsection.6.3.3}{Experiment C: Vectorisation analysis}{section.6.3}% 59
+\BOOKMARK [2][-]{subsection.6.3.4}{Experiment D: Computation rate}{section.6.3}% 60
+\BOOKMARK [2][-]{subsection.6.3.5}{Experiment E: Communication analysis}{section.6.3}% 61
+\BOOKMARK [2][-]{subsection.6.3.6}{Experiment F: Runtime variation}{section.6.3}% 62
+\BOOKMARK [2][-]{subsection.6.3.7}{Experiment G: Roofline analysis}{section.6.3}% 63
+\BOOKMARK [1][-]{section.6.4}{Summary}{chapter.6}% 64
+\BOOKMARK [0][-]{chapter.7}{Results}{part.2}% 65
+\BOOKMARK [1][-]{section.7.1}{Experiment A: Scaling study}{chapter.7}% 66
+\BOOKMARK [2][-]{subsection.7.1.1}{Results}{section.7.1}% 67
+\BOOKMARK [2][-]{subsection.7.1.2}{Conclusions and discussion}{section.7.1}% 68
+\BOOKMARK [1][-]{section.7.2}{Experiment B: Compiler comparison}{chapter.7}% 69
+\BOOKMARK [2][-]{subsection.7.2.1}{Results}{section.7.2}% 70
+\BOOKMARK [2][-]{subsection.7.2.2}{Conclusions and discussion}{section.7.2}% 71
+\BOOKMARK [1][-]{section.7.3}{Experiment C: Vectorisation analysis}{chapter.7}% 72
+\BOOKMARK [2][-]{subsection.7.3.1}{Results}{section.7.3}% 73
+\BOOKMARK [2][-]{subsection.7.3.2}{Conclusions and discussion}{section.7.3}% 74
+\BOOKMARK [1][-]{section.7.4}{Experiment D: Computation rate}{chapter.7}% 75
+\BOOKMARK [2][-]{subsection.7.4.1}{Results}{section.7.4}% 76
+\BOOKMARK [2][-]{subsection.7.4.2}{Conclusions and discussion}{section.7.4}% 77
+\BOOKMARK [1][-]{section.7.5}{Experiment E: Time spent in the MPI library}{chapter.7}% 78
+\BOOKMARK [2][-]{subsection.7.5.1}{Results}{section.7.5}% 79
+\BOOKMARK [2][-]{subsection.7.5.2}{Conclusions and discussion}{section.7.5}% 80
+\BOOKMARK [1][-]{section.7.6}{Experiment F: Runtime variation}{chapter.7}% 81
+\BOOKMARK [2][-]{subsection.7.6.1}{Results}{section.7.6}% 82
+\BOOKMARK [2][-]{subsection.7.6.2}{Conclusions and discussion}{section.7.6}% 83
+\BOOKMARK [1][-]{section.7.7}{Experiment G: Roofline model analysis}{chapter.7}% 84
+\BOOKMARK [2][-]{subsection.7.7.1}{Conclusions and discussion}{section.7.7}% 85
+\BOOKMARK [1][-]{section.7.8}{Summary}{chapter.7}% 86
+\BOOKMARK [0][-]{chapter.8}{Optimisation}{part.2}% 87
+\BOOKMARK [1][-]{section.8.1}{FFT optimisation}{chapter.8}% 88
+\BOOKMARK [2][-]{subsection.8.1.1}{Implementation}{section.8.1}% 89
+\BOOKMARK [2][-]{subsection.8.1.2}{Verification of results}{section.8.1}% 90
+\BOOKMARK [2][-]{subsection.8.1.3}{Performance analysis}{section.8.1}% 91
+\BOOKMARK [1][-]{section.8.2}{Optimisation B: Single-precision floating point numbers}{chapter.8}% 92
+\BOOKMARK [2][-]{subsection.8.2.1}{Implementation}{section.8.2}% 93
+\BOOKMARK [2][-]{subsection.8.2.2}{Performance analysis}{section.8.2}% 94
+\BOOKMARK [2][-]{subsection.8.2.3}{Conclusions and discussion}{section.8.2}% 95
+\BOOKMARK [2][-]{subsection.8.2.4}{Verification of results}{section.8.2}% 96
+\BOOKMARK [1][-]{section.8.3}{FFTW with single-precision variables}{chapter.8}% 97
+\BOOKMARK [2][-]{subsection.8.3.1}{Performance analysis}{section.8.3}% 98
+\BOOKMARK [1][-]{section.8.4}{Conclusions}{chapter.8}% 99
+\BOOKMARK [0][-]{chapter.9}{Performance projection}{part.2}% 100
+\BOOKMARK [1][-]{section.9.1}{Hardware performance estimation}{chapter.9}% 101
+\BOOKMARK [2][-]{subsection.9.1.1}{Floating point performance}{section.9.1}% 102
+\BOOKMARK [2][-]{subsection.9.1.2}{Memory-bandwidth}{section.9.1}% 103
+\BOOKMARK [1][-]{section.9.2}{Isca performance estimation}{chapter.9}% 104
+\BOOKMARK [2][-]{subsection.9.2.1}{Scalar estimation}{section.9.2}% 105
+\BOOKMARK [2][-]{subsection.9.2.2}{Vector estimation}{section.9.2}% 106
+\BOOKMARK [2][-]{subsection.9.2.3}{Results}{section.9.2}% 107
+\BOOKMARK [1][-]{section.9.3}{Conclusion}{chapter.9}% 108
+\BOOKMARK [-1][-]{part.3}{III Reflection, Critical Evaluation and Conclusion}{}% 109
+\BOOKMARK [0][-]{chapter.10}{Reflection}{part.3}% 110
+\BOOKMARK [1][-]{section.10.1}{The Fortran programming language}{chapter.10}% 111
+\BOOKMARK [1][-]{section.10.2}{Compilation of the model}{chapter.10}% 112
+\BOOKMARK [1][-]{section.10.3}{Data collection}{chapter.10}% 113
+\BOOKMARK [0][-]{chapter.11}{Critical evaluation and conclusion}{part.3}% 114
+\BOOKMARK [1][-]{section.11.1}{Areas of improvement}{chapter.11}% 115
+\BOOKMARK [1][-]{section.11.2}{Conclusion}{chapter.11}% 116
+\BOOKMARK [1][-]{section.11.3}{Further work}{chapter.11}% 117
+\BOOKMARK [2][-]{subsection.11.3.1}{Scaling}{section.11.3}% 118
+\BOOKMARK [2][-]{subsection.11.3.2}{Comparison with other models}{section.11.3}% 119
+\BOOKMARK [2][-]{subsection.11.3.3}{Software architecture}{section.11.3}% 120
+\BOOKMARK [2][-]{subsection.11.3.4}{Model configurations}{section.11.3}% 121
+\BOOKMARK [2][-]{subsection.11.3.5}{Performance projection}{section.11.3}% 122
+\BOOKMARK [2][-]{subsection.11.3.6}{Catalyst}{section.11.3}% 123
+\BOOKMARK [0][-]{subsection.11.3.6}{Bibliography}{part.3}% 124
+\BOOKMARK [0][-]{appendix.A}{Porting code changes}{part.3}% 125
+\BOOKMARK [0][-]{appendix.B}{Code listings}{part.3}% 126
+\BOOKMARK [0][-]{appendix.C}{Compile environment scripts}{part.3}% 127
+\BOOKMARK [0][-]{appendix.D}{Job submission scripts}{part.3}% 128
