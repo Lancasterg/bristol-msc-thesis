@@ -20,73 +20,75 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces STREAM TRIAD benchmark}}{18}{figure.caption.23}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces STREAM TRIAD benchmark}}{19}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces High performance Linpack benchmark}}{19}{figure.caption.24}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.2}{\ignorespaces High performance Linpack benchmark}}{20}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Position of the planet Mars at epoch 1 and epoch 13.\relax }}{32}{figure.caption.37}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Position of the planet Mars at epoch 1 and epoch 13.\relax }}{33}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Speedup of the Held-Suarez configuration at T21 resolution}}{33}{figure.caption.38}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Speedup of the Held-Suarez configuration at T21 resolution}}{34}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Wallclock runtime of the Grey-Mars configuration at T21 resolution}}{34}{figure.caption.39}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Wallclock runtime of the Grey-Mars configuration at T21 resolution}}{35}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Wallclock runtime of the Held-Suarez configuration running at T42 resolution}}{34}{figure.caption.40}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Wallclock runtime of the Held-Suarez configuration running at T42 resolution}}{35}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Speedup of the Held-Suarez configuration at T42 resolution}}{35}{figure.caption.41}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Speedup of the Held-Suarez configuration at T42 resolution}}{36}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Wallclock runtime of the Held-Suarez configuration at T85 resolution}}{35}{figure.caption.42}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Wallclock runtime of the Held-Suarez configuration at T85 resolution}}{36}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Speedup of the Held-Suarez configuration at T85 resolution}}{36}{figure.caption.43}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Speedup of the Held-Suarez configuration at T85 resolution}}{37}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Performance comparison using different compilers}}{37}{figure.caption.44}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Performance comparison using different compilers}}{38}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Speedup of the vectorised code relative to scalar at T42 resolution. \relax }}{38}{figure.caption.45}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Speedup of the vectorised code relative to scalar at T42 resolution. \relax }}{39}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Cost per grid point at T21 and T42 resoltuions}}{39}{figure.caption.46}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Cost per grid point at T21 and T42 resoltuions}}{40}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Percentage of runtime spent in MPI across processes}}{41}{figure.caption.47}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Percentage of runtime spent in MPI across processes}}{42}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Communication matrix for the Grey-Mars model configuration}}{41}{figure.caption.48}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Communication matrix for the Grey-Mars model configuration}}{42}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Percentage of runtime spent in the MPI library}}{42}{figure.caption.49}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Percentage of runtime spent in the MPI library}}{43}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Variation in runtimes for the Held-Suarez configuration running at T42 resolution.\relax }}{43}{figure.caption.50}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Visualisation of load imbalance}}{43}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Variation in runtimes for the Grey-Mars configuration running at T42 resolution.\relax }}{44}{figure.caption.51}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Variation in runtimes for the Held-Suarez configuration running at T42 resolution.\relax }}{44}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Roofline model of Isca on Intel hardware}}{45}{figure.caption.52}
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Variation in runtimes for the Grey-Mars configuration running at T42 resolution.\relax }}{45}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.16}{\ignorespaces Contiguous and non-contiguous memory access}}{46}{figure.caption.54}
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Roofline model of Isca on Intel hardware}}{46}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Two-dimensional data layout in Fortran}}{48}{figure.caption.56}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Speedup of FFTW relative to Temperton's FFT}}{50}{figure.caption.59}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Performance comparison of FFTW and Temperton's FFT}}{50}{figure.caption.60}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Roofline model comparison of single and double-precision arithmetic}}{52}{figure.caption.64}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Performance comparison of varied precision of floating point numbers}}{52}{figure.caption.65}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Speedup of the vectorised code relative to scalar.\relax }}{53}{figure.caption.66}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Runtimes of all optimisations}}{54}{figure.caption.69}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Speedup of performance optimisations relative to the unmodified model.\relax }}{54}{figure.caption.70}
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Contiguous and non-contiguous memory access}}{47}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Non-linear least squares regression }}{57}{figure.caption.73}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Two-dimensional data layout in Fortran}}{49}{figure.caption.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Projected performance of the A64FX}}{58}{figure.caption.74}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Speedup of FFTW relative to Temperton's FFT}}{51}{figure.caption.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Performance comparison of FFTW and Temperton's FFT}}{51}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Roofline model comparison of single and double-precision arithmetic}}{53}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Performance comparison of varied precision of floating point numbers}}{53}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Speedup of the vectorised code relative to scalar.\relax }}{54}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Runtimes of all optimisations}}{55}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Speedup of performance optimisations relative to the unmodified model.\relax }}{55}{figure.caption.68}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Non-linear least squares regression }}{58}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Projected performance of the A64FX}}{59}{figure.caption.71}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

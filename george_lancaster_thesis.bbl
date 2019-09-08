@@ -1489,7 +1489,7 @@
       \verb 10.1109/JPROC.2004.840301
       \endverb
     \endentry
-    \entry{frigo2003fftw}{article}{}
+    \entry{frigo2003fftw}{report}{}
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{2}{}{%
@@ -1504,8 +1504,8 @@
            given={Steven\bibnamedelima G},
            giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Massachusetts Institute of Technology}%
+      \list{location}{1}{%
+        {Cambridge, MA, USA}%
       }
       \strng{namehash}{1b35038ffd72680cccb96048831c8948}
       \strng{fullhash}{1b35038ffd72680cccb96048831c8948}
@@ -1517,8 +1517,10 @@
       \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Massachusetts Institute of Technology}
       \field{month}{5}
       \field{title}{FFTW for version 3.3.8}
+      \field{type}{techreport}
       \field{year}{2018}
     \endentry
     \entry{heideman1985gauss}{article}{}
@@ -1661,7 +1663,7 @@
       \verb 10.1109/38.56302
       \endverb
     \endentry
-    \entry{schmunk2015panoply}{article}{}
+    \entry{schmunk2015panoply}{online}{}
       \name{author}{1}{}{%
         {{hash=ed172712864d2fbb91476e0e9799ef6d}{%
            family={Schmunk},
@@ -1679,9 +1681,15 @@
       \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{National Aeronautics and Space Administration-Goddard Institute for Space Studies}
+      \field{month}{8}
       \field{title}{Panoply netcdf, hdf and grib data viewer}
       \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.giss.nasa.gov/tools/panoply/
+      \endverb
+      \verb{url}
+      \verb https://www.giss.nasa.gov/tools/panoply/
+      \endverb
     \endentry
     \entry{van2011numpy}{article}{}
       \name{author}{3}{}{%
@@ -2552,6 +2560,70 @@
       \verb 10.1145/3075564.3095086
       \endverb
     \endentry
+    \entry{mccalpin1995memory}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=a29f65c5863e161e47765c4b5c960c20}{%
+           family={McCalpin},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{fullhash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{bibnamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{authorbibnamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{authornamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \strng{authorfullhash}{6cd795ad0cfd88dbdf4a1a0c22681827}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE computer society technical committee on computer architecture (TCCA) newsletter}
+      \field{month}{12}
+      \field{number}{19--25}
+      \field{title}{Memory bandwidth and machine balance in current high performance computers}
+      \field{volume}{2}
+      \field{year}{1995}
+    \endentry
+    \entry{dongarra2008linpack}{article}{}
+      \name{author}{4}{}{%
+        {{hash=82653b0e8447d6571a4e179dd232d7f4}{%
+           family={Petitet},
+           familyi={P\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d99703aadbfa4524d034f0f5f3421446}{%
+           family={C.\bibnamedelimi Whaley},
+           familyi={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b57e9502ada0493415564206d6641312}{%
+           family={Dongarra},
+           familyi={D\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e8bc7334acc4c415c9bdc13fa678de00}{%
+           family={Cleary},
+           familyi={C\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e24be1363d0a79d58de52c6f027b4fc5}
+      \strng{fullhash}{e57cd9645ef27ae64d598f16fbf656c3}
+      \strng{bibnamehash}{e24be1363d0a79d58de52c6f027b4fc5}
+      \strng{authorbibnamehash}{e24be1363d0a79d58de52c6f027b4fc5}
+      \strng{authornamehash}{e24be1363d0a79d58de52c6f027b4fc5}
+      \strng{authorfullhash}{e57cd9645ef27ae64d598f16fbf656c3}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{HPL - a Portable Implementation of the High-Performance Linpack Benchmark for Distributed-Memory Computers}
+      \field{year}{2008}
+    \endentry
     \entry{moore1965cramming}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -2574,8 +2646,8 @@
       \strng{authorbibnamehash}{2bb847962029b8018b70e1069b1fbb83}
       \strng{authornamehash}{2bb847962029b8018b70e1069b1fbb83}
       \strng{authorfullhash}{2bb847962029b8018b70e1069b1fbb83}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Electronics}
@@ -2589,33 +2661,6 @@
       \verb{doi}
       \verb 10.1109/N-SSC.2006.4785860
       \endverb
-    \endentry
-    \entry{mccalpin1995memory}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{hash=a29f65c5863e161e47765c4b5c960c20}{%
-           family={McCalpin},
-           familyi={M\bibinitperiod},
-           given={John\bibnamedelima D.},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \strng{namehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
-      \strng{fullhash}{6cd795ad0cfd88dbdf4a1a0c22681827}
-      \strng{bibnamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
-      \strng{authorbibnamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
-      \strng{authornamehash}{6cd795ad0cfd88dbdf4a1a0c22681827}
-      \strng{authorfullhash}{6cd795ad0cfd88dbdf4a1a0c22681827}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE computer society technical committee on computer architecture (TCCA) newsletter}
-      \field{month}{12}
-      \field{number}{19--25}
-      \field{title}{Memory bandwidth and machine balance in current high performance computers}
-      \field{volume}{2}
-      \field{year}{1995}
     \endentry
     \entry{patterson1997case}{article}{}
       \name{author}{8}{}{%
@@ -2712,43 +2757,6 @@
       \verb{url}
       \verb https://github.com/jeffhammond/STREAM
       \endverb
-    \endentry
-    \entry{dongarra2008linpack}{article}{}
-      \name{author}{4}{}{%
-        {{hash=82653b0e8447d6571a4e179dd232d7f4}{%
-           family={Petitet},
-           familyi={P\bibinitperiod},
-           given={Antoine},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d99703aadbfa4524d034f0f5f3421446}{%
-           family={C.\bibnamedelimi Whaley},
-           familyi={C\bibinitperiod\bibinitdelim W\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-        {{hash=b57e9502ada0493415564206d6641312}{%
-           family={Dongarra},
-           familyi={D\bibinitperiod},
-           given={Jack},
-           giveni={J\bibinitperiod}}}%
-        {{hash=e8bc7334acc4c415c9bdc13fa678de00}{%
-           family={Cleary},
-           familyi={C\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{e24be1363d0a79d58de52c6f027b4fc5}
-      \strng{fullhash}{e57cd9645ef27ae64d598f16fbf656c3}
-      \strng{bibnamehash}{e24be1363d0a79d58de52c6f027b4fc5}
-      \strng{authorbibnamehash}{e24be1363d0a79d58de52c6f027b4fc5}
-      \strng{authornamehash}{e24be1363d0a79d58de52c6f027b4fc5}
-      \strng{authorfullhash}{e57cd9645ef27ae64d598f16fbf656c3}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{1}
-      \field{title}{HPL - a Portable Implementation of the High-Performance Linpack Benchmark for Distributed-Memory Computers}
-      \field{year}{2008}
     \endentry
     \entry{kumar1994analyzing}{article}{}
       \name{author}{2}{}{%
@@ -2928,8 +2936,8 @@
       \strng{authorbibnamehash}{d55a57c88a14828a53b9e8db48c889d1}
       \strng{authornamehash}{d55a57c88a14828a53b9e8db48c889d1}
       \strng{authorfullhash}{d55a57c88a14828a53b9e8db48c889d1}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM Computing Surveys (CSUR)}
@@ -3844,6 +3852,32 @@
       \field{title}{Cloverleaf: Preparing hydrodynamics codes for exascale}
       \field{volume}{2013}
       \field{year}{2013}
+    \endentry
+    \entry{met2019um}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6a89ce11a9d7fae79e749e0998d133bb}{%
+           family={{The UK Met Office}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a89ce11a9d7fae79e749e0998d133bb}
+      \strng{fullhash}{6a89ce11a9d7fae79e749e0998d133bb}
+      \strng{bibnamehash}{6a89ce11a9d7fae79e749e0998d133bb}
+      \strng{authorbibnamehash}{6a89ce11a9d7fae79e749e0998d133bb}
+      \strng{authornamehash}{6a89ce11a9d7fae79e749e0998d133bb}
+      \strng{authorfullhash}{6a89ce11a9d7fae79e749e0998d133bb}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Unified Model}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index
+      \endverb
+      \verb{url}
+      \verb https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index
+      \endverb
     \endentry
     \entry{peterson2009f2py}{article}{}
       \name{author}{1}{}{%
