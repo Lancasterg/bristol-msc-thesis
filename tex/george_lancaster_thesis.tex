@@ -85,7 +85,7 @@
 \newacronym{bridge}{BRIDGE}{Bristol Research Initiative for the Dynamic Global Environment}
 
 
-
+   
 % DOI in citations
 %\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}
 
@@ -176,9 +176,9 @@ This document is structured into three parts:
 \chapter*{Acknowledgements}
 Firstly, I would like to express my gratitude to my project supervisors Dr. Gethin Williams and Prof. Simon McIntosh-Smith for their expert guidance over the past few months, without whom this project would not have been possible. 
 \par
-I would also like to thank Dr. Dann Mitchell and Dr. William Seviour for testing my code changes in production and providing valuable feedback regarding bugs in the Isca code. 
+I would also like to thank Dr. Dann Mitchell and Dr. William Seviour for testing my code changes in production and providing valuable feedback regarding bugs in the Isca code.
 \par
-I acknowledge the contributions of the entirety of the staff at the Advanced Computing Research Centre at the University of Bristol, as well as everyone on the HPC internship program. 
+I acknowledge the contributions of the entirety of the staff at the Advanced Computing Research Centre at the University of Bristol, as well as everyone on the HPC internship program.  
 \par
 I wish to thank Grace Forsythe for her help, support and understanding throughout this past year.
 \par
@@ -583,9 +583,6 @@ The ThunderX2 uses the ARMv8.1 instruction set. This allows for the use of 128-b
 
 \subsubsection{A64FX}
 To meet the compute requirements of future \gls{hpc} workloads, Fujitsu has recently announced the next generation of Arm chips in their A64FX processor. The A64FX improves upon the NEON instruction set found in the ThunderX2 by introducing \gls{sve}, which allow for a flexible vector register length between 128 and 512 bits so that vector length can reflect the compute requirements of different use cases \cite{stephens2017arm, rico2017arm}. These processors have not yet been released, however this thesis provides an estimate of their performance based on the performance of the ThunderX2.
-
-\section{Summary}
-This project uses four processors on four separate supercomputers. However, the ThunderX2 is the
 
 
 \chapter{Benchmarking and performance analysis}

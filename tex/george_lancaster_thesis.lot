@@ -12,23 +12,23 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Compilers and MPI libraries used for benchmarking.\relax }}{23}{table.caption.29}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Compilers and MPI libraries used for benchmarking.\relax }}{22}{table.caption.29}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.1}{\ignorespaces Resolutions and their compatible core counts}}{30}{table.caption.34}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Resolutions and their compatible core counts}}{29}{table.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Number of processor cores used to measure the performance of different compilers}}{32}{table.caption.35}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code.\relax }}{47}{table.caption.55}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Number of processor cores used to measure the performance of different compilers}}{31}{table.caption.35}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces Runtime spent inside two compute kernels for both scalar and vector code.\relax }}{46}{table.caption.55}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {9.1}{\ignorespaces Comparison of ThunderX2 and A64FX hardware features}}{57}{table.caption.69}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {9.1}{\ignorespaces Comparison of ThunderX2 and A64FX hardware features}}{56}{table.caption.69}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
